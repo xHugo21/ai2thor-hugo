@@ -3,7 +3,7 @@
 (define (domain domain_ai2thor)
   
   ; Eliminar aquellos que sean innecesarios
-  (:requirements :typing :adl)
+  (:requirements :strips :fluents :typing :equality)
 
   (:types
     breakable cookable dirtyable fillable moveable openable pickupable receptacle sliceable toggleable usedup - object
@@ -25,61 +25,95 @@
     (object-at-y ?o - object)
     (object-at-z ?o - object)
     (posiblepos-x ?p - position)
-    (posiblepos-y ?p - position)
     (posiblepos-z ?p - position)
   )
-
+  
+  ; y = 0 -> z+0.25 | y = 180 -> z-0.25 | y = 90 -> x+0.25 | y = 180 -> x-0.25
   ; Permite mover al agente hacia delante un tamaño gridSize (definido en la inicialización del controlador). Solo se puede mover a posiciones válidas
-  (:action move-ahead
-   :parameters ()
-   :condition (and
-                
+  (:action move-ahead-0
+   :parameters (?p - position)
+   :precondition (and
+                (= (facing) 0)
+                (= (agent-at-x) (posiblepos-x ?p))
+                (= (+ (agent-at-z) 0.25) (posiblepos-z ?p))
               )
    :effect (and
-            
+            (increase (agent-at-z) 0.25)
+           )
+  )
+
+  (:action move-ahead-90
+   :parameters (?p - position)
+   :precondition (and
+                (= (facing) 90)
+                (= (agent-at-z) (posiblepos-z ?p))
+                (= (+ (agent-at-x) 0.25) (posiblepos-x ?p))
+              )
+   :effect (and
+            (increase (agent-at-x) 0.25)
+           )
+  )
+
+  (:action move-ahead-180
+   :parameters (?p - position)
+   :precondition (and
+                (= (facing) 180)
+                (= (agent-at-x) (posiblepos-x ?p))
+                (= (- (agent-at-z) 0.25) (posiblepos-z ?p))
+              )
+   :effect (and
+            (decrease (agent-at-z) 0.25)
+           )
+  )
+
+  (:action move-ahead-270
+   :parameters (?p - position)
+   :precondition (and
+                (= (facing) 270)
+                (= (agent-at-z) (posiblepos-z ?p))
+                (= (- (agent-at-x) 0.25) (posiblepos-x ?p))
+              )
+   :effect (and
+            (decrease (agent-at-x) 0.25)
            )
   )
 
   ; Permite al agente rotar hacia la izquierda
   (:action rotate-left
    :parameters ()
-   :condition (and
-                
-              )
+   ;:precondition ()
    :effect (and
-            
+            (decrease (facing) 90)
            )
   )
 
   ; Permite al agente rotar hacia la derecha
   (:action rotate-right
    :parameters ()
-   :condition (and
-                
-              )
+   ;:precondition ()
    :effect (and
-            
+            (increase (facing) 90)
            )
   )
-
-  ; Permite al agente recoger un objeto
-  (:action pickup
-   :parameters ()
-   :condition (and
-                
-              )
-   :effect (and
-            
-           )
-  )
-
-  ; Permite al agente tirar un objeto
-  (:action drop
-   :parameters ()
-   :condition (and
-                
-              )
-   :effect (and
-            
-           )
-  )
+  ;; Permite al agente recoger un objeto
+  ;(:action pickup
+  ; :parameters ()
+  ; :condition (and
+  ;              
+  ;            )
+  ; :effect (and
+  ;          
+  ;         )
+  ;)
+;
+  ;; Permite al agente tirar un objeto
+  ;(:action drop
+  ; :parameters ()
+  ; :condition (and
+  ;              
+  ;            )
+  ; :effect (and
+  ;          
+  ;         )
+  ;)
+)
