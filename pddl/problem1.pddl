@@ -722,17 +722,17 @@
        (= (posiblepos-x pos158) 1.0)
        (= (posiblepos-z pos158) -0.75)
 
-       (= (object-at-x Apple_2d23335f) -1.6506373882293701171875000)
-       (= (object-at-y Apple_2d23335f) 0.8054356575012207031250000)
-       (= (object-at-z Apple_2d23335f) 0.0725005716085433959960938)
+       (= (object-at-x Apple_2d23335f) -1.6506379842758178710937500)
+       (= (object-at-y Apple_2d23335f) 0.8054357171058654785156250)
+       (= (object-at-z Apple_2d23335f) 0.0725005790591239929199219)
 
        (= (object-at-x Bowl_7d4ccff3) 0.2765314280986785888671875)
-       (= (object-at-y Bowl_7d4ccff3) 0.9161400198936462402343750)
+       (= (object-at-y Bowl_7d4ccff3) 0.9161399602890014648437500)
        (= (object-at-z Bowl_7d4ccff3) 1.0911958217620849609375000)
 
        (= (object-at-x Bread_d5a1c3f9) 0.2561373114585876464843750)
        (= (object-at-y Bread_d5a1c3f9) 0.9874744415283203125000000)
-       (= (object-at-z Bread_d5a1c3f9) -0.0760024189949035644531250)
+       (= (object-at-z Bread_d5a1c3f9) -0.0760023966431617736816406)
 
        (= (object-at-x ButterKnife_b89ea1af) 1.6680196523666381835937500)
        (= (object-at-y ButterKnife_b89ea1af) 0.6907327175140380859375000)
@@ -776,11 +776,11 @@
 
        (= (object-at-x CellPhone_aedef2ad) -0.3085974454879760742187500)
        (= (object-at-y CellPhone_aedef2ad) 0.9157510995864868164062500)
-       (= (object-at-z CellPhone_aedef2ad) 1.2878094911575317382812500)
+       (= (object-at-z CellPhone_aedef2ad) 1.2878096103668212890625000)
 
-       (= (object-at-x Chair_1090c2d5) -0.0000157197937369346618652)
-       (= (object-at-y Chair_1090c2d5) 0.0005871653556823730468750)
-       (= (object-at-z Chair_1090c2d5) 1.2428220510482788085937500)
+       (= (object-at-x Chair_1090c2d5) -0.0000156965106725692749023)
+       (= (object-at-y Chair_1090c2d5) 0.0005872249603271484375000)
+       (= (object-at-z Chair_1090c2d5) 1.2428221702575683593750000)
 
        (= (object-at-x CoffeeMachine_8626f75d) 1.3554856777191162109375000)
        (= (object-at-y CoffeeMachine_8626f75d) 0.8999999761581420898437500)
@@ -794,9 +794,9 @@
        (= (object-at-y CounterTop_8c9efcb4) 0.9610999822616577148437500)
        (= (object-at-z CounterTop_8c9efcb4) 0.5059999823570251464843750)
 
-       (= (object-at-x Cup_bb2cfefd) 0.8968403339385986328125000)
-       (= (object-at-y Cup_bb2cfefd) 1.6681205034255981445312500)
-       (= (object-at-z Cup_bb2cfefd) -1.6067391633987426757812500)
+       (= (object-at-x Cup_bb2cfefd) 0.8968402743339538574218750)
+       (= (object-at-y Cup_bb2cfefd) 1.6681203842163085937500000)
+       (= (object-at-z Cup_bb2cfefd) -1.6067390441894531250000000)
 
        (= (object-at-x DishSponge_846279b8) -0.5490002632141113281250000)
        (= (object-at-y DishSponge_846279b8) 0.9239478111267089843750000)
@@ -854,9 +854,9 @@
        (= (object-at-y Drawer_44d719df) 0.5199999809265136718750000)
        (= (object-at-z Drawer_44d719df) 1.2200000286102294921875000)
 
-       (= (object-at-x Egg_3f59b271) 0.1345302611589431762695312)
-       (= (object-at-y Egg_3f59b271) 0.9549759626388549804687500)
-       (= (object-at-z Egg_3f59b271) -0.1690935045480728149414062)
+       (= (object-at-x Egg_3f59b271) 0.1345300376415252685546875)
+       (= (object-at-y Egg_3f59b271) 0.9549759030342102050781250)
+       (= (object-at-z Egg_3f59b271) -0.1690935194492340087890625)
 
        (= (object-at-x Faucet_ab2bbf59) 0.0000000000000000000000000)
        (= (object-at-y Faucet_ab2bbf59) 0.9064000248908996582031250)
@@ -867,68 +867,68 @@
        (= (object-at-z Floor_bbd4574e) 0.0000000000000000000000000)
 
        (= (object-at-x Fork_40ceb846) 1.6937178373336791992187500)
-       (= (object-at-y Fork_40ceb846) 0.9017404317855834960937500)
-       (= (object-at-z Fork_40ceb846) 1.4480832815170288085937500)
+       (= (object-at-y Fork_40ceb846) 0.9017403721809387207031250)
+       (= (object-at-z Fork_40ceb846) 1.4480834007263183593750000)
 
        (= (object-at-x Fridge_0c8b2aac) -1.7640000581741333007812500)
        (= (object-at-y Fridge_0c8b2aac) 0.0000000000000000000000000)
        (= (object-at-z Fridge_0c8b2aac) -0.0010000000474974513053894)
 
-       (= (object-at-x GarbageCan_6027cab7) -1.7960395812988281250000000)
-       (= (object-at-y GarbageCan_6027cab7) 0.0091883689165115356445312)
-       (= (object-at-z GarbageCan_6027cab7) 1.3303004503250122070312500)
+       (= (object-at-x GarbageCan_6027cab7) -1.7960394620895385742187500)
+       (= (object-at-y GarbageCan_6027cab7) 0.0091883540153503417968750)
+       (= (object-at-z GarbageCan_6027cab7) 1.3303005695343017578125000)
 
-       (= (object-at-x Kettle_fbe2db4a) 1.6810047626495361328125000)
+       (= (object-at-x Kettle_fbe2db4a) 1.6810048818588256835937500)
        (= (object-at-y Kettle_fbe2db4a) 0.9044235944747924804687500)
-       (= (object-at-z Kettle_fbe2db4a) 0.0908768326044082641601562)
+       (= (object-at-z Kettle_fbe2db4a) 0.0908768400549888610839844)
 
        (= (object-at-x Knife_32559729) 0.5998945832252502441406250)
-       (= (object-at-y Knife_32559729) 0.9069147706031799316406250)
+       (= (object-at-y Knife_32559729) 0.9069148302078247070312500)
        (= (object-at-z Knife_32559729) -1.4440008401870727539062500)
 
-       (= (object-at-x Ladle_24291006) 1.7859687805175781250000000)
-       (= (object-at-y Ladle_24291006) 0.9266759753227233886718750)
-       (= (object-at-z Ladle_24291006) 1.1294649839401245117187500)
+       (= (object-at-x Ladle_24291006) 1.7859331369400024414062500)
+       (= (object-at-y Ladle_24291006) 0.9266791939735412597656250)
+       (= (object-at-z Ladle_24291006) 1.1294850111007690429687500)
 
-       (= (object-at-x Lettuce_e4c06bf0) -1.7119657993316650390625000)
-       (= (object-at-y Lettuce_e4c06bf0) 0.8199284076690673828125000)
-       (= (object-at-z Lettuce_e4c06bf0) -0.1363750398159027099609375)
+       (= (object-at-x Lettuce_e4c06bf0) -1.7119661569595336914062500)
+       (= (object-at-y Lettuce_e4c06bf0) 0.8199282288551330566406250)
+       (= (object-at-z Lettuce_e4c06bf0) -0.1363748013973236083984375)
 
        (= (object-at-x LightSwitch_117b5e68) -0.1539999991655349731445312)
        (= (object-at-y LightSwitch_117b5e68) 1.2910000085830688476562500)
        (= (object-at-z LightSwitch_117b5e68) 3.7000000476837158203125000)
 
        (= (object-at-x Microwave_034418c4) 1.9329763650894165039062500)
-       (= (object-at-y Microwave_034418c4) 0.9005625844001770019531250)
-       (= (object-at-z Microwave_034418c4) -0.7668576240539550781250000)
+       (= (object-at-y Microwave_034418c4) 0.9005632400512695312500000)
+       (= (object-at-z Microwave_034418c4) -0.7668575644493103027343750)
 
-       (= (object-at-x Mug_5b20fbb4) -0.2350060641765594482421875)
-       (= (object-at-y Mug_5b20fbb4) 0.9150362610816955566406250)
-       (= (object-at-z Mug_5b20fbb4) -0.2559992074966430664062500)
+       (= (object-at-x Mug_5b20fbb4) -0.2350061982870101928710938)
+       (= (object-at-y Mug_5b20fbb4) 0.9150363802909851074218750)
+       (= (object-at-z Mug_5b20fbb4) -0.2559991776943206787109375)
 
        (= (object-at-x Pan_72f9bafb) -1.2864104509353637695312500)
        (= (object-at-y Pan_72f9bafb) 0.9007555842399597167968750)
-       (= (object-at-z Pan_72f9bafb) -1.3487402200698852539062500)
+       (= (object-at-z Pan_72f9bafb) -1.3487403392791748046875000)
 
-       (= (object-at-x PepperShaker_57398a24) 1.8889997005462646484375000)
-       (= (object-at-y PepperShaker_57398a24) 0.9000790119171142578125000)
-       (= (object-at-z PepperShaker_57398a24) 0.0349996760487556457519531)
+       (= (object-at-x PepperShaker_57398a24) 1.8889998197555541992187500)
+       (= (object-at-y PepperShaker_57398a24) 0.9000789523124694824218750)
+       (= (object-at-z PepperShaker_57398a24) 0.0349996909499168395996094)
 
        (= (object-at-x Plate_f7062da2) 1.3229528665542602539062500)
        (= (object-at-y Plate_f7062da2) 1.6700921058654785156250000)
-       (= (object-at-z Plate_f7062da2) -1.5954314470291137695312500)
+       (= (object-at-z Plate_f7062da2) -1.5954315662384033203125000)
 
-       (= (object-at-x Pot_68f3f3e0) 0.8894878625869750976562500)
-       (= (object-at-y Pot_68f3f3e0) 0.9032002687454223632812500)
-       (= (object-at-z Pot_68f3f3e0) -1.4123808145523071289062500)
+       (= (object-at-x Pot_68f3f3e0) 0.8894879221916198730468750)
+       (= (object-at-y Pot_68f3f3e0) 0.9032002091407775878906250)
+       (= (object-at-z Pot_68f3f3e0) -1.4123806953430175781250000)
 
-       (= (object-at-x Potato_582b16c0) 0.3274362981319427490234375)
+       (= (object-at-x Potato_582b16c0) 0.3274363577365875244140625)
        (= (object-at-y Potato_582b16c0) 0.9400352835655212402343750)
-       (= (object-at-z Potato_582b16c0) 1.3115084171295166015625000)
+       (= (object-at-z Potato_582b16c0) 1.3115085363388061523437500)
 
-       (= (object-at-x SaltShaker_6320d1b6) 2.0098264217376708984375000)
+       (= (object-at-x SaltShaker_6320d1b6) 2.0098261833190917968750000)
        (= (object-at-y SaltShaker_6320d1b6) 0.9000757336616516113281250)
-       (= (object-at-z SaltShaker_6320d1b6) 0.0287338308990001678466797)
+       (= (object-at-z SaltShaker_6320d1b6) 0.0287338290363550186157227)
 
        (= (object-at-x Sink_8d06bd95) 0.0000000000000000000000000)
        (= (object-at-y Sink_8d06bd95) 0.8939999938011169433593750)
@@ -938,13 +938,13 @@
        (= (object-at-y SinkBasin_0b197de3) 0.7369999885559082031250000)
        (= (object-at-z SinkBasin_0b197de3) -1.4355000257492065429687500)
 
-       (= (object-at-x SoapBottle_977a5c07) -0.5609994530677795410156250)
+       (= (object-at-x SoapBottle_977a5c07) -0.5609995126724243164062500)
        (= (object-at-y SoapBottle_977a5c07) 0.9001105427742004394531250)
-       (= (object-at-z SoapBottle_977a5c07) -1.5720002651214599609375000)
+       (= (object-at-z SoapBottle_977a5c07) -1.5720003843307495117187500)
 
-       (= (object-at-x Spatula_650f2009) 1.7764476537704467773437500)
-       (= (object-at-y Spatula_650f2009) 0.9074096083641052246093750)
-       (= (object-at-z Spatula_650f2009) -0.1286542415618896484375000)
+       (= (object-at-x Spatula_650f2009) 1.7764477729797363281250000)
+       (= (object-at-y Spatula_650f2009) 0.9074095487594604492187500)
+       (= (object-at-z Spatula_650f2009) -0.1286542564630508422851562)
 
        (= (object-at-x Spoon_ab4315e1) 1.6208981275558471679687500)
        (= (object-at-y Spoon_ab4315e1) 0.9003046751022338867187500)
@@ -1002,9 +1002,9 @@
        (= (object-at-y Toaster_22ab325a) 0.9000750780105590820312500)
        (= (object-at-z Toaster_22ab325a) -0.3357970714569091796875000)
 
-       (= (object-at-x Tomato_5fb6a620) 0.1684528887271881103515625)
-       (= (object-at-y Tomato_5fb6a620) 0.9745159149169921875000000)
-       (= (object-at-z Tomato_5fb6a620) -0.2817418575286865234375000)
+       (= (object-at-x Tomato_5fb6a620) 0.1684768646955490112304688)
+       (= (object-at-y Tomato_5fb6a620) 0.9745200276374816894531250)
+       (= (object-at-z Tomato_5fb6a620) -0.2816503942012786865234375)
 
        (= (object-at-x Window_c2ac07c7) -3.2400000095367431640625000)
        (= (object-at-y Window_c2ac07c7) 1.6160000562667846679687500)
@@ -1021,5 +1021,5 @@
     )
 
     (:goal (and
-       (= (agent-at-x) -0.75)    ))
+       (= (agent-at-x) -2.75)       (= (agent-at-y) 0.9009992480278015)       (= (agent-at-z) 3.25)    ))
 )
