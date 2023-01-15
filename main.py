@@ -2,7 +2,7 @@
 # Imports
 from ai2thor.controller import Controller
 from ai2thor_to_pddl import parse_ai2thor_pddl
-from run_plan import plan
+from run_plan import run_plan, print_plan
 
 # Variables globales
 scene_number = 1 # Determina el escenario. Valores permitidos: [1, 30] -> cocinas, [201, 230] -> salas de estar, [301, 330] -> dormitorios, [401, 430] -> baños
@@ -37,7 +37,10 @@ event = controller.step(action="GetReachablePositions")
 parse_ai2thor_pddl(event, problem_path)
 
 # Ejecución del planificador sobre el dominio y el problema dados
-plan(planner_path, domain_path, problem_path, output_path)
+run_plan(planner_path, domain_path, problem_path, output_path)
+
+# Printeo del plan por pantalla
+print_plan(output_path)
 
 # Parseo del plan para convertirlo en acciones ejecutables por el agente
 
