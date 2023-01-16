@@ -1,42 +1,47 @@
 (define (problem problem1)
     (:domain domain_ai2thor)
     (:objects
-       AlarmClock_899b652f - object
-       Bed_71d587dd - object
-       Blinds_ab6d45d0 - object
-       Book_7afd3ae1 - object
-       Bowl_f1b62db6 - object
-       CD_d3effb23 - object
-       CellPhone_d688f9d9 - object
-       Chair_6b9f1792 - object
-       CreditCard_e329e7f5 - object
-       Desk_01ca18b8 - object
-       DeskLamp_7c4fa288 - object
-       Drawer_cc719b40 - object
-       Drawer_8f3dd27f - object
-       Drawer_dd2e4116 - object
-       Floor_e80f10a8 - object
-       GarbageCan_88394b5d - object
-       HousePlant_a3597e1a - object
-       KeyChain_3ff4d992 - object
-       Laptop_044c100c - object
-       LightSwitch_91f60c59 - object
-       Mirror_db756642 - object
-       Painting_fb08ba3b - object
-       Pen_b5abb21c - object
-       Pencil_84aef9b5 - object
-       Pillow_c25f02ba - object
-       Safe_10197cfe - object
-       Shelf_aa461275 - object
-       Shelf_54cc751e - object
-       Shelf_2f16b4c5 - object
-       Shelf_71819892 - object
-       Shelf_a7d9ee9f - object
-       SideTable_e5d2b9bb - object
-       SideTable_b3df7cc1 - object
-       TeddyBear_8657c3be - object
-       TennisRacket_ae57a35a - object
-       Window_42951f57 - object
+       Bathtub_b837a28d - object
+       BathtubBasin_c5b83aec - object
+       Cabinet_25297d70 - object
+       Cabinet_bd9c7c59 - object
+       Cabinet_e90dc44e - object
+       Cabinet_6809ef74 - object
+       Candle_2b3797d8 - object
+       Cloth_6e60c328 - object
+       CounterTop_794eb6a3 - object
+       Faucet_75d5ab92 - object
+       Faucet_b2d11a28 - object
+       Faucet_ada1cd21 - object
+       Floor_778474a8 - object
+       GarbageCan_4bfb5574 - object
+       HandTowel_001a809d - object
+       HandTowelHolder_a309e830 - object
+       HandTowelHolder_691a856c - object
+       LightSwitch_2f6f7add - object
+       Mirror_e9700b26 - object
+       Plunger_ed710244 - object
+       ScrubBrush_2f874c37 - object
+       Shelf_551926f3 - object
+       ShowerDoor_4666f48d - object
+       ShowerGlass_73a7c1c8 - object
+       ShowerHead_2c6df809 - object
+       Sink_8218170e - object
+       Sink_ebbaeae8 - object
+       SinkBasin_0b2fc3ae - object
+       SinkBasin_28b928cc - object
+       SoapBar_a024dc66 - object
+       SoapBottle_a48be41a - object
+       SprayBottle_cec3785b - object
+       TissueBox_11edae11 - object
+       Toilet_81ce13b2 - object
+       ToiletPaper_61e4a4d7 - object
+       ToiletPaper_b19504c2 - object
+       ToiletPaperHanger_f7f4dd68 - object
+       Towel_4e1d52ab - object
+       TowelHolder_82b9bdf0 - object
+       TowelHolder_fb9ff080 - object
+       Window_d704ac0b - object
        pos0 - position
        pos1 - position
        pos2 - position
@@ -91,327 +96,495 @@
        pos51 - position
        pos52 - position
        pos53 - position
+       pos54 - position
+       pos55 - position
+       pos56 - position
+       pos57 - position
+       pos58 - position
+       pos59 - position
+       pos60 - position
+       pos61 - position
+       pos62 - position
+       pos63 - position
+       pos64 - position
+       pos65 - position
+       pos66 - position
+       pos67 - position
+       pos68 - position
+       pos69 - position
+       pos70 - position
+       pos71 - position
+       pos72 - position
+       pos73 - position
+       pos74 - position
+       pos75 - position
+       pos76 - position
+       pos77 - position
+       pos78 - position
+       pos79 - position
+       pos80 - position
+       pos81 - position
+       pos82 - position
+       pos83 - position
+       pos84 - position
+       pos85 - position
+       pos86 - position
+       pos87 - position
+       pos88 - position
+       pos89 - position
+       pos90 - position
     )
 
     (:init
-       (= (distance AlarmClock_899b652f) 1.8138335943222046)
+       (= (distance Cloth_6e60c328) 2.8059775829315186)
 
-       (= (facing) 180.0)
+       (= (facing) 90.0)
 
        (= (inclination) -0.0)
 
-       (= (agent-at-x) 0.0)
-       (= (agent-at-y) 0.9009991884231567)
-       (= (agent-at-z) 0.0)
+       (= (agent-at-x) -2.0)
+       (= (agent-at-y) 0.9006701707839966)
+       (= (agent-at-z) 2.5)
 
-       (= (posiblepos-x pos0) 0.0)
-       (= (posiblepos-z pos0) 0.0)
+       (= (posiblepos-x pos0) -2.0)
+       (= (posiblepos-z pos0) 2.5)
 
-       (= (posiblepos-x pos1) 0.25)
-       (= (posiblepos-z pos1) 0.0)
+       (= (posiblepos-x pos1) -1.75)
+       (= (posiblepos-z pos1) 2.5)
 
-       (= (posiblepos-x pos2) 0.0)
-       (= (posiblepos-z pos2) 0.25)
+       (= (posiblepos-x pos2) -2.0)
+       (= (posiblepos-z pos2) 2.75)
 
-       (= (posiblepos-x pos3) -0.25)
-       (= (posiblepos-z pos3) 0.0)
+       (= (posiblepos-x pos3) -2.25)
+       (= (posiblepos-z pos3) 2.5)
 
-       (= (posiblepos-x pos4) 0.0)
-       (= (posiblepos-z pos4) -0.25)
+       (= (posiblepos-x pos4) -2.0)
+       (= (posiblepos-z pos4) 2.25)
 
-       (= (posiblepos-x pos5) 0.25)
-       (= (posiblepos-z pos5) 0.25)
+       (= (posiblepos-x pos5) -1.5)
+       (= (posiblepos-z pos5) 2.5)
 
-       (= (posiblepos-x pos6) 0.25)
-       (= (posiblepos-z pos6) -0.25)
+       (= (posiblepos-x pos6) -1.75)
+       (= (posiblepos-z pos6) 2.75)
 
-       (= (posiblepos-x pos7) 0.0)
-       (= (posiblepos-z pos7) 0.5)
+       (= (posiblepos-x pos7) -1.75)
+       (= (posiblepos-z pos7) 2.25)
 
-       (= (posiblepos-x pos8) -0.25)
-       (= (posiblepos-z pos8) 0.25)
+       (= (posiblepos-x pos8) -2.0)
+       (= (posiblepos-z pos8) 3.0)
 
-       (= (posiblepos-x pos9) -0.5)
-       (= (posiblepos-z pos9) 0.0)
+       (= (posiblepos-x pos9) -2.25)
+       (= (posiblepos-z pos9) 2.75)
 
-       (= (posiblepos-x pos10) -0.25)
-       (= (posiblepos-z pos10) -0.25)
+       (= (posiblepos-x pos10) -2.25)
+       (= (posiblepos-z pos10) 2.25)
 
-       (= (posiblepos-x pos11) 0.0)
-       (= (posiblepos-z pos11) -0.5)
+       (= (posiblepos-x pos11) -1.25)
+       (= (posiblepos-z pos11) 2.5)
 
-       (= (posiblepos-x pos12) 0.25)
-       (= (posiblepos-z pos12) 0.5)
+       (= (posiblepos-x pos12) -1.5)
+       (= (posiblepos-z pos12) 2.75)
 
-       (= (posiblepos-x pos13) 0.25)
-       (= (posiblepos-z pos13) -0.5)
+       (= (posiblepos-x pos13) -1.5)
+       (= (posiblepos-z pos13) 2.25)
 
-       (= (posiblepos-x pos14) 0.0)
-       (= (posiblepos-z pos14) 0.75)
+       (= (posiblepos-x pos14) -1.75)
+       (= (posiblepos-z pos14) 3.0)
 
-       (= (posiblepos-x pos15) -0.25)
-       (= (posiblepos-z pos15) 0.5)
+       (= (posiblepos-x pos15) -2.0)
+       (= (posiblepos-z pos15) 3.25)
 
-       (= (posiblepos-x pos16) -0.5)
-       (= (posiblepos-z pos16) 0.25)
+       (= (posiblepos-x pos16) -2.25)
+       (= (posiblepos-z pos16) 3.0)
 
-       (= (posiblepos-x pos17) -0.5)
-       (= (posiblepos-z pos17) -0.25)
+       (= (posiblepos-x pos17) -2.5)
+       (= (posiblepos-z pos17) 2.75)
 
-       (= (posiblepos-x pos18) -0.25)
-       (= (posiblepos-z pos18) -0.5)
+       (= (posiblepos-x pos18) -2.25)
+       (= (posiblepos-z pos18) 2.0)
 
-       (= (posiblepos-x pos19) 0.0)
-       (= (posiblepos-z pos19) -0.75)
+       (= (posiblepos-x pos19) -1.0)
+       (= (posiblepos-z pos19) 2.5)
 
-       (= (posiblepos-x pos20) 0.5)
-       (= (posiblepos-z pos20) 0.5)
+       (= (posiblepos-x pos20) -1.25)
+       (= (posiblepos-z pos20) 2.75)
 
-       (= (posiblepos-x pos21) 0.25)
-       (= (posiblepos-z pos21) 0.75)
+       (= (posiblepos-x pos21) -1.25)
+       (= (posiblepos-z pos21) 2.25)
 
-       (= (posiblepos-x pos22) 0.25)
-       (= (posiblepos-z pos22) -0.75)
+       (= (posiblepos-x pos22) -1.5)
+       (= (posiblepos-z pos22) 3.0)
 
-       (= (posiblepos-x pos23) -0.25)
-       (= (posiblepos-z pos23) 0.75)
+       (= (posiblepos-x pos23) -1.75)
+       (= (posiblepos-z pos23) 3.25)
 
-       (= (posiblepos-x pos24) -0.5)
-       (= (posiblepos-z pos24) 0.5)
+       (= (posiblepos-x pos24) -2.0)
+       (= (posiblepos-z pos24) 3.5)
 
-       (= (posiblepos-x pos25) -0.75)
-       (= (posiblepos-z pos25) 0.25)
+       (= (posiblepos-x pos25) -2.25)
+       (= (posiblepos-z pos25) 3.25)
 
-       (= (posiblepos-x pos26) -0.5)
-       (= (posiblepos-z pos26) -0.5)
+       (= (posiblepos-x pos26) -2.5)
+       (= (posiblepos-z pos26) 3.0)
 
-       (= (posiblepos-x pos27) -0.25)
-       (= (posiblepos-z pos27) -0.75)
+       (= (posiblepos-x pos27) -0.75)
+       (= (posiblepos-z pos27) 2.5)
 
-       (= (posiblepos-x pos28) 0.0)
-       (= (posiblepos-z pos28) -1.0)
+       (= (posiblepos-x pos28) -1.0)
+       (= (posiblepos-z pos28) 2.75)
 
-       (= (posiblepos-x pos29) 0.75)
-       (= (posiblepos-z pos29) 0.5)
+       (= (posiblepos-x pos29) -1.0)
+       (= (posiblepos-z pos29) 2.25)
 
-       (= (posiblepos-x pos30) 0.5)
-       (= (posiblepos-z pos30) 0.75)
+       (= (posiblepos-x pos30) -1.25)
+       (= (posiblepos-z pos30) 3.0)
 
-       (= (posiblepos-x pos31) 0.25)
-       (= (posiblepos-z pos31) -1.0)
+       (= (posiblepos-x pos31) -1.25)
+       (= (posiblepos-z pos31) 2.0)
 
-       (= (posiblepos-x pos32) -0.25)
-       (= (posiblepos-z pos32) 1.0)
+       (= (posiblepos-x pos32) -1.5)
+       (= (posiblepos-z pos32) 3.25)
 
-       (= (posiblepos-x pos33) -0.5)
-       (= (posiblepos-z pos33) 0.75)
+       (= (posiblepos-x pos33) -1.75)
+       (= (posiblepos-z pos33) 3.5)
 
-       (= (posiblepos-x pos34) -0.75)
-       (= (posiblepos-z pos34) 0.5)
+       (= (posiblepos-x pos34) -2.0)
+       (= (posiblepos-z pos34) 3.75)
 
-       (= (posiblepos-x pos35) -1.0)
-       (= (posiblepos-z pos35) 0.25)
+       (= (posiblepos-x pos35) -2.25)
+       (= (posiblepos-z pos35) 3.5)
 
-       (= (posiblepos-x pos36) -0.5)
-       (= (posiblepos-z pos36) -0.75)
+       (= (posiblepos-x pos36) -2.5)
+       (= (posiblepos-z pos36) 3.25)
 
-       (= (posiblepos-x pos37) -0.25)
-       (= (posiblepos-z pos37) -1.0)
+       (= (posiblepos-x pos37) -0.5)
+       (= (posiblepos-z pos37) 2.5)
 
-       (= (posiblepos-x pos38) 0.0)
-       (= (posiblepos-z pos38) -1.25)
+       (= (posiblepos-x pos38) -0.75)
+       (= (posiblepos-z pos38) 2.75)
 
-       (= (posiblepos-x pos39) 1.0)
-       (= (posiblepos-z pos39) 0.5)
+       (= (posiblepos-x pos39) -0.75)
+       (= (posiblepos-z pos39) 2.25)
 
-       (= (posiblepos-x pos40) 0.75)
-       (= (posiblepos-z pos40) 0.75)
+       (= (posiblepos-x pos40) -1.0)
+       (= (posiblepos-z pos40) 2.0)
 
-       (= (posiblepos-x pos41) 0.25)
-       (= (posiblepos-z pos41) -1.25)
+       (= (posiblepos-x pos41) -1.25)
+       (= (posiblepos-z pos41) 3.25)
 
-       (= (posiblepos-x pos42) -0.25)
-       (= (posiblepos-z pos42) 1.25)
+       (= (posiblepos-x pos42) -1.5)
+       (= (posiblepos-z pos42) 3.5)
 
-       (= (posiblepos-x pos43) -0.5)
-       (= (posiblepos-z pos43) 1.0)
+       (= (posiblepos-x pos43) -1.75)
+       (= (posiblepos-z pos43) 3.75)
 
-       (= (posiblepos-x pos44) -0.75)
-       (= (posiblepos-z pos44) 0.75)
+       (= (posiblepos-x pos44) -2.0)
+       (= (posiblepos-z pos44) 4.0)
 
-       (= (posiblepos-x pos45) -1.0)
-       (= (posiblepos-z pos45) 0.5)
+       (= (posiblepos-x pos45) -2.25)
+       (= (posiblepos-z pos45) 3.75)
 
-       (= (posiblepos-x pos46) 0.0)
-       (= (posiblepos-z pos46) -1.5)
+       (= (posiblepos-x pos46) -2.5)
+       (= (posiblepos-z pos46) 3.5)
 
-       (= (posiblepos-x pos47) 1.0)
-       (= (posiblepos-z pos47) 0.75)
+       (= (posiblepos-x pos47) -0.5)
+       (= (posiblepos-z pos47) 2.75)
 
        (= (posiblepos-x pos48) -0.5)
-       (= (posiblepos-z pos48) 1.25)
+       (= (posiblepos-z pos48) 2.25)
 
        (= (posiblepos-x pos49) -0.75)
-       (= (posiblepos-z pos49) 1.0)
+       (= (posiblepos-z pos49) 2.0)
 
-       (= (posiblepos-x pos50) -1.0)
-       (= (posiblepos-z pos50) 0.75)
+       (= (posiblepos-x pos50) -1.25)
+       (= (posiblepos-z pos50) 3.5)
 
-       (= (posiblepos-x pos51) -0.75)
-       (= (posiblepos-z pos51) 1.25)
+       (= (posiblepos-x pos51) -1.5)
+       (= (posiblepos-z pos51) 3.75)
 
-       (= (posiblepos-x pos52) -1.0)
-       (= (posiblepos-z pos52) 1.0)
+       (= (posiblepos-x pos52) -1.75)
+       (= (posiblepos-z pos52) 4.0)
 
-       (= (posiblepos-x pos53) -1.0)
-       (= (posiblepos-z pos53) 1.25)
+       (= (posiblepos-x pos53) -2.0)
+       (= (posiblepos-z pos53) 4.25)
 
-       (= (object-at-x AlarmClock_899b652f) 0.4499727487564086914062500)
-       (= (object-at-y AlarmClock_899b652f) 0.6698755025863647460937500)
-       (= (object-at-z AlarmClock_899b652f) -1.7418664693832397460937500)
+       (= (posiblepos-x pos54) -2.25)
+       (= (posiblepos-z pos54) 4.0)
 
-       (= (object-at-x Bed_71d587dd) 1.2412168979644775390625000)
-       (= (object-at-y Bed_71d587dd) 0.0132440924644470214843750)
-       (= (object-at-z Bed_71d587dd) -0.8866648674011230468750000)
+       (= (posiblepos-x pos55) -2.5)
+       (= (posiblepos-z pos55) 3.75)
 
-       (= (object-at-x Blinds_ab6d45d0) -0.4530000090599060058593750)
-       (= (object-at-y Blinds_ab6d45d0) 2.1568994522094726562500000)
-       (= (object-at-z Blinds_ab6d45d0) -2.2425999641418457031250000)
+       (= (posiblepos-x pos56) -0.5)
+       (= (posiblepos-z pos56) 2.0)
 
-       (= (object-at-x Book_7afd3ae1) -0.6852008104324340820312500)
-       (= (object-at-y Book_7afd3ae1) 0.7917478680610656738281250)
-       (= (object-at-z Book_7afd3ae1) -1.7198729515075683593750000)
+       (= (posiblepos-x pos57) -1.25)
+       (= (posiblepos-z pos57) 3.75)
 
-       (= (object-at-x Bowl_f1b62db6) -0.8094571828842163085937500)
-       (= (object-at-y Bowl_f1b62db6) 0.8261294364929199218750000)
-       (= (object-at-z Bowl_f1b62db6) -2.0852003097534179687500000)
+       (= (posiblepos-x pos58) -1.5)
+       (= (posiblepos-z pos58) 4.0)
 
-       (= (object-at-x CD_d3effb23) -1.3025137186050415039062500)
-       (= (object-at-y CD_d3effb23) 0.7969400882720947265625000)
-       (= (object-at-z CD_d3effb23) -0.3144102990627288818359375)
+       (= (posiblepos-x pos59) -1.75)
+       (= (posiblepos-z pos59) 4.25)
 
-       (= (object-at-x CellPhone_d688f9d9) -1.0740317106246948242187500)
-       (= (object-at-y CellPhone_d688f9d9) 0.7958630323410034179687500)
-       (= (object-at-z CellPhone_d688f9d9) -0.6380314826965332031250000)
+       (= (posiblepos-x pos60) -2.25)
+       (= (posiblepos-z pos60) 4.25)
 
-       (= (object-at-x Chair_6b9f1792) -0.6830035448074340820312500)
-       (= (object-at-y Chair_6b9f1792) 0.0005890727043151855468750)
-       (= (object-at-z Chair_6b9f1792) -1.3262512683868408203125000)
+       (= (posiblepos-x pos61) -2.5)
+       (= (posiblepos-z pos61) 4.0)
 
-       (= (object-at-x CreditCard_e329e7f5) -0.3930778205394744873046875)
-       (= (object-at-y CreditCard_e329e7f5) 0.7956520915031433105468750)
-       (= (object-at-z CreditCard_e329e7f5) -1.6976342201232910156250000)
+       (= (posiblepos-x pos62) -2.75)
+       (= (posiblepos-z pos62) 3.75)
 
-       (= (object-at-x Desk_01ca18b8) -0.7880603075027465820312500)
-       (= (object-at-y Desk_01ca18b8) 0.0004979968070983886718750)
-       (= (object-at-z Desk_01ca18b8) -1.0329155921936035156250000)
+       (= (posiblepos-x pos63) -1.0)
+       (= (posiblepos-z pos63) 3.75)
 
-       (= (object-at-x DeskLamp_7c4fa288) 0.4737176895141601562500000)
-       (= (object-at-y DeskLamp_7c4fa288) 0.6693318486213684082031250)
-       (= (object-at-z DeskLamp_7c4fa288) 1.3501858711242675781250000)
+       (= (posiblepos-x pos64) -1.25)
+       (= (posiblepos-z pos64) 4.0)
 
-       (= (object-at-x Drawer_cc719b40) 0.4162309169769287109375000)
-       (= (object-at-y Drawer_cc719b40) 0.5327293276786804199218750)
-       (= (object-at-z Drawer_cc719b40) -1.5531280040740966796875000)
+       (= (posiblepos-x pos65) -1.5)
+       (= (posiblepos-z pos65) 4.25)
 
-       (= (object-at-x Drawer_8f3dd27f) 0.3047076761722564697265625)
-       (= (object-at-y Drawer_8f3dd27f) 0.4557247757911682128906250)
-       (= (object-at-z Drawer_8f3dd27f) 1.1591970920562744140625000)
+       (= (posiblepos-x pos66) -2.5)
+       (= (posiblepos-z pos66) 4.25)
 
-       (= (object-at-x Drawer_dd2e4116) 0.3047028481960296630859375)
-       (= (object-at-y Drawer_dd2e4116) 0.1634312421083450317382812)
-       (= (object-at-z Drawer_dd2e4116) 1.1591811180114746093750000)
+       (= (posiblepos-x pos67) -2.75)
+       (= (posiblepos-z pos67) 4.0)
 
-       (= (object-at-x Floor_e80f10a8) 0.0000000000000000000000000)
-       (= (object-at-y Floor_e80f10a8) 0.0000000000000000000000000)
-       (= (object-at-z Floor_e80f10a8) 0.0000000000000000000000000)
+       (= (posiblepos-x pos68) -0.75)
+       (= (posiblepos-z pos68) 3.75)
 
-       (= (object-at-x GarbageCan_88394b5d) 0.8401997089385986328125000)
-       (= (object-at-y GarbageCan_88394b5d) 0.0083088129758834838867188)
-       (= (object-at-z GarbageCan_88394b5d) 1.3170053958892822265625000)
+       (= (posiblepos-x pos69) -1.0)
+       (= (posiblepos-z pos69) 4.0)
 
-       (= (object-at-x HousePlant_a3597e1a) -0.0835856497287750244140625)
-       (= (object-at-y HousePlant_a3597e1a) 0.8289601802825927734375000)
-       (= (object-at-z HousePlant_a3597e1a) -2.0459339618682861328125000)
+       (= (posiblepos-x pos70) -1.25)
+       (= (posiblepos-z pos70) 4.25)
 
-       (= (object-at-x KeyChain_3ff4d992) -0.5474309921264648437500000)
-       (= (object-at-y KeyChain_3ff4d992) 0.7958585023880004882812500)
-       (= (object-at-z KeyChain_3ff4d992) -1.5238684415817260742187500)
+       (= (posiblepos-x pos71) -2.75)
+       (= (posiblepos-z pos71) 4.25)
 
-       (= (object-at-x Laptop_044c100c) -1.0382102727890014648437500)
-       (= (object-at-y Laptop_044c100c) 0.7894068360328674316406250)
-       (= (object-at-z Laptop_044c100c) -1.5061670541763305664062500)
+       (= (posiblepos-x pos72) -0.5)
+       (= (posiblepos-z pos72) 3.75)
 
-       (= (object-at-x LightSwitch_91f60c59) 0.0109999999403953552246094)
-       (= (object-at-y LightSwitch_91f60c59) 1.3150000572204589843750000)
-       (= (object-at-z LightSwitch_91f60c59) 1.4999998807907104492187500)
+       (= (posiblepos-x pos73) -0.75)
+       (= (posiblepos-z pos73) 4.0)
 
-       (= (object-at-x Mirror_db756642) -1.3839999437332153320312500)
-       (= (object-at-y Mirror_db756642) 1.5650000572204589843750000)
-       (= (object-at-z Mirror_db756642) 0.5120000243186950683593750)
+       (= (posiblepos-x pos74) -1.0)
+       (= (posiblepos-z pos74) 4.25)
 
-       (= (object-at-x Painting_fb08ba3b) 1.1119999885559082031250000)
-       (= (object-at-y Painting_fb08ba3b) 1.6289999485015869140625000)
-       (= (object-at-z Painting_fb08ba3b) -1.8650000095367431640625000)
+       (= (posiblepos-x pos75) -2.75)
+       (= (posiblepos-z pos75) 4.5)
 
-       (= (object-at-x Pen_b5abb21c) -1.1319767236709594726562500)
-       (= (object-at-y Pen_b5abb21c) 0.7960855364799499511718750)
-       (= (object-at-z Pen_b5abb21c) -1.2363142967224121093750000)
+       (= (posiblepos-x pos76) -3.0)
+       (= (posiblepos-z pos76) 4.25)
 
-       (= (object-at-x Pencil_84aef9b5) -1.1595711708068847656250000)
-       (= (object-at-y Pencil_84aef9b5) 0.7952960133552551269531250)
-       (= (object-at-z Pencil_84aef9b5) -1.1796509027481079101562500)
+       (= (posiblepos-x pos77) -0.5)
+       (= (posiblepos-z pos77) 4.0)
 
-       (= (object-at-x Pillow_c25f02ba) 1.2737457752227783203125000)
-       (= (object-at-y Pillow_c25f02ba) 0.6533695459365844726562500)
-       (= (object-at-z Pillow_c25f02ba) -0.6320831179618835449218750)
+       (= (posiblepos-x pos78) -0.75)
+       (= (posiblepos-z pos78) 4.25)
 
-       (= (object-at-x Safe_10197cfe) 1.6229907274246215820312500)
-       (= (object-at-y Safe_10197cfe) 0.0000003874301910400390625)
-       (= (object-at-z Safe_10197cfe) 0.4480102360248565673828125)
+       (= (posiblepos-x pos79) -3.0)
+       (= (posiblepos-z pos79) 4.5)
 
-       (= (object-at-x Shelf_aa461275) -0.4699999988079071044921875)
-       (= (object-at-y Shelf_aa461275) 0.8284000158309936523437500)
-       (= (object-at-z Shelf_aa461275) -2.0380001068115234375000000)
+       (= (posiblepos-x pos80) -3.25)
+       (= (posiblepos-z pos80) 4.25)
 
-       (= (object-at-x Shelf_54cc751e) -1.2868000268936157226562500)
-       (= (object-at-y Shelf_54cc751e) 1.4511127471923828125000000)
-       (= (object-at-z Shelf_54cc751e) -1.3439999818801879882812500)
+       (= (posiblepos-x pos81) -0.5)
+       (= (posiblepos-z pos81) 4.25)
 
-       (= (object-at-x Shelf_2f16b4c5) -1.2868000268936157226562500)
-       (= (object-at-y Shelf_2f16b4c5) 1.4511127471923828125000000)
-       (= (object-at-z Shelf_2f16b4c5) -0.6029999852180480957031250)
+       (= (posiblepos-x pos82) -3.0)
+       (= (posiblepos-z pos82) 4.75)
 
-       (= (object-at-x Shelf_71819892) -1.2868000268936157226562500)
-       (= (object-at-y Shelf_71819892) 1.8143999576568603515625000)
-       (= (object-at-z Shelf_71819892) -1.3439999818801879882812500)
+       (= (posiblepos-x pos83) -3.25)
+       (= (posiblepos-z pos83) 4.5)
 
-       (= (object-at-x Shelf_a7d9ee9f) -1.2868000268936157226562500)
-       (= (object-at-y Shelf_a7d9ee9f) 1.8143999576568603515625000)
-       (= (object-at-z Shelf_a7d9ee9f) -0.6029999852180480957031250)
+       (= (posiblepos-x pos84) -3.5)
+       (= (posiblepos-z pos84) 4.25)
 
-       (= (object-at-x SideTable_e5d2b9bb) 0.3049807548522949218750000)
-       (= (object-at-y SideTable_e5d2b9bb) -0.0018624663352966308593750)
-       (= (object-at-z SideTable_e5d2b9bb) 1.2259855270385742187500000)
+       (= (posiblepos-x pos85) -3.25)
+       (= (posiblepos-z pos85) 4.75)
 
-       (= (object-at-x SideTable_b3df7cc1) 0.4139997065067291259765625)
-       (= (object-at-y SideTable_b3df7cc1) 0.0009542703628540039062500)
-       (= (object-at-z SideTable_b3df7cc1) -1.6840178966522216796875000)
+       (= (posiblepos-x pos86) -3.5)
+       (= (posiblepos-z pos86) 4.5)
 
-       (= (object-at-x TeddyBear_8657c3be) 1.7129548788070678710937500)
-       (= (object-at-y TeddyBear_8657c3be) 0.6985322237014770507812500)
-       (= (object-at-z TeddyBear_8657c3be) -0.1723667085170745849609375)
+       (= (posiblepos-x pos87) -3.75)
+       (= (posiblepos-z pos87) 4.25)
 
-       (= (object-at-x TennisRacket_ae57a35a) -1.2377161979675292968750000)
-       (= (object-at-y TennisRacket_ae57a35a) 0.3182652294635772705078125)
-       (= (object-at-z TennisRacket_ae57a35a) -0.0686126053333282470703125)
+       (= (posiblepos-x pos88) -3.5)
+       (= (posiblepos-z pos88) 4.75)
 
-       (= (object-at-x Window_42951f57) -0.4729999899864196777343750)
-       (= (object-at-y Window_42951f57) 1.3960000276565551757812500)
-       (= (object-at-z Window_42951f57) -2.2520000934600830078125000)
+       (= (posiblepos-x pos89) -3.75)
+       (= (posiblepos-z pos89) 4.5)
+
+       (= (posiblepos-x pos90) -3.75)
+       (= (posiblepos-z pos90) 4.75)
+
+       (= (object-at-x Bathtub_b837a28d) -2.8964381217956542968750000)
+       (= (object-at-y Bathtub_b837a28d) 0.6673177480697631835937500)
+       (= (object-at-z Bathtub_b837a28d) 2.8605003356933593750000000)
+
+       (= (object-at-x BathtubBasin_c5b83aec) -3.4049999713897705078125000)
+       (= (object-at-y BathtubBasin_c5b83aec) 0.1660000085830688476562500)
+       (= (object-at-z BathtubBasin_c5b83aec) 2.9040000438690185546875000)
+
+       (= (object-at-x Cabinet_25297d70) -0.1245999932289123535156250)
+       (= (object-at-y Cabinet_25297d70) 0.3641459345817565917968750)
+       (= (object-at-z Cabinet_25297d70) 4.6342520713806152343750000)
+
+       (= (object-at-x Cabinet_bd9c7c59) -1.0596699714660644531250000)
+       (= (object-at-y Cabinet_bd9c7c59) 0.3641459345817565917968750)
+       (= (object-at-z Cabinet_bd9c7c59) 4.6342520713806152343750000)
+
+       (= (object-at-x Cabinet_e90dc44e) -1.0278019905090332031250000)
+       (= (object-at-y Cabinet_e90dc44e) 0.3641459345817565917968750)
+       (= (object-at-z Cabinet_e90dc44e) 4.6342511177062988281250000)
+
+       (= (object-at-x Cabinet_6809ef74) -1.9628720283508300781250000)
+       (= (object-at-y Cabinet_6809ef74) 0.3641459345817565917968750)
+       (= (object-at-z Cabinet_6809ef74) 4.6342511177062988281250000)
+
+       (= (object-at-x Candle_2b3797d8) -3.1340491771697998046875000)
+       (= (object-at-y Candle_2b3797d8) 0.6763012409210205078125000)
+       (= (object-at-z Candle_2b3797d8) 3.9199318885803222656250000)
+
+       (= (object-at-x Cloth_6e60c328) -3.7385258674621582031250000)
+       (= (object-at-y Cloth_6e60c328) 0.5312849879264831542968750)
+       (= (object-at-z Cloth_6e60c328) 0.3286886513233184814453125)
+
+       (= (object-at-x CounterTop_794eb6a3) -1.0235509872436523437500000)
+       (= (object-at-y CounterTop_794eb6a3) 0.9540426135063171386718750)
+       (= (object-at-z CounterTop_794eb6a3) 4.8844742774963378906250000)
+
+       (= (object-at-x Faucet_75d5ab92) -0.5831999778747558593750000)
+       (= (object-at-y Faucet_75d5ab92) 1.0472999811172485351562500)
+       (= (object-at-z Faucet_75d5ab92) 5.0964298248291015625000000)
+
+       (= (object-at-x Faucet_b2d11a28) -1.5249572992324829101562500)
+       (= (object-at-y Faucet_b2d11a28) 1.0472999811172485351562500)
+       (= (object-at-z Faucet_b2d11a28) 5.0964298248291015625000000)
+
+       (= (object-at-x Faucet_ada1cd21) -3.4751708507537841796875000)
+       (= (object-at-y Faucet_ada1cd21) 0.7116000056266784667968750)
+       (= (object-at-z Faucet_ada1cd21) 3.9149999618530273437500000)
+
+       (= (object-at-x Floor_778474a8) 0.0000000000000000000000000)
+       (= (object-at-y Floor_778474a8) -0.0037315599620342254638672)
+       (= (object-at-z Floor_778474a8) -0.5471065044403076171875000)
+
+       (= (object-at-x GarbageCan_4bfb5574) -2.3460037708282470703125000)
+       (= (object-at-y GarbageCan_4bfb5574) 0.0030006319284439086914062)
+       (= (object-at-z GarbageCan_4bfb5574) 4.8787636756896972656250000)
+
+       (= (object-at-x HandTowel_001a809d) -0.1123000159859657287597656)
+       (= (object-at-y HandTowel_001a809d) 1.4670000076293945312500000)
+       (= (object-at-z HandTowel_001a809d) 4.8109998703002929687500000)
+
+       (= (object-at-x HandTowelHolder_a309e830) -0.0740000009536743164062500)
+       (= (object-at-y HandTowelHolder_a309e830) 1.5690000057220458984375000)
+       (= (object-at-z HandTowelHolder_a309e830) 4.8109998703002929687500000)
+
+       (= (object-at-x HandTowelHolder_691a856c) -2.0940001010894775390625000)
+       (= (object-at-y HandTowelHolder_691a856c) 1.5440000295639038085937500)
+       (= (object-at-z HandTowelHolder_691a856c) 5.1459999084472656250000000)
+
+       (= (object-at-x LightSwitch_2f6f7add) -2.4960000514984130859375000)
+       (= (object-at-y LightSwitch_2f6f7add) 1.3669999837875366210937500)
+       (= (object-at-z LightSwitch_2f6f7add) 5.1464157104492187500000000)
+
+       (= (object-at-x Mirror_e9700b26) -0.9755375385284423828125000)
+       (= (object-at-y Mirror_e9700b26) 1.5779999494552612304687500)
+       (= (object-at-z Mirror_e9700b26) 5.1456012725830078125000000)
+
+       (= (object-at-x Plunger_ed710244) -0.2129979431629180908203125)
+       (= (object-at-y Plunger_ed710244) -0.0007912591099739074707031)
+       (= (object-at-z Plunger_ed710244) 3.5369977951049804687500000)
+
+       (= (object-at-x ScrubBrush_2f874c37) -0.2315317243337631225585938)
+       (= (object-at-y ScrubBrush_2f874c37) -0.0003285259008407592773438)
+       (= (object-at-z ScrubBrush_2f874c37) 3.8574726581573486328125000)
+
+       (= (object-at-x Shelf_551926f3) -3.7130000591278076171875000)
+       (= (object-at-y Shelf_551926f3) 0.5314242839813232421875000)
+       (= (object-at-z Shelf_551926f3) 0.9517999887466430664062500)
+
+       (= (object-at-x ShowerDoor_4666f48d) -0.2820804119110107421875000)
+       (= (object-at-y ShowerDoor_4666f48d) 1.2287894487380981445312500)
+       (= (object-at-z ShowerDoor_4666f48d) 1.7302060127258300781250000)
+
+       (= (object-at-x ShowerGlass_73a7c1c8) 0.0000000000000000000000000)
+       (= (object-at-y ShowerGlass_73a7c1c8) 0.0000000000000000000000000)
+       (= (object-at-z ShowerGlass_73a7c1c8) 0.0000000000000000000000000)
+
+       (= (object-at-x ShowerHead_2c6df809) -0.0939999967813491821289062)
+       (= (object-at-y ShowerHead_2c6df809) 1.0169999599456787109375000)
+       (= (object-at-z ShowerHead_2c6df809) 0.8899999856948852539062500)
+
+       (= (object-at-x Sink_8218170e) -1.5249999761581420898437500)
+       (= (object-at-y Sink_8218170e) 0.9269999861717224121093750)
+       (= (object-at-z Sink_8218170e) 4.8740000724792480468750000)
+
+       (= (object-at-x Sink_ebbaeae8) -0.5792999863624572753906250)
+       (= (object-at-y Sink_ebbaeae8) 0.9269999861717224121093750)
+       (= (object-at-z Sink_ebbaeae8) 4.8740000724792480468750000)
+
+       (= (object-at-x SinkBasin_0b2fc3ae) -0.5691999793052673339843750)
+       (= (object-at-y SinkBasin_0b2fc3ae) 0.9865999817848205566406250)
+       (= (object-at-z SinkBasin_0b2fc3ae) 4.8860001564025878906250000)
+
+       (= (object-at-x SinkBasin_28b928cc) -1.5148999691009521484375000)
+       (= (object-at-y SinkBasin_28b928cc) 0.9865999817848205566406250)
+       (= (object-at-z SinkBasin_28b928cc) 4.8860001564025878906250000)
+
+       (= (object-at-x SoapBar_a024dc66) -3.6579351425170898437500000)
+       (= (object-at-y SoapBar_a024dc66) 0.5316053628921508789062500)
+       (= (object-at-z SoapBar_a024dc66) 1.3488074541091918945312500)
+
+       (= (object-at-x SoapBottle_a48be41a) -1.0608566999435424804687500)
+       (= (object-at-y SoapBottle_a48be41a) 0.9542958736419677734375000)
+       (= (object-at-z SoapBottle_a48be41a) 5.0290021896362304687500000)
+
+       (= (object-at-x SprayBottle_cec3785b) -1.7411893606185913085937500)
+       (= (object-at-y SprayBottle_cec3785b) 0.0279868990182876586914062)
+       (= (object-at-z SprayBottle_cec3785b) 4.8736095428466796875000000)
+
+       (= (object-at-x TissueBox_11edae11) -0.7998434305191040039062500)
+       (= (object-at-y TissueBox_11edae11) 0.0295273661613464355468750)
+       (= (object-at-z TissueBox_11edae11) 4.9265899658203125000000000)
+
+       (= (object-at-x Toilet_81ce13b2) -0.5170000195503234863281250)
+       (= (object-at-y Toilet_81ce13b2) -0.0003285519778728485107422)
+       (= (object-at-z Toilet_81ce13b2) 3.2200000286102294921875000)
+
+       (= (object-at-x ToiletPaper_61e4a4d7) -0.2027721703052520751953125)
+       (= (object-at-y ToiletPaper_61e4a4d7) 1.0349649190902709960937500)
+       (= (object-at-z ToiletPaper_61e4a4d7) 3.1828312873840332031250000)
+
+       (= (object-at-x ToiletPaper_b19504c2) -0.1878093183040618896484375)
+       (= (object-at-y ToiletPaper_b19504c2) 1.0337496995925903320312500)
+       (= (object-at-z ToiletPaper_b19504c2) 3.3739285469055175781250000)
+
+       (= (object-at-x ToiletPaperHanger_f7f4dd68) -0.0740000009536743164062500)
+       (= (object-at-y ToiletPaperHanger_f7f4dd68) 1.1260000467300415039062500)
+       (= (object-at-z ToiletPaperHanger_f7f4dd68) 3.6860001087188720703125000)
+
+       (= (object-at-x Towel_4e1d52ab) -0.1811111271381378173828125)
+       (= (object-at-y Towel_4e1d52ab) 1.4190000295639038085937500)
+       (= (object-at-z Towel_4e1d52ab) 2.4250001907348632812500000)
+
+       (= (object-at-x TowelHolder_82b9bdf0) -1.7200000286102294921875000)
+       (= (object-at-y TowelHolder_82b9bdf0) 1.2139999866485595703125000)
+       (= (object-at-z TowelHolder_82b9bdf0) 1.7400000095367431640625000)
+
+       (= (object-at-x TowelHolder_fb9ff080) -0.0742111206054687500000000)
+       (= (object-at-y TowelHolder_fb9ff080) 1.4049999713897705078125000)
+       (= (object-at-z TowelHolder_fb9ff080) 2.4249999523162841796875000)
+
+       (= (object-at-x Window_d704ac0b) -1.9930000305175781250000000)
+       (= (object-at-y Window_d704ac0b) 1.8882683515548706054687500)
+       (= (object-at-z Window_d704ac0b) 0.1444935202598571777343750)
 
     )
 
     (:goal (and
-       (holding AlarmClock_899b652f)    ))
+       (holding Cloth_6e60c328)    ))
 )

@@ -18,9 +18,9 @@ search space empty! problem proven unsolvable.
 
 
 
-time spent:    0.00 seconds instantiating 308 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 90 facts and 218 actions
-               0.00 seconds creating final representation with 90 relevant facts, 6 relevant fluents
+time spent:    0.00 seconds instantiating 500 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 132 facts and 368 actions
+               0.00 seconds creating final representation with 132 relevant facts, 8 relevant fluents
                0.00 seconds computing LNF
                0.00 seconds building connectivity graph
                0.00 seconds searching, evaluating 1 states, to a max depth of 0

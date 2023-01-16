@@ -95,6 +95,27 @@
             (increase (facing) 90)
            )
   )
+
+  (:action lookup
+   :parameters ()
+   :precondition (and
+                (> (inclination) -30)
+              )
+   :effect (and
+            (decrease (inclination) 30)
+           )
+  )
+
+  (:action lookdown
+   :parameters ()
+   :precondition (and
+                (< (inclination) 60)
+              )
+   :effect (and
+            (increase (inclination) 30)
+           )
+  )
+
   ; Permite al agente recoger un objeto
   (:action pickup
    :parameters (?o - object)

@@ -48,6 +48,12 @@ class ParserPDDLAI2THOR:
             elif (act.find("MOVE-AHEAD-0") != -1) or (act.find("MOVE-AHEAD-90") != -1) or (act.find("MOVE-AHEAD-180") != -1) or (act.find("MOVE-AHEAD-270") != -1):
                 self.controller.step("MoveAhead")
 
+            elif act.find("LOOKUP") != -1:
+                self.controller.step(action="LookUp", degrees=30)
+
+            elif act.find("LOOKDOWN") != -1:
+                self.controller.step(action="LookDown", degrees=30)
+
             elif act.find("PICKUP") != -1:
                 start_index = act.find("PICKUP")
                 end_index = act.find(")")
