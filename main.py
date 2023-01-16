@@ -13,7 +13,7 @@ planner_path = "../cbp-roller/cbp-roller"
 domain_path = "./pddl/domain_ai2thor.pddl"
 problem_path = "./pddl/problem1.pddl"
 output_path = "./pddl/plan_problem1.txt"
-problem = "movement"
+problem = "movimiento"
 objective = {'x': -2.75, 'y': 0.9009992480278015, 'z': 3.25}
 
 

@@ -6,6 +6,7 @@ from aux import printAgentStatus
 class ParserPDDLAI2THOR:
     def __init__(self, raw_plan, controller):
         self.actions = []
+        self.executable_actions = []
         self.controller = controller
 
         self.extract_plan(raw_plan)
@@ -43,31 +44,13 @@ class ParserPDDLAI2THOR:
                 self.move_ahead()
 
 
-            '''
-            print(act)
-            index1 = act.find("(")
-            index2 = act.find(")")
-            index3 = act.find(" ")
-            print(f"index1: {index1} index2: {index2} index3: {index3}")
-
-            if index3 < index2:
-                action = act[index1+1:index2]
-            else:
-                action = act[index1+1:index3]
-            print(action)
-            print(" ")
-            '''
-
 
     def move_ahead(self):
-        event = self.controller.step("MoveAhead")
-        printAgentStatus(event)
+        self.controller.step("MoveAhead")
 
     def rotate_left(self):
-        event = self.controller.step("RotateLeft")
-        printAgentStatus(event)
+        self.controller.step("RotateLeft")
 
     def rotate_right(self):
-        event = self.controller.step("RotateRight")
-        printAgentStatus(event)
+        self.controller.step("RotateRight")
         

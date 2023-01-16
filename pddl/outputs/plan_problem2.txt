@@ -1,0 +1,62 @@
+
+ff: parsing domain file
+domain 'DOMAIN_AI2THOR' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+Evaluation function 1.000000*g(s) + 3.000000*h(s) where
+ metric is plan length
+
+advancing to distance:   20
+                         15
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: (ROTATE-LEFT)
+        1: (ROTATE-LEFT)
+        2: (MOVE-AHEAD-0 POS2)
+        3: (MOVE-AHEAD-0 POS8)
+        4: (ROTATE-RIGHT)
+        5: (MOVE-AHEAD-90 POS16)
+        6: (MOVE-AHEAD-90 POS27)
+        7: (MOVE-AHEAD-90 POS40)
+        8: (MOVE-AHEAD-90 POS53)
+        9: (ROTATE-LEFT)
+       10: (MOVE-AHEAD-0 POS69)
+       11: (MOVE-AHEAD-0 POS85)
+       12: (MOVE-AHEAD-0 POS101)
+       13: (ROTATE-RIGHT)
+       14: (MOVE-AHEAD-90 POS113)
+       15: (MOVE-AHEAD-90 POS123)
+       16: (MOVE-AHEAD-90 POS131)
+     
+
+time spent:    0.00 seconds instantiating 638 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 0 facts and 638 actions
+               0.00 seconds creating final representation with 0 relevant facts, 6 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 46 states, to a max depth of 0
+               0.00 seconds total time
+

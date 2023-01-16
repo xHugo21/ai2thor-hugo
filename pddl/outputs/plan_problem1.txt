@@ -1,0 +1,5 @@
+
+ff: parsing domain file
+domain 'DOMAIN_AI2THOR' defined
+ ... done.
+ff: parsing problem file
