@@ -9,8 +9,10 @@ class ParserAI2THORPDDL:
 
         self.parse_general()
 
-        if problem == "movement":
+        if problem == "movimiento":
             self.parse_movement_problem(objective)
+        elif problem == "pickup":
+            pass
         
         self.write_parsed_problem()
 
@@ -65,7 +67,7 @@ class ParserAI2THORPDDL:
         i = 0
         for pos in positions:
             self.problem += f"       (= (posiblepos-x pos{i}) {pos['x']})\n"
-            # problem += f"       (= (posiblepos-y pos{i}) {pos['y']})\n"
+            # self.problem += f"       (= (posiblepos-y pos{i}) {pos['y']})\n"
             self.problem += f"       (= (posiblepos-z pos{i}) {pos['z']})\n\n"
             i += 1
 
