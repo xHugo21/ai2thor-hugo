@@ -127,14 +127,14 @@
            )
   )
 ;
-  ;; Permite al agente tirar un objeto
-  ;(:action drop
-  ; :parameters ()
-  ; :condition (and
-  ;              
-  ;            )
-  ; :effect (and
-  ;          
-  ;         )
-  ;)
+  ; Permite al agente tirar un objeto
+  (:action drop
+   :parameters (?o - object)
+   :precondition (and
+                (holding ?o)
+              )
+   :effect (and
+            (not (holding ?o))
+           )
+  )
 )

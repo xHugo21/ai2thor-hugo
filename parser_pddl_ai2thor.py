@@ -8,7 +8,7 @@ class ParserPDDLAI2THOR:
         self.actions = []
         self.executable_actions = []
         self.controller = controller
-        self.objects = self.controller.last_event.metadata["objects"]
+        self.objects = self.controller.last_event.metadata["objects"] # TODO puede que en futuros casos se deba actualizar ocn cada acción
 
         self.extract_plan(raw_plan)
 
@@ -62,6 +62,9 @@ class ParserPDDLAI2THOR:
                 for obj in self.objects:
                     if obj["name"].upper() == obj_name:
                         self.controller.step(action="PickupObject", objectId=obj["objectId"])
+
+            elif act.find("DROP") != -1:
+                self.controller.step("DropHandObject")
                 
 
 
