@@ -95,16 +95,16 @@
             (increase (facing) 90)
            )
   )
-  ;; Permite al agente recoger un objeto
-  ;(:action pickup
-  ; :parameters ()
-  ; :condition (and
-  ;              
-  ;            )
-  ; :effect (and
-  ;          
-  ;         )
-  ;)
+  ; Permite al agente recoger un objeto
+  (:action pickup
+   :parameters (?o - object)
+   :precondition (and
+                (< (distance ?o) 1.5)
+              )
+   :effect (and
+            (holding ?o)
+           )
+  )
 ;
   ;; Permite al agente tirar un objeto
   ;(:action drop

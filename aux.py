@@ -1,5 +1,8 @@
 # Fichero que implementa funciones auxiliares
 # Imports
+from PIL import Image as im
+import os
+import shutil
 
 def printAgentStatus(event):
     '''Muestra posición del agente'''
@@ -28,14 +31,15 @@ def printLastActionStatus(event):
         print(f'Error: {event.metadata["errorMessage"]}')
     print("-----------------------------------------------\n")
 
-'''
-def printEveryPosibleLocation(controller):
-    i = 0
-    event = controller.step("GetReachablePositions")
-    positions = event.metadata["actionReturn"]
-    print("-----------------------------------------------")
-    for pos in positions:
-        print(f'pos{i}: {pos}')
-        i += 1
-    print("-----------------------------------------------\n")
-'''
+def extractLastActionImage(event, name):
+    data = im.fromarray(event.frame)
+    data.save("./images/" + name + ".png")
+
+def removePreviousProblems():
+    problems_dir = "./pddl/problems/"
+    outputs_dir = "./pddl/outputs/"
+    shutil.rmtree(problems_dir)
+    shutil.rmtree(outputs_dir)
+    os.mkdir(problems_dir)
+    os.mkdir(outputs_dir)
+

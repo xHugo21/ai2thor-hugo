@@ -8,6 +8,7 @@ class ParserPDDLAI2THOR:
         self.actions = []
         self.executable_actions = []
         self.controller = controller
+        self.objects = self.controller.last_event.metadata["objects"]
 
         self.extract_plan(raw_plan)
 
@@ -34,23 +35,29 @@ class ParserPDDLAI2THOR:
         # Eliminar posición extra (vacía)
         self.actions.pop()
 
+        print(self.actions)
+
     def parse_actions(self):
         for act in self.actions:
             if act.find("ROTATE-LEFT") != -1:
-                self.rotate_left()
+                self.controller.step("RotateLeft")
+
             elif act.find("ROTATE-RIGHT") != -1:
-                self.rotate_right()
+                self.controller.step("RotateRight")
+
             elif (act.find("MOVE-AHEAD-0") != -1) or (act.find("MOVE-AHEAD-90") != -1) or (act.find("MOVE-AHEAD-180") != -1) or (act.find("MOVE-AHEAD-270") != -1):
-                self.move_ahead()
+                self.controller.step("MoveAhead")
+
+            elif act.find("PICKUP") != -1:
+                start_index = act.find("PICKUP")
+                end_index = act.find(")")
+                obj_name = act[start_index+7:end_index]
+                #obj_name = obj_name[:1] + obj_name[1:].lower()
+                for obj in self.objects:
+                    if obj["name"].upper() == obj_name:
+                        self.controller.step(action="PickupObject", objectId=obj["objectId"])
+                
 
 
 
-    def move_ahead(self):
-        self.controller.step("MoveAhead")
-
-    def rotate_left(self):
-        self.controller.step("RotateLeft")
-
-    def rotate_right(self):
-        self.controller.step("RotateRight")
         

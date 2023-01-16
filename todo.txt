@@ -1,0 +1,11 @@
+- Implementar acción pickup
+- Manejo de errores inputs
+- Sustituir tabulaciones por \t en parser_ai2thor_pddl.py
+- Jerarquía objetos dominio pddl
+- Función para limpiar archivos de problemas y outputs
+- Añadir posibilidad de modificar parámetros del planificador
+- Añadir posibilidad de hacer más objetivos sin finalizar el programa
+- Comentar código
+- Simplificar funciones
+
+* - MODIFICAR PREDICADO DISTANCE EN CADA MOVIMIENTO

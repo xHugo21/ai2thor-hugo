@@ -58,24 +58,24 @@ class ProblemDefinition():
             aux = input("Seleccione la posición objetivo: ")
             self.objective = positions[int(aux)]
             print("")
-            print(f'La posición objetivo seleccionada es: {positions[int(aux)]}')
+            print(f'La posición objetivo seleccionada es: {self.objective}')
 
         # Establecer parámetros en caso de que se seleccione problema de pickup
         if str(aux) == '2':
             self.problem = "pickup"
+            pickupable_objects = []
             print("----OBJETIVO----")
-            objects = event.metadata["objects"]
+            for obj in event.metadata["objects"]:
+                if obj["pickupable"] == True:
+                    pickupable_objects.append(obj)
             i = 0
-            for obj in objects:
-                if obj["pickupable"]:
-                    print(f'[{i}] - {obj["objectId"]}')
-                    i += 1
-                else:
-                    objects.remove(obj)
+            for obj in pickupable_objects:
+                print(f'[{i}] - {obj["objectId"]}')
+                i += 1
             print("----------------")
             aux = input("Seleccione el objetivo pickup: ")
-            self.objective = objects[int(aux)]
+            self.objective = pickupable_objects[int(aux)]
             print("")
-            print(f'El objetivo seleccionado es: {objects[int(aux)]}')
+            print(f'El objetivo seleccionado es: {self.objective["objectId"]} distance: {self.objective["distance"]} visible: {self.objective["visible"]}')
             
         return self.problem, self.objective

@@ -6,10 +6,13 @@ from problem_definition import ProblemDefinition
 from parser_ai2thor_pddl import ParserAI2THORPDDL
 from parser_pddl_ai2thor import ParserPDDLAI2THOR
 from planificador import Planificador
-from aux import printAgentStatus, printLastActionStatus, printObjectStatus
+from aux import printAgentStatus, printLastActionStatus, printObjectStatus, removePreviousProblems, extractLastActionImage
 
 # Constantes
 domain_path = "./pddl/domain_ai2thor.pddl"
+
+# Limpiamos los directorios de problemas
+removePreviousProblems()
 
 # Pedimos al usuario que escoja una escena
 inputs = ProblemDefinition()
@@ -31,8 +34,8 @@ controller = Controller(agentMode="default",
                         renderInstanceSegmentation=False,
 
                         # Opciones de cámara
-                        width=300,
-                        height=300,
+                        width=720,
+                        height=405,
                         fieldOfView=90)
 print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
 
@@ -40,10 +43,18 @@ print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
 planner_path, problem_path, output_path = inputs.paths_selection()
 
 # Ejecutamos una acción sobre el agente. En este caso la acción GetReachablePositions para que contenga la información de las posiciones que puede tomar el agente en el entorno.
+#event = controller.step(action="LookDown", degrees=30)
 event = controller.step(action="GetReachablePositions")
 
 # Pedimos al usuario que indique el tipo de problema a resolver y el objetivo concreto dentro de ese problema
 problem, objective = inputs.problem_selection(event)
+
+'''
+extractLastActionImage(event, "imagen1")
+event = controller.step(action="PickupObject", objectId=objective["objectId"])
+printLastActionStatus(event)
+extractLastActionImage(event, "imagen2")
+'''
 
 # Parseo del entorno a fichero pddl
 ParserAI2THORPDDL(event, problem_path, problem, objective)
@@ -59,3 +70,4 @@ ParserPDDLAI2THOR(plan.get_plan(), controller)
 
 # Visualizar estado final
 printAgentStatus(controller.last_event)
+printLastActionStatus(controller.last_event)

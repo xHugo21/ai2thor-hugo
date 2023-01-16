@@ -6,13 +6,14 @@ class ParserAI2THORPDDL:
         self.event = event
         self.metadata = self.event.metadata
         self.problem_path = problem_path
+        self.objective = objective
 
         self.parse_general()
 
         if problem == "movimiento":
-            self.parse_movement_problem(objective)
+            self.parse_movement_problem()
         elif problem == "pickup":
-            pass
+            self.parse_pickup_problem()
         
         self.write_parsed_problem()
 
@@ -26,15 +27,7 @@ class ParserAI2THORPDDL:
         agent_inclination = self.metadata["agent"]["cameraHorizon"] # Inclinación vertical de la cámara del agente
 
         # Extracción de datos importantes de los objetos del entorno
-        objects = self.metadata["objects"] # Contiene todos los objetos del entorno
-
-        # Búsqueda del objeto "goal" u objetivo
-        '''
-        goal_object = objects[0]
-        for obj in objects:
-            if obj['objectId'] == 'Apple|-01.65|+00.81|+00.07':
-                goal_object = obj # Se almacena en la variable goal_object
-        '''
+        self.objects = self.metadata["objects"] # Contiene todos los objetos del entorno
         
         # Escritura del problema en formato PDDL
         self.problem = "(define (problem problem1)\n"
@@ -42,7 +35,7 @@ class ParserAI2THORPDDL:
 
         # Definición de los objetos
         self.problem += "    (:objects\n"
-        for obj in objects:
+        for obj in self.objects:
             self.problem += f"       {obj['name']} - object\n"
         i = 0
         for pos in positions:
@@ -54,9 +47,6 @@ class ParserAI2THORPDDL:
         self.problem += "    (:init\n"
 
         # Definición de predicados o funciones relacionados con el agente
-        '''
-        problem += f"       (= (distance {goal_object['objectId']}) {goal_object['distance']})\n\n"
-        '''
         self.problem += f"       (= (facing) {agent_facing})\n\n"
         self.problem += f"       (= (inclination) {agent_inclination})\n\n"
         self.problem += f"       (= (agent-at-x) {agent_location['x']})\n"
@@ -72,7 +62,7 @@ class ParserAI2THORPDDL:
             i += 1
 
         # Definición de predicados o funciones relacionados con los objetos
-        for obj in objects:
+        for obj in self.objects:
             object_location = obj["position"]
             self.problem += f"       (= (object-at-x {obj['name']}) {object_location['x']:.25f})\n" #TODO mirar si se puede solucionar de otra manera la notacion científica
             self.problem += f"       (= (object-at-y {obj['name']}) {object_location['y']:.25f})\n"
@@ -80,12 +70,24 @@ class ParserAI2THORPDDL:
         
         self.problem += "    )\n\n"
 
-    def parse_movement_problem(self, objective):
+    def parse_movement_problem(self):
         # Definición del estado meta del problema
         self.problem += "    (:goal (and\n"
-        self.problem += f"       (= (agent-at-x) {objective['x']})"    
-        self.problem += f"       (= (agent-at-y) {objective['y']})"    
-        self.problem += f"       (= (agent-at-z) {objective['z']})"    
+        self.problem += f"       (= (agent-at-x) {self.objective['x']})"    
+        self.problem += f"       (= (agent-at-y) {self.objective['y']})"    
+        self.problem += f"       (= (agent-at-z) {self.objective['z']})"    
+        self.problem += "    ))\n"
+        self.problem += ")\n"
+    
+    def parse_pickup_problem(self):
+        # Añadir predicado distance
+        start_index = self.problem.find("(:init\n")
+        end_index = self.problem.find("       (= (facing)")
+        self.problem = self.problem[:start_index+8] + f"      (= (distance {self.objective['name']}) {self.objective['distance']})\n\n" + self.problem[end_index:]
+
+        # Definición del estado meta del problema
+        self.problem += "    (:goal (and\n"
+        self.problem += f"       (holding {self.objective['name']})"    
         self.problem += "    ))\n"
         self.problem += ")\n"
 
