@@ -35,6 +35,8 @@ class ParserPDDLAI2THOR:
         # Elimina la última posición si está vacía
         if self.actions[-1] == ' ':
             self.actions.pop()
+
+        print(self.actions)
         
 
     def parse_actions(self):
@@ -44,32 +46,25 @@ class ParserPDDLAI2THOR:
 
         for act in self.actions:
             if act.find("ROTATE-LEFT") != -1:
-                #self.executable_actions.append('controller.step("RotateLeft")')
                 self.controller.step("RotateLeft")
 
             elif act.find("ROTATE-RIGHT") != -1:
-                #self.executable_actions.append('controller.step("RotateRight")')
                 self.controller.step("RotateRight")
 
             elif (act.find("MOVE-AHEAD-0") != -1) or (act.find("MOVE-AHEAD-90") != -1) or (act.find("MOVE-AHEAD-180") != -1) or (act.find("MOVE-AHEAD-270") != -1):
-                #self.executable_actions.append('controller.step("MoveAhead")')
                 self.controller.step("MoveAhead")
 
             elif act.find("LOOKUP") != -1:
-                #self.executable_actions.append('controller.step(action="LookUp", degrees=30)')
                 self.controller.step(action="LookUp", degrees=30)
 
             elif act.find("LOOKDOWN") != -1:
-                #self.executable_actions.append('controller.step(action="LookDown", degrees=30)')
                 self.controller.step(action="LookDown", degrees=30)
-
             
             #elif act.find("STANDUP") != -1:
             #    self.controller.step("Stand")
 
             #elif act.find("CROUCH") != -1:
             #    self.controller.step("Crouch")
-            
 
             elif act.find("PICKUP") != -1:
                 start_index = act.find("PICKUP")
@@ -77,12 +72,26 @@ class ParserPDDLAI2THOR:
                 obj_name = act[start_index+7:end_index]
                 for obj in self.objects:
                     if obj["name"].upper() == obj_name:
-                        #self.executable_actions.append(f'controller.step(action="PickupObject", objectId={obj["objectId"]})')
                         self.controller.step(action="PickupObject", objectId=obj["objectId"])
 
             elif act.find("DROP") != -1:
-                #self.executable_actions.append('controller.step("DropHandObject")')
                 self.controller.step("DropHandObject")
+
+            elif act.find("OPEN") != -1:
+                start_index = act.find("OPEN")
+                end_index = act.find(" POSE")
+                obj_name = act[start_index+5:end_index]
+                for obj in self.objects:
+                    if obj["name"].upper() == obj_name:
+                        self.controller.step(action="OpenObject", objectId=obj["objectId"])
+            
+            elif act.find("CLOSE") != -1:
+                start_index = act.find("CLOSE")
+                end_index = act.find(" POSE")
+                obj_name = act[start_index+6:end_index]
+                for obj in self.objects:
+                    if obj["name"].upper() == obj_name:
+                        self.controller.step(action="CloseObject", objectId=obj["objectId"])
             
             # Extraemos una foto del paso ejecutado
             extractActionImage(self.controller.last_event, f'paso{n_image}')

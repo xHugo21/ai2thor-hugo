@@ -47,6 +47,8 @@ class ProblemDefinition():
         print("----PROBLEMA----")
         print("[1] - Move Agent")
         print("[2] - Pickup Object")
+        print("[3] - Open Object")
+        print("[4] - Close Object")
         print("----------------")
         aux = input("Seleccione un tipo de problema a resolver: ")
         print("")
@@ -82,6 +84,40 @@ class ProblemDefinition():
             aux = input("Seleccione el objetivo pickup: ")
             self.objective = pickupable_objects[int(aux)]
             print("")
-            print(f'El objetivo seleccionado es: {self.objective["objectId"]} distance: {self.objective["distance"]} visible: {self.objective["visible"]}')
+            print(f'El objetivo seleccionado es: {self.objective["objectId"]} distance: {self.objective["distance"]}')
+
+        if str(aux) == '3':
+            self.problem = "open"
+            openable_objects = []
+            print("----OBJETIVO----")
+            for obj in event.metadata["objects"]:
+                if (obj["openable"] == True) and (obj["isOpen"] == False):
+                    openable_objects.append(obj)
+            i = 0
+            for obj in openable_objects:
+                print(f'[{i}] - {obj["objectId"]}')
+                i += 1
+            print("----------------")
+            aux = input("Seleccione el objetivo a abrir: ")
+            self.objective = openable_objects[int(aux)]
+            print("")
+            print(f'El objetivo seleccionado es: {self.objective["objectId"]}')
+
+        if str(aux) == '4':
+            self.problem = "close"
+            openable_objects = []
+            print("----OBJETIVO----")
+            for obj in event.metadata["objects"]:
+                if (obj["openable"] == True) and (obj["isOpen"] == True):
+                    openable_objects.append(obj)
+            i = 0
+            for obj in openable_objects:
+                print(f'[{i}] - {obj["objectId"]}')
+                i += 1
+            print("----------------")
+            aux = input("Seleccione el objetivo a cerrar: ")
+            self.objective = openable_objects[int(aux)]
+            print("")
+            print(f'El objetivo seleccionado es: {self.objective["objectId"]}')
             
         return self.problem, self.objective

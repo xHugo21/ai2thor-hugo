@@ -36,8 +36,8 @@ controller = Controller(agentMode="default",
                         # Opciones de cámara
                         #width=720,
                         #height=405,
-                        width=400,
-                        height=400,
+                        width=300,
+                        height=300,
                         fieldOfView=90)
 print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
 
@@ -76,7 +76,7 @@ print(event.metadata["actionReturn"])
 ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
 
 # Ejecución del planificador sobre el dominio y el problema dados. Si último parámetro = True -> se imprime plan por pantalla.
-plan = Planificador(planner_path, domain_path, problem_path, output_path, True)
+plan = Planificador(planner_path, domain_path, problem_path, output_path, 0,  True)
 
 # Visualizar estado inicial
 # printAgentStatus(controller.last_event)

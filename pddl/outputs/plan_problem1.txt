@@ -11,41 +11,24 @@ no metric specified. plan length assumed.
 
 checking for cyclic := effects --- OK.
 
-Evaluation function -1.000000*g(s) + -1.000000*h(s) where
+Evaluation function 0.000000*g(s) + 1.000000*h(s) where
  metric is plan length
 
-Cueing down from goal distance:   23 into depth  --- pruning stopped --- [1]
-                                  22             --- pruning stopped --- [1]
-                                  21             --- pruning stopped --- [1][2]
-                                  12             --- pruning stopped --- [1]
-                                  11             --- pruning stopped --- [1]
-                                   5             --- pruning stopped --- [1]
-                                   4             --- pruning stopped --- [1]
-                                   3             --- pruning stopped --- [1]
-                                   2             --- pruning stopped --- [1]
+Cueing down from goal distance:    4 into depth  --- pruning stopped --- [1]
                                    1            [1]
                                    0            
 
 ff: found legal plan as follows
 
 step    0: (LOOKDOWN)
-        1: (LOOKDOWN)
-        2: (ROTATE-RIGHT)
-        3: (ROTATE-RIGHT)
-        4: (MOVE-AHEAD-270 POS3)
-        5: (MOVE-AHEAD-270 POS10)
-        6: (LOOKUP)
-        7: (MOVE-AHEAD-270 POS21)
-        8: (MOVE-AHEAD-270 POS36)
-        9: (MOVE-AHEAD-270 POS53)
-       10: (PICKUP SPRAYBOTTLE_68F9C0A8 POSE33)
+        1: (OPEN SHOWERCURTAIN_83DDD474 POSE94)
      
 
-time spent:    0.00 seconds instantiating 49245 easy, 0 hard action templates
-               0.01 seconds reachability analysis, yielding 241 facts and 799 actions
-               0.02 seconds creating final representation with 241 relevant facts, 8 relevant fluents
-               0.01 seconds computing LNF
+time spent:    0.01 seconds instantiating 318616 easy, 0 hard action templates
+               0.05 seconds reachability analysis, yielding 1026 facts and 1312 actions
+               0.19 seconds creating final representation with 1026 relevant facts, 8 relevant fluents
+               0.00 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.01 seconds searching, evaluating 51 states, to a max depth of 2
-               0.05 seconds total time
+               0.00 seconds searching, evaluating 6 states, to a max depth of 1
+               0.25 seconds total time
 

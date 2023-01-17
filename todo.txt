@@ -1,12 +1,17 @@
-- Mejorar acción pickup (no funciona siempre porque a veces están en armarios cerrados o lugares a los que el agente no llega caminando p.ej) Se podría usar InitialRandomSpawn con forceVisible=True
+* HACER *
+- Añadir stepsize como parámetro y ver si modificandolo funciona correctamente
 - Manejo de errores inputs
 - Arregar identacion extra al modificar string parserai2thorpddl
-- Jerarquía objetos dominio pddl
-- Función para limpiar archivos de problemas y outputs
 - Añadir posibilidad de modificar parámetros del planificador
 - Añadir posibilidad de hacer más objetivos sin finalizar el programa
 - Comentar código
 - Simplificar funciones
+- Comprobar si los planes son óptimos -> En caso contrario modificar parámetros planificador
+- El planificador prioriza la accion lookdown
+- Si no hay objetivos posibles (p.ej close object) -> devolver a selección problema
+
+
+* ¿HACER? *
+- Jerarquía objetos dominio pddl?
 - Permitir acción crouch? -> Añadir coordenada y a posiciones?
-- Comprobar si los planes son óptimos -> En caso de que no modificar parámetros planificador
-- Probar si se puede modificar visibilityDistance y sigue funcionando
+- Se podría usar InitialRandomSpawn para aleatorizar posición inicial agente

@@ -18,7 +18,14 @@ class ParserAI2THORPDDL:
         if problem == "movimiento":
             self.parse_movement_problem()
         elif problem == "pickup":
+            self.parse_interactable_poses()
             self.parse_pickup_problem()
+        elif problem == "open":
+            self.parse_interactable_poses()
+            self.parse_open_problem()
+        elif problem == "close":
+            self.parse_interactable_poses()
+            self.parse_close_problem()
         
         # Una vez parseado, se escribe sobre un fichero .pddl
         self.write_parsed_problem()
@@ -88,8 +95,8 @@ class ParserAI2THORPDDL:
         self.problem += f"\t\t(= (agent-at-z) {self.objective['z']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
-    
-    def parse_pickup_problem(self):
+
+    def parse_interactable_poses(self):
         # Añadir interactable poses del objeto
         event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True])
         interactable_poses = event2.metadata["actionReturn"]
@@ -114,10 +121,25 @@ class ParserAI2THORPDDL:
         start_index = self.problem.find("(:objects\n")
         end_index = self.problem.find("\t\tpos0")
         self.problem = self.problem[:start_index+11] + subproblem + self.problem[end_index:]
-
+    
+    def parse_pickup_problem(self):
         # Definición del estado meta del problema
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(holding {self.objective['name']})"    
+        self.problem += "\t))\n"
+        self.problem += ")\n"
+
+    def parse_open_problem(self):
+        # Definición del estado meta del problema
+        self.problem += "\t(:goal (and\n"
+        self.problem += f"\t\t(open {self.objective['name']})"    
+        self.problem += "\t))\n"
+        self.problem += ")\n"
+    
+    def parse_close_problem(self):
+        # Definición del estado meta del problema
+        self.problem += "\t(:goal (and\n"
+        self.problem += f"\t\t(closed {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 

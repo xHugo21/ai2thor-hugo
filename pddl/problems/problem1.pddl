@@ -83,6 +83,194 @@
 		pose79 - position
 		pose80 - position
 		pose81 - position
+		pose82 - position
+		pose83 - position
+		pose84 - position
+		pose85 - position
+		pose86 - position
+		pose87 - position
+		pose88 - position
+		pose89 - position
+		pose90 - position
+		pose91 - position
+		pose92 - position
+		pose93 - position
+		pose94 - position
+		pose95 - position
+		pose96 - position
+		pose97 - position
+		pose98 - position
+		pose99 - position
+		pose100 - position
+		pose101 - position
+		pose102 - position
+		pose103 - position
+		pose104 - position
+		pose105 - position
+		pose106 - position
+		pose107 - position
+		pose108 - position
+		pose109 - position
+		pose110 - position
+		pose111 - position
+		pose112 - position
+		pose113 - position
+		pose114 - position
+		pose115 - position
+		pose116 - position
+		pose117 - position
+		pose118 - position
+		pose119 - position
+		pose120 - position
+		pose121 - position
+		pose122 - position
+		pose123 - position
+		pose124 - position
+		pose125 - position
+		pose126 - position
+		pose127 - position
+		pose128 - position
+		pose129 - position
+		pose130 - position
+		pose131 - position
+		pose132 - position
+		pose133 - position
+		pose134 - position
+		pose135 - position
+		pose136 - position
+		pose137 - position
+		pose138 - position
+		pose139 - position
+		pose140 - position
+		pose141 - position
+		pose142 - position
+		pose143 - position
+		pose144 - position
+		pose145 - position
+		pose146 - position
+		pose147 - position
+		pose148 - position
+		pose149 - position
+		pose150 - position
+		pose151 - position
+		pose152 - position
+		pose153 - position
+		pose154 - position
+		pose155 - position
+		pose156 - position
+		pose157 - position
+		pose158 - position
+		pose159 - position
+		pose160 - position
+		pose161 - position
+		pose162 - position
+		pose163 - position
+		pose164 - position
+		pose165 - position
+		pose166 - position
+		pose167 - position
+		pose168 - position
+		pose169 - position
+		pose170 - position
+		pose171 - position
+		pose172 - position
+		pose173 - position
+		pose174 - position
+		pose175 - position
+		pose176 - position
+		pose177 - position
+		pose178 - position
+		pose179 - position
+		pose180 - position
+		pose181 - position
+		pose182 - position
+		pose183 - position
+		pose184 - position
+		pose185 - position
+		pose186 - position
+		pose187 - position
+		pose188 - position
+		pose189 - position
+		pose190 - position
+		pose191 - position
+		pose192 - position
+		pose193 - position
+		pose194 - position
+		pose195 - position
+		pose196 - position
+		pose197 - position
+		pose198 - position
+		pose199 - position
+		pose200 - position
+		pose201 - position
+		pose202 - position
+		pose203 - position
+		pose204 - position
+		pose205 - position
+		pose206 - position
+		pose207 - position
+		pose208 - position
+		pose209 - position
+		pose210 - position
+		pose211 - position
+		pose212 - position
+		pose213 - position
+		pose214 - position
+		pose215 - position
+		pose216 - position
+		pose217 - position
+		pose218 - position
+		pose219 - position
+		pose220 - position
+		pose221 - position
+		pose222 - position
+		pose223 - position
+		pose224 - position
+		pose225 - position
+		pose226 - position
+		pose227 - position
+		pose228 - position
+		pose229 - position
+		pose230 - position
+		pose231 - position
+		pose232 - position
+		pose233 - position
+		pose234 - position
+		pose235 - position
+		pose236 - position
+		pose237 - position
+		pose238 - position
+		pose239 - position
+		pose240 - position
+		pose241 - position
+		pose242 - position
+		pose243 - position
+		pose244 - position
+		pose245 - position
+		pose246 - position
+		pose247 - position
+		pose248 - position
+		pose249 - position
+		pose250 - position
+		pose251 - position
+		pose252 - position
+		pose253 - position
+		pose254 - position
+		pose255 - position
+		pose256 - position
+		pose257 - position
+		pose258 - position
+		pose259 - position
+		pose260 - position
+		pose261 - position
+		pose262 - position
+		pose263 - position
+		pose264 - position
+		pose265 - position
+		pose266 - position
+		pose267 - position
+		pose268 - position
+		pose269 - position
 		pos0 - position
 		pos1 - position
 		pos2 - position
@@ -122,1066 +310,1650 @@
 		pos36 - position
 		pos37 - position
 		pos38 - position
-		pos39 - position
-		pos40 - position
-		pos41 - position
-		pos42 - position
-		pos43 - position
-		pos44 - position
-		pos45 - position
-		pos46 - position
-		pos47 - position
-		pos48 - position
-		pos49 - position
-		pos50 - position
-		pos51 - position
-		pos52 - position
-		pos53 - position
-		pos54 - position
-		pos55 - position
-		pos56 - position
-		pos57 - position
-		pos58 - position
-		pos59 - position
-		pos60 - position
-		pos61 - position
-		pos62 - position
-		pos63 - position
-		pos64 - position
-		pos65 - position
-		pos66 - position
-		pos67 - position
-		pos68 - position
-		pos69 - position
-		pos70 - position
-		pos71 - position
-		pos72 - position
-		pos73 - position
-		pos74 - position
-		pos75 - position
-		pos76 - position
-		pos77 - position
-		pos78 - position
-		pos79 - position
-		pos80 - position
-		pos81 - position
-		pos82 - position
-		pos83 - position
-		pos84 - position
-		pos85 - position
-		pos86 - position
-		pos87 - position
-		pos88 - position
-		pos89 - position
-		pos90 - position
-		pos91 - position
-		pos92 - position
-		pos93 - position
-		pos94 - position
-		pos95 - position
-		pos96 - position
-		pos97 - position
-		pos98 - position
-		pos99 - position
-		pos100 - position
-		pos101 - position
-		pos102 - position
-		pos103 - position
-		pos104 - position
-		pos105 - position
-		pos106 - position
-		pos107 - position
-		pos108 - position
-		pos109 - position
-		pos110 - position
-		pos111 - position
-		pos112 - position
-		pos113 - position
-		pos114 - position
-		pos115 - position
-		pos116 - position
-		pos117 - position
-		Bathtub_4053d0b5 - object
-		Candle_727c6003 - object
-		Cloth_ecfda2eb - object
-		CounterTop_d2ae5fa0 - object
-		DishSponge_6e8f61d2 - object
-		Drawer_a6915f53 - object
-		Drawer_b9e42270 - object
-		Drawer_00df1201 - object
-		Drawer_f852a7c0 - object
-		Faucet_90f49144 - object
-		Faucet_77ca98b9 - object
-		Floor_5dd9694a - object
-		Footstool_57cd7230 - object
-		GarbageCan_f291c46d - object
-		HandTowel_a42a8c07 - object
-		HandTowelHolder_479f111d - object
-		LightSwitch_df48146e - object
-		Mirror_ed461591 - object
-		Plunger_61fcb662 - object
-		ScrubBrush_6300d06b - object
-		Shelf_78513ed4 - object
-		ShowerDoor_ba1f59f4 - object
-		ShowerGlass_50a177ce - object
-		ShowerHead_4a4806ae - object
-		SideTable_72ab7c1b - object
-		Sink_d90bef47 - object
-		SinkBasin_bd90f4e4 - object
-		SoapBar_5efad73f - object
-		SoapBottle_394ca031 - object
-		SprayBottle_68f9c0a8 - object
-		TissueBox_878fe029 - object
-		Toilet_7e8ce5bd - object
-		ToiletPaper_6e8f746a - object
-		ToiletPaper_e7b7f9b2 - object
-		ToiletPaperHanger_c783d786 - object
-		Towel_7e638523 - object
-		TowelHolder_29e779dc - object
-		Window_a61de043 - object
-		Window_67928466 - object
-		Window_8a389dbc - object
-		Window_b4845eb7 - object
+		Bathtub_ae3c36fa - object
+		BathtubBasin_d8aceff2 - object
+		Cabinet_cce6eb3e - object
+		Cabinet_0596fb92 - object
+		Cabinet_ab4ae10f - object
+		Cabinet_cc651d88 - object
+		Cabinet_83d42ccf - object
+		Candle_a63876c1 - object
+		Cloth_27ec77d5 - object
+		CounterTop_a282e8cf - object
+		Faucet_cb0e6332 - object
+		Faucet_8b4d1d5d - object
+		Floor_4e1819df - object
+		GarbageCan_841540ac - object
+		HandTowel_d68dd6d4 - object
+		HandTowelHolder_eaa69c39 - object
+		HandTowelHolder_f832c230 - object
+		LightSwitch_32283f8a - object
+		Mirror_e46f986f - object
+		Plunger_98d0faf6 - object
+		ScrubBrush_1028334f - object
+		ShowerCurtain_83ddd474 - object
+		Sink_1726a687 - object
+		SinkBasin_88b6ab63 - object
+		SoapBar_376e7374 - object
+		SoapBottle_f2e00ced - object
+		SprayBottle_f9327a5a - object
+		Toilet_cc94d52e - object
+		ToiletPaper_ff7e8bb3 - object
+		ToiletPaper_678648ca - object
+		ToiletPaperHanger_40658897 - object
+		Towel_43b191ae - object
+		TowelHolder_6ee81143 - object
 	)
 
 	(:init
-			(= (interactablepose-x pose0 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose0 SprayBottle_68f9c0a8) 0.5)
-		(= (interactablepose-facing pose0 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose0 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose1 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose1 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose1 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose1 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose2 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose2 SprayBottle_68f9c0a8) 0.25)
-		(= (interactablepose-facing pose2 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose2 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose3 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose3 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose3 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose3 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose4 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose4 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose4 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose4 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose5 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose5 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose5 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose5 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose6 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose6 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose6 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose6 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose7 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose7 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose7 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose7 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose8 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose8 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose8 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose8 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose9 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose9 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose9 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose9 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose10 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose10 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose10 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose10 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose11 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose11 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose11 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose11 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose12 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose12 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose12 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose12 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose13 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose13 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose13 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose13 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose14 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose14 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose14 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose14 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose15 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose15 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose15 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose15 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose16 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose16 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose16 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose16 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose17 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose17 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose17 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose17 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose18 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose18 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose18 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose18 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose19 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose19 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose19 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose19 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose20 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose20 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose20 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose20 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose21 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose21 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose21 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose21 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose22 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose22 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose22 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose22 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose23 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose23 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose23 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose23 SprayBottle_68f9c0a8) 0.0)
-
-		(= (interactablepose-x pose24 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose24 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose24 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose24 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose25 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose25 SprayBottle_68f9c0a8) 0.5)
-		(= (interactablepose-facing pose25 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose25 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose26 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose26 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose26 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose26 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose27 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose27 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose27 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose27 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose28 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose28 SprayBottle_68f9c0a8) 0.25)
-		(= (interactablepose-facing pose28 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose28 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose29 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose29 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose29 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose29 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose30 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose30 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose30 SprayBottle_68f9c0a8) 180.0)
-		(= (interactablepose-inclination pose30 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose31 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose31 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose31 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose31 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose32 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose32 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose32 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose32 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose33 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose33 SprayBottle_68f9c0a8) 0.5)
-		(= (interactablepose-facing pose33 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose33 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose34 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose34 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose34 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose34 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose35 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose35 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose35 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose35 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose36 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose36 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose36 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose36 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose37 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose37 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose37 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose37 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose38 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose38 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose38 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose38 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose39 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose39 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose39 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose39 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose40 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose40 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose40 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose40 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose41 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose41 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose41 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose41 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose42 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose42 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose42 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose42 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose43 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose43 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose43 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose43 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose44 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose44 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose44 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose44 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose45 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose45 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose45 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose45 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose46 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose46 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose46 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose46 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose47 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose47 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose47 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose47 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose48 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose48 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose48 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose48 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose49 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose49 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose49 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose49 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose50 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose50 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose50 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose50 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose51 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose51 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose51 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose51 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose52 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose52 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose52 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose52 SprayBottle_68f9c0a8) 30.0)
-
-		(= (interactablepose-x pose53 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose53 SprayBottle_68f9c0a8) 0.5)
-		(= (interactablepose-facing pose53 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose53 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose54 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose54 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose54 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose54 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose55 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose55 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose55 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose55 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose56 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose56 SprayBottle_68f9c0a8) 0.25)
-		(= (interactablepose-facing pose56 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose56 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose57 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose57 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose57 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose57 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose58 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose58 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose58 SprayBottle_68f9c0a8) 0.0)
-		(= (interactablepose-inclination pose58 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose59 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose59 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose59 SprayBottle_68f9c0a8) 180.0)
-		(= (interactablepose-inclination pose59 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose60 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose60 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose60 SprayBottle_68f9c0a8) 180.0)
-		(= (interactablepose-inclination pose60 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose61 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose61 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose61 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose61 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose62 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose62 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose62 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose62 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose63 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose63 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose63 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose63 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose64 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose64 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose64 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose64 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose65 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose65 SprayBottle_68f9c0a8) 0.75)
-		(= (interactablepose-facing pose65 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose65 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose66 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose66 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose66 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose66 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose67 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose67 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose67 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose67 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose68 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose68 SprayBottle_68f9c0a8) 1.0)
-		(= (interactablepose-facing pose68 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose68 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose69 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose69 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose69 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose69 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose70 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose70 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose70 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose70 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose71 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose71 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose71 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose71 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose72 SprayBottle_68f9c0a8) -1.5)
-		(= (interactablepose-z pose72 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose72 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose72 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose73 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose73 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose73 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose73 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose74 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose74 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose74 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose74 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose75 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose75 SprayBottle_68f9c0a8) 1.25)
-		(= (interactablepose-facing pose75 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose75 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose76 SprayBottle_68f9c0a8) -1.75)
-		(= (interactablepose-z pose76 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose76 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose76 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose77 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose77 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose77 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose77 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose78 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose78 SprayBottle_68f9c0a8) 1.5)
-		(= (interactablepose-facing pose78 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose78 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose79 SprayBottle_68f9c0a8) -2.0)
-		(= (interactablepose-z pose79 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose79 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose79 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose80 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose80 SprayBottle_68f9c0a8) 1.75)
-		(= (interactablepose-facing pose80 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose80 SprayBottle_68f9c0a8) 60.0)
-
-		(= (interactablepose-x pose81 SprayBottle_68f9c0a8) -2.25)
-		(= (interactablepose-z pose81 SprayBottle_68f9c0a8) 2.0)
-		(= (interactablepose-facing pose81 SprayBottle_68f9c0a8) 270.0)
-		(= (interactablepose-inclination pose81 SprayBottle_68f9c0a8) 60.0)
-
-		(= (facing) 90.0)
+			(= (interactablepose-x pose0 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose0 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose0 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose0 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose1 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose1 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose1 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose1 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose2 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose2 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose2 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose2 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose3 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose3 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose3 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose3 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose4 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose4 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose4 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose4 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose5 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose5 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose5 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose5 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose6 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose6 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose6 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose6 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose7 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose7 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose7 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose7 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose8 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose8 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose8 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose8 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose9 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose9 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose9 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose9 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose10 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose10 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose10 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose10 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose11 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose11 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose11 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose11 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose12 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose12 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose12 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose12 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose13 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose13 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose13 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose13 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose14 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose14 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose14 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose14 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose15 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose15 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose15 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose15 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose16 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose16 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose16 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose16 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose17 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose17 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose17 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose17 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose18 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose18 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose18 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose18 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose19 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose19 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose19 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose19 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose20 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose20 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose20 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose20 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose21 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose21 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose21 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose21 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose22 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose22 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose22 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose22 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose23 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose23 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose23 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose23 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose24 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose24 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose24 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose24 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose25 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose25 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose25 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose25 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose26 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose26 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose26 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose26 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose27 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose27 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose27 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose27 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose28 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose28 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose28 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose28 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose29 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose29 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose29 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose29 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose30 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose30 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose30 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose30 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose31 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose31 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose31 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose31 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose32 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose32 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose32 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose32 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose33 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose33 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose33 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose33 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose34 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose34 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose34 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose34 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose35 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose35 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose35 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose35 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose36 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose36 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose36 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose36 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose37 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose37 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose37 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose37 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose38 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose38 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose38 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose38 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose39 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose39 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose39 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose39 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose40 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose40 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose40 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose40 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose41 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose41 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose41 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose41 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose42 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose42 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose42 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose42 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose43 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose43 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose43 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose43 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose44 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose44 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose44 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose44 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose45 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose45 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose45 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose45 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose46 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose46 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose46 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose46 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose47 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose47 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose47 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose47 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose48 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose48 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose48 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose48 ShowerCurtain_83ddd474) -30.0)
+
+		(= (interactablepose-x pose49 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose49 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose49 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose49 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose50 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose50 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose50 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose50 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose51 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose51 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose51 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose51 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose52 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose52 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose52 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose52 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose53 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose53 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose53 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose53 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose54 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose54 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose54 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose54 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose55 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose55 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose55 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose55 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose56 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose56 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose56 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose56 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose57 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose57 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose57 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose57 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose58 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose58 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose58 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose58 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose59 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose59 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose59 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose59 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose60 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose60 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose60 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose60 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose61 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose61 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose61 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose61 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose62 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose62 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose62 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose62 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose63 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose63 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose63 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose63 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose64 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose64 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose64 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose64 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose65 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose65 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose65 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose65 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose66 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose66 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose66 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose66 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose67 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose67 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose67 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose67 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose68 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose68 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose68 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose68 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose69 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose69 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose69 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose69 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose70 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose70 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose70 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose70 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose71 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose71 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose71 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose71 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose72 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose72 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose72 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose72 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose73 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose73 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose73 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose73 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose74 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose74 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose74 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose74 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose75 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose75 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose75 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose75 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose76 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose76 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose76 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose76 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose77 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose77 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose77 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose77 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose78 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose78 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose78 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose78 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose79 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose79 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose79 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose79 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose80 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose80 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose80 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose80 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose81 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose81 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose81 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose81 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose82 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose82 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose82 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose82 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose83 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose83 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose83 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose83 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose84 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose84 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose84 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose84 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose85 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose85 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose85 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose85 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose86 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose86 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose86 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose86 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose87 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose87 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose87 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose87 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose88 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose88 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose88 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose88 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose89 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose89 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose89 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose89 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose90 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose90 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose90 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose90 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose91 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose91 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose91 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose91 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose92 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose92 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose92 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose92 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose93 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose93 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose93 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose93 ShowerCurtain_83ddd474) 0.0)
+
+		(= (interactablepose-x pose94 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose94 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose94 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose94 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose95 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose95 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose95 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose95 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose96 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose96 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose96 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose96 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose97 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose97 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose97 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose97 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose98 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose98 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose98 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose98 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose99 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose99 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose99 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose99 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose100 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose100 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose100 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose100 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose101 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose101 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose101 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose101 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose102 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose102 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose102 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose102 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose103 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose103 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose103 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose103 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose104 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose104 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose104 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose104 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose105 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose105 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose105 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose105 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose106 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose106 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose106 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose106 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose107 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose107 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose107 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose107 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose108 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose108 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose108 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose108 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose109 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose109 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose109 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose109 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose110 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose110 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose110 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose110 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose111 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose111 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose111 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose111 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose112 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose112 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose112 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose112 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose113 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose113 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose113 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose113 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose114 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose114 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose114 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose114 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose115 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose115 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose115 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose115 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose116 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose116 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose116 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose116 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose117 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose117 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose117 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose117 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose118 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose118 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose118 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose118 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose119 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose119 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose119 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose119 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose120 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose120 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose120 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose120 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose121 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose121 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose121 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose121 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose122 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose122 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose122 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose122 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose123 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose123 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose123 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose123 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose124 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose124 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose124 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose124 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose125 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose125 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose125 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose125 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose126 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose126 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose126 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose126 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose127 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose127 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose127 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose127 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose128 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose128 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose128 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose128 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose129 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose129 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose129 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose129 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose130 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose130 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose130 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose130 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose131 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose131 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose131 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose131 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose132 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose132 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose132 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose132 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose133 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose133 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose133 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose133 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose134 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose134 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose134 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose134 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose135 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose135 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose135 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose135 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose136 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose136 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose136 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose136 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose137 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose137 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose137 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose137 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose138 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose138 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose138 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose138 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose139 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose139 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose139 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose139 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose140 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose140 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose140 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose140 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose141 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose141 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose141 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose141 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose142 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose142 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose142 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose142 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose143 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose143 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose143 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose143 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose144 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose144 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose144 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose144 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose145 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose145 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose145 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose145 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose146 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose146 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose146 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose146 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose147 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose147 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose147 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose147 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose148 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose148 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose148 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose148 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose149 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose149 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose149 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose149 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose150 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose150 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose150 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose150 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose151 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose151 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose151 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose151 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose152 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose152 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose152 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose152 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose153 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose153 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose153 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose153 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose154 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose154 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose154 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose154 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose155 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose155 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose155 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose155 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose156 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose156 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose156 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose156 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose157 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose157 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose157 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose157 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose158 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose158 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose158 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose158 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose159 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose159 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose159 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose159 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose160 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose160 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose160 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose160 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose161 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose161 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose161 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose161 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose162 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose162 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose162 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose162 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose163 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose163 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose163 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose163 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose164 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose164 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose164 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose164 ShowerCurtain_83ddd474) 30.0)
+
+		(= (interactablepose-x pose165 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose165 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose165 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose165 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose166 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose166 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose166 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose166 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose167 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose167 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose167 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose167 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose168 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose168 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose168 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose168 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose169 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose169 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose169 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose169 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose170 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose170 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose170 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose170 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose171 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose171 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose171 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose171 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose172 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose172 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose172 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose172 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose173 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose173 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose173 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose173 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose174 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose174 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose174 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose174 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose175 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose175 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose175 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose175 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose176 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose176 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose176 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose176 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose177 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose177 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose177 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose177 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose178 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose178 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose178 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose178 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose179 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose179 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose179 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose179 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose180 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose180 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose180 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose180 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose181 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose181 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose181 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose181 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose182 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose182 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose182 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose182 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose183 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose183 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose183 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose183 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose184 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose184 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose184 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose184 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose185 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose185 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose185 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose185 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose186 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose186 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose186 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose186 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose187 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose187 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose187 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-inclination pose187 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose188 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose188 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose188 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose188 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose189 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose189 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose189 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose189 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose190 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose190 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose190 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose190 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose191 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose191 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose191 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose191 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose192 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose192 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose192 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose192 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose193 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose193 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose193 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose193 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose194 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose194 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose194 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose194 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose195 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose195 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose195 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose195 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose196 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose196 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose196 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose196 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose197 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose197 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose197 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose197 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose198 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose198 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose198 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose198 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose199 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose199 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose199 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose199 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose200 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose200 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose200 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose200 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose201 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose201 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose201 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose201 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose202 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose202 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose202 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose202 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose203 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose203 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose203 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose203 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose204 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose204 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose204 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose204 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose205 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose205 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose205 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose205 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose206 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose206 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose206 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose206 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose207 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose207 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose207 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose207 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose208 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose208 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose208 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose208 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose209 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose209 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose209 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose209 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose210 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose210 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose210 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose210 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose211 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose211 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose211 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose211 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose212 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose212 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose212 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose212 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose213 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose213 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose213 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose213 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose214 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose214 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose214 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose214 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose215 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose215 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose215 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose215 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose216 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose216 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose216 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose216 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose217 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose217 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose217 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose217 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose218 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose218 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose218 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose218 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose219 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose219 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose219 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose219 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose220 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose220 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose220 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose220 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose221 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose221 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose221 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose221 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose222 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose222 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose222 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose222 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose223 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose223 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose223 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose223 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose224 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose224 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose224 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose224 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose225 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose225 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose225 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose225 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose226 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose226 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose226 ShowerCurtain_83ddd474) 90.0)
+		(= (interactablepose-inclination pose226 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose227 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose227 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose227 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose227 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose228 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose228 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose228 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose228 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose229 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose229 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose229 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose229 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose230 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose230 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose230 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose230 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose231 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose231 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose231 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose231 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose232 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose232 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose232 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose232 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose233 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose233 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose233 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose233 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose234 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose234 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose234 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose234 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose235 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose235 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose235 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose235 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose236 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose236 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose236 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose236 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose237 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose237 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose237 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose237 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose238 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose238 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose238 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose238 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose239 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose239 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose239 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose239 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose240 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose240 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose240 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose240 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose241 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose241 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose241 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose241 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose242 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose242 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose242 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose242 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose243 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose243 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose243 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose243 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose244 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose244 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose244 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose244 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose245 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose245 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose245 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose245 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose246 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose246 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose246 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose246 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose247 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose247 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose247 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose247 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose248 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose248 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose248 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose248 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose249 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose249 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose249 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose249 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose250 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose250 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose250 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose250 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose251 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose251 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose251 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose251 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose252 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose252 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose252 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose252 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose253 ShowerCurtain_83ddd474) -2.25)
+		(= (interactablepose-z pose253 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose253 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose253 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose254 ShowerCurtain_83ddd474) -2.5)
+		(= (interactablepose-z pose254 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose254 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose254 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose255 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose255 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose255 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose255 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose256 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose256 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose256 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose256 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose257 ShowerCurtain_83ddd474) -2.0)
+		(= (interactablepose-z pose257 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose257 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose257 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose258 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose258 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose258 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose258 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose259 ShowerCurtain_83ddd474) -1.75)
+		(= (interactablepose-z pose259 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose259 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose259 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose260 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose260 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose260 ShowerCurtain_83ddd474) 180.0)
+		(= (interactablepose-inclination pose260 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose261 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose261 ShowerCurtain_83ddd474) 0.0)
+		(= (interactablepose-facing pose261 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose261 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose262 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose262 ShowerCurtain_83ddd474) 0.25)
+		(= (interactablepose-facing pose262 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose262 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose263 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose263 ShowerCurtain_83ddd474) -0.25)
+		(= (interactablepose-facing pose263 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose263 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose264 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose264 ShowerCurtain_83ddd474) 0.5)
+		(= (interactablepose-facing pose264 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose264 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose265 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose265 ShowerCurtain_83ddd474) -0.5)
+		(= (interactablepose-facing pose265 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose265 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose266 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose266 ShowerCurtain_83ddd474) 0.75)
+		(= (interactablepose-facing pose266 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose266 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose267 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose267 ShowerCurtain_83ddd474) 1.0)
+		(= (interactablepose-facing pose267 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose267 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose268 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose268 ShowerCurtain_83ddd474) 1.25)
+		(= (interactablepose-facing pose268 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose268 ShowerCurtain_83ddd474) 60.0)
+
+		(= (interactablepose-x pose269 ShowerCurtain_83ddd474) -1.5)
+		(= (interactablepose-z pose269 ShowerCurtain_83ddd474) 1.5)
+		(= (interactablepose-facing pose269 ShowerCurtain_83ddd474) 270.0)
+		(= (interactablepose-inclination pose269 ShowerCurtain_83ddd474) 60.0)
+
+		(= (facing) 0.0)
 
 		(= (inclination) -0.0)
 
-		(= (agent-at-x) -0.75)
-		(= (agent-at-z) 0.5)
+		(= (agent-at-x) -2.0)
+		(= (agent-at-z) 0.0)
 
-		(= (posiblepos-x pos0) -0.75)
-		(= (posiblepos-z pos0) 0.5)
+		(= (posiblepos-x pos0) -2.0)
+		(= (posiblepos-z pos0) 0.0)
 
-		(= (posiblepos-x pos1) -0.5)
-		(= (posiblepos-z pos1) 0.5)
+		(= (posiblepos-x pos1) -1.75)
+		(= (posiblepos-z pos1) 0.0)
 
-		(= (posiblepos-x pos2) -0.75)
-		(= (posiblepos-z pos2) 0.75)
+		(= (posiblepos-x pos2) -2.0)
+		(= (posiblepos-z pos2) 0.25)
 
-		(= (posiblepos-x pos3) -1.0)
-		(= (posiblepos-z pos3) 0.5)
+		(= (posiblepos-x pos3) -2.25)
+		(= (posiblepos-z pos3) 0.0)
 
-		(= (posiblepos-x pos4) -0.75)
-		(= (posiblepos-z pos4) 0.25)
+		(= (posiblepos-x pos4) -2.0)
+		(= (posiblepos-z pos4) -0.25)
 
-		(= (posiblepos-x pos5) -0.25)
-		(= (posiblepos-z pos5) 0.5)
+		(= (posiblepos-x pos5) -1.5)
+		(= (posiblepos-z pos5) 0.0)
 
-		(= (posiblepos-x pos6) -0.5)
-		(= (posiblepos-z pos6) 0.75)
+		(= (posiblepos-x pos6) -1.75)
+		(= (posiblepos-z pos6) 0.25)
 
-		(= (posiblepos-x pos7) -0.5)
-		(= (posiblepos-z pos7) 0.25)
+		(= (posiblepos-x pos7) -1.75)
+		(= (posiblepos-z pos7) -0.25)
 
-		(= (posiblepos-x pos8) -0.75)
-		(= (posiblepos-z pos8) 1.0)
+		(= (posiblepos-x pos8) -2.0)
+		(= (posiblepos-z pos8) 0.5)
 
-		(= (posiblepos-x pos9) -1.0)
-		(= (posiblepos-z pos9) 0.75)
+		(= (posiblepos-x pos9) -2.25)
+		(= (posiblepos-z pos9) 0.25)
 
-		(= (posiblepos-x pos10) -1.25)
-		(= (posiblepos-z pos10) 0.5)
+		(= (posiblepos-x pos10) -2.5)
+		(= (posiblepos-z pos10) 0.0)
 
-		(= (posiblepos-x pos11) -1.0)
-		(= (posiblepos-z pos11) 0.25)
+		(= (posiblepos-x pos11) -2.25)
+		(= (posiblepos-z pos11) -0.25)
 
-		(= (posiblepos-x pos12) -0.75)
-		(= (posiblepos-z pos12) 0.0)
+		(= (posiblepos-x pos12) -1.5)
+		(= (posiblepos-z pos12) 0.25)
 
-		(= (posiblepos-x pos13) 0.0)
-		(= (posiblepos-z pos13) 0.5)
+		(= (posiblepos-x pos13) -1.5)
+		(= (posiblepos-z pos13) -0.25)
 
-		(= (posiblepos-x pos14) -0.25)
-		(= (posiblepos-z pos14) 0.75)
+		(= (posiblepos-x pos14) -1.75)
+		(= (posiblepos-z pos14) 0.5)
 
-		(= (posiblepos-x pos15) -0.25)
-		(= (posiblepos-z pos15) 0.25)
+		(= (posiblepos-x pos15) -1.75)
+		(= (posiblepos-z pos15) -0.5)
 
-		(= (posiblepos-x pos16) -0.5)
-		(= (posiblepos-z pos16) 1.0)
+		(= (posiblepos-x pos16) -2.0)
+		(= (posiblepos-z pos16) 0.75)
 
-		(= (posiblepos-x pos17) -0.5)
-		(= (posiblepos-z pos17) 0.0)
+		(= (posiblepos-x pos17) -2.25)
+		(= (posiblepos-z pos17) 0.5)
 
-		(= (posiblepos-x pos18) -0.75)
-		(= (posiblepos-z pos18) 1.25)
+		(= (posiblepos-x pos18) -2.5)
+		(= (posiblepos-z pos18) 0.25)
 
-		(= (posiblepos-x pos19) -1.0)
-		(= (posiblepos-z pos19) 1.0)
+		(= (posiblepos-x pos19) -2.5)
+		(= (posiblepos-z pos19) -0.25)
 
-		(= (posiblepos-x pos20) -1.25)
-		(= (posiblepos-z pos20) 0.75)
+		(= (posiblepos-x pos20) -2.25)
+		(= (posiblepos-z pos20) -0.5)
 
 		(= (posiblepos-x pos21) -1.5)
 		(= (posiblepos-z pos21) 0.5)
 
-		(= (posiblepos-x pos22) -1.25)
-		(= (posiblepos-z pos22) 0.25)
+		(= (posiblepos-x pos22) -1.5)
+		(= (posiblepos-z pos22) -0.5)
 
-		(= (posiblepos-x pos23) -1.0)
-		(= (posiblepos-z pos23) 0.0)
+		(= (posiblepos-x pos23) -1.75)
+		(= (posiblepos-z pos23) 0.75)
 
-		(= (posiblepos-x pos24) -0.75)
-		(= (posiblepos-z pos24) -0.25)
+		(= (posiblepos-x pos24) -2.0)
+		(= (posiblepos-z pos24) 1.0)
 
-		(= (posiblepos-x pos25) 0.25)
-		(= (posiblepos-z pos25) 0.5)
+		(= (posiblepos-x pos25) -2.25)
+		(= (posiblepos-z pos25) 0.75)
 
-		(= (posiblepos-x pos26) 0.0)
-		(= (posiblepos-z pos26) 0.75)
+		(= (posiblepos-x pos26) -2.5)
+		(= (posiblepos-z pos26) 0.5)
 
-		(= (posiblepos-x pos27) 0.0)
-		(= (posiblepos-z pos27) 0.25)
+		(= (posiblepos-x pos27) -2.5)
+		(= (posiblepos-z pos27) -0.5)
 
-		(= (posiblepos-x pos28) -0.25)
-		(= (posiblepos-z pos28) 1.0)
+		(= (posiblepos-x pos28) -1.5)
+		(= (posiblepos-z pos28) 0.75)
 
-		(= (posiblepos-x pos29) -0.25)
-		(= (posiblepos-z pos29) 0.0)
+		(= (posiblepos-x pos29) -1.75)
+		(= (posiblepos-z pos29) 1.0)
 
-		(= (posiblepos-x pos30) -0.5)
+		(= (posiblepos-x pos30) -2.0)
 		(= (posiblepos-z pos30) 1.25)
 
-		(= (posiblepos-x pos31) -0.5)
-		(= (posiblepos-z pos31) -0.25)
+		(= (posiblepos-x pos31) -2.25)
+		(= (posiblepos-z pos31) 1.0)
 
-		(= (posiblepos-x pos32) -0.75)
-		(= (posiblepos-z pos32) 1.5)
+		(= (posiblepos-x pos32) -2.5)
+		(= (posiblepos-z pos32) 0.75)
 
-		(= (posiblepos-x pos33) -1.0)
-		(= (posiblepos-z pos33) 1.25)
+		(= (posiblepos-x pos33) -1.5)
+		(= (posiblepos-z pos33) 1.0)
 
-		(= (posiblepos-x pos34) -1.25)
-		(= (posiblepos-z pos34) 1.0)
+		(= (posiblepos-x pos34) -1.75)
+		(= (posiblepos-z pos34) 1.25)
 
-		(= (posiblepos-x pos35) -1.5)
-		(= (posiblepos-z pos35) 0.75)
+		(= (posiblepos-x pos35) -2.0)
+		(= (posiblepos-z pos35) 1.5)
 
-		(= (posiblepos-x pos36) -1.75)
-		(= (posiblepos-z pos36) 0.5)
+		(= (posiblepos-x pos36) -1.5)
+		(= (posiblepos-z pos36) 1.25)
 
-		(= (posiblepos-x pos37) -1.5)
-		(= (posiblepos-z pos37) 0.25)
+		(= (posiblepos-x pos37) -1.75)
+		(= (posiblepos-z pos37) 1.5)
 
-		(= (posiblepos-x pos38) -1.25)
-		(= (posiblepos-z pos38) 0.0)
+		(= (posiblepos-x pos38) -1.5)
+		(= (posiblepos-z pos38) 1.5)
 
-		(= (posiblepos-x pos39) -1.0)
-		(= (posiblepos-z pos39) -0.25)
+		(= (object-at-x Bathtub_ae3c36fa) -0.6039601564407348632812500)
+		(= (object-at-y Bathtub_ae3c36fa) 0.2866531014442443847656250)
+		(= (object-at-z Bathtub_ae3c36fa) 0.8323522806167602539062500)
 
-		(= (posiblepos-x pos40) -0.75)
-		(= (posiblepos-z pos40) -0.5)
+		(= (object-at-x BathtubBasin_d8aceff2) -0.5580601692199707031250000)
+		(= (object-at-y BathtubBasin_d8aceff2) 0.0232211053371429443359375)
+		(= (object-at-z BathtubBasin_d8aceff2) 0.8113522529602050781250000)
 
-		(= (posiblepos-x pos41) 0.25)
-		(= (posiblepos-z pos41) 0.75)
+		(= (object-at-x Cabinet_cce6eb3e) -2.7617099285125732421875000)
+		(= (object-at-y Cabinet_cce6eb3e) 0.4466799497604370117187500)
+		(= (object-at-z Cabinet_cce6eb3e) 0.5999054908752441406250000)
 
-		(= (posiblepos-x pos42) 0.25)
-		(= (posiblepos-z pos42) 0.25)
+		(= (object-at-x Cabinet_0596fb92) -2.7567842006683349609375000)
+		(= (object-at-y Cabinet_0596fb92) 0.4215855598449707031250000)
+		(= (object-at-z Cabinet_0596fb92) -0.7596634030342102050781250)
 
-		(= (posiblepos-x pos43) 0.0)
-		(= (posiblepos-z pos43) 1.0)
+		(= (object-at-x Cabinet_ab4ae10f) -2.9050290584564208984375000)
+		(= (object-at-y Cabinet_ab4ae10f) 2.0981392860412597656250000)
+		(= (object-at-z Cabinet_ab4ae10f) 1.8786492347717285156250000)
 
-		(= (posiblepos-x pos44) 0.0)
-		(= (posiblepos-z pos44) 0.0)
+		(= (object-at-x Cabinet_cc651d88) -2.7567842006683349609375000)
+		(= (object-at-y Cabinet_cc651d88) 0.4215855598449707031250000)
+		(= (object-at-z Cabinet_cc651d88) -0.2729782462120056152343750)
 
-		(= (posiblepos-x pos45) -0.25)
-		(= (posiblepos-z pos45) 1.25)
+		(= (object-at-x Cabinet_83d42ccf) -2.9002192020416259765625000)
+		(= (object-at-y Cabinet_83d42ccf) 2.0534095764160156250000000)
+		(= (object-at-z Cabinet_83d42ccf) 1.0057646036148071289062500)
 
-		(= (posiblepos-x pos46) -0.25)
-		(= (posiblepos-z pos46) -0.25)
+		(= (object-at-x Candle_a63876c1) -2.9969005584716796875000000)
+		(= (object-at-y Candle_a63876c1) 0.0996379479765892028808594)
+		(= (object-at-z Candle_a63876c1) -0.1188997924327850341796875)
 
-		(= (posiblepos-x pos47) -0.5)
-		(= (posiblepos-z pos47) 1.5)
+		(= (object-at-x Cloth_27ec77d5) -0.4945053160190582275390625)
+		(= (object-at-y Cloth_27ec77d5) 0.0227224119007587432861328)
+		(= (object-at-z Cloth_27ec77d5) 1.3082711696624755859375000)
 
-		(= (posiblepos-x pos48) -0.5)
-		(= (posiblepos-z pos48) -0.5)
+		(= (object-at-x CounterTop_a282e8cf) -3.0490000247955322265625000)
+		(= (object-at-y CounterTop_a282e8cf) 1.0396000146865844726562500)
+		(= (object-at-z CounterTop_a282e8cf) -0.4429999887943267822265625)
 
-		(= (posiblepos-x pos49) -1.0)
-		(= (posiblepos-z pos49) 1.5)
+		(= (object-at-x Faucet_cb0e6332) -0.6188321113586425781250000)
+		(= (object-at-y Faucet_cb0e6332) 0.6675017476081848144531250)
+		(= (object-at-z Faucet_cb0e6332) 1.8409999608993530273437500)
 
-		(= (posiblepos-x pos50) -1.25)
-		(= (posiblepos-z pos50) 1.25)
+		(= (object-at-x Faucet_8b4d1d5d) -3.3131604194641113281250000)
+		(= (object-at-y Faucet_8b4d1d5d) 0.9890999794006347656250000)
+		(= (object-at-z Faucet_8b4d1d5d) 0.2070004791021347045898438)
 
-		(= (posiblepos-x pos51) -1.5)
-		(= (posiblepos-z pos51) 1.0)
+		(= (object-at-x Floor_4e1819df) -1.6885498762130737304687500)
+		(= (object-at-y Floor_4e1819df) -0.0353043302893638610839844)
+		(= (object-at-z Floor_4e1819df) 0.8054957985877990722656250)
 
-		(= (posiblepos-x pos52) -1.75)
-		(= (posiblepos-z pos52) 0.75)
+		(= (object-at-x GarbageCan_841540ac) -3.0807998180389404296875000)
+		(= (object-at-y GarbageCan_841540ac) -0.0071446597576141357421875)
+		(= (object-at-z GarbageCan_841540ac) 0.8999946713447570800781250)
 
-		(= (posiblepos-x pos53) -2.0)
-		(= (posiblepos-z pos53) 0.5)
+		(= (object-at-x HandTowel_d68dd6d4) -2.9600000381469726562500000)
+		(= (object-at-y HandTowel_d68dd6d4) 1.5930000543594360351562500)
+		(= (object-at-z HandTowel_d68dd6d4) -0.7284030318260192871093750)
 
-		(= (posiblepos-x pos54) -1.75)
-		(= (posiblepos-z pos54) 0.25)
+		(= (object-at-x HandTowelHolder_eaa69c39) -3.3599998950958251953125000)
+		(= (object-at-y HandTowelHolder_eaa69c39) 1.5659999847412109375000000)
+		(= (object-at-z HandTowelHolder_eaa69c39) 0.7630000114440917968750000)
 
-		(= (posiblepos-x pos55) -1.5)
-		(= (posiblepos-z pos55) 0.0)
+		(= (object-at-x HandTowelHolder_f832c230) -2.9600000381469726562500000)
+		(= (object-at-y HandTowelHolder_f832c230) 1.6950000524520874023437500)
+		(= (object-at-z HandTowelHolder_f832c230) -0.7667030096054077148437500)
 
-		(= (posiblepos-x pos56) -1.25)
-		(= (posiblepos-z pos56) -0.25)
+		(= (object-at-x LightSwitch_32283f8a) -2.3133358955383300781250000)
+		(= (object-at-y LightSwitch_32283f8a) 1.4265397787094116210937500)
+		(= (object-at-z LightSwitch_32283f8a) -0.7667684555053710937500000)
 
-		(= (posiblepos-x pos57) -1.0)
-		(= (posiblepos-z pos57) -0.5)
+		(= (object-at-x Mirror_e46f986f) -3.3480000495910644531250000)
+		(= (object-at-y Mirror_e46f986f) 1.4769999980926513671875000)
+		(= (object-at-z Mirror_e46f986f) 0.0204263608902692794799805)
 
-		(= (posiblepos-x pos58) -0.75)
-		(= (posiblepos-z pos58) -0.75)
-
-		(= (posiblepos-x pos59) 0.25)
-		(= (posiblepos-z pos59) 1.0)
-
-		(= (posiblepos-x pos60) 0.25)
-		(= (posiblepos-z pos60) 0.0)
-
-		(= (posiblepos-x pos61) 0.0)
-		(= (posiblepos-z pos61) 1.25)
-
-		(= (posiblepos-x pos62) 0.0)
-		(= (posiblepos-z pos62) -0.25)
-
-		(= (posiblepos-x pos63) -0.25)
-		(= (posiblepos-z pos63) -0.5)
-
-		(= (posiblepos-x pos64) -0.5)
-		(= (posiblepos-z pos64) -0.75)
-
-		(= (posiblepos-x pos65) -1.0)
-		(= (posiblepos-z pos65) 1.75)
-
-		(= (posiblepos-x pos66) -1.25)
-		(= (posiblepos-z pos66) 1.5)
-
-		(= (posiblepos-x pos67) -1.5)
-		(= (posiblepos-z pos67) 1.25)
-
-		(= (posiblepos-x pos68) -1.75)
-		(= (posiblepos-z pos68) 1.0)
-
-		(= (posiblepos-x pos69) -2.0)
-		(= (posiblepos-z pos69) 0.75)
-
-		(= (posiblepos-x pos70) -2.0)
-		(= (posiblepos-z pos70) 0.25)
-
-		(= (posiblepos-x pos71) -1.75)
-		(= (posiblepos-z pos71) 0.0)
-
-		(= (posiblepos-x pos72) -1.5)
-		(= (posiblepos-z pos72) -0.25)
-
-		(= (posiblepos-x pos73) -1.25)
-		(= (posiblepos-z pos73) -0.5)
-
-		(= (posiblepos-x pos74) -1.0)
-		(= (posiblepos-z pos74) -0.75)
-
-		(= (posiblepos-x pos75) -0.75)
-		(= (posiblepos-z pos75) -1.0)
-
-		(= (posiblepos-x pos76) 0.25)
-		(= (posiblepos-z pos76) 1.25)
-
-		(= (posiblepos-x pos77) 0.25)
-		(= (posiblepos-z pos77) -0.25)
-
-		(= (posiblepos-x pos78) 0.0)
-		(= (posiblepos-z pos78) -0.5)
-
-		(= (posiblepos-x pos79) -0.25)
-		(= (posiblepos-z pos79) -0.75)
-
-		(= (posiblepos-x pos80) -0.5)
-		(= (posiblepos-z pos80) -1.0)
-
-		(= (posiblepos-x pos81) -1.0)
-		(= (posiblepos-z pos81) 2.0)
-
-		(= (posiblepos-x pos82) -1.25)
-		(= (posiblepos-z pos82) 1.75)
-
-		(= (posiblepos-x pos83) -1.5)
-		(= (posiblepos-z pos83) 1.5)
-
-		(= (posiblepos-x pos84) -1.75)
-		(= (posiblepos-z pos84) 1.25)
-
-		(= (posiblepos-x pos85) -2.0)
-		(= (posiblepos-z pos85) 1.0)
-
-		(= (posiblepos-x pos86) -2.25)
-		(= (posiblepos-z pos86) 0.25)
-
-		(= (posiblepos-x pos87) -2.0)
-		(= (posiblepos-z pos87) 0.0)
-
-		(= (posiblepos-x pos88) -1.75)
-		(= (posiblepos-z pos88) -0.25)
-
-		(= (posiblepos-x pos89) -1.5)
-		(= (posiblepos-z pos89) -0.5)
-
-		(= (posiblepos-x pos90) -1.25)
-		(= (posiblepos-z pos90) -0.75)
-
-		(= (posiblepos-x pos91) -1.0)
-		(= (posiblepos-z pos91) -1.0)
-
-		(= (posiblepos-x pos92) -0.75)
-		(= (posiblepos-z pos92) -1.25)
-
-		(= (posiblepos-x pos93) 0.25)
-		(= (posiblepos-z pos93) -0.5)
-
-		(= (posiblepos-x pos94) 0.0)
-		(= (posiblepos-z pos94) -0.75)
-
-		(= (posiblepos-x pos95) -0.25)
-		(= (posiblepos-z pos95) -1.0)
-
-		(= (posiblepos-x pos96) -0.5)
-		(= (posiblepos-z pos96) -1.25)
-
-		(= (posiblepos-x pos97) -1.25)
-		(= (posiblepos-z pos97) 2.0)
-
-		(= (posiblepos-x pos98) -1.5)
-		(= (posiblepos-z pos98) 1.75)
-
-		(= (posiblepos-x pos99) -1.75)
-		(= (posiblepos-z pos99) 1.5)
-
-		(= (posiblepos-x pos100) -2.0)
-		(= (posiblepos-z pos100) 1.25)
-
-		(= (posiblepos-x pos101) -2.25)
-		(= (posiblepos-z pos101) 0.0)
-
-		(= (posiblepos-x pos102) 0.25)
-		(= (posiblepos-z pos102) -0.75)
-
-		(= (posiblepos-x pos103) 0.0)
-		(= (posiblepos-z pos103) -1.0)
-
-		(= (posiblepos-x pos104) -0.25)
-		(= (posiblepos-z pos104) -1.25)
-
-		(= (posiblepos-x pos105) -1.5)
-		(= (posiblepos-z pos105) 2.0)
-
-		(= (posiblepos-x pos106) -1.75)
-		(= (posiblepos-z pos106) 1.75)
-
-		(= (posiblepos-x pos107) -2.0)
-		(= (posiblepos-z pos107) 1.5)
-
-		(= (posiblepos-x pos108) -2.25)
-		(= (posiblepos-z pos108) 1.25)
-
-		(= (posiblepos-x pos109) -2.5)
-		(= (posiblepos-z pos109) 0.0)
-
-		(= (posiblepos-x pos110) 0.0)
-		(= (posiblepos-z pos110) -1.25)
-
-		(= (posiblepos-x pos111) -1.75)
-		(= (posiblepos-z pos111) 2.0)
-
-		(= (posiblepos-x pos112) -2.0)
-		(= (posiblepos-z pos112) 1.75)
-
-		(= (posiblepos-x pos113) -2.25)
-		(= (posiblepos-z pos113) 1.5)
-
-		(= (posiblepos-x pos114) -2.75)
-		(= (posiblepos-z pos114) 0.0)
-
-		(= (posiblepos-x pos115) -2.0)
-		(= (posiblepos-z pos115) 2.0)
-
-		(= (posiblepos-x pos116) -2.25)
-		(= (posiblepos-z pos116) 1.75)
-
-		(= (posiblepos-x pos117) -2.25)
-		(= (posiblepos-z pos117) 2.0)
-
-		(= (object-at-x Bathtub_4053d0b5) -1.9577132463455200195312500)
-		(= (object-at-y Bathtub_4053d0b5) 0.4947879314422607421875000)
-		(= (object-at-z Bathtub_4053d0b5) -1.2332706451416015625000000)
-
-		(= (object-at-x Candle_727c6003) -0.5851435661315917968750000)
-		(= (object-at-y Candle_727c6003) 0.9538473486900329589843750)
-		(= (object-at-z Candle_727c6003) -2.2496492862701416015625000)
-
-		(= (object-at-x Cloth_ecfda2eb) -0.4963869154453277587890625)
-		(= (object-at-y Cloth_ecfda2eb) 0.9530261158943176269531250)
-		(= (object-at-z Cloth_ecfda2eb) -1.9938652515411376953125000)
-
-		(= (object-at-x CounterTop_d2ae5fa0) 0.1966076940298080444335938)
-		(= (object-at-y CounterTop_d2ae5fa0) 0.4309999942779541015625000)
-		(= (object-at-z CounterTop_d2ae5fa0) -2.0109999179840087890625000)
-
-		(= (object-at-x DishSponge_6e8f61d2) -2.7831168174743652343750000)
-		(= (object-at-y DishSponge_6e8f61d2) 0.2420624941587448120117188)
-		(= (object-at-z DishSponge_6e8f61d2) 1.3339596986770629882812500)
-
-		(= (object-at-x Drawer_a6915f53) 0.3004314303398132324218750)
-		(= (object-at-y Drawer_a6915f53) 0.3041999936103820800781250)
-		(= (object-at-z Drawer_a6915f53) -1.8203675746917724609375000)
-
-		(= (object-at-x Drawer_b9e42270) 0.3004314303398132324218750)
-		(= (object-at-y Drawer_b9e42270) 0.8339999914169311523437500)
-		(= (object-at-z Drawer_b9e42270) -1.8203675746917724609375000)
-
-		(= (object-at-x Drawer_00df1201) 0.3004314303398132324218750)
-		(= (object-at-y Drawer_00df1201) 0.6823999881744384765625000)
-		(= (object-at-z Drawer_00df1201) -1.8203675746917724609375000)
-
-		(= (object-at-x Drawer_f852a7c0) 0.3004314303398132324218750)
-		(= (object-at-y Drawer_f852a7c0) 0.4925744533538818359375000)
-		(= (object-at-z Drawer_f852a7c0) -1.8203675746917724609375000)
-
-		(= (object-at-x Faucet_90f49144) -1.1449999809265136718750000)
-		(= (object-at-y Faucet_90f49144) 0.0120397806167602539062500)
-		(= (object-at-z Faucet_90f49144) -2.1280000209808349609375000)
-
-		(= (object-at-x Faucet_77ca98b9) -3.1061000823974609375000000)
-		(= (object-at-y Faucet_77ca98b9) 1.0562000274658203125000000)
-		(= (object-at-z Faucet_77ca98b9) 0.7573000192642211914062500)
-
-		(= (object-at-x Floor_5dd9694a) -0.3468429446220397949218750)
-		(= (object-at-y Floor_5dd9694a) -0.0408324860036373138427734)
-		(= (object-at-z Floor_5dd9694a) 0.0998812466859817504882812)
-
-		(= (object-at-x Footstool_57cd7230) -0.3160279989242553710937500)
-		(= (object-at-y Footstool_57cd7230) 0.0124288499355316162109375)
-		(= (object-at-z Footstool_57cd7230) -1.8489779233932495117187500)
-
-		(= (object-at-x GarbageCan_f291c46d) -0.5649937987327575683593750)
-		(= (object-at-y GarbageCan_f291c46d) 0.0107011795043945312500000)
-		(= (object-at-z GarbageCan_f291c46d) 2.0619859695434570312500000)
-
-		(= (object-at-x HandTowel_a42a8c07) -0.8849999308586120605468750)
-		(= (object-at-y HandTowel_a42a8c07) 1.6169999837875366210937500)
-		(= (object-at-z HandTowel_a42a8c07) -2.5037000179290771484375000)
-
-		(= (object-at-x HandTowelHolder_479f111d) -0.8849999904632568359375000)
-		(= (object-at-y HandTowelHolder_479f111d) 1.7189999818801879882812500)
-		(= (object-at-z HandTowelHolder_479f111d) -2.5420000553131103515625000)
-
-		(= (object-at-x LightSwitch_df48146e) -1.4062999486923217773437500)
-		(= (object-at-y LightSwitch_df48146e) 1.4724999666213989257812500)
-		(= (object-at-z LightSwitch_df48146e) 2.4076578617095947265625000)
-
-		(= (object-at-x Mirror_ed461591) -0.0463152788579463958740234)
-		(= (object-at-y Mirror_ed461591) 1.5120279788970947265625000)
-		(= (object-at-z Mirror_ed461591) -2.5382590293884277343750000)
-
-		(= (object-at-x Plunger_61fcb662) 0.5063213706016540527343750)
-		(= (object-at-y Plunger_61fcb662) 0.0115768089890480041503906)
-		(= (object-at-z Plunger_61fcb662) 2.2688605785369873046875000)
-
-		(= (object-at-x ScrubBrush_6300d06b) 0.3428618609905242919921875)
-		(= (object-at-y ScrubBrush_6300d06b) 0.0120398253202438354492188)
-		(= (object-at-z ScrubBrush_6300d06b) 2.0720145702362060546875000)
-
-		(= (object-at-x Shelf_78513ed4) 1.5369999408721923828125000)
-		(= (object-at-y Shelf_78513ed4) 0.6139271855354309082031250)
-		(= (object-at-z Shelf_78513ed4) -2.2420001029968261718750000)
-
-		(= (object-at-x ShowerDoor_ba1f59f4) 0.6501114368438720703125000)
-		(= (object-at-y ShowerDoor_ba1f59f4) 1.4134664535522460937500000)
-		(= (object-at-z ShowerDoor_ba1f59f4) 2.1692044734954833984375000)
-
-		(= (object-at-x ShowerGlass_50a177ce) 0.0000000000000000000000000)
-		(= (object-at-y ShowerGlass_50a177ce) 0.0000000000000000000000000)
-		(= (object-at-z ShowerGlass_50a177ce) 0.0000000000000000000000000)
-
-		(= (object-at-x ShowerHead_4a4806ae) 1.5590000152587890625000000)
-		(= (object-at-y ShowerHead_4a4806ae) 1.1050000190734863281250000)
-		(= (object-at-z ShowerHead_4a4806ae) -2.5380001068115234375000000)
-
-		(= (object-at-x SideTable_72ab7c1b) -2.8479251861572265625000000)
-		(= (object-at-y SideTable_72ab7c1b) 0.0138376951217651367187500)
-		(= (object-at-z SideTable_72ab7c1b) 1.5090315341949462890625000)
-
-		(= (object-at-x Sink_d90bef47) -2.7969999313354492187500000)
-		(= (object-at-y Sink_d90bef47) 0.3280000090599060058593750)
-		(= (object-at-z Sink_d90bef47) 0.7559999823570251464843750)
-
-		(= (object-at-x SinkBasin_bd90f4e4) -2.7960999011993408203125000)
-		(= (object-at-y SinkBasin_bd90f4e4) 0.8754000067710876464843750)
-		(= (object-at-z SinkBasin_bd90f4e4) 0.7652999758720397949218750)
-
-		(= (object-at-x SoapBar_5efad73f) -0.2484458386898040771484375)
-		(= (object-at-y SoapBar_5efad73f) 0.9536516070365905761718750)
-		(= (object-at-z SoapBar_5efad73f) -2.2807540893554687500000000)
-
-		(= (object-at-x SoapBottle_394ca031) 0.4121015667915344238281250)
-		(= (object-at-y SoapBottle_394ca031) 0.9640863537788391113281250)
-		(= (object-at-z SoapBottle_394ca031) -2.2827603816986083984375000)
-
-		(= (object-at-x SprayBottle_68f9c0a8) -2.8804185390472412109375000)
-		(= (object-at-y SprayBottle_68f9c0a8) 0.8674505949020385742187500)
-		(= (object-at-z SprayBottle_68f9c0a8) 1.5998754501342773437500000)
-
-		(= (object-at-x TissueBox_878fe029) 0.0863585025072097778320312)
-		(= (object-at-y TissueBox_878fe029) 0.9545326232910156250000000)
-		(= (object-at-z TissueBox_878fe029) -2.3029074668884277343750000)
-
-		(= (object-at-x Toilet_7e8ce5bd) -0.0640000030398368835449219)
-		(= (object-at-y Toilet_7e8ce5bd) 0.0120397955179214477539062)
-		(= (object-at-z Toilet_7e8ce5bd) 1.8389999866485595703125000)
-
-		(= (object-at-x ToiletPaper_6e8f746a) -0.1777804791927337646484375)
-		(= (object-at-y ToiletPaper_6e8f746a) 0.9554311633110046386718750)
-		(= (object-at-z ToiletPaper_6e8f746a) 2.2684311866760253906250000)
-
-		(= (object-at-x ToiletPaper_e7b7f9b2) -0.4860030412673950195312500)
-		(= (object-at-y ToiletPaper_e7b7f9b2) 0.0915854573249816894531250)
-		(= (object-at-z ToiletPaper_e7b7f9b2) 2.1252374649047851562500000)
-
-		(= (object-at-x ToiletPaperHanger_c783d786) -0.5740000009536743164062500)
-		(= (object-at-y ToiletPaperHanger_c783d786) 0.9269999861717224121093750)
-		(= (object-at-z ToiletPaperHanger_c783d786) 2.4079999923706054687500000)
-
-		(= (object-at-x Towel_7e638523) 0.4658903777599334716796875)
-		(= (object-at-y Towel_7e638523) 1.2100000381469726562500000)
-		(= (object-at-z Towel_7e638523) -1.0950000286102294921875000)
-
-		(= (object-at-x TowelHolder_29e779dc) 0.5727903842926025390625000)
-		(= (object-at-y TowelHolder_29e779dc) 1.1959999799728393554687500)
-		(= (object-at-z TowelHolder_29e779dc) -1.0950000286102294921875000)
-
-		(= (object-at-x Window_a61de043) -2.1449999809265136718750000)
-		(= (object-at-y Window_a61de043) 1.8099999427795410156250000)
-		(= (object-at-z Window_a61de043) -2.5735166072845458984375000)
-
-		(= (object-at-x Window_67928466) -3.1700000762939453125000000)
-		(= (object-at-y Window_67928466) 1.8129999637603759765625000)
-		(= (object-at-z Window_67928466) 1.5970000028610229492187500)
-
-		(= (object-at-x Window_8a389dbc) -3.1700000762939453125000000)
-		(= (object-at-y Window_8a389dbc) 1.8129999637603759765625000)
-		(= (object-at-z Window_8a389dbc) -0.0549999997019767761230469)
-
-		(= (object-at-x Window_b4845eb7) -3.1700000762939453125000000)
-		(= (object-at-y Window_b4845eb7) 1.8129999637603759765625000)
-		(= (object-at-z Window_b4845eb7) -1.6979999542236328125000000)
+		(= (object-at-x Plunger_98d0faf6) -3.0159964561462402343750000)
+		(= (object-at-y Plunger_98d0faf6) 0.0033893212676048278808594)
+		(= (object-at-z Plunger_98d0faf6) 1.7599997520446777343750000)
+
+		(= (object-at-x ScrubBrush_1028334f) -3.2340826988220214843750000)
+		(= (object-at-y ScrubBrush_1028334f) 0.0038523599505424499511719)
+		(= (object-at-z ScrubBrush_1028334f) 1.7888728380203247070312500)
+
+		(= (object-at-x ShowerCurtain_83ddd474) -1.1059999465942382812500000)
+		(= (object-at-y ShowerCurtain_83ddd474) 1.8880000114440917968750000)
+		(= (object-at-z ShowerCurtain_83ddd474) -0.1089999973773956298828125)
+
+		(= (object-at-x Sink_1726a687) -3.0160000324249267578125000)
+		(= (object-at-y Sink_1726a687) 0.8659999966621398925781250)
+		(= (object-at-z Sink_1726a687) 0.2070000022649765014648438)
+
+		(= (object-at-x SinkBasin_88b6ab63) -3.0167999267578125000000000)
+		(= (object-at-y SinkBasin_88b6ab63) 0.8747000098228454589843750)
+		(= (object-at-z SinkBasin_88b6ab63) 0.2175000011920928955078125)
+
+		(= (object-at-x SoapBar_376e7374) -3.2799999713897705078125000)
+		(= (object-at-y SoapBar_376e7374) 0.9935414195060729980468750)
+		(= (object-at-z SoapBar_376e7374) 0.5145999789237976074218750)
+
+		(= (object-at-x SoapBottle_f2e00ced) -3.2449972629547119140625000)
+		(= (object-at-y SoapBottle_f2e00ced) 0.9923833608627319335937500)
+		(= (object-at-z SoapBottle_f2e00ced) -0.1519981175661087036132812)
+
+		(= (object-at-x SprayBottle_f9327a5a) -3.1204416751861572265625000)
+		(= (object-at-y SprayBottle_f9327a5a) 0.0987578779458999633789062)
+		(= (object-at-z SprayBottle_f9327a5a) 0.4822252094745635986328125)
+
+		(= (object-at-x Toilet_cc94d52e) -2.9318368434906005859375000)
+		(= (object-at-y Toilet_cc94d52e) 0.0037782453000545501708984)
+		(= (object-at-z Toilet_cc94d52e) 1.3646486997604370117187500)
+
+		(= (object-at-x ToiletPaper_ff7e8bb3) -3.2459280490875244140625000)
+		(= (object-at-y ToiletPaper_ff7e8bb3) 1.0377477407455444335937500)
+		(= (object-at-z ToiletPaper_ff7e8bb3) 1.2406468391418457031250000)
+
+		(= (object-at-x ToiletPaper_678648ca) -3.2820222377777099609375000)
+		(= (object-at-y ToiletPaper_678648ca) 1.0389980077743530273437500)
+		(= (object-at-z ToiletPaper_678648ca) 1.5289816856384277343750000)
+
+		(= (object-at-x ToiletPaperHanger_40658897) -3.1052668094635009765625000)
+		(= (object-at-y ToiletPaperHanger_40658897) 0.8282999992370605468750000)
+		(= (object-at-z ToiletPaperHanger_40658897) 0.6259999871253967285156250)
+
+		(= (object-at-x Towel_43b191ae) -1.6150006055831909179687500)
+		(= (object-at-y Towel_43b191ae) 1.3980000019073486328125000)
+		(= (object-at-z Towel_43b191ae) 1.8006380796432495117187500)
+
+		(= (object-at-x TowelHolder_6ee81143) -1.6150000095367431640625000)
+		(= (object-at-y TowelHolder_6ee81143) 1.3839999437332153320312500)
+		(= (object-at-z TowelHolder_6ee81143) 1.9075380563735961914062500)
 
 	)
 
 	(:goal (and
-		(holding SprayBottle_68f9c0a8)	))
+		(open ShowerCurtain_83ddd474)	))
 )

@@ -13,6 +13,8 @@
 
   (:predicates
     (holding ?o - object)
+    (open ?o - object)
+    (closed ?o - object)
     ;(is-standing)
   )
 
@@ -173,4 +175,31 @@
       (not (holding ?o))
     )
   )
+
+  (:action open
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (open ?o)
+    )
+  )
+
+  (:action close
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (closed ?o)
+    )
+  )
+
 )
