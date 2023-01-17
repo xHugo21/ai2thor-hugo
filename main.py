@@ -34,8 +34,10 @@ controller = Controller(agentMode="default",
                         renderInstanceSegmentation=False,
 
                         # Opciones de cámara
-                        width=720,
-                        height=405,
+                        #width=720,
+                        #height=405,
+                        width=400,
+                        height=400,
                         fieldOfView=90)
 print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
 
@@ -77,7 +79,7 @@ ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
 plan = Planificador(planner_path, domain_path, problem_path, output_path, True)
 
 # Visualizar estado inicial
-printAgentStatus(controller.last_event)
+# printAgentStatus(controller.last_event)
 
 # Parseo del plan para convertirlo en acciones ejecutables por el agente y ejecutarlas
 parsed = ParserPDDLAI2THOR(plan.get_plan(), controller)
@@ -88,5 +90,5 @@ for act in parsed.executable_actions:
 '''
 
 # Visualizar estado final
-printAgentStatus(controller.last_event)
+# printAgentStatus(controller.last_event)
 printLastActionStatus(controller.last_event)

@@ -83,13 +83,6 @@
 		pose79 - position
 		pose80 - position
 		pose81 - position
-		pose82 - position
-		pose83 - position
-		pose84 - position
-		pose85 - position
-		pose86 - position
-		pose87 - position
-		pose88 - position
 		pos0 - position
 		pos1 - position
 		pos2 - position
@@ -208,1028 +201,987 @@
 		pos115 - position
 		pos116 - position
 		pos117 - position
-		pos118 - position
-		pos119 - position
-		pos120 - position
-		pos121 - position
-		pos122 - position
-		pos123 - position
-		pos124 - position
-		pos125 - position
-		pos126 - position
-		pos127 - position
-		pos128 - position
-		pos129 - position
-		pos130 - position
-		pos131 - position
-		AlarmClock_7d0d38ae - object
-		BasketBall_875fe79f - object
-		Bed_420caaec - object
-		Blinds_ff1e4b9b - object
-		Book_afb3f9df - object
-		Bowl_0abdf3bb - object
-		Box_a991ba61 - object
-		CD_b24c5a47 - object
-		CellPhone_5d6cd5e8 - object
-		Chair_ea7fa83b - object
-		Chair_7927cc5b - object
-		CreditCard_90c09413 - object
-		Desk_a87bf226 - object
-		DeskLamp_9239d232 - object
-		Drawer_726bc88f - object
-		Drawer_7985d2de - object
-		Drawer_4692d9dc - object
-		Floor_05410015 - object
-		GarbageCan_b36a0d85 - object
-		KeyChain_e39cd0c7 - object
-		Laptop_f85d4674 - object
-		LaundryHamper_a5f2360e - object
-		LightSwitch_39b44a03 - object
-		Mirror_37f11d71 - object
-		Mug_9ba5c3ff - object
-		Pen_ee39f5ac - object
-		Pencil_89097a8c - object
-		Pillow_fc6f2755 - object
-		Shelf_9b1ff678 - object
-		Statue_8424377d - object
-		Window_3c902585 - object
+		Bathtub_4053d0b5 - object
+		Candle_727c6003 - object
+		Cloth_ecfda2eb - object
+		CounterTop_d2ae5fa0 - object
+		DishSponge_6e8f61d2 - object
+		Drawer_a6915f53 - object
+		Drawer_b9e42270 - object
+		Drawer_00df1201 - object
+		Drawer_f852a7c0 - object
+		Faucet_90f49144 - object
+		Faucet_77ca98b9 - object
+		Floor_5dd9694a - object
+		Footstool_57cd7230 - object
+		GarbageCan_f291c46d - object
+		HandTowel_a42a8c07 - object
+		HandTowelHolder_479f111d - object
+		LightSwitch_df48146e - object
+		Mirror_ed461591 - object
+		Plunger_61fcb662 - object
+		ScrubBrush_6300d06b - object
+		Shelf_78513ed4 - object
+		ShowerDoor_ba1f59f4 - object
+		ShowerGlass_50a177ce - object
+		ShowerHead_4a4806ae - object
+		SideTable_72ab7c1b - object
+		Sink_d90bef47 - object
+		SinkBasin_bd90f4e4 - object
+		SoapBar_5efad73f - object
+		SoapBottle_394ca031 - object
+		SprayBottle_68f9c0a8 - object
+		TissueBox_878fe029 - object
+		Toilet_7e8ce5bd - object
+		ToiletPaper_6e8f746a - object
+		ToiletPaper_e7b7f9b2 - object
+		ToiletPaperHanger_c783d786 - object
+		Towel_7e638523 - object
+		TowelHolder_29e779dc - object
+		Window_a61de043 - object
+		Window_67928466 - object
+		Window_8a389dbc - object
+		Window_b4845eb7 - object
 	)
 
 	(:init
-			(= (interactablepose-x pose0 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose0 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose0 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose0 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose1 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose1 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose1 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose1 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose2 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose2 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose2 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose2 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose3 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose3 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose3 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose3 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose4 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose4 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose4 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose4 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose5 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-z pose5 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose5 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose5 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose6 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose6 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose6 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose6 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose7 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose7 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose7 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose7 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose8 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-z pose8 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose8 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose8 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose9 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-z pose9 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose9 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose9 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose10 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose10 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose10 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose10 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose11 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose11 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose11 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose11 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose12 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-z pose12 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose12 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose12 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose13 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose13 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose13 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose13 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose14 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose14 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose14 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose14 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose15 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose15 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose15 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose15 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose16 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose16 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose16 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose16 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose17 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose17 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose17 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose17 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose18 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose18 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose18 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose18 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose19 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose19 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose19 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose19 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose20 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose20 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose20 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose20 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose21 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose21 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose21 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose21 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose22 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose22 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose22 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose22 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose23 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose23 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose23 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose23 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose24 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose24 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-facing pose24 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose24 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose25 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose25 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose25 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose25 Mug_9ba5c3ff) 0.0)
-
-		(= (interactablepose-x pose26 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose26 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose26 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose26 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose27 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose27 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose27 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose27 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose28 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose28 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose28 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose28 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose29 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose29 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose29 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose29 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose30 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose30 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose30 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose30 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose31 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose31 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose31 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose31 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose32 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose32 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose32 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose32 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose33 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-z pose33 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose33 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose33 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose34 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose34 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose34 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose34 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose35 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose35 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose35 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose35 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose36 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose36 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-facing pose36 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose36 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose37 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-z pose37 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose37 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose37 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose38 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-z pose38 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose38 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose38 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose39 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose39 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose39 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose39 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose40 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose40 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose40 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose40 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose41 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-z pose41 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose41 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose41 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose42 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose42 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose42 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose42 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose43 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose43 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose43 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose43 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose44 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose44 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose44 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose44 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose45 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose45 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose45 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose45 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose46 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose46 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose46 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose46 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose47 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose47 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose47 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose47 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose48 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose48 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose48 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose48 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose49 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose49 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose49 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose49 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose50 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose50 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose50 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose50 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose51 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose51 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose51 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose51 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose52 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose52 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose52 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose52 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose53 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose53 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose53 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose53 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose54 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose54 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-facing pose54 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose54 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose55 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-z pose55 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose55 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose55 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose56 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose56 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose56 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose56 Mug_9ba5c3ff) 30.0)
-
-		(= (interactablepose-x pose57 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose57 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose57 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose57 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose58 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose58 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose58 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose58 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose59 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose59 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose59 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose59 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose60 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose60 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose60 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose60 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose61 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose61 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose61 Mug_9ba5c3ff) 90.0)
-		(= (interactablepose-inclination pose61 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose62 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose62 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose62 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose62 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose63 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose63 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose63 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose63 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose64 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose64 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose64 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose64 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose65 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-z pose65 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose65 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose65 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose66 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose66 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose66 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose66 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose67 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose67 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose67 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose67 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose68 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose68 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-facing pose68 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose68 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose69 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-z pose69 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose69 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose69 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose70 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-z pose70 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose70 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose70 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose71 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose71 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose71 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose71 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose72 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose72 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose72 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose72 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose73 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-z pose73 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose73 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose73 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose74 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose74 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose74 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose74 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose75 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose75 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose75 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose75 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose76 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose76 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose76 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose76 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose77 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-z pose77 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose77 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose77 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose78 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose78 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose78 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose78 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose79 Mug_9ba5c3ff) -1.25)
-		(= (interactablepose-z pose79 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose79 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose79 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose80 Mug_9ba5c3ff) -1.5)
-		(= (interactablepose-z pose80 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose80 Mug_9ba5c3ff) 180.0)
-		(= (interactablepose-inclination pose80 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose81 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose81 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-facing pose81 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose81 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose82 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose82 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose82 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose82 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose83 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose83 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose83 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose83 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose84 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose84 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose84 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose84 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose85 Mug_9ba5c3ff) 0.0)
-		(= (interactablepose-z pose85 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose85 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose85 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose86 Mug_9ba5c3ff) 0.25)
-		(= (interactablepose-z pose86 Mug_9ba5c3ff) -1.0)
-		(= (interactablepose-facing pose86 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose86 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose87 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-z pose87 Mug_9ba5c3ff) -0.5)
-		(= (interactablepose-facing pose87 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose87 Mug_9ba5c3ff) 60.0)
-
-		(= (interactablepose-x pose88 Mug_9ba5c3ff) -0.25)
-		(= (interactablepose-z pose88 Mug_9ba5c3ff) -0.75)
-		(= (interactablepose-facing pose88 Mug_9ba5c3ff) 270.0)
-		(= (interactablepose-inclination pose88 Mug_9ba5c3ff) 60.0)
-
-		(= (facing) 270.0)
+			(= (interactablepose-x pose0 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose0 SprayBottle_68f9c0a8) 0.5)
+		(= (interactablepose-facing pose0 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose0 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose1 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose1 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose1 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose1 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose2 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose2 SprayBottle_68f9c0a8) 0.25)
+		(= (interactablepose-facing pose2 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose2 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose3 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose3 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose3 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose3 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose4 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose4 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose4 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose4 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose5 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose5 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose5 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose5 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose6 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose6 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose6 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose6 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose7 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose7 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose7 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose7 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose8 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose8 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose8 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose8 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose9 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose9 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose9 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose9 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose10 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose10 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose10 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose10 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose11 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose11 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose11 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose11 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose12 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose12 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose12 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose12 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose13 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose13 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose13 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose13 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose14 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose14 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose14 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose14 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose15 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose15 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose15 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose15 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose16 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose16 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose16 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose16 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose17 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose17 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose17 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose17 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose18 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose18 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose18 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose18 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose19 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose19 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose19 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose19 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose20 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose20 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose20 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose20 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose21 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose21 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose21 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose21 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose22 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose22 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose22 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose22 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose23 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose23 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose23 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose23 SprayBottle_68f9c0a8) 0.0)
+
+		(= (interactablepose-x pose24 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose24 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose24 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose24 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose25 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose25 SprayBottle_68f9c0a8) 0.5)
+		(= (interactablepose-facing pose25 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose25 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose26 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose26 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose26 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose26 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose27 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose27 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose27 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose27 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose28 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose28 SprayBottle_68f9c0a8) 0.25)
+		(= (interactablepose-facing pose28 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose28 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose29 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose29 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose29 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose29 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose30 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose30 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose30 SprayBottle_68f9c0a8) 180.0)
+		(= (interactablepose-inclination pose30 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose31 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose31 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose31 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose31 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose32 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose32 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose32 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose32 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose33 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose33 SprayBottle_68f9c0a8) 0.5)
+		(= (interactablepose-facing pose33 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose33 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose34 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose34 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose34 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose34 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose35 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose35 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose35 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose35 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose36 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose36 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose36 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose36 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose37 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose37 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose37 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose37 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose38 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose38 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose38 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose38 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose39 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose39 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose39 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose39 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose40 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose40 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose40 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose40 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose41 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose41 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose41 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose41 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose42 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose42 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose42 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose42 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose43 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose43 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose43 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose43 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose44 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose44 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose44 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose44 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose45 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose45 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose45 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose45 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose46 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose46 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose46 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose46 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose47 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose47 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose47 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose47 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose48 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose48 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose48 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose48 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose49 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose49 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose49 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose49 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose50 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose50 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose50 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose50 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose51 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose51 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose51 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose51 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose52 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose52 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose52 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose52 SprayBottle_68f9c0a8) 30.0)
+
+		(= (interactablepose-x pose53 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose53 SprayBottle_68f9c0a8) 0.5)
+		(= (interactablepose-facing pose53 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose53 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose54 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose54 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose54 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose54 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose55 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose55 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose55 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose55 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose56 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose56 SprayBottle_68f9c0a8) 0.25)
+		(= (interactablepose-facing pose56 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose56 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose57 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose57 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose57 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose57 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose58 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose58 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose58 SprayBottle_68f9c0a8) 0.0)
+		(= (interactablepose-inclination pose58 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose59 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose59 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose59 SprayBottle_68f9c0a8) 180.0)
+		(= (interactablepose-inclination pose59 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose60 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose60 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose60 SprayBottle_68f9c0a8) 180.0)
+		(= (interactablepose-inclination pose60 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose61 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose61 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose61 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose61 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose62 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose62 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose62 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose62 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose63 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose63 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose63 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose63 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose64 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose64 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose64 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose64 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose65 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose65 SprayBottle_68f9c0a8) 0.75)
+		(= (interactablepose-facing pose65 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose65 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose66 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose66 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose66 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose66 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose67 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose67 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose67 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose67 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose68 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose68 SprayBottle_68f9c0a8) 1.0)
+		(= (interactablepose-facing pose68 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose68 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose69 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose69 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose69 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose69 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose70 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose70 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose70 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose70 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose71 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose71 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose71 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose71 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose72 SprayBottle_68f9c0a8) -1.5)
+		(= (interactablepose-z pose72 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose72 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose72 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose73 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose73 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose73 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose73 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose74 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose74 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose74 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose74 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose75 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose75 SprayBottle_68f9c0a8) 1.25)
+		(= (interactablepose-facing pose75 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose75 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose76 SprayBottle_68f9c0a8) -1.75)
+		(= (interactablepose-z pose76 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose76 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose76 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose77 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose77 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose77 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose77 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose78 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose78 SprayBottle_68f9c0a8) 1.5)
+		(= (interactablepose-facing pose78 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose78 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose79 SprayBottle_68f9c0a8) -2.0)
+		(= (interactablepose-z pose79 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose79 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose79 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose80 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose80 SprayBottle_68f9c0a8) 1.75)
+		(= (interactablepose-facing pose80 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose80 SprayBottle_68f9c0a8) 60.0)
+
+		(= (interactablepose-x pose81 SprayBottle_68f9c0a8) -2.25)
+		(= (interactablepose-z pose81 SprayBottle_68f9c0a8) 2.0)
+		(= (interactablepose-facing pose81 SprayBottle_68f9c0a8) 270.0)
+		(= (interactablepose-inclination pose81 SprayBottle_68f9c0a8) 60.0)
+
+		(= (facing) 90.0)
 
 		(= (inclination) -0.0)
 
-		(= (agent-at-x) 0.5)
+		(= (agent-at-x) -0.75)
 		(= (agent-at-z) 0.5)
 
-		(= (posiblepos-x pos0) 0.5)
+		(= (posiblepos-x pos0) -0.75)
 		(= (posiblepos-z pos0) 0.5)
 
-		(= (posiblepos-x pos1) 0.75)
+		(= (posiblepos-x pos1) -0.5)
 		(= (posiblepos-z pos1) 0.5)
 
-		(= (posiblepos-x pos2) 0.5)
+		(= (posiblepos-x pos2) -0.75)
 		(= (posiblepos-z pos2) 0.75)
 
-		(= (posiblepos-x pos3) 0.25)
+		(= (posiblepos-x pos3) -1.0)
 		(= (posiblepos-z pos3) 0.5)
 
-		(= (posiblepos-x pos4) 0.5)
+		(= (posiblepos-x pos4) -0.75)
 		(= (posiblepos-z pos4) 0.25)
 
-		(= (posiblepos-x pos5) 1.0)
+		(= (posiblepos-x pos5) -0.25)
 		(= (posiblepos-z pos5) 0.5)
 
-		(= (posiblepos-x pos6) 0.75)
+		(= (posiblepos-x pos6) -0.5)
 		(= (posiblepos-z pos6) 0.75)
 
-		(= (posiblepos-x pos7) 0.75)
+		(= (posiblepos-x pos7) -0.5)
 		(= (posiblepos-z pos7) 0.25)
 
-		(= (posiblepos-x pos8) 0.5)
+		(= (posiblepos-x pos8) -0.75)
 		(= (posiblepos-z pos8) 1.0)
 
-		(= (posiblepos-x pos9) 0.25)
+		(= (posiblepos-x pos9) -1.0)
 		(= (posiblepos-z pos9) 0.75)
 
-		(= (posiblepos-x pos10) 0.0)
+		(= (posiblepos-x pos10) -1.25)
 		(= (posiblepos-z pos10) 0.5)
 
-		(= (posiblepos-x pos11) 0.25)
+		(= (posiblepos-x pos11) -1.0)
 		(= (posiblepos-z pos11) 0.25)
 
-		(= (posiblepos-x pos12) 0.5)
+		(= (posiblepos-x pos12) -0.75)
 		(= (posiblepos-z pos12) 0.0)
 
-		(= (posiblepos-x pos13) 1.25)
+		(= (posiblepos-x pos13) 0.0)
 		(= (posiblepos-z pos13) 0.5)
 
-		(= (posiblepos-x pos14) 1.0)
+		(= (posiblepos-x pos14) -0.25)
 		(= (posiblepos-z pos14) 0.75)
 
-		(= (posiblepos-x pos15) 1.0)
+		(= (posiblepos-x pos15) -0.25)
 		(= (posiblepos-z pos15) 0.25)
 
-		(= (posiblepos-x pos16) 0.75)
+		(= (posiblepos-x pos16) -0.5)
 		(= (posiblepos-z pos16) 1.0)
 
-		(= (posiblepos-x pos17) 0.75)
+		(= (posiblepos-x pos17) -0.5)
 		(= (posiblepos-z pos17) 0.0)
 
-		(= (posiblepos-x pos18) 0.5)
+		(= (posiblepos-x pos18) -0.75)
 		(= (posiblepos-z pos18) 1.25)
 
-		(= (posiblepos-x pos19) 0.25)
+		(= (posiblepos-x pos19) -1.0)
 		(= (posiblepos-z pos19) 1.0)
 
-		(= (posiblepos-x pos20) 0.0)
+		(= (posiblepos-x pos20) -1.25)
 		(= (posiblepos-z pos20) 0.75)
 
-		(= (posiblepos-x pos21) -0.25)
+		(= (posiblepos-x pos21) -1.5)
 		(= (posiblepos-z pos21) 0.5)
 
-		(= (posiblepos-x pos22) 0.0)
+		(= (posiblepos-x pos22) -1.25)
 		(= (posiblepos-z pos22) 0.25)
 
-		(= (posiblepos-x pos23) 0.25)
+		(= (posiblepos-x pos23) -1.0)
 		(= (posiblepos-z pos23) 0.0)
 
-		(= (posiblepos-x pos24) 0.5)
+		(= (posiblepos-x pos24) -0.75)
 		(= (posiblepos-z pos24) -0.25)
 
-		(= (posiblepos-x pos25) 1.5)
+		(= (posiblepos-x pos25) 0.25)
 		(= (posiblepos-z pos25) 0.5)
 
-		(= (posiblepos-x pos26) 1.25)
+		(= (posiblepos-x pos26) 0.0)
 		(= (posiblepos-z pos26) 0.75)
 
-		(= (posiblepos-x pos27) 1.25)
+		(= (posiblepos-x pos27) 0.0)
 		(= (posiblepos-z pos27) 0.25)
 
-		(= (posiblepos-x pos28) 1.0)
+		(= (posiblepos-x pos28) -0.25)
 		(= (posiblepos-z pos28) 1.0)
 
-		(= (posiblepos-x pos29) 1.0)
+		(= (posiblepos-x pos29) -0.25)
 		(= (posiblepos-z pos29) 0.0)
 
-		(= (posiblepos-x pos30) 0.75)
+		(= (posiblepos-x pos30) -0.5)
 		(= (posiblepos-z pos30) 1.25)
 
-		(= (posiblepos-x pos31) 0.75)
+		(= (posiblepos-x pos31) -0.5)
 		(= (posiblepos-z pos31) -0.25)
 
-		(= (posiblepos-x pos32) 0.5)
+		(= (posiblepos-x pos32) -0.75)
 		(= (posiblepos-z pos32) 1.5)
 
-		(= (posiblepos-x pos33) 0.25)
+		(= (posiblepos-x pos33) -1.0)
 		(= (posiblepos-z pos33) 1.25)
 
-		(= (posiblepos-x pos34) 0.0)
+		(= (posiblepos-x pos34) -1.25)
 		(= (posiblepos-z pos34) 1.0)
 
-		(= (posiblepos-x pos35) -0.25)
+		(= (posiblepos-x pos35) -1.5)
 		(= (posiblepos-z pos35) 0.75)
 
-		(= (posiblepos-x pos36) -0.5)
+		(= (posiblepos-x pos36) -1.75)
 		(= (posiblepos-z pos36) 0.5)
 
-		(= (posiblepos-x pos37) -0.25)
+		(= (posiblepos-x pos37) -1.5)
 		(= (posiblepos-z pos37) 0.25)
 
-		(= (posiblepos-x pos38) 0.0)
+		(= (posiblepos-x pos38) -1.25)
 		(= (posiblepos-z pos38) 0.0)
 
-		(= (posiblepos-x pos39) 0.25)
+		(= (posiblepos-x pos39) -1.0)
 		(= (posiblepos-z pos39) -0.25)
 
-		(= (posiblepos-x pos40) 0.5)
+		(= (posiblepos-x pos40) -0.75)
 		(= (posiblepos-z pos40) -0.5)
 
-		(= (posiblepos-x pos41) 1.5)
+		(= (posiblepos-x pos41) 0.25)
 		(= (posiblepos-z pos41) 0.75)
 
-		(= (posiblepos-x pos42) 1.5)
+		(= (posiblepos-x pos42) 0.25)
 		(= (posiblepos-z pos42) 0.25)
 
-		(= (posiblepos-x pos43) 1.25)
+		(= (posiblepos-x pos43) 0.0)
 		(= (posiblepos-z pos43) 1.0)
 
-		(= (posiblepos-x pos44) 1.25)
+		(= (posiblepos-x pos44) 0.0)
 		(= (posiblepos-z pos44) 0.0)
 
-		(= (posiblepos-x pos45) 1.0)
+		(= (posiblepos-x pos45) -0.25)
 		(= (posiblepos-z pos45) 1.25)
 
-		(= (posiblepos-x pos46) 1.0)
+		(= (posiblepos-x pos46) -0.25)
 		(= (posiblepos-z pos46) -0.25)
 
-		(= (posiblepos-x pos47) 0.75)
+		(= (posiblepos-x pos47) -0.5)
 		(= (posiblepos-z pos47) 1.5)
 
-		(= (posiblepos-x pos48) 0.75)
+		(= (posiblepos-x pos48) -0.5)
 		(= (posiblepos-z pos48) -0.5)
 
-		(= (posiblepos-x pos49) 0.5)
-		(= (posiblepos-z pos49) 1.75)
+		(= (posiblepos-x pos49) -1.0)
+		(= (posiblepos-z pos49) 1.5)
 
-		(= (posiblepos-x pos50) 0.25)
-		(= (posiblepos-z pos50) 1.5)
+		(= (posiblepos-x pos50) -1.25)
+		(= (posiblepos-z pos50) 1.25)
 
-		(= (posiblepos-x pos51) 0.0)
-		(= (posiblepos-z pos51) 1.25)
+		(= (posiblepos-x pos51) -1.5)
+		(= (posiblepos-z pos51) 1.0)
 
-		(= (posiblepos-x pos52) -0.25)
-		(= (posiblepos-z pos52) 1.0)
+		(= (posiblepos-x pos52) -1.75)
+		(= (posiblepos-z pos52) 0.75)
 
-		(= (posiblepos-x pos53) -0.5)
-		(= (posiblepos-z pos53) 0.75)
+		(= (posiblepos-x pos53) -2.0)
+		(= (posiblepos-z pos53) 0.5)
 
-		(= (posiblepos-x pos54) -0.5)
+		(= (posiblepos-x pos54) -1.75)
 		(= (posiblepos-z pos54) 0.25)
 
-		(= (posiblepos-x pos55) -0.25)
+		(= (posiblepos-x pos55) -1.5)
 		(= (posiblepos-z pos55) 0.0)
 
-		(= (posiblepos-x pos56) 0.0)
+		(= (posiblepos-x pos56) -1.25)
 		(= (posiblepos-z pos56) -0.25)
 
-		(= (posiblepos-x pos57) 0.25)
+		(= (posiblepos-x pos57) -1.0)
 		(= (posiblepos-z pos57) -0.5)
 
-		(= (posiblepos-x pos58) 0.5)
+		(= (posiblepos-x pos58) -0.75)
 		(= (posiblepos-z pos58) -0.75)
 
-		(= (posiblepos-x pos59) 1.5)
+		(= (posiblepos-x pos59) 0.25)
 		(= (posiblepos-z pos59) 1.0)
 
-		(= (posiblepos-x pos60) 1.5)
+		(= (posiblepos-x pos60) 0.25)
 		(= (posiblepos-z pos60) 0.0)
 
-		(= (posiblepos-x pos61) 1.25)
+		(= (posiblepos-x pos61) 0.0)
 		(= (posiblepos-z pos61) 1.25)
 
-		(= (posiblepos-x pos62) 1.25)
+		(= (posiblepos-x pos62) 0.0)
 		(= (posiblepos-z pos62) -0.25)
 
-		(= (posiblepos-x pos63) 1.0)
-		(= (posiblepos-z pos63) 1.5)
+		(= (posiblepos-x pos63) -0.25)
+		(= (posiblepos-z pos63) -0.5)
 
-		(= (posiblepos-x pos64) 1.0)
-		(= (posiblepos-z pos64) -0.5)
+		(= (posiblepos-x pos64) -0.5)
+		(= (posiblepos-z pos64) -0.75)
 
-		(= (posiblepos-x pos65) 0.75)
+		(= (posiblepos-x pos65) -1.0)
 		(= (posiblepos-z pos65) 1.75)
 
-		(= (posiblepos-x pos66) 0.75)
-		(= (posiblepos-z pos66) -0.75)
+		(= (posiblepos-x pos66) -1.25)
+		(= (posiblepos-z pos66) 1.5)
 
-		(= (posiblepos-x pos67) 0.5)
-		(= (posiblepos-z pos67) 2.0)
+		(= (posiblepos-x pos67) -1.5)
+		(= (posiblepos-z pos67) 1.25)
 
-		(= (posiblepos-x pos68) 0.25)
-		(= (posiblepos-z pos68) 1.75)
+		(= (posiblepos-x pos68) -1.75)
+		(= (posiblepos-z pos68) 1.0)
 
-		(= (posiblepos-x pos69) 0.0)
-		(= (posiblepos-z pos69) 1.5)
+		(= (posiblepos-x pos69) -2.0)
+		(= (posiblepos-z pos69) 0.75)
 
-		(= (posiblepos-x pos70) -0.25)
-		(= (posiblepos-z pos70) 1.25)
+		(= (posiblepos-x pos70) -2.0)
+		(= (posiblepos-z pos70) 0.25)
 
-		(= (posiblepos-x pos71) -0.5)
-		(= (posiblepos-z pos71) 1.0)
+		(= (posiblepos-x pos71) -1.75)
+		(= (posiblepos-z pos71) 0.0)
 
-		(= (posiblepos-x pos72) -0.5)
-		(= (posiblepos-z pos72) 0.0)
+		(= (posiblepos-x pos72) -1.5)
+		(= (posiblepos-z pos72) -0.25)
 
-		(= (posiblepos-x pos73) -0.25)
-		(= (posiblepos-z pos73) -0.25)
+		(= (posiblepos-x pos73) -1.25)
+		(= (posiblepos-z pos73) -0.5)
 
-		(= (posiblepos-x pos74) 0.0)
-		(= (posiblepos-z pos74) -0.5)
+		(= (posiblepos-x pos74) -1.0)
+		(= (posiblepos-z pos74) -0.75)
 
-		(= (posiblepos-x pos75) 0.25)
-		(= (posiblepos-z pos75) -0.75)
+		(= (posiblepos-x pos75) -0.75)
+		(= (posiblepos-z pos75) -1.0)
 
-		(= (posiblepos-x pos76) 0.5)
-		(= (posiblepos-z pos76) -1.0)
+		(= (posiblepos-x pos76) 0.25)
+		(= (posiblepos-z pos76) 1.25)
 
-		(= (posiblepos-x pos77) 1.5)
-		(= (posiblepos-z pos77) 1.25)
+		(= (posiblepos-x pos77) 0.25)
+		(= (posiblepos-z pos77) -0.25)
 
-		(= (posiblepos-x pos78) 1.5)
-		(= (posiblepos-z pos78) -0.25)
+		(= (posiblepos-x pos78) 0.0)
+		(= (posiblepos-z pos78) -0.5)
 
-		(= (posiblepos-x pos79) 1.25)
-		(= (posiblepos-z pos79) 1.5)
+		(= (posiblepos-x pos79) -0.25)
+		(= (posiblepos-z pos79) -0.75)
 
-		(= (posiblepos-x pos80) 1.25)
-		(= (posiblepos-z pos80) -0.5)
+		(= (posiblepos-x pos80) -0.5)
+		(= (posiblepos-z pos80) -1.0)
 
-		(= (posiblepos-x pos81) 1.0)
-		(= (posiblepos-z pos81) 1.75)
+		(= (posiblepos-x pos81) -1.0)
+		(= (posiblepos-z pos81) 2.0)
 
-		(= (posiblepos-x pos82) 1.0)
-		(= (posiblepos-z pos82) -0.75)
+		(= (posiblepos-x pos82) -1.25)
+		(= (posiblepos-z pos82) 1.75)
 
-		(= (posiblepos-x pos83) 0.75)
-		(= (posiblepos-z pos83) 2.0)
+		(= (posiblepos-x pos83) -1.5)
+		(= (posiblepos-z pos83) 1.5)
 
-		(= (posiblepos-x pos84) 0.5)
-		(= (posiblepos-z pos84) 2.25)
+		(= (posiblepos-x pos84) -1.75)
+		(= (posiblepos-z pos84) 1.25)
 
-		(= (posiblepos-x pos85) 0.25)
-		(= (posiblepos-z pos85) 2.0)
+		(= (posiblepos-x pos85) -2.0)
+		(= (posiblepos-z pos85) 1.0)
 
-		(= (posiblepos-x pos86) 0.0)
-		(= (posiblepos-z pos86) 1.75)
+		(= (posiblepos-x pos86) -2.25)
+		(= (posiblepos-z pos86) 0.25)
 
-		(= (posiblepos-x pos87) -0.25)
-		(= (posiblepos-z pos87) 1.5)
+		(= (posiblepos-x pos87) -2.0)
+		(= (posiblepos-z pos87) 0.0)
 
-		(= (posiblepos-x pos88) -0.5)
-		(= (posiblepos-z pos88) 1.25)
+		(= (posiblepos-x pos88) -1.75)
+		(= (posiblepos-z pos88) -0.25)
 
-		(= (posiblepos-x pos89) -0.75)
-		(= (posiblepos-z pos89) 0.0)
+		(= (posiblepos-x pos89) -1.5)
+		(= (posiblepos-z pos89) -0.5)
 
-		(= (posiblepos-x pos90) -0.5)
-		(= (posiblepos-z pos90) -0.25)
+		(= (posiblepos-x pos90) -1.25)
+		(= (posiblepos-z pos90) -0.75)
 
-		(= (posiblepos-x pos91) -0.25)
-		(= (posiblepos-z pos91) -0.5)
+		(= (posiblepos-x pos91) -1.0)
+		(= (posiblepos-z pos91) -1.0)
 
-		(= (posiblepos-x pos92) 0.0)
-		(= (posiblepos-z pos92) -0.75)
+		(= (posiblepos-x pos92) -0.75)
+		(= (posiblepos-z pos92) -1.25)
 
 		(= (posiblepos-x pos93) 0.25)
-		(= (posiblepos-z pos93) -1.0)
+		(= (posiblepos-z pos93) -0.5)
 
-		(= (posiblepos-x pos94) 1.5)
-		(= (posiblepos-z pos94) 1.5)
+		(= (posiblepos-x pos94) 0.0)
+		(= (posiblepos-z pos94) -0.75)
 
-		(= (posiblepos-x pos95) 1.5)
-		(= (posiblepos-z pos95) -0.5)
+		(= (posiblepos-x pos95) -0.25)
+		(= (posiblepos-z pos95) -1.0)
 
-		(= (posiblepos-x pos96) 1.25)
-		(= (posiblepos-z pos96) 1.75)
+		(= (posiblepos-x pos96) -0.5)
+		(= (posiblepos-z pos96) -1.25)
 
-		(= (posiblepos-x pos97) 1.25)
-		(= (posiblepos-z pos97) -0.75)
+		(= (posiblepos-x pos97) -1.25)
+		(= (posiblepos-z pos97) 2.0)
 
-		(= (posiblepos-x pos98) 1.0)
-		(= (posiblepos-z pos98) 2.0)
+		(= (posiblepos-x pos98) -1.5)
+		(= (posiblepos-z pos98) 1.75)
 
-		(= (posiblepos-x pos99) 0.75)
-		(= (posiblepos-z pos99) 2.25)
+		(= (posiblepos-x pos99) -1.75)
+		(= (posiblepos-z pos99) 1.5)
 
-		(= (posiblepos-x pos100) 0.5)
-		(= (posiblepos-z pos100) 2.5)
+		(= (posiblepos-x pos100) -2.0)
+		(= (posiblepos-z pos100) 1.25)
 
-		(= (posiblepos-x pos101) 0.25)
-		(= (posiblepos-z pos101) 2.25)
+		(= (posiblepos-x pos101) -2.25)
+		(= (posiblepos-z pos101) 0.0)
 
-		(= (posiblepos-x pos102) 0.0)
-		(= (posiblepos-z pos102) 2.0)
+		(= (posiblepos-x pos102) 0.25)
+		(= (posiblepos-z pos102) -0.75)
 
-		(= (posiblepos-x pos103) -0.25)
-		(= (posiblepos-z pos103) 1.75)
+		(= (posiblepos-x pos103) 0.0)
+		(= (posiblepos-z pos103) -1.0)
 
-		(= (posiblepos-x pos104) -0.5)
-		(= (posiblepos-z pos104) 1.5)
+		(= (posiblepos-x pos104) -0.25)
+		(= (posiblepos-z pos104) -1.25)
 
-		(= (posiblepos-x pos105) -1.0)
-		(= (posiblepos-z pos105) 0.0)
+		(= (posiblepos-x pos105) -1.5)
+		(= (posiblepos-z pos105) 2.0)
 
-		(= (posiblepos-x pos106) -0.75)
-		(= (posiblepos-z pos106) -0.25)
+		(= (posiblepos-x pos106) -1.75)
+		(= (posiblepos-z pos106) 1.75)
 
-		(= (posiblepos-x pos107) -0.5)
-		(= (posiblepos-z pos107) -0.5)
+		(= (posiblepos-x pos107) -2.0)
+		(= (posiblepos-z pos107) 1.5)
 
-		(= (posiblepos-x pos108) -0.25)
-		(= (posiblepos-z pos108) -0.75)
+		(= (posiblepos-x pos108) -2.25)
+		(= (posiblepos-z pos108) 1.25)
 
-		(= (posiblepos-x pos109) 1.5)
-		(= (posiblepos-z pos109) 1.75)
+		(= (posiblepos-x pos109) -2.5)
+		(= (posiblepos-z pos109) 0.0)
 
-		(= (posiblepos-x pos110) 1.5)
-		(= (posiblepos-z pos110) -0.75)
+		(= (posiblepos-x pos110) 0.0)
+		(= (posiblepos-z pos110) -1.25)
 
-		(= (posiblepos-x pos111) 1.25)
+		(= (posiblepos-x pos111) -1.75)
 		(= (posiblepos-z pos111) 2.0)
 
-		(= (posiblepos-x pos112) 1.0)
-		(= (posiblepos-z pos112) 2.25)
+		(= (posiblepos-x pos112) -2.0)
+		(= (posiblepos-z pos112) 1.75)
 
-		(= (posiblepos-x pos113) 0.75)
-		(= (posiblepos-z pos113) 2.5)
+		(= (posiblepos-x pos113) -2.25)
+		(= (posiblepos-z pos113) 1.5)
 
-		(= (posiblepos-x pos114) -0.25)
-		(= (posiblepos-z pos114) 2.0)
+		(= (posiblepos-x pos114) -2.75)
+		(= (posiblepos-z pos114) 0.0)
 
-		(= (posiblepos-x pos115) -0.5)
-		(= (posiblepos-z pos115) 1.75)
+		(= (posiblepos-x pos115) -2.0)
+		(= (posiblepos-z pos115) 2.0)
 
-		(= (posiblepos-x pos116) -1.25)
-		(= (posiblepos-z pos116) 0.0)
+		(= (posiblepos-x pos116) -2.25)
+		(= (posiblepos-z pos116) 1.75)
 
-		(= (posiblepos-x pos117) -1.0)
-		(= (posiblepos-z pos117) -0.25)
+		(= (posiblepos-x pos117) -2.25)
+		(= (posiblepos-z pos117) 2.0)
 
-		(= (posiblepos-x pos118) -0.75)
-		(= (posiblepos-z pos118) -0.5)
+		(= (object-at-x Bathtub_4053d0b5) -1.9577132463455200195312500)
+		(= (object-at-y Bathtub_4053d0b5) 0.4947879314422607421875000)
+		(= (object-at-z Bathtub_4053d0b5) -1.2332706451416015625000000)
 
-		(= (posiblepos-x pos119) 1.5)
-		(= (posiblepos-z pos119) 2.0)
+		(= (object-at-x Candle_727c6003) -0.5851435661315917968750000)
+		(= (object-at-y Candle_727c6003) 0.9538473486900329589843750)
+		(= (object-at-z Candle_727c6003) -2.2496492862701416015625000)
 
-		(= (posiblepos-x pos120) 1.25)
-		(= (posiblepos-z pos120) 2.25)
+		(= (object-at-x Cloth_ecfda2eb) -0.4963869154453277587890625)
+		(= (object-at-y Cloth_ecfda2eb) 0.9530261158943176269531250)
+		(= (object-at-z Cloth_ecfda2eb) -1.9938652515411376953125000)
 
-		(= (posiblepos-x pos121) 1.0)
-		(= (posiblepos-z pos121) 2.5)
+		(= (object-at-x CounterTop_d2ae5fa0) 0.1966076940298080444335938)
+		(= (object-at-y CounterTop_d2ae5fa0) 0.4309999942779541015625000)
+		(= (object-at-z CounterTop_d2ae5fa0) -2.0109999179840087890625000)
 
-		(= (posiblepos-x pos122) -1.25)
-		(= (posiblepos-z pos122) -0.25)
+		(= (object-at-x DishSponge_6e8f61d2) -2.7831168174743652343750000)
+		(= (object-at-y DishSponge_6e8f61d2) 0.2420624941587448120117188)
+		(= (object-at-z DishSponge_6e8f61d2) 1.3339596986770629882812500)
 
-		(= (posiblepos-x pos123) -1.0)
-		(= (posiblepos-z pos123) -0.5)
+		(= (object-at-x Drawer_a6915f53) 0.3004314303398132324218750)
+		(= (object-at-y Drawer_a6915f53) 0.3041999936103820800781250)
+		(= (object-at-z Drawer_a6915f53) -1.8203675746917724609375000)
 
-		(= (posiblepos-x pos124) 1.5)
-		(= (posiblepos-z pos124) 2.25)
+		(= (object-at-x Drawer_b9e42270) 0.3004314303398132324218750)
+		(= (object-at-y Drawer_b9e42270) 0.8339999914169311523437500)
+		(= (object-at-z Drawer_b9e42270) -1.8203675746917724609375000)
 
-		(= (posiblepos-x pos125) 1.25)
-		(= (posiblepos-z pos125) 2.5)
+		(= (object-at-x Drawer_00df1201) 0.3004314303398132324218750)
+		(= (object-at-y Drawer_00df1201) 0.6823999881744384765625000)
+		(= (object-at-z Drawer_00df1201) -1.8203675746917724609375000)
 
-		(= (posiblepos-x pos126) -1.25)
-		(= (posiblepos-z pos126) -0.5)
+		(= (object-at-x Drawer_f852a7c0) 0.3004314303398132324218750)
+		(= (object-at-y Drawer_f852a7c0) 0.4925744533538818359375000)
+		(= (object-at-z Drawer_f852a7c0) -1.8203675746917724609375000)
 
-		(= (posiblepos-x pos127) -1.0)
-		(= (posiblepos-z pos127) -0.75)
+		(= (object-at-x Faucet_90f49144) -1.1449999809265136718750000)
+		(= (object-at-y Faucet_90f49144) 0.0120397806167602539062500)
+		(= (object-at-z Faucet_90f49144) -2.1280000209808349609375000)
 
-		(= (posiblepos-x pos128) 1.5)
-		(= (posiblepos-z pos128) 2.5)
+		(= (object-at-x Faucet_77ca98b9) -3.1061000823974609375000000)
+		(= (object-at-y Faucet_77ca98b9) 1.0562000274658203125000000)
+		(= (object-at-z Faucet_77ca98b9) 0.7573000192642211914062500)
 
-		(= (posiblepos-x pos129) -1.5)
-		(= (posiblepos-z pos129) -0.5)
+		(= (object-at-x Floor_5dd9694a) -0.3468429446220397949218750)
+		(= (object-at-y Floor_5dd9694a) -0.0408324860036373138427734)
+		(= (object-at-z Floor_5dd9694a) 0.0998812466859817504882812)
 
-		(= (posiblepos-x pos130) -1.25)
-		(= (posiblepos-z pos130) -0.75)
+		(= (object-at-x Footstool_57cd7230) -0.3160279989242553710937500)
+		(= (object-at-y Footstool_57cd7230) 0.0124288499355316162109375)
+		(= (object-at-z Footstool_57cd7230) -1.8489779233932495117187500)
 
-		(= (posiblepos-x pos131) -1.5)
-		(= (posiblepos-z pos131) -0.75)
+		(= (object-at-x GarbageCan_f291c46d) -0.5649937987327575683593750)
+		(= (object-at-y GarbageCan_f291c46d) 0.0107011795043945312500000)
+		(= (object-at-z GarbageCan_f291c46d) 2.0619859695434570312500000)
 
-		(= (object-at-x AlarmClock_7d0d38ae) -0.5566247701644897460937500)
-		(= (object-at-y AlarmClock_7d0d38ae) 1.5444493293762207031250000)
-		(= (object-at-z AlarmClock_7d0d38ae) -1.5782086849212646484375000)
+		(= (object-at-x HandTowel_a42a8c07) -0.8849999308586120605468750)
+		(= (object-at-y HandTowel_a42a8c07) 1.6169999837875366210937500)
+		(= (object-at-z HandTowel_a42a8c07) -2.5037000179290771484375000)
 
-		(= (object-at-x BasketBall_875fe79f) -1.6576001644134521484375000)
-		(= (object-at-y BasketBall_875fe79f) 0.1260002255439758300781250)
-		(= (object-at-z BasketBall_875fe79f) -0.0908175706863403320312500)
+		(= (object-at-x HandTowelHolder_479f111d) -0.8849999904632568359375000)
+		(= (object-at-y HandTowelHolder_479f111d) 1.7189999818801879882812500)
+		(= (object-at-z HandTowelHolder_479f111d) -2.5420000553131103515625000)
 
-		(= (object-at-x Bed_420caaec) -1.2993043661117553710937500)
-		(= (object-at-y Bed_420caaec) 1.9369596242904663085937500)
-		(= (object-at-z Bed_420caaec) 1.4410259723663330078125000)
+		(= (object-at-x LightSwitch_df48146e) -1.4062999486923217773437500)
+		(= (object-at-y LightSwitch_df48146e) 1.4724999666213989257812500)
+		(= (object-at-z LightSwitch_df48146e) 2.4076578617095947265625000)
 
-		(= (object-at-x Blinds_ff1e4b9b) 1.0640000104904174804687500)
-		(= (object-at-y Blinds_ff1e4b9b) 2.3829998970031738281250000)
-		(= (object-at-z Blinds_ff1e4b9b) -2.0940001010894775390625000)
+		(= (object-at-x Mirror_ed461591) -0.0463152788579463958740234)
+		(= (object-at-y Mirror_ed461591) 1.5120279788970947265625000)
+		(= (object-at-z Mirror_ed461591) -2.5382590293884277343750000)
 
-		(= (object-at-x Book_afb3f9df) -1.1725590229034423828125000)
-		(= (object-at-y Book_afb3f9df) 0.9927955865859985351562500)
-		(= (object-at-z Book_afb3f9df) -1.4360873699188232421875000)
+		(= (object-at-x Plunger_61fcb662) 0.5063213706016540527343750)
+		(= (object-at-y Plunger_61fcb662) 0.0115768089890480041503906)
+		(= (object-at-z Plunger_61fcb662) 2.2688605785369873046875000)
 
-		(= (object-at-x Bowl_0abdf3bb) -1.1786285638809204101562500)
-		(= (object-at-y Bowl_0abdf3bb) 1.5498775243759155273437500)
-		(= (object-at-z Bowl_0abdf3bb) -1.5931532382965087890625000)
+		(= (object-at-x ScrubBrush_6300d06b) 0.3428618609905242919921875)
+		(= (object-at-y ScrubBrush_6300d06b) 0.0120398253202438354492188)
+		(= (object-at-z ScrubBrush_6300d06b) 2.0720145702362060546875000)
 
-		(= (object-at-x Box_a991ba61) 1.5630003213882446289062500)
-		(= (object-at-y Box_a991ba61) 0.2905995249748229980468750)
-		(= (object-at-z Box_a991ba61) -1.0690006017684936523437500)
+		(= (object-at-x Shelf_78513ed4) 1.5369999408721923828125000)
+		(= (object-at-y Shelf_78513ed4) 0.6139271855354309082031250)
+		(= (object-at-z Shelf_78513ed4) -2.2420001029968261718750000)
 
-		(= (object-at-x CD_b24c5a47) -1.5867129564285278320312500)
-		(= (object-at-y CD_b24c5a47) 0.9944731593132019042968750)
-		(= (object-at-z CD_b24c5a47) -1.6044996976852416992187500)
+		(= (object-at-x ShowerDoor_ba1f59f4) 0.6501114368438720703125000)
+		(= (object-at-y ShowerDoor_ba1f59f4) 1.4134664535522460937500000)
+		(= (object-at-z ShowerDoor_ba1f59f4) 2.1692044734954833984375000)
 
-		(= (object-at-x CellPhone_5d6cd5e8) -0.7806780338287353515625000)
-		(= (object-at-y CellPhone_5d6cd5e8) 0.9924272298812866210937500)
-		(= (object-at-z CellPhone_5d6cd5e8) -1.2524131536483764648437500)
+		(= (object-at-x ShowerGlass_50a177ce) 0.0000000000000000000000000)
+		(= (object-at-y ShowerGlass_50a177ce) 0.0000000000000000000000000)
+		(= (object-at-z ShowerGlass_50a177ce) 0.0000000000000000000000000)
 
-		(= (object-at-x Chair_ea7fa83b) -0.6459997892379760742187500)
-		(= (object-at-y Chair_ea7fa83b) 0.0079182982444763183593750)
-		(= (object-at-z Chair_ea7fa83b) -1.2070045471191406250000000)
+		(= (object-at-x ShowerHead_4a4806ae) 1.5590000152587890625000000)
+		(= (object-at-y ShowerHead_4a4806ae) 1.1050000190734863281250000)
+		(= (object-at-z ShowerHead_4a4806ae) -2.5380001068115234375000000)
 
-		(= (object-at-x Chair_7927cc5b) 0.8847419023513793945312500)
-		(= (object-at-y Chair_7927cc5b) 0.0125908553600311279296875)
-		(= (object-at-z Chair_7927cc5b) -1.4326345920562744140625000)
+		(= (object-at-x SideTable_72ab7c1b) -2.8479251861572265625000000)
+		(= (object-at-y SideTable_72ab7c1b) 0.0138376951217651367187500)
+		(= (object-at-z SideTable_72ab7c1b) 1.5090315341949462890625000)
 
-		(= (object-at-x CreditCard_90c09413) -0.2875522077083587646484375)
-		(= (object-at-y CreditCard_90c09413) 0.9910110831260681152343750)
-		(= (object-at-z CreditCard_90c09413) -1.2329863309860229492187500)
+		(= (object-at-x Sink_d90bef47) -2.7969999313354492187500000)
+		(= (object-at-y Sink_d90bef47) 0.3280000090599060058593750)
+		(= (object-at-z Sink_d90bef47) 0.7559999823570251464843750)
 
-		(= (object-at-x Desk_a87bf226) -0.9930184483528137207031250)
-		(= (object-at-y Desk_a87bf226) 0.0061625838279724121093750)
-		(= (object-at-z Desk_a87bf226) -1.4110056161880493164062500)
+		(= (object-at-x SinkBasin_bd90f4e4) -2.7960999011993408203125000)
+		(= (object-at-y SinkBasin_bd90f4e4) 0.8754000067710876464843750)
+		(= (object-at-z SinkBasin_bd90f4e4) 0.7652999758720397949218750)
 
-		(= (object-at-x DeskLamp_9239d232) -0.3432929515838623046875000)
-		(= (object-at-y DeskLamp_9239d232) 1.5450586080551147460937500)
-		(= (object-at-z DeskLamp_9239d232) -1.5640974044799804687500000)
+		(= (object-at-x SoapBar_5efad73f) -0.2484458386898040771484375)
+		(= (object-at-y SoapBar_5efad73f) 0.9536516070365905761718750)
+		(= (object-at-z SoapBar_5efad73f) -2.2807540893554687500000000)
 
-		(= (object-at-x Drawer_726bc88f) -1.4090355634689331054687500)
-		(= (object-at-y Drawer_726bc88f) 0.2338336259126663208007812)
-		(= (object-at-z Drawer_726bc88f) -1.3030579090118408203125000)
+		(= (object-at-x SoapBottle_394ca031) 0.4121015667915344238281250)
+		(= (object-at-y SoapBottle_394ca031) 0.9640863537788391113281250)
+		(= (object-at-z SoapBottle_394ca031) -2.2827603816986083984375000)
 
-		(= (object-at-x Drawer_7985d2de) -1.4078059196472167968750000)
-		(= (object-at-y Drawer_7985d2de) 0.8475934267044067382812500)
-		(= (object-at-z Drawer_7985d2de) -1.3028519153594970703125000)
+		(= (object-at-x SprayBottle_68f9c0a8) -2.8804185390472412109375000)
+		(= (object-at-y SprayBottle_68f9c0a8) 0.8674505949020385742187500)
+		(= (object-at-z SprayBottle_68f9c0a8) 1.5998754501342773437500000)
 
-		(= (object-at-x Drawer_4692d9dc) -1.4083844423294067382812500)
-		(= (object-at-y Drawer_4692d9dc) 0.5588331222534179687500000)
-		(= (object-at-z Drawer_4692d9dc) -1.3029489517211914062500000)
+		(= (object-at-x TissueBox_878fe029) 0.0863585025072097778320312)
+		(= (object-at-y TissueBox_878fe029) 0.9545326232910156250000000)
+		(= (object-at-z TissueBox_878fe029) -2.3029074668884277343750000)
 
-		(= (object-at-x Floor_05410015) 0.0000000000000000000000000)
-		(= (object-at-y Floor_05410015) 0.0000000000000000000000000)
-		(= (object-at-z Floor_05410015) 0.0000000000000000000000000)
+		(= (object-at-x Toilet_7e8ce5bd) -0.0640000030398368835449219)
+		(= (object-at-y Toilet_7e8ce5bd) 0.0120397955179214477539062)
+		(= (object-at-z Toilet_7e8ce5bd) 1.8389999866485595703125000)
 
-		(= (object-at-x GarbageCan_b36a0d85) -0.0359975658357143402099609)
-		(= (object-at-y GarbageCan_b36a0d85) 0.0076824277639389038085938)
-		(= (object-at-z GarbageCan_b36a0d85) -1.5310004949569702148437500)
+		(= (object-at-x ToiletPaper_6e8f746a) -0.1777804791927337646484375)
+		(= (object-at-y ToiletPaper_6e8f746a) 0.9554311633110046386718750)
+		(= (object-at-z ToiletPaper_6e8f746a) 2.2684311866760253906250000)
 
-		(= (object-at-x KeyChain_e39cd0c7) -0.8353817462921142578125000)
-		(= (object-at-y KeyChain_e39cd0c7) 1.5460309982299804687500000)
-		(= (object-at-z KeyChain_e39cd0c7) -1.5334326028823852539062500)
+		(= (object-at-x ToiletPaper_e7b7f9b2) -0.4860030412673950195312500)
+		(= (object-at-y ToiletPaper_e7b7f9b2) 0.0915854573249816894531250)
+		(= (object-at-z ToiletPaper_e7b7f9b2) 2.1252374649047851562500000)
 
-		(= (object-at-x Laptop_f85d4674) -0.5411290526390075683593750)
-		(= (object-at-y Laptop_f85d4674) 0.9911671280860900878906250)
-		(= (object-at-z Laptop_f85d4674) -1.4769785404205322265625000)
+		(= (object-at-x ToiletPaperHanger_c783d786) -0.5740000009536743164062500)
+		(= (object-at-y ToiletPaperHanger_c783d786) 0.9269999861717224121093750)
+		(= (object-at-z ToiletPaperHanger_c783d786) 2.4079999923706054687500000)
 
-		(= (object-at-x LaundryHamper_a5f2360e) -0.3511702120304107666015625)
-		(= (object-at-y LaundryHamper_a5f2360e) 0.0077145099639892578125000)
-		(= (object-at-z LaundryHamper_a5f2360e) 2.3682866096496582031250000)
+		(= (object-at-x Towel_7e638523) 0.4658903777599334716796875)
+		(= (object-at-y Towel_7e638523) 1.2100000381469726562500000)
+		(= (object-at-z Towel_7e638523) -1.0950000286102294921875000)
 
-		(= (object-at-x LightSwitch_39b44a03) 0.3970000147819519042968750)
-		(= (object-at-y LightSwitch_39b44a03) 1.1970000267028808593750000)
-		(= (object-at-z LightSwitch_39b44a03) 2.7290000915527343750000000)
+		(= (object-at-x TowelHolder_29e779dc) 0.5727903842926025390625000)
+		(= (object-at-y TowelHolder_29e779dc) 1.1959999799728393554687500)
+		(= (object-at-z TowelHolder_29e779dc) -1.0950000286102294921875000)
 
-		(= (object-at-x Mirror_37f11d71) 1.9079999923706054687500000)
-		(= (object-at-y Mirror_37f11d71) 1.3875999450683593750000000)
-		(= (object-at-z Mirror_37f11d71) 0.9735000133514404296875000)
+		(= (object-at-x Window_a61de043) -2.1449999809265136718750000)
+		(= (object-at-y Window_a61de043) 1.8099999427795410156250000)
+		(= (object-at-z Window_a61de043) -2.5735166072845458984375000)
 
-		(= (object-at-x Mug_9ba5c3ff) -0.8587894439697265625000000)
-		(= (object-at-y Mug_9ba5c3ff) 0.9917929172515869140625000)
-		(= (object-at-z Mug_9ba5c3ff) -1.6309725046157836914062500)
+		(= (object-at-x Window_67928466) -3.1700000762939453125000000)
+		(= (object-at-y Window_67928466) 1.8129999637603759765625000)
+		(= (object-at-z Window_67928466) 1.5970000028610229492187500)
 
-		(= (object-at-x Pen_ee39f5ac) -1.6179174184799194335937500)
-		(= (object-at-y Pen_ee39f5ac) 0.9990168213844299316406250)
-		(= (object-at-z Pen_ee39f5ac) -1.1984059810638427734375000)
+		(= (object-at-x Window_8a389dbc) -3.1700000762939453125000000)
+		(= (object-at-y Window_8a389dbc) 1.8129999637603759765625000)
+		(= (object-at-z Window_8a389dbc) -0.0549999997019767761230469)
 
-		(= (object-at-x Pencil_89097a8c) -1.5987150669097900390625000)
-		(= (object-at-y Pencil_89097a8c) 0.9980517029762268066406250)
-		(= (object-at-z Pencil_89097a8c) -1.2793399095535278320312500)
-
-		(= (object-at-x Pillow_fc6f2755) -1.2803643941879272460937500)
-		(= (object-at-y Pillow_fc6f2755) 0.9228950738906860351562500)
-		(= (object-at-z Pillow_fc6f2755) 0.4785641431808471679687500)
-
-		(= (object-at-x Shelf_9b1ff678) 0.0038920044898986816406250)
-		(= (object-at-y Shelf_9b1ff678) 0.0132019389420747756958008)
-		(= (object-at-z Shelf_9b1ff678) 0.0359387397766113281250000)
-
-		(= (object-at-x Statue_8424377d) -1.5000538825988769531250000)
-		(= (object-at-y Statue_8424377d) 1.5498683452606201171875000)
-		(= (object-at-z Statue_8424377d) -1.5943927764892578125000000)
-
-		(= (object-at-x Window_3c902585) 1.0099999904632568359375000)
-		(= (object-at-y Window_3c902585) 1.5149999856948852539062500)
-		(= (object-at-z Window_3c902585) -2.0899999141693115234375000)
+		(= (object-at-x Window_b4845eb7) -3.1700000762939453125000000)
+		(= (object-at-y Window_b4845eb7) 1.8129999637603759765625000)
+		(= (object-at-z Window_b4845eb7) -1.6979999542236328125000000)
 
 	)
 
 	(:goal (and
-		(holding Mug_9ba5c3ff)	))
+		(holding SprayBottle_68f9c0a8)	))
 )

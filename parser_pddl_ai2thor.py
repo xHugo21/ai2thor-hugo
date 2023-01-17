@@ -63,6 +63,14 @@ class ParserPDDLAI2THOR:
                 #self.executable_actions.append('controller.step(action="LookDown", degrees=30)')
                 self.controller.step(action="LookDown", degrees=30)
 
+            
+            #elif act.find("STANDUP") != -1:
+            #    self.controller.step("Stand")
+
+            #elif act.find("CROUCH") != -1:
+            #    self.controller.step("Crouch")
+            
+
             elif act.find("PICKUP") != -1:
                 start_index = act.find("PICKUP")
                 end_index = act.find(" POSE")

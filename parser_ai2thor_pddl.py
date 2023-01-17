@@ -31,6 +31,7 @@ class ParserAI2THORPDDL:
         positions = self.metadata["actionReturn"] # Posiciones permitidas en el entorno. Return de acción GetReachablePositions
         agent_facing = self.metadata["agent"]["rotation"]["y"] # Orientación del agente. Valores posibles: 0, 90, 180, 270. Dependiendo del valor se incrementa o decrementa una coordenada distinta al ejecutar MoveAhead
         agent_inclination = self.metadata["agent"]["cameraHorizon"] # Inclinación vertical de la cámara del agente
+        #is_standing = self.metadata["agent"]["isStanding"]
 
         # Extracción de datos importantes de los objetos del entorno
         self.objects = self.metadata["objects"] # Contiene todos los objetos del entorno
@@ -58,6 +59,9 @@ class ParserAI2THORPDDL:
         self.problem += f"\t\t(= (agent-at-x) {agent_location['x']})\n"
         # self.problem += f"       (= (agent-at-y) {agent_location['y']})\n"
         self.problem += f"\t\t(= (agent-at-z) {agent_location['z']})\n\n"
+
+        #if is_standing:
+        #    self.problem += f"\t\t(is-standing)\n\n"
 
         # Definición de predicados o funciones que determinan las posibles posiciones del agente en el entorno
         i = 0

@@ -11,41 +11,41 @@ no metric specified. plan length assumed.
 
 checking for cyclic := effects --- OK.
 
-Evaluation function 1.000000*g(s) + 3.000000*h(s) where
+Evaluation function -1.000000*g(s) + -1.000000*h(s) where
  metric is plan length
 
-advancing to distance:   12
-                         11
-                         10
-                          7
-                          6
-                          5
-                          2
-                          1
-                          0
+Cueing down from goal distance:   23 into depth  --- pruning stopped --- [1]
+                                  22             --- pruning stopped --- [1]
+                                  21             --- pruning stopped --- [1][2]
+                                  12             --- pruning stopped --- [1]
+                                  11             --- pruning stopped --- [1]
+                                   5             --- pruning stopped --- [1]
+                                   4             --- pruning stopped --- [1]
+                                   3             --- pruning stopped --- [1]
+                                   2             --- pruning stopped --- [1]
+                                   1            [1]
+                                   0            
 
 ff: found legal plan as follows
 
 step    0: (LOOKDOWN)
         1: (LOOKDOWN)
-        2: (MOVE-AHEAD-270 POS3)
-        3: (ROTATE-LEFT)
-        4: (MOVE-AHEAD-180 POS11)
-        5: (ROTATE-RIGHT)
-        6: (MOVE-AHEAD-270 POS22)
-        7: (MOVE-AHEAD-270 POS37)
-        8: (MOVE-AHEAD-270 POS54)
-        9: (ROTATE-LEFT)
-       10: (MOVE-AHEAD-180 POS72)
-       11: (MOVE-AHEAD-180 POS90)
-       12: (PICKUP MUG_9BA5C3FF POSE65)
+        2: (ROTATE-RIGHT)
+        3: (ROTATE-RIGHT)
+        4: (MOVE-AHEAD-270 POS3)
+        5: (MOVE-AHEAD-270 POS10)
+        6: (LOOKUP)
+        7: (MOVE-AHEAD-270 POS21)
+        8: (MOVE-AHEAD-270 POS36)
+        9: (MOVE-AHEAD-270 POS53)
+       10: (PICKUP SPRAYBOTTLE_68F9C0A8 POSE33)
      
 
-time spent:    0.00 seconds instantiating 56832 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 252 facts and 873 actions
-               0.03 seconds creating final representation with 252 relevant facts, 8 relevant fluents
-               0.00 seconds computing LNF
+time spent:    0.00 seconds instantiating 49245 easy, 0 hard action templates
+               0.01 seconds reachability analysis, yielding 241 facts and 799 actions
+               0.02 seconds creating final representation with 241 relevant facts, 8 relevant fluents
+               0.01 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.01 seconds searching, evaluating 49 states, to a max depth of 0
-               0.04 seconds total time
+               0.01 seconds searching, evaluating 51 states, to a max depth of 2
+               0.05 seconds total time
 

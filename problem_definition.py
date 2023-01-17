@@ -26,8 +26,6 @@ class ProblemDefinition():
         if str(aux) == '1':
             self.planner_path = "../cbp-roller/cbp-roller"
         print("")
-        '''
-        self.planner_path = "../cbp-roller/cbp-roller"
 
         aux = input("Introduzca el nombre del problema a generar: ")
         self.problem_path = "./pddl/problems/" + aux + ".pddl"
@@ -36,6 +34,11 @@ class ProblemDefinition():
         self.output_path = "./pddl/outputs/plan_" + aux + ".txt"
         print(f'El fichero de salida del planificador tendrá el nombre plan_{aux}.txt')
         print("")
+        '''
+
+        self.planner_path = "../cbp-roller/cbp-roller"
+        self.problem_path = "./pddl/problems/problem1.pddl"
+        self.output_path = "./pddl/outputs/plan_problem1.txt"
 
 
         return self.planner_path, self.problem_path, self.output_path
