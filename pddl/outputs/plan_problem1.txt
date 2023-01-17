@@ -14,15 +14,32 @@ checking for cyclic := effects --- OK.
 Evaluation function 1.000000*g(s) + 3.000000*h(s) where
  metric is plan length
 
-search space empty! problem proven unsolvable.
+advancing to distance:   14
+                          8
+                          7
+                          6
+                          3
+                          1
+                          0
 
+ff: found legal plan as follows
 
+step    0: (MOVE-AHEAD-270 POS3)
+        1: (LOOKDOWN)
+        2: (LOOKDOWN)
+        3: (ROTATE-LEFT)
+        4: (MOVE-AHEAD-180 POS10)
+        5: (MOVE-AHEAD-180 POS18)
+        6: (MOVE-AHEAD-180 POS29)
+        7: (MOVE-AHEAD-180 POS41)
+        8: (PICKUP DISHSPONGE_91DD0C92 POSE54)
+     
 
-time spent:    0.00 seconds instantiating 500 easy, 0 hard action templates
-               0.00 seconds reachability analysis, yielding 132 facts and 368 actions
-               0.00 seconds creating final representation with 132 relevant facts, 8 relevant fluents
-               0.00 seconds computing LNF
+time spent:    0.00 seconds instantiating 61823 easy, 0 hard action templates
+               0.01 seconds reachability analysis, yielding 289 facts and 884 actions
+               0.06 seconds creating final representation with 289 relevant facts, 8 relevant fluents
+               0.01 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.00 seconds searching, evaluating 1 states, to a max depth of 0
-               0.00 seconds total time
+               0.01 seconds searching, evaluating 44 states, to a max depth of 0
+               0.09 seconds total time
 

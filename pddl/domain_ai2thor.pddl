@@ -15,17 +15,21 @@
   )
 
   (:functions
-    (distance ?o - object)
+    ;(distance ?o - object)
     (facing)
     (inclination)
     (agent-at-x)
-    (agent-at-y)
+    ;(agent-at-y)
     (agent-at-z)
     (object-at-x ?o - object)
     (object-at-y ?o - object)
     (object-at-z ?o - object)
     (posiblepos-x ?p - position)
     (posiblepos-z ?p - position)
+    (interactablepose-x ?p - position ?o - object)
+    (interactablepose-z ?p - position ?o - object)
+    (interactablepose-facing ?p - position ?o - object)
+    (interactablepose-inclination ?p - position ?o - object)
   )
   
   ; y = 0 -> z+0.25 | y = 180 -> z-0.25 | y = 90 -> x+0.25 | y = 180 -> x-0.25
@@ -118,9 +122,13 @@
 
   ; Permite al agente recoger un objeto
   (:action pickup
-   :parameters (?o - object)
+   :parameters (?o - object ?p - position)
    :precondition (and
-                (< (distance ?o) 1.5)
+                ;(< (distance ?o) 1.5)
+                (= (agent-at-x) (interactablepose-x ?p ?o))
+                (= (agent-at-z) (interactablepose-z ?p ?o))
+                (= (facing) (interactablepose-facing ?p ?o))
+                (= (inclination) (interactablepose-inclination ?p ?o))
               )
    :effect (and
             (holding ?o)

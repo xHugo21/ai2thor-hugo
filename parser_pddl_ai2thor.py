@@ -40,31 +40,41 @@ class ParserPDDLAI2THOR:
     def parse_actions(self):
         for act in self.actions:
             if act.find("ROTATE-LEFT") != -1:
+                #self.executable_actions.append('controller.step("RotateLeft")')
                 self.controller.step("RotateLeft")
 
             elif act.find("ROTATE-RIGHT") != -1:
+                #self.executable_actions.append('controller.step("RotateRight")')
                 self.controller.step("RotateRight")
 
             elif (act.find("MOVE-AHEAD-0") != -1) or (act.find("MOVE-AHEAD-90") != -1) or (act.find("MOVE-AHEAD-180") != -1) or (act.find("MOVE-AHEAD-270") != -1):
+                #self.executable_actions.append('controller.step("MoveAhead")')
                 self.controller.step("MoveAhead")
 
             elif act.find("LOOKUP") != -1:
+                #self.executable_actions.append('controller.step(action="LookUp", degrees=30)')
                 self.controller.step(action="LookUp", degrees=30)
 
             elif act.find("LOOKDOWN") != -1:
+                #self.executable_actions.append('controller.step(action="LookDown", degrees=30)')
                 self.controller.step(action="LookDown", degrees=30)
 
             elif act.find("PICKUP") != -1:
                 start_index = act.find("PICKUP")
-                end_index = act.find(")")
+                end_index = act.find(" POSE")
                 obj_name = act[start_index+7:end_index]
-                #obj_name = obj_name[:1] + obj_name[1:].lower()
                 for obj in self.objects:
                     if obj["name"].upper() == obj_name:
+                        #self.executable_actions.append(f'controller.step(action="PickupObject", objectId={obj["objectId"]})')
                         self.controller.step(action="PickupObject", objectId=obj["objectId"])
 
             elif act.find("DROP") != -1:
+                #self.executable_actions.append('controller.step("DropHandObject")')
                 self.controller.step("DropHandObject")
+        
+        #return self.executable_actions
+
+
                 
 
 

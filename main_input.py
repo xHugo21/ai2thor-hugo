@@ -50,14 +50,26 @@ event = controller.step(action="GetReachablePositions")
 problem, objective = inputs.problem_selection(event)
 
 '''
-extractLastActionImage(event, "imagen1")
-event = controller.step(action="PickupObject", objectId=objective["objectId"])
+count1 = 0
+for obj in event.metadata["actionReturn"]:
+posible_pos = event.metadata["actionReturn"]
+
+event = controller.step(action="GetInteractablePoses", objectId=objective["objectId"], standings=[True])
 printLastActionStatus(event)
-extractLastActionImage(event, "imagen2")
+count = 0
+interactable_pos = event.metadata["actionReturn"]
+aux = False
+for i in range(0, len(interactable_pos)):
+    for j in range (0, len(posible_pos)):
+        if (interactable_pos[i]['x'] == posible_pos[j]['x']) and (interactable_pos[i]['z'] == posible_pos[j]['z']):
+            aux = True
+    print(f'{i} - {aux}')
+    aux = False
+print(event.metadata["actionReturn"])
 '''
 
 # Parseo del entorno a fichero pddl
-ParserAI2THORPDDL(event, problem_path, problem, objective)
+ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
 
 # Ejecución del planificador sobre el dominio y el problema dados. Si último parámetro = True -> se imprime plan por pantalla.
 plan = Planificador(planner_path, domain_path, problem_path, output_path, True)
@@ -66,8 +78,14 @@ plan = Planificador(planner_path, domain_path, problem_path, output_path, True)
 printAgentStatus(controller.last_event)
 
 # Parseo del plan para convertirlo en acciones ejecutables por el agente y ejecutarlas
-ParserPDDLAI2THOR(plan.get_plan(), controller)
+parsed = ParserPDDLAI2THOR(plan.get_plan(), controller)
+
+'''
+for act in parsed.executable_actions:
+    exec(act)
+'''
 
 # Visualizar estado final
 printAgentStatus(controller.last_event)
 printLastActionStatus(controller.last_event)
+extractLastActionImage(controller.last_event, 'lechuga')

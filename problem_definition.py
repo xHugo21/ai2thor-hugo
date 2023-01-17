@@ -18,6 +18,7 @@ class ProblemDefinition():
         return self.scene_number
 
     def paths_selection(self):
+        '''
         print("----PLANIFICADOR----")
         print("[1] - cbp-roller")
         print("--------------------")
@@ -25,6 +26,8 @@ class ProblemDefinition():
         if str(aux) == '1':
             self.planner_path = "../cbp-roller/cbp-roller"
         print("")
+        '''
+        self.planner_path = "../cbp-roller/cbp-roller"
 
         aux = input("Introduzca el nombre del problema a generar: ")
         self.problem_path = "./pddl/problems/" + aux + ".pddl"
