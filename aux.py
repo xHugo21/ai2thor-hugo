@@ -31,15 +31,40 @@ def printLastActionStatus(event):
         print(f'Error: {event.metadata["errorMessage"]}')
     print("-----------------------------------------------\n")
 
-def extractLastActionImage(event, name):
+def extractActionImage(event, name):
+    '''Devuelve una imagen de la situación indicada con el nombre pasado por parámetro'''
     data = im.fromarray(event.frame)
     data.save("./images/" + name + ".png")
 
-def removePreviousProblems():
+def createCamera(controller):
+    event = controller.step("Done")
+    center = event.metadata["sceneBounds"]["center"]
+    center["y"] = event.metadata["sceneBounds"]["cornerPoints"][0][1]
+    camera_loc = center
+
+    event = controller.step(
+        action="AddThirdPartyCamera",
+        position=camera_loc,
+        rotation=dict(x=90, y=0, z=0),
+        fieldOfView=110
+    )
+
+    extractCameraImage(event.third_party_camera_frames[0], 'scene')
+
+def extractCameraImage(nparray, name):
+    '''Devuelve una imagen de la situación indicada con el nombre pasado por parámetro'''
+    data = im.fromarray(nparray)
+    data.save("./images/" + name + ".png")
+
+def removeGeneratedFolders():
+    '''Limpia los directorios de problemas, salidas del planificador e imágenes'''
     problems_dir = "./pddl/problems/"
     outputs_dir = "./pddl/outputs/"
+    images_dir = "./images/"
     shutil.rmtree(problems_dir)
     shutil.rmtree(outputs_dir)
+    shutil.rmtree(images_dir)
     os.mkdir(problems_dir)
     os.mkdir(outputs_dir)
+    os.mkdir(images_dir)
 

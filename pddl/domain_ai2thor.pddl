@@ -32,8 +32,7 @@
     (interactablepose-inclination ?p - position ?o - object)
   )
   
-  ; y = 0 -> z+0.25 | y = 180 -> z-0.25 | y = 90 -> x+0.25 | y = 180 -> x-0.25
-  ; Permite mover al agente hacia delante un tamaño gridSize (definido en la inicialización del controlador). Solo se puede mover a posiciones válidas
+  ; Permite mover al agente hacia delante un tamaño gridSize (default=0.25). facing=0 -> z+0.25
   (:action move-ahead-0
    :parameters (?p - position)
    :precondition (and
@@ -46,6 +45,7 @@
            )
   )
 
+  ; Permite mover al agente hacia delante un tamaño gridSize (default=0.25). facing=90 -> x+0.25
   (:action move-ahead-90
    :parameters (?p - position)
    :precondition (and
@@ -58,6 +58,7 @@
            )
   )
 
+  ; Permite mover al agente hacia delante un tamaño gridSize (default=0.25). facing=180 -> z-0.25
   (:action move-ahead-180
    :parameters (?p - position)
    :precondition (and
@@ -70,6 +71,7 @@
            )
   )
 
+  ; Permite mover al agente hacia delante un tamaño gridSize (default=0.25). facing=270 -> x-0.25
   (:action move-ahead-270
    :parameters (?p - position)
    :precondition (and
@@ -82,7 +84,7 @@
            )
   )
 
-  ; Permite al agente rotar hacia la izquierda
+  ; Permite al agente rotar hacia la izquierda, modificando la funcion facing en -90
   (:action rotate-left
    :parameters ()
    ;:precondition ()
@@ -91,7 +93,7 @@
            )
   )
 
-  ; Permite al agente rotar hacia la derecha
+  ; Permite al agente rotar hacia la derecha, modificando la funcion facing en +90
   (:action rotate-right
    :parameters ()
    ;:precondition ()
@@ -100,6 +102,7 @@
            )
   )
 
+  ; 
   (:action lookup
    :parameters ()
    :precondition (and
@@ -134,7 +137,7 @@
             (holding ?o)
            )
   )
-;
+
   ; Permite al agente tirar un objeto
   (:action drop
    :parameters (?o - object)

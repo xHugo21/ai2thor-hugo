@@ -42,8 +42,8 @@ class ProblemDefinition():
 
     def problem_selection(self, event):
         print("----PROBLEMA----")
-        print("[1] - movimiento")
-        print("[2] - pickup")
+        print("[1] - Move Agent")
+        print("[2] - Pickup Object")
         print("----------------")
         aux = input("Seleccione un tipo de problema a resolver: ")
         print("")

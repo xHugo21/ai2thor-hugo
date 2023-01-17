@@ -6,13 +6,13 @@ from problem_definition import ProblemDefinition
 from parser_ai2thor_pddl import ParserAI2THORPDDL
 from parser_pddl_ai2thor import ParserPDDLAI2THOR
 from planificador import Planificador
-from aux import printAgentStatus, printLastActionStatus, printObjectStatus, removePreviousProblems, extractLastActionImage
+from aux import printAgentStatus, printLastActionStatus, removeGeneratedFolders, createCamera
 
 # Constantes
 domain_path = "./pddl/domain_ai2thor.pddl"
 
 # Limpiamos los directorios de problemas
-removePreviousProblems()
+removeGeneratedFolders()
 
 # Pedimos al usuario que escoja una escena
 inputs = ProblemDefinition()
@@ -39,11 +39,13 @@ controller = Controller(agentMode="default",
                         fieldOfView=90)
 print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
 
+# Creamos una cámara que extrae una foto general de la escena en ./images/scene.png
+createCamera(controller)
+
 # Pedimos al usuario que escoja el planificador, y el nombre de los ficheros que se van a generar
 planner_path, problem_path, output_path = inputs.paths_selection()
 
 # Ejecutamos una acción sobre el agente. En este caso la acción GetReachablePositions para que contenga la información de las posiciones que puede tomar el agente en el entorno.
-#event = controller.step(action="LookDown", degrees=30)
 event = controller.step(action="GetReachablePositions")
 
 # Pedimos al usuario que indique el tipo de problema a resolver y el objetivo concreto dentro de ese problema
@@ -88,4 +90,3 @@ for act in parsed.executable_actions:
 # Visualizar estado final
 printAgentStatus(controller.last_event)
 printLastActionStatus(controller.last_event)
-extractLastActionImage(controller.last_event, 'lechuga')
