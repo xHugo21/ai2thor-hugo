@@ -1,6 +1,6 @@
 # Fichero para parsear los datos de un plan en acciones ejecutables por AI2THOR
 from ai2thor.controller import Controller
-from aux import printAgentStatus
+from aux import extractActionImage
 
 
 class ParserPDDLAI2THOR:
@@ -31,13 +31,17 @@ class ParserPDDLAI2THOR:
             index = act.find(":")
             act = act[:index].replace(" ", "") + act[index:]
             self.actions.append(act)
-
-        # Eliminar posición extra (vacía)
-        self.actions.pop()
-
-        print(self.actions)
+        
+        # Elimina la última posición si está vacía
+        if self.actions[-1] == ' ':
+            self.actions.pop()
+        
 
     def parse_actions(self):
+        # Creamos foto situación inicial
+        extractActionImage(self.controller.last_event, 'paso0')
+        n_image = 1
+
         for act in self.actions:
             if act.find("ROTATE-LEFT") != -1:
                 #self.executable_actions.append('controller.step("RotateLeft")')
@@ -71,6 +75,10 @@ class ParserPDDLAI2THOR:
             elif act.find("DROP") != -1:
                 #self.executable_actions.append('controller.step("DropHandObject")')
                 self.controller.step("DropHandObject")
+            
+            # Extraemos una foto del paso ejecutado
+            extractActionImage(self.controller.last_event, f'paso{n_image}')
+            n_image += 1
         
         #return self.executable_actions
 
