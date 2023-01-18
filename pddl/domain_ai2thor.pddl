@@ -15,11 +15,23 @@
     (holding ?o - object)
     (open ?o - object)
     (closed ?o - object)
+    (broken ?o - object)
+    (cooked ?o - object)
+    (sliced ?o - object)
+    (toggledon ?o - object)
+    (toggledoff ?o - object)
+    (dirty ?o - object)
+    (cleaned ?o - object)
+    (filled ?o - object)
+    (emptied ?o - object)
+    (usedup ?o - object)
     ;(is-standing)
   )
 
   (:functions
     ;(distance ?o - object)
+    ;(stepsize)
+    ;(n_lookdown)
     (facing)
     (inclination)
     (agent-at-x)
@@ -125,10 +137,11 @@
     )
     :effect (and
       (increase (inclination) 30)
+      ;(increase (n_lookdown) 1)
     )
   )
 
-  ;; Permite al agente levantarse
+  ; Permite al agente levantarse
   ;(:action standup
   ;  :parameters()
   ;  :precondition (and
@@ -154,7 +167,6 @@
   (:action pickup
     :parameters (?o - object ?p - position)
     :precondition (and
-      ;(< (distance ?o) 1.5)
       (= (agent-at-x) (interactablepose-x ?p ?o))
       (= (agent-at-z) (interactablepose-z ?p ?o))
       (= (facing) (interactablepose-facing ?p ?o))
@@ -202,4 +214,133 @@
     )
   )
 
+  (:action break
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (broken ?o)
+    )
+  )
+
+  (:action cook
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (cooked ?o)
+    )
+  )
+
+  (:action slice
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (sliced ?o)
+    )
+  )
+
+  (:action toggledoff
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (toggledoff ?o)
+    )
+  )
+
+  (:action toggleon
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (toggledon ?o)
+    )
+  )
+
+  (:action dirty
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (dirty ?o)
+    )
+  )
+
+  (:action clean
+      :parameters (?o - object ?p - position)
+      :precondition (and
+        (= (agent-at-x) (interactablepose-x ?p ?o))
+        (= (agent-at-z) (interactablepose-z ?p ?o))
+        (= (facing) (interactablepose-facing ?p ?o))
+        (= (inclination) (interactablepose-inclination ?p ?o))
+      )
+      :effect (and
+        (cleaned ?o)
+      )
+    )
+
+  (:action fill
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (filled ?o)
+    )
+  )
+
+  (:action empty
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (emptied ?o)
+    )
+  )
+
+  (:action useup
+    :parameters (?o - object ?p - position)
+    :precondition (and
+      (= (agent-at-x) (interactablepose-x ?p ?o))
+      (= (agent-at-z) (interactablepose-z ?p ?o))
+      (= (facing) (interactablepose-facing ?p ?o))
+      (= (inclination) (interactablepose-inclination ?p ?o))
+    )
+    :effect (and
+      (usedup ?o)
+    )
+  )
 )

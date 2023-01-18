@@ -4,7 +4,7 @@ from aux import extractActionImage
 
 
 class ParserPDDLAI2THOR:
-    def __init__(self, raw_plan, controller):
+    def __init__(self, raw_plan, controller, iteracion):
         self.actions = []
         self.executable_actions = []
         self.controller = controller
@@ -12,7 +12,7 @@ class ParserPDDLAI2THOR:
 
         self.extract_plan(raw_plan)
 
-        self.parse_actions()
+        self.parse_actions(iteracion)
     
     def extract_plan(self, raw_plan):
         '''Método que extrae el plan dividido para poder procesar acción por acción.
@@ -39,9 +39,9 @@ class ParserPDDLAI2THOR:
         print(self.actions)
         
 
-    def parse_actions(self):
+    def parse_actions(self, iteracion):
         # Creamos foto situación inicial
-        extractActionImage(self.controller.last_event, 'paso0')
+        extractActionImage(self.controller.last_event, f'paso{iteracion}_0')
         n_image = 1
 
         for act in self.actions:
@@ -52,7 +52,7 @@ class ParserPDDLAI2THOR:
                 self.controller.step("RotateRight")
 
             elif (act.find("MOVE-AHEAD-0") != -1) or (act.find("MOVE-AHEAD-90") != -1) or (act.find("MOVE-AHEAD-180") != -1) or (act.find("MOVE-AHEAD-270") != -1):
-                self.controller.step("MoveAhead")
+                self.controller.step(action="MoveAhead")
 
             elif act.find("LOOKUP") != -1:
                 self.controller.step(action="LookUp", degrees=30)
@@ -60,45 +60,67 @@ class ParserPDDLAI2THOR:
             elif act.find("LOOKDOWN") != -1:
                 self.controller.step(action="LookDown", degrees=30)
             
-            #elif act.find("STANDUP") != -1:
-            #    self.controller.step("Stand")
+            elif act.find("STANDUP") != -1:
+                self.controller.step("Stand")
 
-            #elif act.find("CROUCH") != -1:
-            #    self.controller.step("Crouch")
-
-            elif act.find("PICKUP") != -1:
-                start_index = act.find("PICKUP")
-                end_index = act.find(" POSE")
-                obj_name = act[start_index+7:end_index]
-                for obj in self.objects:
-                    if obj["name"].upper() == obj_name:
-                        self.controller.step(action="PickupObject", objectId=obj["objectId"])
+            elif act.find("CROUCH") != -1:
+                self.controller.step("Crouch")
 
             elif act.find("DROP") != -1:
                 self.controller.step("DropHandObject")
 
+            elif act.find("PICKUP") != -1:
+                self.object_state_action(act, "PICKUP", 7, "PickupObject")
+
             elif act.find("OPEN") != -1:
-                start_index = act.find("OPEN")
-                end_index = act.find(" POSE")
-                obj_name = act[start_index+5:end_index]
-                for obj in self.objects:
-                    if obj["name"].upper() == obj_name:
-                        self.controller.step(action="OpenObject", objectId=obj["objectId"])
+                self.object_state_action(act, "OPEN", 5, "OpenObject")
             
             elif act.find("CLOSE") != -1:
-                start_index = act.find("CLOSE")
-                end_index = act.find(" POSE")
-                obj_name = act[start_index+6:end_index]
-                for obj in self.objects:
-                    if obj["name"].upper() == obj_name:
-                        self.controller.step(action="CloseObject", objectId=obj["objectId"])
+                self.object_state_action(act, "CLOSE", 6, "CloseObject")
+
+            elif act.find("BREAK") != -1:
+                self.object_state_action(act, "BREAK", 6, "BreakObject")
+            
+            elif act.find("COOK") != -1:
+                self.object_state_action(act, "COOK", 5, "CookObject")
+
+            elif act.find("SLICE") != -1:
+                self.object_state_action(act, "SLICE", 6, "SliceObject")
+
+            elif act.find("TOGGLEON") != -1:
+                self.object_state_action(act, "TOGGLEON", 9, "ToggleObjectOn")
+
+            elif act.find("TOGGLEOFF") != -1:
+                self.object_state_action(act, "TOGGLEOFF", 10, "ToggleObjectOff")
+
+            elif act.find("DIRTY") != -1:
+                self.object_state_action(act, "DIRTY", 6, "DirtyObject")
+            
+            elif act.find("CLEAN") != -1:
+                self.object_state_action(act, "CLEAN", 6, "CleanObject")
+
+            elif act.find("FILL") != -1:
+                self.object_state_action(act, "FILL", 5, "FillObjectWithLiquid")
+
+            elif act.find("EMPTY") != -1:
+                self.object_state_action(act, "EMPTY", 6, "EmptyLiquidFromObject")
+
+            elif act.find("USEUP") != -1:
+                self.object_state_action(act, "USEUP", 6, "UseUpObject")
             
             # Extraemos una foto del paso ejecutado
-            extractActionImage(self.controller.last_event, f'paso{n_image}')
+            extractActionImage(self.controller.last_event, f'paso{iteracion}_{n_image}')
             n_image += 1
         
         #return self.executable_actions
-
+    
+    def object_state_action(self, act, action_name_domain, plus_index, action_name_ai2thor):
+        start_index = act.find(action_name_domain)
+        end_index = act.find(" POSE")
+        obj_name = act[start_index+plus_index:end_index]
+        for obj in self.objects:
+            if obj["name"].upper() == obj_name:
+                self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"])
 
                 
 

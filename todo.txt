@@ -1,17 +1,18 @@
 * HACER *
-- Añadir stepsize como parámetro y ver si modificandolo funciona correctamente
+- Concatenación de acciones tiene fallos
 - Manejo de errores inputs
-- Arregar identacion extra al modificar string parserai2thorpddl
-- Añadir posibilidad de modificar parámetros del planificador
-- Añadir posibilidad de hacer más objetivos sin finalizar el programa
+- Arreglar identacion extra al modificar string parserai2thorpddl
 - Comentar código
 - Simplificar funciones
 - Comprobar si los planes son óptimos -> En caso contrario modificar parámetros planificador
-- El planificador prioriza la accion lookdown
+- El planificador prioriza la accion lookdown aun usando metric
 - Si no hay objetivos posibles (p.ej close object) -> devolver a selección problema
+- Crear una variable previous_objectives (lista) que guarde los objetivos previos
 
 
 * ¿HACER? *
+- Mantener stepsize como parámetro modificable?
 - Jerarquía objetos dominio pddl?
-- Permitir acción crouch? -> Añadir coordenada y a posiciones?
+- Permitir acción crouch? -> Si no se permite entonces restringir GetInteractablePoses
+- Añadir coordenada y a posiciones?
 - Se podría usar InitialRandomSpawn para aleatorizar posición inicial agente

@@ -15,11 +15,12 @@ def printAgentStatus(event):
     print(f'agent rotation: {event.metadata["agent"]["rotation"]}')
     print("-----------------------------------------------\n")
 
-def printObjectStatus(event):
-    '''Muestra objetos actuales y parámetros importantes de ellos'''
+def printObjectStatus(event, object):
+    '''Muestra el estado de un objeto'''
     print("-----------------------------------------------")
     for obj in event.metadata["objects"]:
-        print(f'objectId: {obj["objectId"]} | distance: {obj["distance"]} | visible: {obj["visible"]} | position: {obj["position"]} | receptacle: {obj["receptacle"]} | parentReceptacles: {obj["parentReceptacles"]}')
+        if obj['objectId'] == object['objectId']:
+            print(obj)
     print("-----------------------------------------------\n")
 
 def printLastActionStatus(event):

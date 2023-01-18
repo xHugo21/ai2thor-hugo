@@ -44,11 +44,22 @@ class ProblemDefinition():
         return self.planner_path, self.problem_path, self.output_path
 
     def problem_selection(self, event):
+        self.event = event
         print("----PROBLEMA----")
         print("[1] - Move Agent")
         print("[2] - Pickup Object")
         print("[3] - Open Object")
         print("[4] - Close Object")
+        print("[5] - Break Object")
+        print("[6] - Cook Object")
+        print("[7] - Slice Object")
+        print("[8] - Toggle On Object")
+        print("[9] - Toggle Off Object")
+        print("[10] - Dirty Object")
+        print("[11] - Clean Object")
+        print("[12] - Fill Object")
+        print("[13] - Empty Object")
+        print("[14] - Use Up Object")
         print("----------------")
         aux = input("Seleccione un tipo de problema a resolver: ")
         print("")
@@ -70,54 +81,61 @@ class ProblemDefinition():
 
         # Establecer parámetros en caso de que se seleccione problema de pickup
         if str(aux) == '2':
-            self.problem = "pickup"
-            pickupable_objects = []
-            print("----OBJETIVO----")
-            for obj in event.metadata["objects"]:
-                if obj["pickupable"] == True:
-                    pickupable_objects.append(obj)
-            i = 0
-            for obj in pickupable_objects:
-                print(f'[{i}] - {obj["objectId"]}')
-                i += 1
-            print("----------------")
-            aux = input("Seleccione el objetivo pickup: ")
-            self.objective = pickupable_objects[int(aux)]
-            print("")
-            print(f'El objetivo seleccionado es: {self.objective["objectId"]} distance: {self.objective["distance"]}')
+            self.object_selection("pickup", "pickupable", "isPickedUp", False)
 
         if str(aux) == '3':
-            self.problem = "open"
-            openable_objects = []
-            print("----OBJETIVO----")
-            for obj in event.metadata["objects"]:
-                if (obj["openable"] == True) and (obj["isOpen"] == False):
-                    openable_objects.append(obj)
-            i = 0
-            for obj in openable_objects:
-                print(f'[{i}] - {obj["objectId"]}')
-                i += 1
-            print("----------------")
-            aux = input("Seleccione el objetivo a abrir: ")
-            self.objective = openable_objects[int(aux)]
-            print("")
-            print(f'El objetivo seleccionado es: {self.objective["objectId"]}')
+            self.object_selection("open", "openable", "isOpen", False)
 
         if str(aux) == '4':
-            self.problem = "close"
-            openable_objects = []
-            print("----OBJETIVO----")
-            for obj in event.metadata["objects"]:
-                if (obj["openable"] == True) and (obj["isOpen"] == True):
-                    openable_objects.append(obj)
-            i = 0
-            for obj in openable_objects:
-                print(f'[{i}] - {obj["objectId"]}')
-                i += 1
-            print("----------------")
-            aux = input("Seleccione el objetivo a cerrar: ")
-            self.objective = openable_objects[int(aux)]
-            print("")
-            print(f'El objetivo seleccionado es: {self.objective["objectId"]}')
+            self.object_selection("close", "openable", "isOpen", True)
+        
+        if str(aux) == '5':
+            self.object_selection("break", "breakable", "isBroken", False)
+        
+        if str(aux) == '6':
+            self.object_selection("cook", "cookable", "isCooked", False)
+
+        if str(aux) == '7':
+            self.object_selection("slice", "sliceable", "isSliced", False)
+
+        if str(aux) == '8':
+            self.object_selection("toggleon", "toggleable", "isToggled", False)
+
+        if str(aux) == '9':
+            self.object_selection("toggleoff", "toggleable", "isToggled", True)
+
+        if str(aux) == '10':
+            self.object_selection("dirty", "dirtyable", "isDirty", False)
+
+        if str(aux) == '11':
+            self.object_selection("clean", "dirtyable", "isDirty", True)
+        
+        if str(aux) == '12':
+            self.object_selection("fill", "canFillWithLiquid", "isFilledWithLiquid", False)
+            # Seleccionar con que liquido rellenar
+
+        if str(aux) == '13':
+            self.object_selection("empty", "canFillWithLiquid", "isFilledWithLiquid", True)
+        
+        if str(aux) == '14':
+            self.object_selection("useup", "canBeUsedUp", "isUsedUp", False)
+
             
         return self.problem, self.objective
+
+    def object_selection(self, problem_type, condition1, condition2, condition2_res):
+        self.problem = problem_type
+        posible_objects = []
+        print("----OBJETIVO----")
+        for obj in self.event.metadata["objects"]:
+            if (obj[condition1] == True) and (obj[condition2] == condition2_res):
+                posible_objects.append(obj)
+        i = 0
+        for obj in posible_objects:
+            print(f'[{i}] - {obj["objectId"]}')
+            i += 1
+        print("----------------")
+        aux = input("Seleccione el objetivo: ")
+        self.objective = posible_objects[int(aux)]
+        print("")
+        print(f'El objetivo seleccionado es: {self.objective["objectId"]}')
