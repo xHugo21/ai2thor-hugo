@@ -61,6 +61,7 @@ class ProblemDefinition():
         print("[12] - Fill Object")
         print("[13] - Empty Object")
         print("[14] - Use Up Object")
+        print("[15] - Drop Object (Requires holding an object)")
         print("----------------")
         aux = input("Seleccione un tipo de problema a resolver: ")
         print("")
@@ -119,6 +120,9 @@ class ProblemDefinition():
         
         if str(aux) == '14':
             self.object_selection("useup", "canBeUsedUp", "isUsedUp", False)
+        
+        if str(aux) == '15':
+            self.object_selection("drop", "pickupable", "isPickedUp", True)
 
             
         return self.problem, self.objective, self.liquid

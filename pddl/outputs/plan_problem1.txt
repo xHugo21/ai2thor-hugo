@@ -14,55 +14,19 @@ checking for cyclic := effects --- OK.
 Evaluation function 0.000000*g(s) + 1.000000*h(s) where
  metric is plan length
 
-Cueing down from goal distance:   31 into depth  --- pruning stopped --- [1]
-                                  30             --- pruning stopped --- [1]
-                                  29             --- pruning stopped --- [1]
-                                  20             --- pruning stopped --- [1]
-                                  19             --- pruning stopped --- [1]
-                                  18             --- pruning stopped --- [1]
-                                  17             --- pruning stopped --- [1]
-                                  16             --- pruning stopped --- [1]
-                                  15             --- pruning stopped --- [1]
-                                  14             --- pruning stopped --- [1][2][3][4][5]
-                                  11             --- pruning stopped --- [1][2][3][4]
-                                   6             --- pruning stopped --- [1]
-                                   5             --- pruning stopped --- [1][2]
-                                   3             --- pruning stopped --- [1]
-                                   1            [1]
+Cueing down from goal distance:    1 into depth [1]
                                    0            
 
 ff: found legal plan as follows
 
-step    0: (LOOKDOWN)
-        1: (LOOKDOWN)
-        2: (MOVE-AHEAD-270 POS2)
-        3: (ROTATE-LEFT)
-        4: (MOVE-AHEAD-180 POS7)
-        5: (MOVE-AHEAD-180 POS13)
-        6: (MOVE-AHEAD-180 POS20)
-        7: (MOVE-AHEAD-180 POS28)
-        8: (MOVE-AHEAD-180 POS35)
-        9: (MOVE-AHEAD-180 POS41)
-       10: (MOVE-AHEAD-180 POS48)
-       11: (MOVE-AHEAD-180 POS55)
-       12: (MOVE-AHEAD-180 POS61)
-       13: (MOVE-AHEAD-180 POS69)
-       14: (ROTATE-LEFT)
-       15: (MOVE-AHEAD-90 POS63)
-       16: (MOVE-AHEAD-90 POS71)
-       17: (MOVE-AHEAD-90 POS81)
-       18: (MOVE-AHEAD-90 POS91)
-       19: (MOVE-AHEAD-90 POS101)
-       20: (MOVE-AHEAD-90 POS110)
-       21: (MOVE-AHEAD-90 POS119)
-       22: (FILL BOTTLE_4E73F712 POSE59)
+step    0: (DROP APPLE_3FEF4551)
      
 
-time spent:    0.07 seconds instantiating 1094313 easy, 0 hard action templates
-               0.14 seconds reachability analysis, yielding 4303 facts and 2179 actions
-               0.52 seconds creating final representation with 4303 relevant facts, 8 relevant fluents
-               0.00 seconds computing LNF
-               0.01 seconds building connectivity graph
-               0.57 seconds searching, evaluating 226 states, to a max depth of 5
-               1.31 seconds total time
+time spent:    0.03 seconds instantiating 504225 easy, 0 hard action templates
+               0.07 seconds reachability analysis, yielding 3346 facts and 891 actions
+               0.20 seconds creating final representation with 3346 relevant facts, 8 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 2 states, to a max depth of 1
+               0.31 seconds total time
 

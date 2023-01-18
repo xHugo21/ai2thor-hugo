@@ -17,6 +17,8 @@ class ParserAI2THORPDDL:
         # Dependiendo del tipo de problema, se añaden unos parámetros u otros mediante sus respectivos métodos
         if problem == "movimiento":
             self.parse_movement_problem()
+        elif problem == "drop":
+            self.parse_drop_problem()
         else:
             self.parse_interactable_poses()
         
@@ -109,10 +111,14 @@ class ParserAI2THORPDDL:
 
         # Definición de predicados o funciones relacionados con los objetos
         for obj in self.objects:
-            object_location = obj["position"]
-            self.problem += f"\t\t(= (object-at-x {obj['name']}) {object_location['x']:.25f})\n" #TODO mirar si se puede solucionar de otra manera la notacion científica
-            self.problem += f"\t\t(= (object-at-y {obj['name']}) {object_location['y']:.25f})\n"
-            self.problem += f"\t\t(= (object-at-z {obj['name']}) {object_location['z']:.25f})\n\n"
+            #object_location = obj["position"]
+            #self.problem += f"\t\t(= (object-at-x {obj['name']}) {object_location['x']:.25f})\n" #TODO mirar si se puede solucionar de otra manera la notacion científica
+            #self.problem += f"\t\t(= (object-at-y {obj['name']}) {object_location['y']:.25f})\n"
+            #self.problem += f"\t\t(= (object-at-z {obj['name']}) {object_location['z']:.25f})\n\n"
+
+            if obj["isPickedUp"]:
+                self.held_obj = obj
+                self.problem += f"\t\t(holding {obj['name']})\n\n"
         
         self.problem += "\t)\n\n"
 
@@ -241,6 +247,13 @@ class ParserAI2THORPDDL:
         # Definición del estado meta del problema
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(usedup {self.objective['name']})"    
+        self.problem += "\t))\n"
+        self.problem += ")\n"
+
+    def parse_drop_problem(self):
+        # Definición del estado meta del problema
+        self.problem += "\t(:goal (and\n"
+        self.problem += f"\t\t(not (holding {self.objective['name']}))\n"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 

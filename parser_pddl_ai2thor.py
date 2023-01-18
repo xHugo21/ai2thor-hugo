@@ -66,9 +66,6 @@ class ParserPDDLAI2THOR:
             elif act.find("CROUCH") != -1:
                 self.controller.step("Crouch")
 
-            elif act.find("DROP") != -1:
-                self.controller.step("DropHandObject")
-
             elif act.find("PICKUP") != -1:
                 self.object_state_action(act, "PICKUP", 7, "PickupObject")
 
@@ -107,6 +104,9 @@ class ParserPDDLAI2THOR:
 
             elif act.find("USEUP") != -1:
                 self.object_state_action(act, "USEUP", 6, "UseUpObject")
+
+            elif act.find("DROP") != -1:
+                self.controller.step("DropHandObject")
             
             # Extraemos una foto del paso ejecutado
             extractActionImage(self.controller.last_event, f'paso{iteracion}_{n_image}')
