@@ -1,6 +1,159 @@
 (define (problem problem1)
 	(:domain domain_ai2thor)
 	(:objects
+			pose0 - position
+		pose1 - position
+		pose2 - position
+		pose3 - position
+		pose4 - position
+		pose5 - position
+		pose6 - position
+		pose7 - position
+		pose8 - position
+		pose9 - position
+		pose10 - position
+		pose11 - position
+		pose12 - position
+		pose13 - position
+		pose14 - position
+		pose15 - position
+		pose16 - position
+		pose17 - position
+		pose18 - position
+		pose19 - position
+		pose20 - position
+		pose21 - position
+		pose22 - position
+		pose23 - position
+		pose24 - position
+		pose25 - position
+		pose26 - position
+		pose27 - position
+		pose28 - position
+		pose29 - position
+		pose30 - position
+		pose31 - position
+		pose32 - position
+		pose33 - position
+		pose34 - position
+		pose35 - position
+		pose36 - position
+		pose37 - position
+		pose38 - position
+		pose39 - position
+		pose40 - position
+		pose41 - position
+		pose42 - position
+		pose43 - position
+		pose44 - position
+		pose45 - position
+		pose46 - position
+		pose47 - position
+		pose48 - position
+		pose49 - position
+		pose50 - position
+		pose51 - position
+		pose52 - position
+		pose53 - position
+		pose54 - position
+		pose55 - position
+		pose56 - position
+		pose57 - position
+		pose58 - position
+		pose59 - position
+		pose60 - position
+		pose61 - position
+		pose62 - position
+		pose63 - position
+		pose64 - position
+		pose65 - position
+		pose66 - position
+		pose67 - position
+		pose68 - position
+		pose69 - position
+		pose70 - position
+		pose71 - position
+		pose72 - position
+		pose73 - position
+		pose74 - position
+		pose75 - position
+		pose76 - position
+		pose77 - position
+		pose78 - position
+		pose79 - position
+		pose80 - position
+		pose81 - position
+		pose82 - position
+		pose83 - position
+		pose84 - position
+		pose85 - position
+		pose86 - position
+		pose87 - position
+		pose88 - position
+		pose89 - position
+		pose90 - position
+		pose91 - position
+		pose92 - position
+		pose93 - position
+		pose94 - position
+		pose95 - position
+		pose96 - position
+		pose97 - position
+		pose98 - position
+		pose99 - position
+		pose100 - position
+		pose101 - position
+		pose102 - position
+		pose103 - position
+		pose104 - position
+		pose105 - position
+		pose106 - position
+		pose107 - position
+		pose108 - position
+		pose109 - position
+		pose110 - position
+		pose111 - position
+		pose112 - position
+		pose113 - position
+		pose114 - position
+		pose115 - position
+		pose116 - position
+		pose117 - position
+		pose118 - position
+		pose119 - position
+		pose120 - position
+		pose121 - position
+		pose122 - position
+		pose123 - position
+		pose124 - position
+		pose125 - position
+		pose126 - position
+		pose127 - position
+		pose128 - position
+		pose129 - position
+		pose130 - position
+		pose131 - position
+		pose132 - position
+		pose133 - position
+		pose134 - position
+		pose135 - position
+		pose136 - position
+		pose137 - position
+		pose138 - position
+		pose139 - position
+		pose140 - position
+		pose141 - position
+		pose142 - position
+		pose143 - position
+		pose144 - position
+		pose145 - position
+		pose146 - position
+		pose147 - position
+		pose148 - position
+		pose149 - position
+		pose150 - position
+		pose151 - position
+		pose152 - position
 		pos0 - position
 		pos1 - position
 		pos2 - position
@@ -73,674 +226,1035 @@
 		pos69 - position
 		pos70 - position
 		pos71 - position
-		pos72 - position
-		pos73 - position
-		pos74 - position
-		pos75 - position
-		pos76 - position
-		pos77 - position
-		pos78 - position
-		pos79 - position
-		pos80 - position
-		pos81 - position
-		pos82 - position
-		pos83 - position
-		pos84 - position
-		pos85 - position
-		pos86 - position
-		pos87 - position
-		pos88 - position
-		pos89 - position
-		pos90 - position
-		pos91 - position
-		pos92 - position
-		pos93 - position
-		pos94 - position
-		pos95 - position
-		pos96 - position
-		pos97 - position
-		pos98 - position
-		pos99 - position
-		pos100 - position
-		pos101 - position
-		pos102 - position
-		pos103 - position
-		pos104 - position
-		pos105 - position
-		pos106 - position
-		pos107 - position
-		pos108 - position
-		pos109 - position
-		pos110 - position
-		pos111 - position
-		pos112 - position
-		pos113 - position
-		pos114 - position
-		pos115 - position
-		pos116 - position
-		pos117 - position
-		pos118 - position
-		pos119 - position
-		pos120 - position
-		pos121 - position
-		pos122 - position
-		pos123 - position
-		pos124 - position
-		pos125 - position
-		pos126 - position
-		pos127 - position
-		pos128 - position
-		pos129 - position
-		pos130 - position
-		pos131 - position
-		pos132 - position
-		pos133 - position
-		pos134 - position
-		pos135 - position
-		pos136 - position
-		pos137 - position
-		pos138 - position
-		pos139 - position
-		pos140 - position
-		pos141 - position
-		pos142 - position
-		pos143 - position
-		pos144 - position
-		pos145 - position
-		pos146 - position
-		pos147 - position
-		pos148 - position
-		pos149 - position
-		pos150 - position
-		pos151 - position
-		pos152 - position
-		pos153 - position
-		pos154 - position
-		pos155 - position
-		pos156 - position
-		pos157 - position
-		pos158 - position
-		pos159 - position
-		pos160 - position
-		pos161 - position
-		Apple_3fef4551 - object
-		Book_e5ef3174 - object
-		Bottle_4e73f712 - object
-		Bowl_208f368b - object
-		Bread_c6b4566e - object
-		ButterKnife_4ae287b7 - object
-		Cabinet_07bf9f23 - object
-		Cabinet_7d7a3425 - object
-		Cabinet_67e9cbea - object
-		Cabinet_b69a8cbf - object
-		Cabinet_83d77a74 - object
-		Cabinet_41c7fc3b - object
-		Cabinet_4223545f - object
-		Cabinet_64c8b7ce - object
-		Cabinet_afbfa706 - object
-		CoffeeMachine_19c6af8e - object
-		CounterTop_2fe78146 - object
-		CounterTop_203f0cf4 - object
-		CounterTop_978a4b41 - object
-		CreditCard_5e829d70 - object
-		Cup_4c1ceda2 - object
-		DishSponge_2f93679b - object
-		Drawer_454fdaaf - object
-		Drawer_814ccbab - object
-		Drawer_b7714dd0 - object
-		Drawer_8f754799 - object
-		Drawer_14af4910 - object
-		Drawer_45b02cbc - object
-		Drawer_feba4efa - object
-		Drawer_f0dcbe39 - object
-		Drawer_51f98f55 - object
-		Egg_67211636 - object
-		Faucet_1000141d - object
-		Floor_86781be7 - object
-		Fork_c3e63e06 - object
-		Fridge_e92350c6 - object
-		GarbageCan_a3dd7762 - object
-		HousePlant_cc99edda - object
-		Kettle_2aef2274 - object
-		Knife_28c8fc57 - object
-		Lettuce_2d8f3ab9 - object
-		LightSwitch_cfaab6e3 - object
-		Microwave_cf90fa06 - object
-		Mug_e7fad100 - object
-		Pan_21173d15 - object
-		PaperTowelRoll_511cdc3f - object
-		PepperShaker_948fdf26 - object
-		Plate_82b647b0 - object
-		Pot_5c47f775 - object
-		Potato_4dee147d - object
-		SaltShaker_ccf73c67 - object
-		Shelf_bf36c881 - object
-		Shelf_957b2e88 - object
-		Shelf_9d7816a7 - object
-		ShelvingUnit_11057823 - object
-		Sink_41af8f72 - object
-		SinkBasin_3138b92f - object
-		SoapBottle_4540124e - object
-		Spatula_6667745e - object
-		Spoon_ea8b29ee - object
-		Statue_32e151a8 - object
-		Stool_b084fe8e - object
-		Stool_6ad82f78 - object
-		StoveBurner_08a5798f - object
-		StoveBurner_3397cbe3 - object
-		StoveBurner_a0b460e5 - object
-		StoveBurner_d506dac6 - object
-		StoveKnob_e0c0e452 - object
-		StoveKnob_39559252 - object
-		StoveKnob_61f5d5b9 - object
-		StoveKnob_b57953af - object
-		Toaster_f30a9b32 - object
-		Tomato_caaae6b0 - object
-		Vase_b2bf6b9c - object
-		Vase_a3ef2efe - object
-		Window_98e9c41a - object
-		WineBottle_39d61bf0 - object
+		AlarmClock_fee6a9a6 - object
+		BasketBall_3ea03c8d - object
+		Bed_6328d1fb - object
+		Book_9480f3bc - object
+		CD_29952fdd - object
+		CellPhone_15633f73 - object
+		Chair_3d4514c3 - object
+		CreditCard_8a4ca740 - object
+		Curtains_c23076e3 - object
+		Curtains_03d383a0 - object
+		Desk_648106b7 - object
+		Desk_e3368811 - object
+		DeskLamp_39829ba7 - object
+		Dumbbell_b2adaa3b - object
+		Dumbbell_eb94171d - object
+		Floor_7069f553 - object
+		Footstool_d3c102ff - object
+		Footstool_98f9f920 - object
+		GarbageBag_7bcae5c4 - object
+		GarbageCan_d0a1a0b6 - object
+		KeyChain_33743958 - object
+		Laptop_23fccfa4 - object
+		LightSwitch_dec1730d - object
+		Mirror_1d643be2 - object
+		Pen_31f13aa0 - object
+		Pencil_9f0cdda6 - object
+		Pillow_a19cf96e - object
+		Shelf_a2cf0278 - object
+		Shelf_376956c6 - object
+		Shelf_c2de1755 - object
+		Shelf_a2582694 - object
+		SideTable_7f214282 - object
+		TeddyBear_222111dc - object
+		TennisRacket_c8b6933c - object
+		Window_4657b49f - object
+		Window_1130865d - object
 	)
 
 	(:init
-		(= (facing) 180.0)
+			(= (interactablepose-x pose0 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose0 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose0 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose0 Mirror_1d643be2) -30.0)
 
-		(= (inclination) 0.0)
+		(= (interactablepose-x pose1 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose1 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose1 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose1 Mirror_1d643be2) -30.0)
 
-		(= (agent-at-x) -1.0)
+		(= (interactablepose-x pose2 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose2 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose2 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose2 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose3 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose3 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose3 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose3 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose4 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose4 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose4 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose4 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose5 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose5 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose5 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose5 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose6 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose6 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose6 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose6 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose7 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose7 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose7 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose7 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose8 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose8 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose8 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose8 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose9 Mirror_1d643be2) 1.0)
+		(= (interactablepose-z pose9 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose9 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose9 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose10 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose10 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose10 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose10 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose11 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose11 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose11 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose11 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose12 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose12 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose12 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose12 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose13 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose13 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose13 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose13 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose14 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose14 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose14 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose14 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose15 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose15 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose15 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose15 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose16 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose16 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose16 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose16 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose17 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose17 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose17 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose17 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose18 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose18 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose18 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose18 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose19 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose19 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose19 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose19 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose20 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose20 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose20 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose20 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose21 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose21 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose21 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose21 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose22 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose22 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose22 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose22 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose23 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose23 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose23 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose23 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose24 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose24 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose24 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose24 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose25 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose25 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose25 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose25 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose26 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose26 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose26 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose26 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose27 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose27 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose27 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose27 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose28 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose28 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose28 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose28 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose29 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose29 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose29 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose29 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose30 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose30 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose30 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose30 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose31 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose31 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose31 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose31 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose32 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose32 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose32 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose32 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose33 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose33 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose33 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose33 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose34 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose34 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose34 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose34 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose35 Mirror_1d643be2) -1.0)
+		(= (interactablepose-z pose35 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose35 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose35 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose36 Mirror_1d643be2) 1.0)
+		(= (interactablepose-z pose36 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose36 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose36 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose37 Mirror_1d643be2) 1.25)
+		(= (interactablepose-z pose37 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose37 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose37 Mirror_1d643be2) -30.0)
+
+		(= (interactablepose-x pose38 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose38 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose38 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose38 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose39 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose39 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose39 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose39 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose40 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose40 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose40 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose40 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose41 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose41 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose41 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose41 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose42 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose42 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose42 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose42 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose43 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose43 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose43 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose43 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose44 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose44 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose44 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose44 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose45 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose45 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose45 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose45 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose46 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose46 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose46 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose46 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose47 Mirror_1d643be2) 1.0)
+		(= (interactablepose-z pose47 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose47 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose47 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose48 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose48 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose48 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose48 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose49 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose49 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose49 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose49 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose50 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose50 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose50 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose50 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose51 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose51 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose51 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose51 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose52 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose52 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose52 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose52 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose53 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose53 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose53 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose53 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose54 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose54 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose54 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose54 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose55 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose55 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose55 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose55 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose56 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose56 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose56 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose56 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose57 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose57 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose57 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose57 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose58 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose58 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose58 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose58 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose59 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose59 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose59 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose59 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose60 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose60 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose60 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose60 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose61 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose61 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose61 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose61 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose62 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose62 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose62 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose62 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose63 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose63 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose63 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose63 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose64 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose64 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose64 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose64 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose65 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose65 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose65 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose65 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose66 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose66 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose66 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose66 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose67 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose67 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose67 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose67 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose68 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose68 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose68 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose68 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose69 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose69 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose69 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose69 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose70 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose70 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose70 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose70 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose71 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose71 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose71 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose71 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose72 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose72 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose72 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose72 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose73 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose73 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose73 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose73 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose74 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose74 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose74 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose74 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose75 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose75 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose75 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose75 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose76 Mirror_1d643be2) -1.0)
+		(= (interactablepose-z pose76 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose76 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose76 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose77 Mirror_1d643be2) 1.0)
+		(= (interactablepose-z pose77 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose77 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose77 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose78 Mirror_1d643be2) 1.25)
+		(= (interactablepose-z pose78 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose78 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose78 Mirror_1d643be2) 0.0)
+
+		(= (interactablepose-x pose79 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose79 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose79 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose79 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose80 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose80 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose80 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose80 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose81 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose81 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose81 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose81 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose82 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose82 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose82 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose82 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose83 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose83 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose83 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose83 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose84 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose84 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose84 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose84 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose85 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose85 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose85 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose85 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose86 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose86 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose86 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose86 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose87 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose87 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose87 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose87 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose88 Mirror_1d643be2) 1.0)
+		(= (interactablepose-z pose88 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose88 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose88 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose89 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose89 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose89 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose89 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose90 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose90 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose90 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose90 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose91 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose91 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose91 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose91 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose92 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose92 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose92 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose92 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose93 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose93 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose93 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose93 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose94 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose94 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose94 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose94 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose95 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose95 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose95 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose95 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose96 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose96 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose96 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose96 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose97 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose97 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose97 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose97 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose98 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose98 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose98 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose98 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose99 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose99 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose99 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose99 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose100 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose100 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose100 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose100 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose101 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose101 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose101 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose101 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose102 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose102 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose102 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose102 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose103 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose103 Mirror_1d643be2) 0.5)
+		(= (interactablepose-facing pose103 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose103 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose104 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose104 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose104 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose104 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose105 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose105 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose105 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose105 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose106 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose106 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose106 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose106 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose107 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose107 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose107 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose107 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose108 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose108 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose108 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose108 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose109 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose109 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose109 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose109 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose110 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose110 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose110 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose110 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose111 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose111 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose111 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose111 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose112 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose112 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose112 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose112 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose113 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose113 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose113 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose113 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose114 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose114 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose114 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose114 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose115 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose115 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose115 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose115 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose116 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose116 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose116 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose116 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose117 Mirror_1d643be2) -1.0)
+		(= (interactablepose-z pose117 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose117 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose117 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose118 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose118 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose118 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose118 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose119 Mirror_1d643be2) 1.0)
+		(= (interactablepose-z pose119 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose119 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose119 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose120 Mirror_1d643be2) 1.25)
+		(= (interactablepose-z pose120 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose120 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose120 Mirror_1d643be2) 30.0)
+
+		(= (interactablepose-x pose121 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose121 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose121 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose121 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose122 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose122 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose122 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose122 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose123 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose123 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose123 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose123 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose124 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose124 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose124 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose124 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose125 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose125 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose125 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose125 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose126 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose126 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose126 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose126 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose127 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose127 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose127 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose127 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose128 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose128 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose128 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose128 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose129 Mirror_1d643be2) 1.0)
+		(= (interactablepose-z pose129 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose129 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose129 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose130 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose130 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose130 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose130 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose131 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose131 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose131 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose131 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose132 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose132 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose132 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose132 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose133 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose133 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose133 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose133 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose134 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose134 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose134 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose134 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose135 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose135 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose135 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose135 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose136 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose136 Mirror_1d643be2) 1.0)
+		(= (interactablepose-facing pose136 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose136 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose137 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose137 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose137 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose137 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose138 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose138 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose138 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose138 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose139 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose139 Mirror_1d643be2) 0.75)
+		(= (interactablepose-facing pose139 Mirror_1d643be2) 0.0)
+		(= (interactablepose-inclination pose139 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose140 Mirror_1d643be2) 0.5)
+		(= (interactablepose-z pose140 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose140 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose140 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose141 Mirror_1d643be2) 0.25)
+		(= (interactablepose-z pose141 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose141 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose141 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose142 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose142 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose142 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose142 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose143 Mirror_1d643be2) 0.0)
+		(= (interactablepose-z pose143 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose143 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose143 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose144 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose144 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose144 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose144 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose145 Mirror_1d643be2) -0.25)
+		(= (interactablepose-z pose145 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose145 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose145 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose146 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose146 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose146 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose146 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose147 Mirror_1d643be2) -0.5)
+		(= (interactablepose-z pose147 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose147 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose147 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose148 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose148 Mirror_1d643be2) 1.25)
+		(= (interactablepose-facing pose148 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose148 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose149 Mirror_1d643be2) -0.75)
+		(= (interactablepose-z pose149 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose149 Mirror_1d643be2) 90.0)
+		(= (interactablepose-inclination pose149 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose150 Mirror_1d643be2) 0.75)
+		(= (interactablepose-z pose150 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose150 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose150 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose151 Mirror_1d643be2) 1.0)
+		(= (interactablepose-z pose151 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose151 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose151 Mirror_1d643be2) 60.0)
+
+		(= (interactablepose-x pose152 Mirror_1d643be2) 1.25)
+		(= (interactablepose-z pose152 Mirror_1d643be2) 1.5)
+		(= (interactablepose-facing pose152 Mirror_1d643be2) 270.0)
+		(= (interactablepose-inclination pose152 Mirror_1d643be2) 60.0)
+
+		(= (facing) 0.0)
+
+		(= (inclination) -0.0)
+
+		(= (agent-at-x) 0.75)
 		(= (agent-at-z) 1.0)
 
-		(= (posiblepos-x pos0) -1.0)
+		(= (posiblepos-x pos0) 0.75)
 		(= (posiblepos-z pos0) 1.0)
 
-		(= (posiblepos-x pos1) -1.0)
+		(= (posiblepos-x pos1) 0.75)
 		(= (posiblepos-z pos1) 1.25)
 
-		(= (posiblepos-x pos2) -1.25)
+		(= (posiblepos-x pos2) 0.5)
 		(= (posiblepos-z pos2) 1.0)
 
-		(= (posiblepos-x pos3) -1.0)
+		(= (posiblepos-x pos3) 0.75)
 		(= (posiblepos-z pos3) 0.75)
 
-		(= (posiblepos-x pos4) -0.75)
-		(= (posiblepos-z pos4) 1.25)
+		(= (posiblepos-x pos4) 0.75)
+		(= (posiblepos-z pos4) 1.5)
 
-		(= (posiblepos-x pos5) -1.0)
-		(= (posiblepos-z pos5) 1.5)
+		(= (posiblepos-x pos5) 0.5)
+		(= (posiblepos-z pos5) 1.25)
 
-		(= (posiblepos-x pos6) -1.25)
-		(= (posiblepos-z pos6) 1.25)
+		(= (posiblepos-x pos6) 0.25)
+		(= (posiblepos-z pos6) 1.0)
 
-		(= (posiblepos-x pos7) -1.25)
+		(= (posiblepos-x pos7) 0.5)
 		(= (posiblepos-z pos7) 0.75)
 
-		(= (posiblepos-x pos8) -1.0)
+		(= (posiblepos-x pos8) 0.75)
 		(= (posiblepos-z pos8) 0.5)
 
-		(= (posiblepos-x pos9) -0.5)
-		(= (posiblepos-z pos9) 1.25)
+		(= (posiblepos-x pos9) 1.0)
+		(= (posiblepos-z pos9) 1.5)
 
-		(= (posiblepos-x pos10) -0.75)
+		(= (posiblepos-x pos10) 0.5)
 		(= (posiblepos-z pos10) 1.5)
 
-		(= (posiblepos-x pos11) -1.0)
-		(= (posiblepos-z pos11) 1.75)
+		(= (posiblepos-x pos11) 0.25)
+		(= (posiblepos-z pos11) 1.25)
 
-		(= (posiblepos-x pos12) -1.25)
-		(= (posiblepos-z pos12) 1.5)
+		(= (posiblepos-x pos12) 0.0)
+		(= (posiblepos-z pos12) 1.0)
 
-		(= (posiblepos-x pos13) -1.25)
-		(= (posiblepos-z pos13) 0.5)
+		(= (posiblepos-x pos13) 0.25)
+		(= (posiblepos-z pos13) 0.75)
 
-		(= (posiblepos-x pos14) -1.0)
-		(= (posiblepos-z pos14) 0.25)
+		(= (posiblepos-x pos14) 0.5)
+		(= (posiblepos-z pos14) 0.5)
 
-		(= (posiblepos-x pos15) -0.25)
-		(= (posiblepos-z pos15) 1.25)
+		(= (posiblepos-x pos15) 0.75)
+		(= (posiblepos-z pos15) 0.25)
 
-		(= (posiblepos-x pos16) -0.5)
+		(= (posiblepos-x pos16) 1.25)
 		(= (posiblepos-z pos16) 1.5)
 
-		(= (posiblepos-x pos17) -0.75)
-		(= (posiblepos-z pos17) 1.75)
+		(= (posiblepos-x pos17) 0.25)
+		(= (posiblepos-z pos17) 1.5)
 
-		(= (posiblepos-x pos18) -1.0)
-		(= (posiblepos-z pos18) 2.0)
+		(= (posiblepos-x pos18) 0.0)
+		(= (posiblepos-z pos18) 1.25)
 
-		(= (posiblepos-x pos19) -1.25)
-		(= (posiblepos-z pos19) 1.75)
+		(= (posiblepos-x pos19) -0.25)
+		(= (posiblepos-z pos19) 1.0)
 
-		(= (posiblepos-x pos20) -1.25)
-		(= (posiblepos-z pos20) 0.25)
+		(= (posiblepos-x pos20) 0.0)
+		(= (posiblepos-z pos20) 0.75)
 
-		(= (posiblepos-x pos21) -1.0)
-		(= (posiblepos-z pos21) 0.0)
+		(= (posiblepos-x pos21) 0.25)
+		(= (posiblepos-z pos21) 0.5)
 
-		(= (posiblepos-x pos22) 0.0)
-		(= (posiblepos-z pos22) 1.25)
+		(= (posiblepos-x pos22) 0.5)
+		(= (posiblepos-z pos22) 0.25)
 
-		(= (posiblepos-x pos23) -0.25)
-		(= (posiblepos-z pos23) 1.5)
+		(= (posiblepos-x pos23) 0.75)
+		(= (posiblepos-z pos23) 0.0)
 
-		(= (posiblepos-x pos24) -0.5)
-		(= (posiblepos-z pos24) 1.75)
+		(= (posiblepos-x pos24) 0.0)
+		(= (posiblepos-z pos24) 1.5)
 
-		(= (posiblepos-x pos25) -0.75)
-		(= (posiblepos-z pos25) 2.0)
+		(= (posiblepos-x pos25) -0.25)
+		(= (posiblepos-z pos25) 1.25)
 
-		(= (posiblepos-x pos26) -1.25)
-		(= (posiblepos-z pos26) 2.0)
+		(= (posiblepos-x pos26) -0.5)
+		(= (posiblepos-z pos26) 1.0)
 
-		(= (posiblepos-x pos27) -1.5)
-		(= (posiblepos-z pos27) 1.75)
+		(= (posiblepos-x pos27) -0.25)
+		(= (posiblepos-z pos27) 0.75)
 
-		(= (posiblepos-x pos28) -1.25)
-		(= (posiblepos-z pos28) 0.0)
+		(= (posiblepos-x pos28) 0.0)
+		(= (posiblepos-z pos28) 0.5)
 
-		(= (posiblepos-x pos29) -1.0)
-		(= (posiblepos-z pos29) -0.25)
+		(= (posiblepos-x pos29) 0.25)
+		(= (posiblepos-z pos29) 0.25)
 
-		(= (posiblepos-x pos30) 0.25)
-		(= (posiblepos-z pos30) 1.25)
+		(= (posiblepos-x pos30) 0.5)
+		(= (posiblepos-z pos30) 0.0)
 
-		(= (posiblepos-x pos31) 0.0)
-		(= (posiblepos-z pos31) 1.5)
+		(= (posiblepos-x pos31) 0.75)
+		(= (posiblepos-z pos31) -0.25)
 
 		(= (posiblepos-x pos32) -0.25)
-		(= (posiblepos-z pos32) 1.75)
+		(= (posiblepos-z pos32) 1.5)
 
 		(= (posiblepos-x pos33) -0.5)
-		(= (posiblepos-z pos33) 2.0)
+		(= (posiblepos-z pos33) 1.25)
 
-		(= (posiblepos-x pos34) -1.5)
-		(= (posiblepos-z pos34) 2.0)
+		(= (posiblepos-x pos34) -0.75)
+		(= (posiblepos-z pos34) 1.0)
 
-		(= (posiblepos-x pos35) -1.25)
-		(= (posiblepos-z pos35) -0.25)
+		(= (posiblepos-x pos35) -0.5)
+		(= (posiblepos-z pos35) 0.75)
 
-		(= (posiblepos-x pos36) -1.0)
-		(= (posiblepos-z pos36) -0.5)
+		(= (posiblepos-x pos36) -0.25)
+		(= (posiblepos-z pos36) 0.5)
 
-		(= (posiblepos-x pos37) 0.5)
-		(= (posiblepos-z pos37) 1.25)
+		(= (posiblepos-x pos37) 0.0)
+		(= (posiblepos-z pos37) 0.25)
 
 		(= (posiblepos-x pos38) 0.25)
-		(= (posiblepos-z pos38) 1.5)
+		(= (posiblepos-z pos38) 0.0)
 
-		(= (posiblepos-x pos39) 0.0)
-		(= (posiblepos-z pos39) 1.75)
+		(= (posiblepos-x pos39) 0.75)
+		(= (posiblepos-z pos39) -0.5)
 
-		(= (posiblepos-x pos40) -0.25)
-		(= (posiblepos-z pos40) 2.0)
+		(= (posiblepos-x pos40) -0.5)
+		(= (posiblepos-z pos40) 1.5)
 
-		(= (posiblepos-x pos41) -1.25)
-		(= (posiblepos-z pos41) -0.5)
+		(= (posiblepos-x pos41) -0.75)
+		(= (posiblepos-z pos41) 1.25)
 
 		(= (posiblepos-x pos42) -1.0)
-		(= (posiblepos-z pos42) -0.75)
+		(= (posiblepos-z pos42) 1.0)
 
-		(= (posiblepos-x pos43) 0.75)
-		(= (posiblepos-z pos43) 1.25)
+		(= (posiblepos-x pos43) -0.75)
+		(= (posiblepos-z pos43) 0.75)
 
-		(= (posiblepos-x pos44) 0.5)
-		(= (posiblepos-z pos44) 1.5)
+		(= (posiblepos-x pos44) -0.5)
+		(= (posiblepos-z pos44) 0.5)
 
-		(= (posiblepos-x pos45) 0.25)
-		(= (posiblepos-z pos45) 1.75)
+		(= (posiblepos-x pos45) -0.25)
+		(= (posiblepos-z pos45) 0.25)
 
-		(= (posiblepos-x pos46) 0.0)
-		(= (posiblepos-z pos46) 2.0)
+		(= (posiblepos-x pos46) 0.75)
+		(= (posiblepos-z pos46) -0.75)
 
-		(= (posiblepos-x pos47) -0.25)
-		(= (posiblepos-z pos47) 2.25)
+		(= (posiblepos-x pos47) -0.75)
+		(= (posiblepos-z pos47) 1.5)
 
-		(= (posiblepos-x pos48) -1.25)
-		(= (posiblepos-z pos48) -0.75)
+		(= (posiblepos-x pos48) -1.0)
+		(= (posiblepos-z pos48) 1.25)
 
 		(= (posiblepos-x pos49) -1.0)
-		(= (posiblepos-z pos49) -1.0)
+		(= (posiblepos-z pos49) 0.75)
 
-		(= (posiblepos-x pos50) 1.0)
-		(= (posiblepos-z pos50) 1.25)
+		(= (posiblepos-x pos50) -0.75)
+		(= (posiblepos-z pos50) 0.5)
 
-		(= (posiblepos-x pos51) 0.75)
-		(= (posiblepos-z pos51) 1.5)
+		(= (posiblepos-x pos51) -0.5)
+		(= (posiblepos-z pos51) 0.25)
 
-		(= (posiblepos-x pos52) 0.5)
-		(= (posiblepos-z pos52) 1.75)
+		(= (posiblepos-x pos52) 1.0)
+		(= (posiblepos-z pos52) -0.75)
 
-		(= (posiblepos-x pos53) 0.25)
-		(= (posiblepos-z pos53) 2.0)
+		(= (posiblepos-x pos53) 0.75)
+		(= (posiblepos-z pos53) -1.0)
 
-		(= (posiblepos-x pos54) 0.0)
-		(= (posiblepos-z pos54) 2.25)
+		(= (posiblepos-x pos54) -1.0)
+		(= (posiblepos-z pos54) 1.5)
 
-		(= (posiblepos-x pos55) -1.25)
-		(= (posiblepos-z pos55) -1.0)
+		(= (posiblepos-x pos55) -1.0)
+		(= (posiblepos-z pos55) 0.5)
 
-		(= (posiblepos-x pos56) -1.0)
-		(= (posiblepos-z pos56) -1.25)
+		(= (posiblepos-x pos56) -0.75)
+		(= (posiblepos-z pos56) 0.25)
 
 		(= (posiblepos-x pos57) 1.25)
-		(= (posiblepos-z pos57) 1.25)
+		(= (posiblepos-z pos57) -0.75)
 
 		(= (posiblepos-x pos58) 1.0)
-		(= (posiblepos-z pos58) 1.5)
+		(= (posiblepos-z pos58) -1.0)
 
-		(= (posiblepos-x pos59) 0.75)
-		(= (posiblepos-z pos59) 1.75)
+		(= (posiblepos-x pos59) 0.5)
+		(= (posiblepos-z pos59) -1.0)
 
-		(= (posiblepos-x pos60) 0.5)
-		(= (posiblepos-z pos60) 2.0)
+		(= (posiblepos-x pos60) 0.75)
+		(= (posiblepos-z pos60) -1.25)
 
 		(= (posiblepos-x pos61) -1.25)
-		(= (posiblepos-z pos61) -1.25)
+		(= (posiblepos-z pos61) 1.5)
 
-		(= (posiblepos-x pos62) -0.75)
-		(= (posiblepos-z pos62) -1.25)
+		(= (posiblepos-x pos62) -1.25)
+		(= (posiblepos-z pos62) 0.5)
 
 		(= (posiblepos-x pos63) -1.0)
-		(= (posiblepos-z pos63) -1.5)
+		(= (posiblepos-z pos63) 0.25)
 
 		(= (posiblepos-x pos64) 1.5)
-		(= (posiblepos-z pos64) 1.25)
+		(= (posiblepos-z pos64) -0.75)
 
 		(= (posiblepos-x pos65) 1.25)
-		(= (posiblepos-z pos65) 1.5)
+		(= (posiblepos-z pos65) -1.0)
 
-		(= (posiblepos-x pos66) 1.25)
-		(= (posiblepos-z pos66) 1.0)
+		(= (posiblepos-x pos66) 1.0)
+		(= (posiblepos-z pos66) -1.25)
 
-		(= (posiblepos-x pos67) 1.0)
-		(= (posiblepos-z pos67) 1.75)
+		(= (posiblepos-x pos67) 0.25)
+		(= (posiblepos-z pos67) -1.0)
 
-		(= (posiblepos-x pos68) 0.75)
-		(= (posiblepos-z pos68) 2.0)
+		(= (posiblepos-x pos68) 0.5)
+		(= (posiblepos-z pos68) -1.25)
 
 		(= (posiblepos-x pos69) -1.25)
-		(= (posiblepos-z pos69) -1.5)
+		(= (posiblepos-z pos69) 0.25)
 
-		(= (posiblepos-x pos70) -0.5)
-		(= (posiblepos-z pos70) -1.25)
+		(= (posiblepos-x pos70) 1.5)
+		(= (posiblepos-z pos70) -1.0)
 
-		(= (posiblepos-x pos71) -0.75)
-		(= (posiblepos-z pos71) -1.5)
-
-		(= (posiblepos-x pos72) -1.0)
-		(= (posiblepos-z pos72) -1.75)
-
-		(= (posiblepos-x pos73) 1.75)
-		(= (posiblepos-z pos73) 1.25)
-
-		(= (posiblepos-x pos74) 1.5)
-		(= (posiblepos-z pos74) 1.5)
-
-		(= (posiblepos-x pos75) 1.5)
-		(= (posiblepos-z pos75) 1.0)
-
-		(= (posiblepos-x pos76) 1.25)
-		(= (posiblepos-z pos76) 1.75)
-
-		(= (posiblepos-x pos77) 1.25)
-		(= (posiblepos-z pos77) 0.75)
-
-		(= (posiblepos-x pos78) 1.0)
-		(= (posiblepos-z pos78) 2.0)
-
-		(= (posiblepos-x pos79) -1.25)
-		(= (posiblepos-z pos79) -1.75)
-
-		(= (posiblepos-x pos80) -0.25)
-		(= (posiblepos-z pos80) -1.25)
-
-		(= (posiblepos-x pos81) -0.5)
-		(= (posiblepos-z pos81) -1.5)
-
-		(= (posiblepos-x pos82) -0.75)
-		(= (posiblepos-z pos82) -1.75)
-
-		(= (posiblepos-x pos83) 2.0)
-		(= (posiblepos-z pos83) 1.25)
-
-		(= (posiblepos-x pos84) 1.75)
-		(= (posiblepos-z pos84) 1.5)
-
-		(= (posiblepos-x pos85) 1.75)
-		(= (posiblepos-z pos85) 1.0)
-
-		(= (posiblepos-x pos86) 1.5)
-		(= (posiblepos-z pos86) 1.75)
-
-		(= (posiblepos-x pos87) 1.5)
-		(= (posiblepos-z pos87) 0.75)
-
-		(= (posiblepos-x pos88) 1.25)
-		(= (posiblepos-z pos88) 2.0)
-
-		(= (posiblepos-x pos89) 1.25)
-		(= (posiblepos-z pos89) 0.5)
-
-		(= (posiblepos-x pos90) 0.0)
-		(= (posiblepos-z pos90) -1.25)
-
-		(= (posiblepos-x pos91) -0.25)
-		(= (posiblepos-z pos91) -1.5)
-
-		(= (posiblepos-x pos92) -0.5)
-		(= (posiblepos-z pos92) -1.75)
-
-		(= (posiblepos-x pos93) 2.0)
-		(= (posiblepos-z pos93) 1.5)
-
-		(= (posiblepos-x pos94) 2.0)
-		(= (posiblepos-z pos94) 1.0)
-
-		(= (posiblepos-x pos95) 1.75)
-		(= (posiblepos-z pos95) 1.75)
-
-		(= (posiblepos-x pos96) 1.75)
-		(= (posiblepos-z pos96) 0.75)
-
-		(= (posiblepos-x pos97) 1.5)
-		(= (posiblepos-z pos97) 2.0)
-
-		(= (posiblepos-x pos98) 1.5)
-		(= (posiblepos-z pos98) 0.5)
-
-		(= (posiblepos-x pos99) 1.25)
-		(= (posiblepos-z pos99) 0.25)
-
-		(= (posiblepos-x pos100) 0.25)
-		(= (posiblepos-z pos100) -1.25)
-
-		(= (posiblepos-x pos101) 0.0)
-		(= (posiblepos-z pos101) -1.5)
-
-		(= (posiblepos-x pos102) -0.25)
-		(= (posiblepos-z pos102) -1.75)
-
-		(= (posiblepos-x pos103) 2.0)
-		(= (posiblepos-z pos103) 1.75)
-
-		(= (posiblepos-x pos104) 2.0)
-		(= (posiblepos-z pos104) 0.75)
-
-		(= (posiblepos-x pos105) 1.75)
-		(= (posiblepos-z pos105) 2.0)
-
-		(= (posiblepos-x pos106) 1.75)
-		(= (posiblepos-z pos106) 0.5)
-
-		(= (posiblepos-x pos107) 1.5)
-		(= (posiblepos-z pos107) 0.25)
-
-		(= (posiblepos-x pos108) 1.25)
-		(= (posiblepos-z pos108) 0.0)
-
-		(= (posiblepos-x pos109) 0.5)
-		(= (posiblepos-z pos109) -1.25)
-
-		(= (posiblepos-x pos110) 0.25)
-		(= (posiblepos-z pos110) -1.5)
-
-		(= (posiblepos-x pos111) 0.0)
-		(= (posiblepos-z pos111) -1.75)
-
-		(= (posiblepos-x pos112) 2.0)
-		(= (posiblepos-z pos112) 2.0)
-
-		(= (posiblepos-x pos113) 2.0)
-		(= (posiblepos-z pos113) 0.5)
-
-		(= (posiblepos-x pos114) 1.75)
-		(= (posiblepos-z pos114) 0.25)
-
-		(= (posiblepos-x pos115) 1.5)
-		(= (posiblepos-z pos115) 0.0)
-
-		(= (posiblepos-x pos116) 1.0)
-		(= (posiblepos-z pos116) 0.0)
-
-		(= (posiblepos-x pos117) 1.25)
-		(= (posiblepos-z pos117) -0.25)
-
-		(= (posiblepos-x pos118) 0.75)
-		(= (posiblepos-z pos118) -1.25)
-
-		(= (posiblepos-x pos119) 0.5)
-		(= (posiblepos-z pos119) -1.5)
-
-		(= (posiblepos-x pos120) 0.25)
-		(= (posiblepos-z pos120) -1.75)
-
-		(= (posiblepos-x pos121) 2.0)
-		(= (posiblepos-z pos121) 0.25)
-
-		(= (posiblepos-x pos122) 1.75)
-		(= (posiblepos-z pos122) 0.0)
-
-		(= (posiblepos-x pos123) 1.5)
-		(= (posiblepos-z pos123) -0.25)
-
-		(= (posiblepos-x pos124) 1.0)
-		(= (posiblepos-z pos124) -0.25)
-
-		(= (posiblepos-x pos125) 1.25)
-		(= (posiblepos-z pos125) -0.5)
-
-		(= (posiblepos-x pos126) 1.0)
-		(= (posiblepos-z pos126) -1.25)
-
-		(= (posiblepos-x pos127) 0.75)
-		(= (posiblepos-z pos127) -1.5)
-
-		(= (posiblepos-x pos128) 0.5)
-		(= (posiblepos-z pos128) -1.75)
-
-		(= (posiblepos-x pos129) 2.0)
-		(= (posiblepos-z pos129) 0.0)
-
-		(= (posiblepos-x pos130) 1.75)
-		(= (posiblepos-z pos130) -0.25)
-
-		(= (posiblepos-x pos131) 1.5)
-		(= (posiblepos-z pos131) -0.5)
-
-		(= (posiblepos-x pos132) 1.25)
-		(= (posiblepos-z pos132) -0.75)
-
-		(= (posiblepos-x pos133) 1.25)
-		(= (posiblepos-z pos133) -1.25)
-
-		(= (posiblepos-x pos134) 1.0)
-		(= (posiblepos-z pos134) -1.0)
-
-		(= (posiblepos-x pos135) 1.0)
-		(= (posiblepos-z pos135) -1.5)
-
-		(= (posiblepos-x pos136) 0.75)
-		(= (posiblepos-z pos136) -1.75)
-
-		(= (posiblepos-x pos137) 2.0)
-		(= (posiblepos-z pos137) -0.25)
-
-		(= (posiblepos-x pos138) 1.75)
-		(= (posiblepos-z pos138) -0.5)
-
-		(= (posiblepos-x pos139) 1.5)
-		(= (posiblepos-z pos139) -0.75)
-
-		(= (posiblepos-x pos140) 1.25)
-		(= (posiblepos-z pos140) -1.0)
-
-		(= (posiblepos-x pos141) 1.5)
-		(= (posiblepos-z pos141) -1.25)
-
-		(= (posiblepos-x pos142) 1.25)
-		(= (posiblepos-z pos142) -1.5)
-
-		(= (posiblepos-x pos143) 1.0)
-		(= (posiblepos-z pos143) -1.75)
-
-		(= (posiblepos-x pos144) 2.0)
-		(= (posiblepos-z pos144) -0.5)
-
-		(= (posiblepos-x pos145) 1.75)
-		(= (posiblepos-z pos145) -0.75)
-
-		(= (posiblepos-x pos146) 1.5)
-		(= (posiblepos-z pos146) -1.0)
-
-		(= (posiblepos-x pos147) 1.75)
-		(= (posiblepos-z pos147) -1.25)
-
-		(= (posiblepos-x pos148) 1.5)
-		(= (posiblepos-z pos148) -1.5)
-
-		(= (posiblepos-x pos149) 1.25)
-		(= (posiblepos-z pos149) -1.75)
-
-		(= (posiblepos-x pos150) 2.0)
-		(= (posiblepos-z pos150) -0.75)
-
-		(= (posiblepos-x pos151) 1.75)
-		(= (posiblepos-z pos151) -1.0)
-
-		(= (posiblepos-x pos152) 2.0)
-		(= (posiblepos-z pos152) -1.25)
-
-		(= (posiblepos-x pos153) 1.75)
-		(= (posiblepos-z pos153) -1.5)
-
-		(= (posiblepos-x pos154) 1.5)
-		(= (posiblepos-z pos154) -1.75)
-
-		(= (posiblepos-x pos155) 2.0)
-		(= (posiblepos-z pos155) -1.0)
-
-		(= (posiblepos-x pos156) 2.0)
-		(= (posiblepos-z pos156) -1.5)
-
-		(= (posiblepos-x pos157) 1.75)
-		(= (posiblepos-z pos157) -1.75)
-
-		(= (posiblepos-x pos158) 1.5)
-		(= (posiblepos-z pos158) -2.0)
-
-		(= (posiblepos-x pos159) 2.0)
-		(= (posiblepos-z pos159) -1.75)
-
-		(= (posiblepos-x pos160) 1.75)
-		(= (posiblepos-z pos160) -2.0)
-
-		(= (posiblepos-x pos161) 2.0)
-		(= (posiblepos-z pos161) -2.0)
-
-		(holding Apple_3fef4551)
+		(= (posiblepos-x pos71) 0.25)
+		(= (posiblepos-z pos71) -1.25)
 
 	)
 
 	(:goal (and
-		(not (holding Apple_3fef4551))
-	))
+		(cleaned Mirror_1d643be2)	))
 )

@@ -19,14 +19,14 @@ Cueing down from goal distance:    1 into depth [1]
 
 ff: found legal plan as follows
 
-step    0: (DROP APPLE_3FEF4551)
+step    0: (CLEAN MIRROR_1D643BE2 POSE38)
      
 
-time spent:    0.03 seconds instantiating 504225 easy, 0 hard action templates
-               0.07 seconds reachability analysis, yielding 3346 facts and 891 actions
-               0.20 seconds creating final representation with 3346 relevant facts, 8 relevant fluents
-               0.01 seconds computing LNF
+time spent:    0.05 seconds instantiating 764590 easy, 0 hard action templates
+               0.11 seconds reachability analysis, yielding 3393 facts and 2542 actions
+               0.42 seconds creating final representation with 3393 relevant facts, 8 relevant fluents
+               0.02 seconds computing LNF
                0.00 seconds building connectivity graph
                0.00 seconds searching, evaluating 2 states, to a max depth of 1
-               0.31 seconds total time
+               0.60 seconds total time
 

@@ -1,10 +1,10 @@
 * HACER *
+- Añadir acción put
 - Concatenación de acciones tiene fallos
 - Manejo de errores inputs
-- Arreglar identacion extra al modificar string parserai2thorpddl
 - Comentar código
 - Simplificar funciones
-- Comprobar si los planes son óptimos -> En caso contrario modificar parámetros planificador
+- Comprobar si los planes son óptimos
 - El planificador prioriza la accion lookdown aun usando metric
 - Si no hay objetivos posibles (p.ej close object) -> devolver a selección problema
 - Crear una variable previous_objectives (lista) que guarde los objetivos previos
