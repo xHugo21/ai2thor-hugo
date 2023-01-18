@@ -253,7 +253,7 @@
     )
   )
 
-  (:action toggledoff
+  (:action toggleoff
     :parameters (?o - object ?p - position)
     :precondition (and
       (= (agent-at-x) (interactablepose-x ?p ?o))

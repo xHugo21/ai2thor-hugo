@@ -4,7 +4,7 @@ from aux import extractActionImage
 
 
 class ParserPDDLAI2THOR:
-    def __init__(self, raw_plan, controller, iteracion):
+    def __init__(self, raw_plan, controller, iteracion, liquid):
         self.actions = []
         self.executable_actions = []
         self.controller = controller
@@ -12,7 +12,7 @@ class ParserPDDLAI2THOR:
 
         self.extract_plan(raw_plan)
 
-        self.parse_actions(iteracion)
+        self.parse_actions(iteracion, liquid)
     
     def extract_plan(self, raw_plan):
         '''Método que extrae el plan dividido para poder procesar acción por acción.
@@ -39,7 +39,7 @@ class ParserPDDLAI2THOR:
         print(self.actions)
         
 
-    def parse_actions(self, iteracion):
+    def parse_actions(self, iteracion, liquid):
         # Creamos foto situación inicial
         extractActionImage(self.controller.last_event, f'paso{iteracion}_0')
         n_image = 1
@@ -100,7 +100,7 @@ class ParserPDDLAI2THOR:
                 self.object_state_action(act, "CLEAN", 6, "CleanObject")
 
             elif act.find("FILL") != -1:
-                self.object_state_action(act, "FILL", 5, "FillObjectWithLiquid")
+                self.object_state_action(act, "FILL", 5, "FillObjectWithLiquid", liquid)
 
             elif act.find("EMPTY") != -1:
                 self.object_state_action(act, "EMPTY", 6, "EmptyLiquidFromObject")
@@ -114,13 +114,15 @@ class ParserPDDLAI2THOR:
         
         #return self.executable_actions
     
-    def object_state_action(self, act, action_name_domain, plus_index, action_name_ai2thor):
+    def object_state_action(self, act, action_name_domain, plus_index, action_name_ai2thor, liquid='coffee'):
         start_index = act.find(action_name_domain)
         end_index = act.find(" POSE")
         obj_name = act[start_index+plus_index:end_index]
         for obj in self.objects:
-            if obj["name"].upper() == obj_name:
+            if (obj["name"].upper() == obj_name) and (action_name_domain != "FILL"):
                 self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"])
+            elif (obj["name"].upper() == obj_name) and (action_name_domain == "FILL"):
+                self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"], fillLiquid=liquid)
 
                 
 

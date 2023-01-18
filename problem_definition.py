@@ -44,6 +44,7 @@ class ProblemDefinition():
         return self.planner_path, self.problem_path, self.output_path
 
     def problem_selection(self, event):
+        self.liquid = 'coffee'
         self.event = event
         print("----PROBLEMA----")
         print("[1] - Move Agent")
@@ -74,8 +75,8 @@ class ProblemDefinition():
                 print(f'[{i}] - {pos}')
                 i += 1
             print("----------------")
-            aux = input("Seleccione la posición objetivo: ")
-            self.objective = positions[int(aux)]
+            aux2 = input("Seleccione la posición objetivo: ")
+            self.objective = positions[int(aux2)]
             print("")
             print(f'La posición objetivo seleccionada es: {self.objective}')
 
@@ -111,8 +112,7 @@ class ProblemDefinition():
             self.object_selection("clean", "dirtyable", "isDirty", True)
         
         if str(aux) == '12':
-            self.object_selection("fill", "canFillWithLiquid", "isFilledWithLiquid", False)
-            # Seleccionar con que liquido rellenar
+            self.object_selection("fill", "canFillWithLiquid", "isFilledWithLiquid", False, True)
 
         if str(aux) == '13':
             self.object_selection("empty", "canFillWithLiquid", "isFilledWithLiquid", True)
@@ -121,9 +121,9 @@ class ProblemDefinition():
             self.object_selection("useup", "canBeUsedUp", "isUsedUp", False)
 
             
-        return self.problem, self.objective
+        return self.problem, self.objective, self.liquid
 
-    def object_selection(self, problem_type, condition1, condition2, condition2_res):
+    def object_selection(self, problem_type, condition1, condition2, condition2_res, select_liquid=False):
         self.problem = problem_type
         posible_objects = []
         print("----OBJETIVO----")
@@ -135,7 +135,22 @@ class ProblemDefinition():
             print(f'[{i}] - {obj["objectId"]}')
             i += 1
         print("----------------")
-        aux = input("Seleccione el objetivo: ")
-        self.objective = posible_objects[int(aux)]
+        aux2 = input("Seleccione el objetivo: ")
+        self.objective = posible_objects[int(aux2)]
         print("")
         print(f'El objetivo seleccionado es: {self.objective["objectId"]}')
+
+        if select_liquid:
+            print("----PROBLEMA----")
+            print("[1] - Coffee")
+            print("[2] - Wine")
+            print("[3] - Water")
+            print("----------------")
+            inp = input(f'Seleccione el líquido con el que rellenar el objeto: ')
+
+            if str(inp) == '1':
+                self.liquid = 'coffee'
+            elif str(inp) == '2':
+                self.liquid = 'wine'
+            elif str(inp) == '3':
+                self.liquid = 'water'

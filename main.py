@@ -54,7 +54,7 @@ while bucle == 'Y':
     event = controller.step(action="GetReachablePositions")
 
     # Pedimos al usuario que indique el tipo de problema a resolver y el objetivo concreto dentro de ese problema
-    problem, objective = inputs.problem_selection(event)
+    problem, objective, liquid = inputs.problem_selection(event)
 
     '''
     count1 = 0
@@ -85,7 +85,7 @@ while bucle == 'Y':
     # printAgentStatus(controller.last_event)
 
     # Parseo del plan para convertirlo en acciones ejecutables por el agente y ejecutarlas
-    parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion)
+    parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid)
 
     '''
     for act in parsed.executable_actions:
@@ -95,8 +95,10 @@ while bucle == 'Y':
     # Visualizar estado final
     # printAgentStatus(controller.last_event)
     printLastActionStatus(controller.last_event)
-    printAgentStatus(controller.last_event)
-    printObjectStatus(controller.last_event, objective)
+    if problem == 'movimiento':
+        printAgentStatus(controller.last_event)
+    else:
+        printObjectStatus(controller.last_event, objective)
 
     bucle = input('Desea realizar otra acción sobre este entorno [Y/n]: ')
     iteracion += 1
