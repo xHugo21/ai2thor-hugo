@@ -11,17 +11,19 @@ class ParserAI2THORPDDL:
         self.objective = objective
         self.controller = controller
 
-        # Se empieza a parsear el problema
+        # Se parsean los datos generales comunes en todos los problemas
         self.parse_general()
 
-        # Dependiendo del tipo de problema, se añaden unos parámetros u otros mediante sus respectivos métodos
-        if problem == "movimiento":
-            self.parse_movement_problem()
+        # Dependiendo del tipo de problema, se añaden unos parámetros u otros
+        if problem == "move":
+            self.parse_move_problem()
         elif problem == "drop":
             self.parse_drop_problem()
+        # Si el problema es de un tipo distinto a movimiento o drop, entonces se añaden las interactable poses del objetivo
         else:
             self.parse_interactable_poses()
         
+        # Se añaden los estados meta del resto de problemas
         if problem == "pickup":
             self.parse_pickup_problem()
         elif problem == "open":
@@ -51,6 +53,7 @@ class ParserAI2THORPDDL:
         #elif problem == "put":
         #    self.parse_put_problem()
         
+        # Se añade la métrica indicada (opcional)
         #self.parse_metric()
         
         # Una vez parseado, se escribe sobre un fichero .pddl
@@ -124,7 +127,7 @@ class ParserAI2THORPDDL:
         
         self.problem += "\t)\n\n"
 
-    def parse_movement_problem(self):
+    def parse_move_problem(self):
         # Definición del estado meta del problema
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(= (agent-at-x) {self.objective['x']})"    
@@ -147,126 +150,123 @@ class ParserAI2THORPDDL:
             subproblem += f"\t\t(= (interactablepose-facing pose{i} {self.objective['name']}) {pose['rotation']})\n"
             subproblem += f"\t\t(= (interactablepose-inclination pose{i} {self.objective['name']}) {pose['horizon']})\n\n"
             i += 1
-        
         start_index = self.problem.find("(:init\n")
         end_index = self.problem.find("\t\t(= (facing)")
         self.problem = self.problem[:start_index+8] + subproblem + self.problem[end_index:]
 
-        # Añadir las interactable poses creadas como objetos
+        # Añadir las interactable poses anteriormente creadas como objetos
         subproblem = ""
         for j in range (0, i):
             subproblem += f"\t\tpose{j} - position\n"
-        
         start_index = self.problem.find("(:objects\n")
         end_index = self.problem.find("\t\tpos0")
         self.problem = self.problem[:start_index+11] + subproblem + self.problem[end_index:]
     
     def parse_pickup_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema pickup
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(holding {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_open_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema open
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(open {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
     
     def parse_close_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema close
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(closed {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_break_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema break
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(broken {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_cook_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema cook
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(cooked {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
     
     def parse_slice_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema slice
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(sliced {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_toggleon_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema toggleon
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(toggledon {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_toggleoff_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema toggleoff
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(toggledoff {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_dirty_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema dirty
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(dirty {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_clean_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema clean
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(cleaned {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
     
     def parse_fill_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema fill
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(filled {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_empty_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema empty
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(emptied {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_useup_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema useup
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(usedup {self.objective['name']})"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
     def parse_drop_problem(self):
-        # Definición del estado meta del problema
+        # Definición del estado meta del problema drop
         self.problem += "\t(:goal (and\n"
         self.problem += f"\t\t(not (holding {self.objective['name']}))\n"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 
-    '''
-    def parse_put_problem(self):
-        # Definición del estado meta del problema
-        self.problem += "\t(:goal (and\n"
-        self.problem += f"\t\t(put {self.held_obj['name']} {self.objective['name']}))\n"    
-        self.problem += "\t))\n"
-        self.problem += ")\n"
-    '''
+    
+    # def parse_put_problem(self):
+    #     # Definición del estado meta del problema put
+    #     self.problem += "\t(:goal (and\n"
+    #     self.problem += f"\t\t(put {self.held_obj['name']} {self.objective['name']}))\n"    
+    #     self.problem += "\t))\n"
+    #     self.problem += ")\n"
 
     #def parse_metric(self):
     #    self.problem += "\t(:metric minimize (n_lookdown))\n"

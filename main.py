@@ -44,6 +44,7 @@ print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
 # Creamos una cámara que extrae una foto general de la escena en ./images/scene.png
 createCamera(controller)
 
+# Bucle que permite realizar más de una acción sobre la escena iniciada
 iteracion = 0
 bucle = 'Y'
 while bucle == 'Y':
@@ -55,25 +56,6 @@ while bucle == 'Y':
 
     # Pedimos al usuario que indique el tipo de problema a resolver y el objetivo concreto dentro de ese problema
     problem, objective, liquid = inputs.problem_selection(event)
-
-    '''
-    count1 = 0
-    for obj in event.metadata["actionReturn"]:
-    posible_pos = event.metadata["actionReturn"]
-
-    event = controller.step(action="GetInteractablePoses", objectId=objective["objectId"], standings=[True])
-    printLastActionStatus(event)
-    count = 0
-    interactable_pos = event.metadata["actionReturn"]
-    aux = False
-    for i in range(0, len(interactable_pos)):
-        for j in range (0, len(posible_pos)):
-            if (interactable_pos[i]['x'] == posible_pos[j]['x']) and (interactable_pos[i]['z'] == posible_pos[j]['z']):
-                aux = True
-        print(f'{i} - {aux}')
-        aux = False
-    print(event.metadata["actionReturn"])
-    '''
 
     # Parseo del entorno a fichero pddl
     ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
@@ -87,18 +69,13 @@ while bucle == 'Y':
     # Parseo del plan para convertirlo en acciones ejecutables por el agente y ejecutarlas
     parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid)
 
-    '''
-    for act in parsed.executable_actions:
-        exec(act)
-    '''
-
     # Visualizar estado final
-    # printAgentStatus(controller.last_event)
     printLastActionStatus(controller.last_event)
-    if problem == 'movimiento':
+    if problem == 'move':
         printAgentStatus(controller.last_event)
     else:
         printObjectStatus(controller.last_event, objective)
 
+    # Preguntar si se desea ejecutar otra acción en este mismo entorno. En caso contrario se finaliza el programa
     bucle = input('Desea realizar otra acción sobre este entorno [Y/n]: ')
     iteracion += 1

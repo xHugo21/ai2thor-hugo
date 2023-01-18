@@ -14,25 +14,53 @@ checking for cyclic := effects --- OK.
 Evaluation function 0.000000*g(s) + 1.000000*h(s) where
  metric is plan length
 
-Cueing down from goal distance:    4 into depth  --- pruning stopped --- [1]
+Cueing down from goal distance:   25 into depth  --- pruning stopped --- [1][2]
+                                  24             --- pruning stopped --- [1][2]
+                                  18             --- pruning stopped --- [1]
+                                  17             --- pruning stopped --- [1]
+                                  16             --- pruning stopped --- [1]
+                                  15             --- pruning stopped --- [1]
+                                  14             --- pruning stopped --- [1]
+                                  13             --- pruning stopped --- [1]
+                                  12             --- pruning stopped --- [1]
+                                  11             --- pruning stopped --- [1]
+                                  10             --- pruning stopped --- [1]
+                                   9             --- pruning stopped --- [1]
+                                   8             --- pruning stopped --- [1]
+                                   4             --- pruning stopped --- [1]
                                    3             --- pruning stopped --- [1]
                                    2             --- pruning stopped --- [1]
-                                   1            [1]
+                                   1             --- pruning stopped --- [1]
                                    0            
 
 ff: found legal plan as follows
 
-step    0: (LOOKDOWN)
-        1: (LOOKDOWN)
+step    0: (MOVE-AHEAD-270 POS2)
+        1: (ROTATE-LEFT)
         2: (ROTATE-LEFT)
-        3: (PICKUP FORK_BD290B10 POSE50)
+        3: (ROTATE-LEFT)
+        4: (MOVE-AHEAD-0 POS5)
+        5: (MOVE-AHEAD-0 POS10)
+        6: (MOVE-AHEAD-0 POS16)
+        7: (MOVE-AHEAD-0 POS24)
+        8: (MOVE-AHEAD-0 POS32)
+        9: (MOVE-AHEAD-0 POS39)
+       10: (MOVE-AHEAD-0 POS46)
+       11: (MOVE-AHEAD-0 POS54)
+       12: (MOVE-AHEAD-0 POS63)
+       13: (MOVE-AHEAD-0 POS70)
+       14: (MOVE-AHEAD-0 POS76)
+       15: (MOVE-AHEAD-0 POS82)
+       16: (MOVE-AHEAD-0 POS88)
+       17: (MOVE-AHEAD-0 POS94)
+       18: (MOVE-AHEAD-0 POS100)
      
 
-time spent:    0.02 seconds instantiating 512208 easy, 0 hard action templates
-               0.08 seconds reachability analysis, yielding 2990 facts and 1422 actions
-               0.26 seconds creating final representation with 2990 relevant facts, 8 relevant fluents
+time spent:    0.01 seconds instantiating 260768 easy, 0 hard action templates
+               0.04 seconds reachability analysis, yielding 2262 facts and 638 actions
+               0.11 seconds creating final representation with 2262 relevant facts, 8 relevant fluents
                0.00 seconds computing LNF
-               0.01 seconds building connectivity graph
-               0.01 seconds searching, evaluating 16 states, to a max depth of 1
-               0.38 seconds total time
+               0.00 seconds building connectivity graph
+               0.03 seconds searching, evaluating 114 states, to a max depth of 2
+               0.19 seconds total time
 

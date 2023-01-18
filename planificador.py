@@ -3,6 +3,7 @@ import os
 
 class Planificador():
     def __init__(self, planner_path, domain_path, problem_path, output_path, search_algorithm=0, print=False):
+        '''Método init de Planificador. Inicia los parámetros y llama a los métodos necesarios para ejecutar el planificador'''
         self.planner_path = planner_path
         self.domain_path = domain_path
         self.problem_path = problem_path
@@ -26,6 +27,7 @@ class Planificador():
             print(f.read())
 
     def get_plan (self):
+        '''Método que extrae el plan generado a una variable que es devuelta'''
         with open(self.output_path, 'r') as f:
             raw_plan = f.read()
         return raw_plan

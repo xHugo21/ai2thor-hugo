@@ -2,18 +2,34 @@
 - Reducir numero de estados en los problemas
 - Añadir acción put
 - Concatenación de acciones tiene fallos
-- Manejo de errores inputs
+- Manejo de errores en input de objetivo
 - Comentar código
 - Simplificar funciones
 - Comprobar si los planes son óptimos
 - El planificador prioriza la accion lookdown aun usando metric
 - Si no hay objetivos posibles (p.ej close object) -> devolver a selección problema
-- Crear una variable previous_objectives (lista) que guarde los objetivos previos
-
 
 * ¿HACER? *
-- Mantener stepsize como parámetro modificable?
+- stepsize como parámetro modificable?
 - Jerarquía objetos dominio pddl?
 - Permitir acción crouch? -> Si no se permite entonces restringir GetInteractablePoses
 - Añadir coordenada y a posiciones?
 - Se podría usar InitialRandomSpawn para aleatorizar posición inicial agente
+
+* PROBLEMAS CONCRETOS DE CADA ACCIÓN *
+- Move: Ninguno
+- Pickup:
+- Open:
+- Close:
+- Break:
+- Cook:
+- Slice:
+- Toggle On:
+- Toggle Off:
+- Dirty:
+- Clean:
+- Fill:
+- Empty:
+- Use Up:
+- Drop:
+- Put:

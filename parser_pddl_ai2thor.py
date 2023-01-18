@@ -5,6 +5,7 @@ from aux import extractActionImage
 
 class ParserPDDLAI2THOR:
     def __init__(self, raw_plan, controller, iteracion, liquid):
+        '''Método init de la clase ParserPDDLAI2THOR. Guarda los parámetros y ejecuta los métodos necesarios para convertir el plan generado a acciones de ai2thor'''
         self.actions = []
         self.executable_actions = []
         self.controller = controller
@@ -12,7 +13,12 @@ class ParserPDDLAI2THOR:
 
         self.extract_plan(raw_plan)
 
+        print("*EJECUTANDO PLAN SOBRE ENTORNO AI2THOR*\n")
+
         self.parse_actions(iteracion, liquid)
+
+        print("*PLAN EJECUTADO SATISFACTORIAMENTE*\n")
+
     
     def extract_plan(self, raw_plan):
         '''Método que extrae el plan dividido para poder procesar acción por acción.
@@ -40,6 +46,7 @@ class ParserPDDLAI2THOR:
         
 
     def parse_actions(self, iteracion, liquid):
+        '''Método que identifica cada acción junto a sus parámetros y la ejecuta. Extrae además una foto en ./images/ del simulador después de ejecutar cada acción'''
         # Creamos foto situación inicial
         extractActionImage(self.controller.last_event, f'iter{iteracion}_0')
         n_image = 1
@@ -118,6 +125,7 @@ class ParserPDDLAI2THOR:
         #return self.executable_actions
     
     def object_state_action(self, act, action_name_domain, plus_index, action_name_ai2thor, liquid='coffee'):
+        '''Método que ejecuta las acciones de cambio de estado de objetos al ser similares entre sí'''
         start_index = act.find(action_name_domain)
         end_index = act.find(" POSE")
         obj_name = act[start_index+plus_index:end_index]

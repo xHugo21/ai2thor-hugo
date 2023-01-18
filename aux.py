@@ -5,7 +5,7 @@ import os
 import shutil
 
 def printAgentStatus(event):
-    '''Muestra posición del agente'''
+    '''Muestra datos generales y posición del agente'''
     print("-----------------------------------------------")
     print(f'sceneName: {event.metadata["sceneName"]}')
     print(f'lastAction: {event.metadata["lastAction"]}')
@@ -16,7 +16,7 @@ def printAgentStatus(event):
     print("-----------------------------------------------\n")
 
 def printObjectStatus(event, object):
-    '''Muestra el estado de un objeto'''
+    '''Muestra el estado de un objeto completo'''
     print("-----------------------------------------------")
     for obj in event.metadata["objects"]:
         if obj['objectId'] == object['objectId']:
@@ -33,11 +33,12 @@ def printLastActionStatus(event):
     print("-----------------------------------------------\n")
 
 def extractActionImage(event, name):
-    '''Devuelve una imagen de la situación indicada con el nombre pasado por parámetro'''
+    '''Extrae una imagen de la situación indicada con el nombre pasado por parámetro'''
     data = im.fromarray(event.frame)
     data.save("./images/" + name + ".png")
 
 def createCamera(controller):
+    '''Crea una cámara en la posición indicada y después llama a extractCameraImage() para extraer una imagen'''
     event = controller.step("Done")
     center = event.metadata["sceneBounds"]["center"]
     center["y"] = event.metadata["sceneBounds"]["cornerPoints"][0][1]
@@ -49,7 +50,6 @@ def createCamera(controller):
         rotation=dict(x=90, y=0, z=0),
         fieldOfView=110
     )
-
     extractCameraImage(event.third_party_camera_frames[0], 'scene')
 
 def extractCameraImage(nparray, name):

@@ -3,38 +3,51 @@
 
 class ProblemDefinition():
     def __init__(self):
+        '''Clase que contiene todos los métodos para recoger los parámetros de entrada'''
         pass
 
     def scene_selection(self):
-        print("----ESCENAS----")
-        print("[1-30] - Cocinas")
-        print("[201-230] - Salas de estar")
-        print("[301-330] - Dormitorios")
-        print("[401-430] - Baños")
-        print("---------------")
-        self.scene_number = str(input("Seleccione una escena: "))
-        print("")
+        '''Método que permite seleccionar la escena a utilizar'''
+        bucle = True
+        while bucle:
+            print("----ESCENAS----")
+            print("[1-30] - Cocinas")
+            print("[201-230] - Salas de estar")
+            print("[301-330] - Dormitorios")
+            print("[401-430] - Baños")
+            print("---------------")
+            self.scene_number = int(input("Seleccione una escena: "))
+            print("")
+            if (1 <= self.scene_number <= 30) or (201 <= self.scene_number <= 230) or (301 <= self.scene_number <= 330) or (401 <= self.scene_number <= 430):
+                bucle = False
+                self.scene_number = str(self.scene_number)
+            else:
+                print("Por favor, introduce una escena válida\n")
 
         return self.scene_number
 
     def paths_selection(self, iteracion):
-        '''
-        print("----PLANIFICADOR----")
-        print("[1] - cbp-roller")
-        print("--------------------")
-        aux = input("Seleccione un planificador: ")
-        if str(aux) == '1':
-            self.planner_path = "../cbp-roller/cbp-roller"
-        print("")
+        '''Método que permite seleccionar las rutas de los archivos del planificador, problema y output'''
+        #bucle = True
+        #while bucle:
+        #    print("----PLANIFICADOR----")
+        #    print("[1] - cbp-roller")
+        #    print("--------------------")
+        #    aux = input("Seleccione un planificador: ")
+        #    print("")
+        #    if aux == '1':
+        #        self.planner_path = "../cbp-roller/cbp-roller"
+        #        bucle = False
+        #    else:
+        #        print("Por favor, introduce un planificador válido\n")
 
-        aux = input("Introduzca el nombre del problema a generar: ")
-        self.problem_path = "./pddl/problems/" + aux + ".pddl"
-        print("")
+        #aux = input("Introduzca el nombre del problema a generar: ")
+        #self.problem_path = "./pddl/problems/" + aux + "_iter" + str(iteracion) + ".pddl"
+        #print("")
 
-        self.output_path = "./pddl/outputs/plan_" + aux + ".txt"
-        print(f'El fichero de salida del planificador tendrá el nombre plan_{aux}.txt')
-        print("")
-        '''
+        #self.output_path = "./pddl/outputs/" + aux + "_iter" + str(iteracion) + ".txt"
+        #print(f'El fichero de salida del planificador tendrá el nombre {self.output_path}\n')
+        
 
         self.planner_path = "../cbp-roller/cbp-roller"
         self.problem_path = f'./pddl/problems/problem1_iter{iteracion}.pddl'
@@ -44,32 +57,41 @@ class ProblemDefinition():
         return self.planner_path, self.problem_path, self.output_path
 
     def problem_selection(self, event):
+        '''Método que permite escoger el problema (acción) a realizar junto a su respectivo objetivo'''
         self.liquid = 'coffee'
         self.event = event
-        print("----PROBLEMA----")
-        print("[1] - Move Agent")
-        print("[2] - Pickup Object")
-        print("[3] - Open Object")
-        print("[4] - Close Object")
-        print("[5] - Break Object")
-        print("[6] - Cook Object")
-        print("[7] - Slice Object")
-        print("[8] - Toggle On Object")
-        print("[9] - Toggle Off Object")
-        print("[10] - Dirty Object")
-        print("[11] - Clean Object")
-        print("[12] - Fill Object")
-        print("[13] - Empty Object")
-        print("[14] - Use Up Object")
-        print("[15] - Drop Object (Requires holding an object)")
-        print("[16] - Put Object (Requires holding an object) NOT IMPLEMENTED")
-        print("----------------")
-        aux = input("Seleccione un tipo de problema a resolver: ")
-        print("")
+        bucle = True
+        while bucle:
+            print("----PROBLEMA----")
+            print("[1] - Move Agent")
+            print("[2] - Pickup Object")
+            print("[3] - Open Object")
+            print("[4] - Close Object")
+            print("[5] - Break Object")
+            print("[6] - Cook Object")
+            print("[7] - Slice Object")
+            print("[8] - Toggle On Object")
+            print("[9] - Toggle Off Object")
+            print("[10] - Dirty Object")
+            print("[11] - Clean Object")
+            print("[12] - Fill Object")
+            print("[13] - Empty Object")
+            print("[14] - Use Up Object")
+            print("[15] - Drop Object (Requires holding an object)")
+            print("[16] - Put Object (Requires holding an object) NOT IMPLEMENTED")
+            print("----------------")
+            aux = input("Seleccione un tipo de problema a resolver: ")
+            print("")
+
+            if (1 <= int(aux) <= 16):
+                bucle = False
+            else:
+                print("Por favor, introduce un problema válido\n")
+
 
         # Establecer parámetros en caso de que se seleccione problema de movimiento
         if str(aux) == '1':
-            self.problem = "movimiento"
+            self.problem = "move"
             print("----OBJETIVO----")
             positions = event.metadata["actionReturn"]
             i = 0
@@ -132,6 +154,7 @@ class ProblemDefinition():
         return self.problem, self.objective, self.liquid
 
     def object_selection(self, problem_type, condition1, condition2, condition2_res, select_liquid=False):
+        '''Método que encapsula la selección de objetivos de la mayoría de problemas'''
         self.problem = problem_type
         posible_objects = []
         print("----OBJETIVO----")
