@@ -1,4 +1,5 @@
 * HACER *
+- Reducir numero de estados en los problemas
 - Añadir acción put
 - Concatenación de acciones tiene fallos
 - Manejo de errores inputs

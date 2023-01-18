@@ -48,6 +48,8 @@ class ParserAI2THORPDDL:
             self.parse_empty_problem()
         elif problem == "useup":
             self.parse_useup_problem()
+        #elif problem == "put":
+        #    self.parse_put_problem()
         
         #self.parse_metric()
         
@@ -256,6 +258,15 @@ class ParserAI2THORPDDL:
         self.problem += f"\t\t(not (holding {self.objective['name']}))\n"    
         self.problem += "\t))\n"
         self.problem += ")\n"
+
+    '''
+    def parse_put_problem(self):
+        # Definición del estado meta del problema
+        self.problem += "\t(:goal (and\n"
+        self.problem += f"\t\t(put {self.held_obj['name']} {self.objective['name']}))\n"    
+        self.problem += "\t))\n"
+        self.problem += ")\n"
+    '''
 
     #def parse_metric(self):
     #    self.problem += "\t(:metric minimize (n_lookdown))\n"

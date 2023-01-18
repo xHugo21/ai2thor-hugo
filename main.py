@@ -48,7 +48,7 @@ iteracion = 0
 bucle = 'Y'
 while bucle == 'Y':
     # Pedimos al usuario que escoja el planificador, y el nombre de los ficheros que se van a generar
-    planner_path, problem_path, output_path = inputs.paths_selection()
+    planner_path, problem_path, output_path = inputs.paths_selection(iteracion)
 
     # Ejecutamos una acción sobre el agente. En este caso la acción GetReachablePositions para que contenga la información de las posiciones que puede tomar el agente en el entorno.
     event = controller.step(action="GetReachablePositions")

@@ -25,6 +25,8 @@
     (filled ?o - object)
     (emptied ?o - object)
     (usedup ?o - object)
+    ;(put ?o2 ?o1 - object)
+
     ;(is-standing)
   )
 
@@ -343,4 +345,18 @@
       (usedup ?o)
     )
   )
+
+  ;(:action put
+  ;  :parameters (?o1 ?o2 - object ?p - position)
+  ;  :precondition (and
+  ;    (holding ?o2)
+  ;    (= (agent-at-x) (interactablepose-x ?p ?o1))
+  ;    (= (agent-at-z) (interactablepose-z ?p ?o1))
+  ;    (= (facing) (interactablepose-facing ?p ?o1))
+  ;    (= (inclination) (interactablepose-inclination ?p ?o1))
+  ;  )
+  ;  :effect (and
+  ;    (put ?o2 ?o1)
+  ;  )
+  ;)
 )

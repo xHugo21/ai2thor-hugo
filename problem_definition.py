@@ -17,7 +17,7 @@ class ProblemDefinition():
 
         return self.scene_number
 
-    def paths_selection(self):
+    def paths_selection(self, iteracion):
         '''
         print("----PLANIFICADOR----")
         print("[1] - cbp-roller")
@@ -37,8 +37,8 @@ class ProblemDefinition():
         '''
 
         self.planner_path = "../cbp-roller/cbp-roller"
-        self.problem_path = "./pddl/problems/problem1.pddl"
-        self.output_path = "./pddl/outputs/plan_problem1.txt"
+        self.problem_path = f'./pddl/problems/problem1_iter{iteracion}.pddl'
+        self.output_path = f'./pddl/outputs/problem1_iter{iteracion}.txt'
 
 
         return self.planner_path, self.problem_path, self.output_path
@@ -62,6 +62,7 @@ class ProblemDefinition():
         print("[13] - Empty Object")
         print("[14] - Use Up Object")
         print("[15] - Drop Object (Requires holding an object)")
+        print("[16] - Put Object (Requires holding an object) NOT IMPLEMENTED")
         print("----------------")
         aux = input("Seleccione un tipo de problema a resolver: ")
         print("")
@@ -123,6 +124,9 @@ class ProblemDefinition():
         
         if str(aux) == '15':
             self.object_selection("drop", "pickupable", "isPickedUp", True)
+        
+        #if str(aux) == '16':
+        #    self.object_selection("put", "receptacle", True, True)
 
             
         return self.problem, self.objective, self.liquid
@@ -140,7 +144,7 @@ class ProblemDefinition():
             i += 1
         print("----------------")
         aux2 = input("Seleccione el objetivo: ")
-        self.objective = posible_objects[int(aux2)]
+        self.objective = posible_objects[int(aux2)]            
         print("")
         print(f'El objetivo seleccionado es: {self.objective["objectId"]}')
 
