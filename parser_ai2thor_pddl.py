@@ -142,9 +142,7 @@ class ParserAI2THORPDDL:
         interactable_poses = event2.metadata["actionReturn"]
         subproblem = ""
         i = 0
-        print("Interactable poses:")
         for pose in interactable_poses:
-            print(pose)
             subproblem += f"\t\t(= (interactablepose-x pose{i} {self.objective['name']}) {pose['x']})\n"
             subproblem += f"\t\t(= (interactablepose-z pose{i} {self.objective['name']}) {pose['z']})\n"
             subproblem += f"\t\t(= (interactablepose-facing pose{i} {self.objective['name']}) {pose['rotation']})\n"

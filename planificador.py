@@ -17,7 +17,7 @@ class Planificador():
     def run_plan(self, search_algorithm):
         '''Método que ejecuta el planificador sobre los archivos indicados'''    
         try:
-            os.system(f'./{self.planner_path} -o {self.domain_path} -f {self.problem_path} -S {search_algorithm} -H 1 > {self.output_path}')
+            os.system(f'./{self.planner_path} -o {self.domain_path} -f {self.problem_path} -S {search_algorithm} -H 0 > {self.output_path}')
         except FileNotFoundError:
             raise Exception("Error al ejecutar el planificador (Archivo no encontrado)")
 

@@ -14,20 +14,20 @@ checking for cyclic := effects --- OK.
 Evaluation function 0.000000*g(s) + 1.000000*h(s) where
  metric is plan length
 
-Cueing down from goal distance:   25 into depth  --- pruning stopped --- [1][2]
-                                  24             --- pruning stopped --- [1][2]
-                                  18             --- pruning stopped --- [1]
-                                  17             --- pruning stopped --- [1]
-                                  16             --- pruning stopped --- [1]
-                                  15             --- pruning stopped --- [1]
-                                  14             --- pruning stopped --- [1]
-                                  13             --- pruning stopped --- [1]
-                                  12             --- pruning stopped --- [1]
-                                  11             --- pruning stopped --- [1]
-                                  10             --- pruning stopped --- [1]
-                                   9             --- pruning stopped --- [1]
+Cueing down from goal distance:   22 into depth  --- pruning stopped --- [1]
+                                  20             --- pruning stopped --- [1][2][3][4]
+                                  19             --- pruning stopped --- [1][2]
+                                  18             --- pruning stopped --- [1][2][3]
+                                  17             --- pruning stopped --- [1][2][3]
+                                  16             --- pruning stopped --- [1][2][3]
+                                  15             --- pruning stopped --- [1][2][3][4][5]
+                                  14             --- pruning stopped --- [1][2][3]
+                                  11             --- pruning stopped --- [1][2][3][4][5]
+                                  10             --- pruning stopped --- [1][2][3]
+                                   9             --- pruning stopped --- [1][2][3][4][5]
                                    8             --- pruning stopped --- [1]
-                                   4             --- pruning stopped --- [1]
+                                   7             --- pruning stopped --- [1]
+                                   5             --- pruning stopped --- [1]
                                    3             --- pruning stopped --- [1]
                                    2             --- pruning stopped --- [1]
                                    1             --- pruning stopped --- [1]
@@ -35,32 +35,54 @@ Cueing down from goal distance:   25 into depth  --- pruning stopped --- [1][2]
 
 ff: found legal plan as follows
 
-step    0: (MOVE-AHEAD-270 POS2)
+step    0: (MOVE-AHEAD-270 POS3)
         1: (ROTATE-LEFT)
         2: (ROTATE-LEFT)
         3: (ROTATE-LEFT)
-        4: (MOVE-AHEAD-0 POS5)
-        5: (MOVE-AHEAD-0 POS10)
-        6: (MOVE-AHEAD-0 POS16)
-        7: (MOVE-AHEAD-0 POS24)
-        8: (MOVE-AHEAD-0 POS32)
-        9: (MOVE-AHEAD-0 POS39)
-       10: (MOVE-AHEAD-0 POS46)
-       11: (MOVE-AHEAD-0 POS54)
-       12: (MOVE-AHEAD-0 POS63)
-       13: (MOVE-AHEAD-0 POS70)
-       14: (MOVE-AHEAD-0 POS76)
-       15: (MOVE-AHEAD-0 POS82)
-       16: (MOVE-AHEAD-0 POS88)
-       17: (MOVE-AHEAD-0 POS94)
-       18: (MOVE-AHEAD-0 POS100)
+        4: (MOVE-AHEAD-0 POS9)
+        5: (ROTATE-RIGHT)
+        6: (MOVE-AHEAD-90 POS2)
+        7: (ROTATE-LEFT)
+        8: (MOVE-AHEAD-0 POS8)
+        9: (MOVE-AHEAD-0 POS16)
+       10: (ROTATE-RIGHT)
+       11: (ROTATE-RIGHT)
+       12: (ROTATE-RIGHT)
+       13: (MOVE-AHEAD-270 POS26)
+       14: (ROTATE-LEFT)
+       15: (ROTATE-LEFT)
+       16: (ROTATE-LEFT)
+       17: (MOVE-AHEAD-0 POS37)
+       18: (ROTATE-RIGHT)
+       19: (ROTATE-RIGHT)
+       20: (ROTATE-RIGHT)
+       21: (MOVE-AHEAD-270 POS49)
+       22: (ROTATE-LEFT)
+       23: (ROTATE-LEFT)
+       24: (ROTATE-LEFT)
+       25: (MOVE-AHEAD-0 POS61)
+       26: (ROTATE-RIGHT)
+       27: (ROTATE-RIGHT)
+       28: (ROTATE-RIGHT)
+       29: (MOVE-AHEAD-270 POS73)
+       30: (ROTATE-LEFT)
+       31: (ROTATE-LEFT)
+       32: (ROTATE-LEFT)
+       33: (MOVE-AHEAD-0 POS83)
+       34: (MOVE-AHEAD-0 POS91)
+       35: (ROTATE-RIGHT)
+       36: (ROTATE-RIGHT)
+       37: (ROTATE-RIGHT)
+       38: (MOVE-AHEAD-270 POS99)
+       39: (MOVE-AHEAD-270 POS106)
+       40: (MOVE-AHEAD-270 POS113)
      
 
-time spent:    0.01 seconds instantiating 260768 easy, 0 hard action templates
-               0.04 seconds reachability analysis, yielding 2262 facts and 638 actions
-               0.11 seconds creating final representation with 2262 relevant facts, 8 relevant fluents
+time spent:    0.01 seconds instantiating 340824 easy, 0 hard action templates
+               0.05 seconds reachability analysis, yielding 2678 facts and 718 actions
+               0.13 seconds creating final representation with 2678 relevant facts, 8 relevant fluents
                0.00 seconds computing LNF
                0.00 seconds building connectivity graph
-               0.03 seconds searching, evaluating 114 states, to a max depth of 2
-               0.19 seconds total time
+               0.10 seconds searching, evaluating 535 states, to a max depth of 5
+               0.29 seconds total time
 
