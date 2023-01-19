@@ -2,10 +2,14 @@
 
 ## Trabajo Fin de Grado - Hugo García Cuesta 100428954
 
+### Documentacion
+- AI2THOR documentation: https://ai2thor.allenai.org/ithor/documentation/
+
 ### Ejecución
 1. Clonar repositorio en carpeta local
 2. Comprobar apartado de requisitos e instalar o modificar componentes necesarios
-3. Ejecutar main.py con Python
+3. Descargar planificador cbp-roller y modificar ruta de acceso al mismo. La variable debe modificarse en el archivo problem_definition.py dentro de la función paths_selection(). La variable es self.planner_path
+4. Ejecutar main.py con Python
     3.1 Seleccionar escena
     3.2 Seleccionar problema/accion
     3.3 Seleccionar objetivo
