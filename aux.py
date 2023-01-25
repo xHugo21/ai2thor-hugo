@@ -20,7 +20,9 @@ def printObjectStatus(event, object):
     print("-----------------------------------------------")
     for obj in event.metadata["objects"]:
         if obj['objectId'] == object['objectId']:
-            print(obj)
+            for key, value in obj.items():
+                if key != 'axisAlignedBoundingBox' and key != 'objectOrientedBoundingBox':
+                    print(f'{key}: {value}')
     print("-----------------------------------------------\n")
 
 def printLastActionStatus(event):
@@ -68,4 +70,10 @@ def removeGeneratedFolders():
     os.mkdir(problems_dir)
     os.mkdir(outputs_dir)
     os.mkdir(images_dir)
+
+def removeResults():
+    '''Limpia el directorio Results'''
+    results_dir = "./Results/"
+    shutil.rmtree(results_dir)
+    os.mkdir(results_dir)
 

@@ -61,6 +61,7 @@ class ProblemDefinition():
         self.liquid = 'coffee'
         self.event = event
         bucle = True
+        holding = False
         while bucle:
             print("----PROBLEMA----")
             print("[1] - Move Agent")
@@ -78,12 +79,16 @@ class ProblemDefinition():
             print("[13] - Empty Object")
             print("[14] - Use Up Object")
             print("[15] - Drop Object (Requires holding an object)")
-            print("[16] - Put Object (Requires holding an object) NOT IMPLEMENTED")
+            print("[16] - Put Object (Requires holding an object)")
             print("----------------")
             aux = input("Seleccione un tipo de problema a resolver: ")
             print("")
-
-            if (1 <= int(aux) <= 16):
+            for obj in event.metadata['objects']:
+                if obj['isPickedUp']:
+                    holding = True
+            if (1 <= int(aux) <= 14):
+                bucle = False
+            elif (15 <= int(aux) <= 16) and holding:
                 bucle = False
             else:
                 print("Por favor, introduce un problema válido\n")
@@ -147,8 +152,8 @@ class ProblemDefinition():
         if str(aux) == '15':
             self.object_selection("drop", "pickupable", "isPickedUp", True)
         
-        #if str(aux) == '16':
-        #    self.object_selection("put", "receptacle", True, True)
+        if str(aux) == '16':
+            self.object_selection("put", "receptacle", "receptacle", True)
 
             
         return self.problem, self.objective, self.liquid
@@ -157,10 +162,13 @@ class ProblemDefinition():
         '''Método que encapsula la selección de objetivos de la mayoría de problemas'''
         self.problem = problem_type
         posible_objects = []
-        print("----OBJETIVO----")
         for obj in self.event.metadata["objects"]:
             if (obj[condition1] == True) and (obj[condition2] == condition2_res):
                 posible_objects.append(obj)
+        if not posible_objects:
+            print("No existen objetivos para esa tarea. Escoja otra o cambie de escena\n")
+            return self.problem_selection(self.event)
+        print("----OBJETIVO----")         
         i = 0
         for obj in posible_objects:
             print(f'[{i}] - {obj["objectId"]}')
@@ -169,7 +177,7 @@ class ProblemDefinition():
         aux2 = input("Seleccione el objetivo: ")
         self.objective = posible_objects[int(aux2)]            
         print("")
-        print(f'El objetivo seleccionado es: {self.objective["objectId"]}')
+        print(f'El objetivo seleccionado es: {self.objective["objectId"]}\n')
 
         if select_liquid:
             print("----PROBLEMA----")
@@ -185,3 +193,25 @@ class ProblemDefinition():
                 self.liquid = 'wine'
             elif str(inp) == '3':
                 self.liquid = 'water'
+    
+    def object_selection_ogamus(self):
+        pickupable_objects = ["alarmclock", "aluminumfoil", "apple", "baseballbat", "book", "boots", "basketball",
+                   "bottle", "bowl", "box", "bread", "butterknife", "candle", "cd", "cellphone", "peppershaker",
+                   "cloth", "creditcard", "cup", "dishsponge", "dumbbell", "egg", "fork", "handtowel",
+                   "kettle", "keychain", "knife", "ladle", "laptop", "lettuce", "mug", "newspaper",
+                   "pan", "papertowel", "papertowelroll", "pen", "pencil", "papershaker", "pillow", "plate", "plunger",
+                   "pot", "potato", "remotecontrol", "saltshaker", "scrubbrush", "soapbar", "soapbottle",
+                   "spatula", "spoon", "spraybottle", "statue", "tabletopdecor", "teddybear", "tennisracket",
+                   "tissuebox", "toiletpaper", "tomato", "towel", "vase", "watch", "wateringcan", "winebottle"]
+        print("----OBJETIVO----")
+        i = 0
+        for obj in pickupable_objects:
+            print(f'[{i}] - {obj}')
+            i += 1
+        print("----------------")
+        aux2 = input("Seleccione el objetivo a buscar y recoger: ")
+
+        self.objective = pickupable_objects[int(aux2)]
+        return self.objective
+
+        

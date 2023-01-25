@@ -1,0 +1,30 @@
+[
+    {
+        "episode": 1,
+        "scene": "FloorPlan1",
+        "goal": "(exists (?o1 - apple) (and (viewing ?o1) (close_to ?o1)))",
+        "agent_position": {
+            "x": -1.0,
+            "y": 0.900999128818512,
+            "z": 1.0
+        },
+        "agent_rotation": {
+            "x": -0.0,
+            "y": 270.0,
+            "z": 0.0
+        },
+        "initial_orientation": 270.0,
+        "initial_horizon": 0.0,
+        "agent_is_standing": true,
+        "agent_in_high_friction_area": false,
+        "agent_fov": 79,
+        "shortest_path": [
+            {
+                "x": -1.0,
+                "y": 0.901863694190979,
+                "z": 2.0
+            }
+        ],
+        "shortest_path_length": 0
+    }
+]

@@ -12,7 +12,7 @@ class ParserAI2THORPDDL:
         self.controller = controller
 
         # Se parsean los datos generales comunes en todos los problemas
-        self.parse_general()
+        self.parse_general(problem)
 
         # Dependiendo del tipo de problema, se añaden unos parámetros u otros
         if problem == "move":
@@ -50,8 +50,8 @@ class ParserAI2THORPDDL:
             self.parse_empty_problem()
         elif problem == "useup":
             self.parse_useup_problem()
-        #elif problem == "put":
-        #    self.parse_put_problem()
+        elif problem == "put":
+            self.parse_put_problem()
         
         # Se añade la métrica indicada (opcional)
         #self.parse_metric()
@@ -59,7 +59,7 @@ class ParserAI2THORPDDL:
         # Una vez parseado, se escribe sobre un fichero .pddl
         self.write_parsed_problem()
 
-    def parse_general(self):
+    def parse_general(self, problem):
         '''Método que transforma los datos del entorno seleccionado de AI2THOR en un problema en lenguaje PDDL'''
 
         # Extracción de datos importantes del agente
@@ -79,16 +79,18 @@ class ParserAI2THORPDDL:
         
         # Escritura del problema en formato PDDL
         self.problem = "(define (problem problem1)\n"
-        self.problem += "\t(:domain domain_ai2thor)\n"
+        self.problem += f"\t(:domain domain_{problem})\n"
 
-        # Definición de los objetos
+        # Definición de las posiciones y objetos
         self.problem += "\t(:objects\n"
         i = 0
         for pos in positions:
             self.problem += f"\t\tpos{i} - position\n"
             i += 1
-        for obj in self.objects:
-            self.problem += f"\t\t{obj['name']} - object\n"
+        if self.objective.get('objectId') != None:
+            for obj in self.objects:
+                if (obj['objectId'] == self.objective['objectId']) or (obj['isPickedUp']): 
+                    self.problem += f"\t\t{obj['name']} - object\n"
         self.problem += "\t)\n\n"
 
         # Definición del estado inicial del problema
@@ -138,16 +140,33 @@ class ParserAI2THORPDDL:
 
     def parse_interactable_poses(self):
         # Añadir interactable poses del objeto
-        event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True])
+        
+        event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True], horizons=[0])
         interactable_poses = event2.metadata["actionReturn"]
+        if not interactable_poses:
+            event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True], horizons=[0, 30])
+            interactable_poses = event2.metadata["actionReturn"]
+            if not interactable_poses:
+                event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True], horizons=[0, 30, 60])
+                interactable_poses = event2.metadata["actionReturn"]
+                if not interactable_poses:
+                    event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True])
+                    interactable_poses = event2.metadata["actionReturn"]
+                    if not interactable_poses:
+                        print("Error. El objeto no se encuentra accesible para el agente\n")
+                        print("Reinicie el programa e intente con otra acción\n")
+                        exit()
+        
+
         subproblem = ""
         i = 0
-        for pose in interactable_poses:
-            subproblem += f"\t\t(= (interactablepose-x pose{i} {self.objective['name']}) {pose['x']})\n"
-            subproblem += f"\t\t(= (interactablepose-z pose{i} {self.objective['name']}) {pose['z']})\n"
-            subproblem += f"\t\t(= (interactablepose-facing pose{i} {self.objective['name']}) {pose['rotation']})\n"
-            subproblem += f"\t\t(= (interactablepose-inclination pose{i} {self.objective['name']}) {pose['horizon']})\n\n"
-            i += 1
+        if interactable_poses:
+            for pose in interactable_poses:
+                subproblem += f"\t\t(= (interactablepose-x pose{i} {self.objective['name']}) {pose['x']})\n"
+                subproblem += f"\t\t(= (interactablepose-z pose{i} {self.objective['name']}) {pose['z']})\n"
+                subproblem += f"\t\t(= (interactablepose-facing pose{i} {self.objective['name']}) {pose['rotation']})\n"
+                subproblem += f"\t\t(= (interactablepose-inclination pose{i} {self.objective['name']}) {pose['horizon']})\n\n"
+                i += 1
         start_index = self.problem.find("(:init\n")
         end_index = self.problem.find("\t\t(= (facing)")
         self.problem = self.problem[:start_index+8] + subproblem + self.problem[end_index:]
@@ -259,12 +278,12 @@ class ParserAI2THORPDDL:
         self.problem += ")\n"
 
     
-    # def parse_put_problem(self):
-    #     # Definición del estado meta del problema put
-    #     self.problem += "\t(:goal (and\n"
-    #     self.problem += f"\t\t(put {self.held_obj['name']} {self.objective['name']}))\n"    
-    #     self.problem += "\t))\n"
-    #     self.problem += ")\n"
+    def parse_put_problem(self):
+        # Definición del estado meta del problema put
+        self.problem += "\t(:goal (and\n"
+        self.problem += f"\t\t(put {self.held_obj['name']} {self.objective['name']}))\n"    
+        self.problem += "\t))\n"
+        #self.problem += ")\n"
 
     #def parse_metric(self):
     #    self.problem += "\t(:metric minimize (n_lookdown))\n"

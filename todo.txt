@@ -1,24 +1,20 @@
 * HACER *
-- Reducir numero de estados en los problemas
-- Añadir acción put
 - Concatenación de acciones tiene fallos
-- Manejo de errores en input de objetivo
 - Comentar código
-- Simplificar funciones
+- Simplificar funciones (funciones de añadir estados meta parser_ai2thor_pddl)
 - Comprobar si los planes son óptimos
-- El planificador prioriza la accion lookdown aun usando metric
-- Si no hay objetivos posibles (p.ej close object) -> devolver a selección problema
+
+* OGAMUS *
+Crear domino propio para ejecutar sobre OGAMUS
 
 * ¿HACER? *
 - stepsize como parámetro modificable?
 - Jerarquía objetos dominio pddl?
-- Permitir acción crouch? -> Si no se permite entonces restringir GetInteractablePoses
-- Añadir coordenada y a posiciones?
 - Se podría usar InitialRandomSpawn para aleatorizar posición inicial agente
 
 * PROBLEMAS CONCRETOS DE CADA ACCIÓN *
 - Move: Ninguno
-- Pickup:
+- Pickup: Algunos objetos no son alcanzables
 - Open:
 - Close:
 - Break:

@@ -2,14 +2,20 @@
 import os
 
 class Planificador():
-    def __init__(self, planner_path, domain_path, problem_path, output_path, search_algorithm=0, print=False):
+    def __init__(self, planner_path, problem_path, output_path, problem, search_algorithm=0, print=False, ogamus=False):
         '''Método init de Planificador. Inicia los parámetros y llama a los métodos necesarios para ejecutar el planificador'''
         self.planner_path = planner_path
-        self.domain_path = domain_path
+        if not ogamus:
+            self.domain_path = f'./pddl/domain_{problem}.pddl'
+        else:
+            self.domain_path = './pddl/domain_ogamus.pddl'
         self.problem_path = problem_path
         self.output_path = output_path
-
-        self.run_plan(search_algorithm)
+        
+        if not ogamus:
+            self.run_plan(search_algorithm)
+        else:
+            self.run_plan_ff()
 
         if print:
             self.print_plan()
@@ -18,6 +24,13 @@ class Planificador():
         '''Método que ejecuta el planificador sobre los archivos indicados'''    
         try:
             os.system(f'./{self.planner_path} -o {self.domain_path} -f {self.problem_path} -S {search_algorithm} -H 0 > {self.output_path}')
+        except FileNotFoundError:
+            raise Exception("Error al ejecutar el planificador (Archivo no encontrado)")
+
+    def run_plan_ff(self):
+        '''Método que ejecuta el planificador sobre los archivos indicados'''    
+        try:
+            os.system(f'{self.planner_path} -o {self.domain_path} -f {self.problem_path} > {self.output_path}')
         except FileNotFoundError:
             raise Exception("Error al ejecutar el planificador (Archivo no encontrado)")
 

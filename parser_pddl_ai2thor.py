@@ -42,7 +42,7 @@ class ParserPDDLAI2THOR:
         if self.actions[-1] == ' ':
             self.actions.pop()
 
-        # print(self.actions)
+        print(self.actions)
         
 
     def parse_actions(self, iteracion, liquid):
@@ -116,7 +116,19 @@ class ParserPDDLAI2THOR:
                 self.controller.step(action="DropHandObject", forceAction=True)
             
             elif act.find("PUT") != -1:
-                self.object_state_action(act, "PUT", 4, "PutObject")
+                start_index = act.find("PUT ")
+                end_index1 = act.find(" ", start_index+4)
+                end_index2 = act.find(" ", end_index1)
+                print(end_index2)
+                obj_name = act[start_index+4:end_index2]
+                for obj in self.objects:
+                    if (obj["name"].upper() == obj_name) and ("PUT" != "FILL"):
+                        self.controller.step(action="PutObject", objectId=obj["objectId"], forceAction=True)
+
+            if self.controller.last_event.metadata['errorMessage']:
+                print(f'Error: {self.controller.last_event.metadata["errorMessage"]}')
+                print("Reinicie el programa e intente con otra acción\n")
+                exit()
             
             # Extraemos una foto del paso ejecutado
             extractActionImage(self.controller.last_event, f'iter{iteracion}_{n_image}')
