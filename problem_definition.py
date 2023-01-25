@@ -6,6 +6,27 @@ class ProblemDefinition():
         '''Clase que contiene todos los métodos para recoger los parámetros de entrada'''
         pass
 
+    def method_selection(self):
+        '''Método que permite seleccionar el metodo de resolucion del problema
+            1. METADATA: Utiliza los metadatos devueltos por el simulador para conocer las posiciones de los objetos y posiciones válidas
+            2. OGAMUS: Utiliza redes neuronales para reconocer los objetos de una escena'''
+        bucle = True
+        while bucle:
+            print("----METODO----")
+            print("[1] - METADATA")
+            print("[2] - OGAMUS")
+            print("--------------")
+            self.method = int(input("Seleccione un método de resolución del problema: "))
+            print("")
+            if 1 <= self.method <= 2:
+                bucle = False
+                self.method = str(self.method)
+            else:
+                print("Por favor, introduce un método válido\n")
+
+        return self.method
+        
+
     def scene_selection(self):
         '''Método que permite seleccionar la escena a utilizar'''
         bucle = True
@@ -26,33 +47,16 @@ class ProblemDefinition():
 
         return self.scene_number
 
-    def paths_selection(self, iteracion):
+    def paths_selection(self, method, iteracion):
         '''Método que permite seleccionar las rutas de los archivos del planificador, problema y output'''
-        #bucle = True
-        #while bucle:
-        #    print("----PLANIFICADOR----")
-        #    print("[1] - cbp-roller")
-        #    print("--------------------")
-        #    aux = input("Seleccione un planificador: ")
-        #    print("")
-        #    if aux == '1':
-        #        self.planner_path = "../cbp-roller/cbp-roller"
-        #        bucle = False
-        #    else:
-        #        print("Por favor, introduce un planificador válido\n")
-
-        #aux = input("Introduzca el nombre del problema a generar: ")
-        #self.problem_path = "./pddl/problems/" + aux + "_iter" + str(iteracion) + ".pddl"
-        #print("")
-
-        #self.output_path = "./pddl/outputs/" + aux + "_iter" + str(iteracion) + ".txt"
-        #print(f'El fichero de salida del planificador tendrá el nombre {self.output_path}\n')
-        
-
-        self.planner_path = "../cbp-roller/cbp-roller"
-        self.problem_path = f'./pddl/problems/problem1_iter{iteracion}.pddl'
-        self.output_path = f'./pddl/outputs/problem1_iter{iteracion}.txt'
-
+        if method == '1':
+            self.planner_path = "../cbp-roller/cbp-roller"
+            self.problem_path = f'./pddl/problems/problem1_iter{iteracion}.pddl'
+            self.output_path = f'./pddl/outputs/problem1_iter{iteracion}.txt'
+        else:
+            self.planner_path = './OGAMUS/Plan/PDDL/Planners/FF/ff'
+            self.problem_path = f'./OGAMUS/Plan/PDDL/facts.pddl'
+            self.output_path = f'./pddl/outputs/problem1.txt'
 
         return self.planner_path, self.problem_path, self.output_path
 

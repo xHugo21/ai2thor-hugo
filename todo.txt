@@ -1,31 +1,13 @@
-* HACER *
+* GENERAL *
+- Unir ambos en un único ejecutable
+
+* SIN OGAMUS *
 - Concatenación de acciones tiene fallos
 - Comentar código
 - Simplificar funciones (funciones de añadir estados meta parser_ai2thor_pddl)
 - Comprobar si los planes son óptimos
+- Mover cbp-roller de carpeta
 
 * OGAMUS *
 Crear domino propio para ejecutar sobre OGAMUS
 
-* ¿HACER? *
-- stepsize como parámetro modificable?
-- Jerarquía objetos dominio pddl?
-- Se podría usar InitialRandomSpawn para aleatorizar posición inicial agente
-
-* PROBLEMAS CONCRETOS DE CADA ACCIÓN *
-- Move: Ninguno
-- Pickup: Algunos objetos no son alcanzables
-- Open:
-- Close:
-- Break:
-- Cook:
-- Slice:
-- Toggle On:
-- Toggle Off:
-- Dirty:
-- Clean:
-- Fill:
-- Empty:
-- Use Up:
-- Drop:
-- Put:

@@ -1,20 +1,20 @@
 [
     {
         "episode": 1,
-        "scene": "FloorPlan202",
-        "goal": "(exists (?o1 - laptop) (and (viewing ?o1) (close_to ?o1)))",
+        "scene": "FloorPlan1",
+        "goal": "(exists (?o1 - apple) (and (viewing ?o1) (close_to ?o1)))",
         "agent_position": {
-            "x": -0.5,
-            "y": 0.9010459184646606,
-            "z": 1.75
+            "x": -1.0,
+            "y": 0.900999128818512,
+            "z": 1.0
         },
         "agent_rotation": {
-            "x": 0.0,
+            "x": -0.0,
             "y": 270.0,
             "z": 0.0
         },
         "initial_orientation": 270.0,
-        "initial_horizon": -0.0,
+        "initial_horizon": 0.0,
         "agent_is_standing": true,
         "agent_in_high_friction_area": false,
         "agent_fov": 79,
