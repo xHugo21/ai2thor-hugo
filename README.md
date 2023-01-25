@@ -22,7 +22,8 @@
 6. Instalar PyTorch (versión 1.11.0) (https://pytorch.org/get-started/locally/)
 7. Instalar AI2THOR (versión 5.0.0) (pip install ai2thor)
 8. Instalar matplotlib (pip install matplotlib)
-9. Ejecutar main.py dentro del entorno y seguir los pasos que se muestran por pantalla(python main.py)
+9. Descargar la red neuronal preentrenada del siguiente enlace y volcar archivos en /Utils/pretrained_models/ (https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing)
+10. Ejecutar main.py dentro del entorno y seguir los pasos que se muestran por pantalla(python main.py)
 
 ### Visualización de resultados
 
