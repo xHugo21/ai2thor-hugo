@@ -117,5 +117,5 @@ window_2 - window
 )
 (:goal
 (and
-(holding apple_0))
+(exists (?o1 - apple) (and (viewing ?o1) (close_to ?o1))))
 ))

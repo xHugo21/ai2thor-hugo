@@ -33,7 +33,7 @@ blinds book box cabinet drawer fridge kettle laptop microwave safe showercurtain
 )
 
 (:action pickup
-		:parameters (?param_1 - object)
+		:parameters (?param_1 - pickupable)
 		:precondition (and
 		                    (discovered ?param_1)
 		                    (close_to ?param_1)
@@ -49,6 +49,37 @@ blinds book box cabinet drawer fridge kettle laptop microwave safe showercurtain
 		         )
 )
 
+(:action open
+		:parameters (?param_1 - openable)
+		:precondition (and
+		                    (discovered ?param_1)
+		                    (close_to ?param_1)
+		                    (hand_free)
+		                    (openable ?param_1)
+		                    (viewing ?param_1)
+		                    (inspected ?param_1)
+		              )
+		:effect
+		        (and
+		            (open ?param_1)
+		         )
+)
+
+(:action close
+		:parameters (?param_1 - openable)
+		:precondition (and
+		                    (discovered ?param_1)
+		                    (close_to ?param_1)
+		                    (hand_free)
+		                    (openable ?param_1)
+		                    (viewing ?param_1)
+		                    (inspected ?param_1)
+		              )
+		:effect
+		        (and
+		            (not (open ?param_1))
+		         )
+)
 
 ;(:action putinto
 ;		:parameters (?param_1 ?param_2 - object)
@@ -90,37 +121,7 @@ blinds book box cabinet drawer fridge kettle laptop microwave safe showercurtain
 ;		         )
 ;)
 ;
-;(:action open
-;		:parameters (?param_1 - object)
-;		:precondition (and
-;		                    (discovered ?param_1)
-;		                    (close_to ?param_1)
-;		                    (hand_free)
-;		                    (openable ?param_1)
-;		                    (viewing ?param_1)
-;		                    (inspected ?param_1)
-;		              )
-;		:effect
-;		        (and
-;		            (open ?param_1)
-;		         )
-;)
 ;
-;(:action close
-;		:parameters (?param_1 - object)
-;		:precondition (and
-;		                    (discovered ?param_1)
-;		                    (close_to ?param_1)
-;		                    (hand_free)
-;		                    (openable ?param_1)
-;		                    (viewing ?param_1)
-;		                    (inspected ?param_1)
-;		              )
-;		:effect
-;		        (and
-;		            (not (open ?param_1))
-;		         )
-;)
 ;
 ;(:action get_close_and_look_at_receptacle
 ;		:parameters (?param_1 - object)

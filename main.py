@@ -101,8 +101,8 @@ else:
   # Pedimos al usuario que escoja el planificador, y el nombre de los ficheros que se van a generar
   planner_path, problem_path, output_path = inputs.paths_selection(method, iteracion=0)
 
-  # Pedimos al usuario que seleccione una acción y un objetivo
-  problem = "pickup"
+  # Pedimos al usuario que seleccione una acción, un objetivo y su goal
+  problem = inputs.problem_selection_ogamus()
   objective = inputs.object_selection_ogamus()
 
   # Creamos el diccionario a introducir en el json
@@ -170,7 +170,7 @@ else:
     f.write(problem_str)
 
   # Llamamos al planificador para que ejecute el problema modificado sobre el dominio de ejecución de acciones
-  plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)
+  #plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)
 
   # Parseamos el plan para convertirlo en acciones ejecutables por el agente
   # parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion=0, liquid='coffee')

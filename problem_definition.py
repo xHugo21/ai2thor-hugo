@@ -197,25 +197,82 @@ class ProblemDefinition():
                 self.liquid = 'wine'
             elif str(inp) == '3':
                 self.liquid = 'water'
+
+    def problem_selection_ogamus(self):
+        bucle = True
+        while bucle:
+            print("----PROBLEMA----")
+            print("[1] - Get Close To Object")
+            print("[2] - Pickup Object")
+            print("[3] - Open Object")
+            print("[4] - Close Object")
+            print("[5] - Break Object")
+            print("[6] - Cook Object")
+            print("[7] - Slice Object")
+            print("[8] - Toggle On Object")
+            print("[9] - Toggle Off Object")
+            print("[10] - Dirty Object")
+            print("[11] - Clean Object")
+            print("[12] - Fill Object")
+            print("[13] - Empty Object")
+            print("[14] - Use Up Object")
+            print("[15] - Drop Object (Requires holding an object)")
+            print("[16] - Put Object (Requires holding an object)")
+            print("----------------")
+            aux = input("Seleccione un tipo de problema a resolver: ")
+            print("")
+            if (1 <= int(aux) <= 15):
+                bucle = False
+            else:
+                print("Por favor, introduce un problema válido\n")
+        
+        problemas_ogamus = ["get_close_to", "pickup", "open", "close"]
+        self.problem = problemas_ogamus[int(aux)-1]
+        return self.problem
     
     def object_selection_ogamus(self):
-        pickupable_objects = ["alarmclock", "aluminumfoil", "apple", "baseballbat", "book", "boots", "basketball",
-                   "bottle", "bowl", "box", "bread", "butterknife", "candle", "cd", "cellphone", "peppershaker",
-                   "cloth", "creditcard", "cup", "dishsponge", "dumbbell", "egg", "fork", "handtowel",
-                   "kettle", "keychain", "knife", "ladle", "laptop", "lettuce", "mug", "newspaper",
-                   "pan", "papertowel", "papertowelroll", "pen", "pencil", "papershaker", "pillow", "plate", "plunger",
-                   "pot", "potato", "remotecontrol", "saltshaker", "scrubbrush", "soapbar", "soapbottle",
-                   "spatula", "spoon", "spraybottle", "statue", "tabletopdecor", "teddybear", "tennisracket",
-                   "tissuebox", "toiletpaper", "tomato", "towel", "vase", "watch", "wateringcan", "winebottle"]
+        if self.problem == "get_close_to":
+            possible_objects = ["alarmclock", "aluminumfoil", "apple", "baseballbat", "book", "boots", "basketball",
+                    "bottle", "bowl", "box", "bread", "butterknife", "candle", "cd", "cellphone", "peppershaker",
+                    "cloth", "creditcard", "cup", "dishsponge", "dumbbell", "egg", "fork", "handtowel",
+                    "kettle", "keychain", "knife", "ladle", "laptop", "lettuce", "mug", "newspaper",
+                    "pan", "papertowel", "papertowelroll", "pen", "pencil", "papershaker", "pillow", "plate", "plunger",
+                    "pot", "potato", "remotecontrol", "saltshaker", "scrubbrush", "soapbar", "soapbottle",
+                    "spatula", "spoon", "spraybottle", "statue", "tabletopdecor", "teddybear", "tennisracket",
+                    "tissuebox", "toiletpaper", "tomato", "towel", "vase", "watch", "wateringcan", "winebottle", "armchair", "bathtub", "bathtubbasin", "bed", "bowl", "box", "cabinet", "coffeemachine",
+                   "coffeetable", "countertop", "desk", "diningtable", "drawer", "fridge", 
+                   "garbagecan", "handtowelholder", "laundryhamper", "microwave", "mug", "ottoman", "pan",
+                   "plate", "pot", "safe", "shelf", "sidetable", "sinkbasin", "sofa", "toaster",
+                   "toilet", "toiletpaperhanger", "towelholder", "tvstand", "stoveburner", "blinds", "book", "box", "cabinet", "drawer", "fridge", "kettle", "laptop", "microwave",
+                 "safe", "showercurtain", "showerdoor", "toilet"]
+
+        elif self.problem == "pickup":
+            possible_objects = ["alarmclock", "aluminumfoil", "apple", "baseballbat", "book", "boots", "basketball",
+                    "bottle", "bowl", "box", "bread", "butterknife", "candle", "cd", "cellphone", "peppershaker",
+                    "cloth", "creditcard", "cup", "dishsponge", "dumbbell", "egg", "fork", "handtowel",
+                    "kettle", "keychain", "knife", "ladle", "laptop", "lettuce", "mug", "newspaper",
+                    "pan", "papertowel", "papertowelroll", "pen", "pencil", "papershaker", "pillow", "plate", "plunger",
+                    "pot", "potato", "remotecontrol", "saltshaker", "scrubbrush", "soapbar", "soapbottle",
+                    "spatula", "spoon", "spraybottle", "statue", "tabletopdecor", "teddybear", "tennisracket",
+                    "tissuebox", "toiletpaper", "tomato", "towel", "vase", "watch", "wateringcan", "winebottle"]
+                    
+        elif self.problem == "open":
+            possible_objects = ["blinds", "book", "box", "cabinet", "drawer", "fridge", "kettle", "laptop", "microwave",
+                 "safe", "showercurtain", "showerdoor", "toilet"]
+
+        elif self.problem == "close":
+            possible_objects = ["blinds", "book", "box", "cabinet", "drawer", "fridge", "kettle", "laptop", "microwave",
+                 "safe", "showercurtain", "showerdoor", "toilet"]
+
         print("----OBJETIVO----")
         i = 0
-        for obj in pickupable_objects:
+        for obj in possible_objects:
             print(f'[{i}] - {obj}')
             i += 1
         print("----------------")
-        aux2 = input("Seleccione el objetivo a buscar y recoger: ")
-
-        self.objective = pickupable_objects[int(aux2)]
+        aux2 = input("Seleccione el objetivo: ")
+        self.objective = possible_objects[int(aux2)]
         return self.objective
+
 
         
