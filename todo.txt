@@ -1,5 +1,5 @@
 * GENERAL *
-- Unir ambos en un único ejecutable
+- Mejorar README
 
 * SIN OGAMUS *
 - Concatenación de acciones tiene fallos
