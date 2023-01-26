@@ -1,0 +1,65 @@
+
+usage of cbp-roller:
+
+OPTIONS   DESCRIPTIONS
+
+-p <str>    path for operator and fact file
+-o <str>    operator file name
+-f <str>    fact file name
+
+-F <file-name> results file name
+
+-g <num>    set weight w_g in w_g*g(s) + w_h*h(s) 
+-h <num>    set weight w_h in w_g*g(s) + w_h*h(s) 
+
+-O          switch on optimization expression (default is plan length)
+
+-U          use plan length heuristic in cost-EHC (default is cost heuristic)
+
+-H <num>    heuristic (default 0: Metric-FF) 
+                0: Metric-FF
+                1: hlevel max propagation
+                2: hlevel add propagation
+                3: hmax 
+                4: hadd 
+                5: hadd with helpful actions 
+                6: hmax withhelpful actions 
+                7: sum-hmax 
+                8: max-hadd 
+                9: sum-hmax with helpful actions 
+                10:max-hadd with helpful actions 
+
+-S <num>    search algorithm (default 0: Metric-FF EHC) 
+                0: EHC Metric-FF original
+                1: best first Metric-FF original
+                2: CEHC (EHC with and without costs)
+                3: anytime BFS (bounded by g value and repeated states prune)
+                4: anytime BFS + helpful and secondary lists 
+                5: NOT USE. Trials
+                6: anytime BFS + rescue nodes
+                7: anytime BFS + lookahead + rescue nodes
+                8: NOT USE. Trials
+                9: anytime BFS prune + lookahead + helpful and secondary lists
+                10: depth first with chronological backtracking and Roller
+                11: modified Hill-Climbing
+                12: anytime BFS + Roller policy lookahead with horizon
+                13: anytime BFS + Roller policy lookahead with horizon + rescue nodes
+                14: BFS+BnB (exhaustive) for learning 
+                15: BFS+BnB (exhaustive) for learning using previous solution as upper bound
+                16: depth first with chronological backtracking sorting actions using ff heuristic (for Roller paper). Set h weigth (-h) to 0 for not sorting actions
+                17: anytime BFS + FF heuristic policy lookahead with horizon (for Roller paper). Set horizon equal to 0 for eliminating lookahead generation
+                18: anytime BFS + FF heuristic policy lookahead with horizon + rescue nodes (for Roller paper). Set horizon equal 0 for eliminating lookahead generation
+                19: CEHC ordering first level by h(n)+ cost(a)
+                20: CEHC hdiff 
+                21: random search 
+
+-n          not stopping at first solution for anytime algorithms
+
+-L <num>    Writing Examples for learning 
+                1: LTL for TLPlan 
+                2: Helpful Context for ROLLER
+-D <num>    use HDIFF (default 0: not use it ) 
+                1: HDIFF
+                2: opposite HDIFF
+-c <num> horizon for the BFS Roller policy algorithm (-S 12,13,17,18) (default 50 ) 
+-s <num> seed 

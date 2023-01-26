@@ -1,13 +1,14 @@
 * GENERAL *
 - Mejorar README
 
-* SIN OGAMUS *
-- Concatenación de acciones tiene fallos
+* METADATA *
+- El objetivo no se encuentra accesible chequear si es cierto
 - Comentar código
 - Simplificar funciones (funciones de añadir estados meta parser_ai2thor_pddl)
 - Comprobar si los planes son óptimos
-- Mover cbp-roller de carpeta
 
 * OGAMUS *
-Crear domino propio para ejecutar sobre OGAMUS
+- Crear domino propio para ejecutar sobre OGAMUS
+- Controlar caso de no encontrar objetivo
+- Encadenar acciones
 

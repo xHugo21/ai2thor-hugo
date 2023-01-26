@@ -50,7 +50,7 @@ class ProblemDefinition():
     def paths_selection(self, method, iteracion):
         '''Método que permite seleccionar las rutas de los archivos del planificador, problema y output'''
         if method == '1':
-            self.planner_path = "../cbp-roller/cbp-roller"
+            self.planner_path = "./pddl/cbp-roller/cbp-roller"
             self.problem_path = f'./pddl/problems/problem1_iter{iteracion}.pddl'
             self.output_path = f'./pddl/outputs/problem1_iter{iteracion}.txt'
         else:

@@ -1,12 +1,12 @@
 [
     {
         "episode": 1,
-        "scene": "FloorPlan1",
+        "scene": "FloorPlan5",
         "goal": "(exists (?o1 - apple) (and (viewing ?o1) (close_to ?o1)))",
         "agent_position": {
-            "x": -1.0,
-            "y": 0.900999128818512,
-            "z": 1.0
+            "x": 0.75,
+            "y": 0.9009991884231567,
+            "z": 0.0
         },
         "agent_rotation": {
             "x": -0.0,

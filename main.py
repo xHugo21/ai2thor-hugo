@@ -10,6 +10,7 @@ from aux import printAgentStatus, printLastActionStatus, createCamera, printObje
 
 # CONSTANTES
 DATASET = 'Datasets/test_set_ogn_ithor.json'
+LOG = "Results/test_set_ogn_ithor_steps200/episode_0/log.txt"
 
 # FLUJO DEL PROGRAMA PRINCIPAL
 
@@ -134,6 +135,23 @@ else:
 
   # Llamamos a ogamus.main() para analizar la escena y encontrar el objetivo
   ogamus.main()
+
+  # Comprobamos el log de la ejecución de OGAMUS para ver si ha encontrado el objetivo.
+  # Si ha llegado a la iteración 200 significa que no lo ha encontrado
+  with open(LOG, "r") as f:
+    log_str = f.read()
+
+  print("HOLA")
+  print(log_str)
+  print("HOLA")
+  
+  print(log_str.find("200:Stop"))
+
+  # Si se cumple esta condición significa que no ha encontrado objetivo
+  if log_str.find("200:Stop") != -1:
+    print("No se ha encontrado el objetivo indicado tras recorrer la escena durante 200 pasos\n")
+    print("Ejecute de nuevo el programa y pruebe con un objetivo distinto\n")
+    exit()
 
   # Obtenemos el objeto encontrado de los hechos del fichero "./OGAMUS/Plan/PDDL/facts.pddl"
   with open(problem_path, "r") as f:

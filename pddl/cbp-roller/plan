@@ -1,0 +1,2 @@
+#!/bin/bash
+"$(dirname "$0")"/cbp-roller -o $1 -f $2 -F $3 -O -h 3 -H 1 -S 9 -n
