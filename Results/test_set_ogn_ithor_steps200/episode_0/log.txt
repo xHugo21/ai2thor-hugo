@@ -9,7 +9,7 @@ EPISODE:1
 SCENE:FloorPlan3
 TASK:ogn_ithor
 RANDOM SEED:1
-GOAL OBJECTS:['apple']
+GOAL OBJECTS:['cabinet']
 MAX ITER:200
 VISIBILITY DISTANCE:1
 MOVE STEP:0.25
@@ -27,15 +27,55 @@ ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
 ###############################################
 
 1:MoveAhead
-Changing event planner subgoal to: INSPECT(APPLE_0)
+Changing event planner subgoal to: INSPECT(CABINET_0)
 2:MoveAhead
+3:MoveAhead
+4:MoveAhead
+5:RotateLeft
+6:RotateLeft
+7:MoveAhead
+8:RotateRight
+9:RotateRight
+10:MoveAhead
+Collision detected
+11:RotateLeft
+12:RotateLeft
+13:MoveAhead
+14:RotateRight
+15:RotateRight
+16:MoveAhead
+Collision detected
+17:RotateRight
+18:RotateRight
+19:MoveAhead
+20:MoveAhead
+21:MoveAhead
+22:MoveAhead
+23:MoveAhead
+24:RotateLeft
+25:RotateLeft
+26:MoveAhead
+Collision detected
+27:RotateRight
+28:RotateRight
+29:RotateRight
+30:RotateRight
+31:MoveAhead
+32:MoveAhead
+33:MoveAhead
+34:MoveAhead
+35:MoveAhead
+Collision detected
+36:RotateRight
+37:RotateRight
 Changing event planner subgoal to: STOP()
-3:Stop
+38:Stop
 Successfully executed action: STOP()
+WARNING: computing distance to success as the distance from nearest goal object instance of the goal class, since ai2thor metrics cannot find a valid path.
 WARNING: distance to success is greater than 0 even if success is True. Check Evaluator.py
 Average metrics over 1 episodes:
 	 AVG success: 1.0
 	 AVG SPL: 0.0
 	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 3 seconds
+Episode computational time: 28 seconds

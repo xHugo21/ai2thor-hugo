@@ -5,6 +5,7 @@ from ai2thor.controller import Controller
 from problem_definition import ProblemDefinition
 from parser_ai2thor_pddl import ParserAI2THORPDDL
 from parser_pddl_ai2thor import ParserPDDLAI2THOR
+from goal_ogamus import GoalOgamus
 from planificador import Planificador
 from aux import printAgentStatus, printLastActionStatus, createCamera, printObjectStatus, removeResultFolders
 
@@ -145,32 +146,21 @@ else:
   print(log_str)
   print("HOLA")
   
-  print(log_str.find("200:Stop"))
+  print(log_str.find("200:"))
 
-  # Si se cumple esta condición significa que no ha encontrado objetivo
-  if log_str.find("200:Stop") != -1:
+  # Si se cumple esta condición significa que no ha encontrado objetivo -> Se para el programa
+  if log_str.find("200:") != -1:
     print("No se ha encontrado el objetivo indicado tras recorrer la escena durante 200 pasos\n")
     print("Ejecute de nuevo el programa y pruebe con un objetivo distinto\n")
     exit()
+  
+  # Si ha encontrado el objetivo -> Generar
 
-  # Obtenemos el objeto encontrado de los hechos del fichero "./OGAMUS/Plan/PDDL/facts.pddl"
-  with open(problem_path, "r") as f:
-    problem_str = f.read()
-  index_objective = problem_str.find(objective+"_")
-  final_objective = problem_str[index_objective:index_objective+len(objective)+2]
-
-  # Modificamos el fichero "./OGAMUS/Plan/PDDL/facts.pddl" para cambiar su estado meta
-  goal_state = f'(holding {final_objective})'
-  start_index = problem_str.find('(:goal') + 12
-  end_index = problem_str.find('(close_to ?o1)') + 16
-  problem_str = problem_str[:start_index] + goal_state + problem_str[end_index:]
-
-  # Reescribimos el fichero
-  with open(problem_path, "w") as f:
-    f.write(problem_str)
+  # Modificamos el fichero "./OGAMUS/Plan/PDDL/facts.pddl" para cambiar su estado meta dependiendo del tipo de problema
+  GoalOgamus(problem_path, problem, objective)
 
   # Llamamos al planificador para que ejecute el problema modificado sobre el dominio de ejecución de acciones
-  #plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)
+  plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)
 
   # Parseamos el plan para convertirlo en acciones ejecutables por el agente
   # parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion=0, liquid='coffee')
