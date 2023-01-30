@@ -201,5 +201,5 @@ toiletpaperhanger_0 - toiletpaperhanger
 )
 (:goal
 (and
-(exists (?o1 - toilet) (and (viewing ?o1) (open ?o1) (close_to ?o1))))
+(exists (?o1 - toilet) (and (viewing ?o1) (close_to ?o1))))
 ))

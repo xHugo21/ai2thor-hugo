@@ -1,6 +1,6 @@
 # Fichero para parsear los datos de un plan en acciones ejecutables por AI2THOR
 from ai2thor.controller import Controller
-from aux import extractActionImage
+from aux import extractActionImage, printObjectStatus
 
 
 class ParserPDDLAI2THOR:
@@ -168,6 +168,7 @@ class ParserPDDLAI2THOR:
             print("Reinicie el programa e intente con otra acción\n")
             exit()
         
+        self.controller.step("Pass")
         # Extraemos una foto del paso ejecutado
         extractActionImage(self.controller.last_event, f'iter{iteracion}_{n_image}')
     
@@ -180,7 +181,9 @@ class ParserPDDLAI2THOR:
         for obj in self.objects:
             if obj["objectId"].upper().find(obj_name.upper()) != -1:
                 print(obj["objectId"])
-                self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"])
+                self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"], forceAction=True)
+                printObjectStatus(self.controller.last_event, obj)
+
         
                 
 

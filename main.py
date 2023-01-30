@@ -118,7 +118,7 @@ else:
       "initial_horizon": agent_hor,
       "agent_is_standing": True,
       "agent_in_high_friction_area": False,
-      "agent_fov": 79,
+      "agent_fov": 90,
       "shortest_path": [
         {
           "x": -1.0,
@@ -137,7 +137,7 @@ else:
 
   # Llamamos a ogamus.main() para analizar la escena y encontrar el objetivo
   controller = ogamus.main()
-  
+
   # Comprobamos el log de la ejecución de OGAMUS para ver si ha encontrado el objetivo.
   # Si ha llegado a la iteración 200 significa que no lo ha encontrado
   with open(LOG, "r") as f:

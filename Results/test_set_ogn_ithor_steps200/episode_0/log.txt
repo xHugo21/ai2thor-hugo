@@ -6,17 +6,17 @@ Warning: setting distance threshold of predicate 'close_to(object)' to 150 centi
 ############# START CONFIGURATION #############
 DATASET:test_set_ogn_ithor
 EPISODE:1
-SCENE:FloorPlan3
+SCENE:FloorPlan401
 TASK:ogn_ithor
 RANDOM SEED:1
-GOAL OBJECTS:['apple']
+GOAL OBJECTS:['toilet']
 MAX ITER:200
 VISIBILITY DISTANCE:1
 MOVE STEP:0.25
 MOVE AND ROTATION RANDOMNESS:False
 ROTATION DEGREES:45
 FIELD OF VIEW:79
-MAX DISTANCE MANIPULATION (belief):140
+MAX DISTANCE MANIPULATION (belief):163
 IoU THRESHOLD:0.8
 OBJECT DETECTOR GROUND TRUTH:True
 OPEN CLASSIFIER THRESHOLD:0.5
@@ -26,16 +26,49 @@ OPEN CLASSIFIER:Utils/pretrained_models/open_predictor.pth
 ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
 ###############################################
 
-1:MoveAhead
-Changing event planner subgoal to: INSPECT(APPLE_0)
-2:MoveAhead
+1:RotateLeft
+2:RotateLeft
+3:MoveAhead
+4:MoveAhead
+Collision detected
+5:RotateLeft
+6:RotateLeft
+7:MoveAhead
+8:RotateRight
+9:RotateRight
+10:MoveAhead
+Collision detected
+11:RotateRight
+12:RotateRight
+13:RotateRight
+14:RotateRight
+Changing event planner subgoal to: INSPECT(TOILET_0)
+15:MoveAhead
+16:MoveAhead
+17:MoveAhead
+18:MoveAhead
+19:MoveAhead
+20:MoveAhead
+Collision detected
+21:RotateLeft
+22:RotateLeft
+23:MoveAhead
+24:MoveAhead
+25:MoveAhead
+26:MoveAhead
+27:MoveAhead
+28:RotateRight
+29:RotateRight
+30:MoveAhead
+31:LookDown
+Adding a useless goal cell: 1
+32:MoveAhead
 Changing event planner subgoal to: STOP()
-3:Stop
+33:Stop
 Successfully executed action: STOP()
-WARNING: distance to success is greater than 0 even if success is True. Check Evaluator.py
 Average metrics over 1 episodes:
 	 AVG success: 1.0
 	 AVG SPL: 0.0
 	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 4 seconds
+Episode computational time: 19 seconds
