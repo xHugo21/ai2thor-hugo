@@ -8,6 +8,7 @@
 - Comprobar si los planes son óptimos
 
 * OGAMUS *
+- Encontrar objetivo respecto a ai2thor
 - Usar facts.pddl o fichero generado en results?
 - Crear domino propio para ejecutar sobre OGAMUS
 - Controlar caso de no encontrar objetivo

@@ -2,7 +2,7 @@
     {
         "episode": 1,
         "scene": "FloorPlan3",
-        "goal": "(exists (?o1 - cabinet) (and (viewing ?o1) (close_to ?o1)))",
+        "goal": "(exists (?o1 - apple) (and (viewing ?o1) (close_to ?o1)))",
         "agent_position": {
             "x": 0.0,
             "y": 1.123205542564392,

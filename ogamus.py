@@ -256,11 +256,13 @@ def main():
             if Configuration.TASK == Configuration.TASK_OGN_ROBOTHOR or Configuration.TASK == Configuration.TASK_OGN_ITHOR:
                 shortest_path = episode_data['shortest_path']
 
-            Agent(scene=scene, position=init_position, init_rotation=init_rotation, init_horizon=init_horizon,
+            controller = Agent(scene=scene, position=init_position, init_rotation=init_rotation, init_horizon=init_horizon,
                   shortest_path=shortest_path).run()
 
         # Copy problem file in result directory
         shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl", os.path.join(Logger.LOG_DIR_PATH, "facts_{}.pddl".format(scene)))
+
+    return controller
 
 
 if __name__ == "__main__":

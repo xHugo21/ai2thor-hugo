@@ -1,6 +1,7 @@
 # IMPORTS
 import json
 import ogamus
+import time
 from ai2thor.controller import Controller
 from problem_definition import ProblemDefinition
 from parser_ai2thor_pddl import ParserAI2THORPDDL
@@ -135,8 +136,8 @@ else:
     f.write(json_object)
 
   # Llamamos a ogamus.main() para analizar la escena y encontrar el objetivo
-  ogamus.main()
-
+  controller = ogamus.main()
+  
   # Comprobamos el log de la ejecución de OGAMUS para ver si ha encontrado el objetivo.
   # Si ha llegado a la iteración 200 significa que no lo ha encontrado
   with open(LOG, "r") as f:
@@ -161,6 +162,9 @@ else:
 
   # Llamamos al planificador para que ejecute el problema modificado sobre el dominio de ejecución de acciones
   plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)
+
+  parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion=0, liquid='coffee', ogamus=True)
+
 
   # Parseamos el plan para convertirlo en acciones ejecutables por el agente
   # parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion=0, liquid='coffee')

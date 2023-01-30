@@ -393,8 +393,11 @@ class Agent:
         Logger.write("Episode computational time: {} seconds".format((end-start).seconds))
 
         # Release resources
-        self.controller.stop()
-        plt.close(self.event_planner.path_planner.map_model.fig)
+        # self.controller.stop()
+        # print(self.path)
+        plt.close(self.event_planner.path_planner.map_model.fig)        
+
+        return self.controller
 
 
     def step(self, action):

@@ -4,7 +4,7 @@ from aux import extractActionImage
 
 
 class ParserPDDLAI2THOR:
-    def __init__(self, raw_plan, controller, iteracion, liquid):
+    def __init__(self, raw_plan, controller, iteracion, liquid, ogamus=False):
         '''Método init de la clase ParserPDDLAI2THOR. Guarda los parámetros y ejecuta los métodos necesarios para convertir el plan generado a acciones de ai2thor'''
         self.actions = []
         self.executable_actions = []
@@ -15,7 +15,10 @@ class ParserPDDLAI2THOR:
 
         print("*EJECUTANDO PLAN SOBRE ENTORNO AI2THOR*\n")
 
-        self.parse_actions(iteracion, liquid)
+        if ogamus == False:
+            self.parse_actions(iteracion, liquid)
+        else:
+            self.parse_actions_ogamus(iteracion)
 
         print("*PLAN EJECUTADO SATISFACTORIAMENTE*\n")
 
@@ -147,6 +150,36 @@ class ParserPDDLAI2THOR:
             elif (obj["name"].upper() == obj_name) and (action_name_domain == "FILL"):
                 self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"], fillLiquid=liquid)
 
+    def parse_actions_ogamus(self, iteracion):
+        '''Método que identifica cada acción junto a sus parámetros y la ejecuta. Extrae además una foto en ./images/ del simulador después de ejecutar cada acción'''
+        # Creamos foto situación inicial
+        extractActionImage(self.controller.last_event, f'iter{iteracion}_0')
+        n_image = 1
+
+        if self.actions[0].find('PICKUP') != -1:
+            self.object_state_action_ogamus(self.actions[0], "PICKUP", 7, "PickupObject")
+        elif self.actions[0].find("OPEN") != -1:
+                self.object_state_action_ogamus(self.actions[0], "OPEN", 5, "OpenObject")
+        elif self.actions[0].find("CLOSE") != -1:
+            self.object_state_action_ogamus(self.actions[0], "CLOSE", 6, "CloseObject")
+
+        if self.controller.last_event.metadata['errorMessage']:
+            print(f'Error: {self.controller.last_event.metadata["errorMessage"]}')
+            print("Reinicie el programa e intente con otra acción\n")
+            exit()
+        
+        # Extraemos una foto del paso ejecutado
+        extractActionImage(self.controller.last_event, f'iter{iteracion}_{n_image}')
+    
+    def object_state_action_ogamus(self, act, action_name_domain, plus_index, action_name_ai2thor):
+        
+        start_index = act.find(action_name_domain)
+        end_index = len(act)
+        obj_name = act[start_index+plus_index:end_index]
+        print(obj_name)
+        for obj in self.objects:
+            print(obj["objectId"])
+        
                 
 
 
