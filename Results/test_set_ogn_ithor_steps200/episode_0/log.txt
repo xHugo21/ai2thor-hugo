@@ -16,7 +16,7 @@ MOVE STEP:0.25
 MOVE AND ROTATION RANDOMNESS:False
 ROTATION DEGREES:45
 FIELD OF VIEW:79
-MAX DISTANCE MANIPULATION (belief):163
+MAX DISTANCE MANIPULATION (belief):140
 IoU THRESHOLD:0.8
 OBJECT DETECTOR GROUND TRUTH:True
 OPEN CLASSIFIER THRESHOLD:0.5
@@ -38,4 +38,4 @@ Average metrics over 1 episodes:
 	 AVG SPL: 0.0
 	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 3 seconds
+Episode computational time: 4 seconds

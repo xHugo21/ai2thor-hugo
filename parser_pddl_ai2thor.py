@@ -174,11 +174,13 @@ class ParserPDDLAI2THOR:
     def object_state_action_ogamus(self, act, action_name_domain, plus_index, action_name_ai2thor):
         
         start_index = act.find(action_name_domain)
-        end_index = len(act)
+        end_index = act.find('_')
         obj_name = act[start_index+plus_index:end_index]
         print(obj_name)
         for obj in self.objects:
-            print(obj["objectId"])
+            if obj["objectId"].upper().find(obj_name.upper()) != -1:
+                print(obj["objectId"])
+                self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"])
         
                 
 
