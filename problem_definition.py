@@ -4,7 +4,8 @@
 class ProblemDefinition():
     def __init__(self):
         '''Clase que contiene todos los métodos para recoger los parámetros de entrada'''
-        pass
+        self.problem_list = []
+        self.objective_list = []
 
     def method_selection(self):
         '''Método que permite seleccionar el metodo de resolucion del problema
@@ -51,12 +52,12 @@ class ProblemDefinition():
         '''Método que permite seleccionar las rutas de los archivos del planificador, problema y output'''
         if method == '1':
             self.planner_path = "./pddl/cbp-roller/cbp-roller"
-            self.problem_path = f'./pddl/problems/problem1_iter{iteracion}.pddl'
-            self.output_path = f'./pddl/outputs/problem1_iter{iteracion}.txt'
+            self.problem_path = f'./pddl/problems/problem{iteracion}.pddl'
+            self.output_path = f'./pddl/outputs/problem{iteracion}.txt'
         else:
             self.planner_path = './OGAMUS/Plan/PDDL/Planners/FF/ff'
             self.problem_path = f'./OGAMUS/Plan/PDDL/facts.pddl'
-            self.output_path = f'./pddl/outputs/problem1.txt'
+            self.output_path = f'./pddl/outputs/problem{iteracion}.txt'
 
         return self.planner_path, self.problem_path, self.output_path
 
@@ -228,7 +229,17 @@ class ProblemDefinition():
         
         problemas_ogamus = ["get_close_to", "pickup", "open", "close"]
         self.problem = problemas_ogamus[int(aux)-1]
-        return self.problem
+        self.problem_list.append(self.problem)
+
+        self.object_selection_ogamus()
+
+        print("")
+        condition = input('Desea realizar otra acción sobre este entorno [Y/n]: ')
+        print("")
+        if condition == 'Y':
+            self.problem_selection_ogamus()
+
+        return self.problem_list, self.objective_list
     
     def object_selection_ogamus(self):
         if self.problem == "get_close_to":
@@ -272,7 +283,7 @@ class ProblemDefinition():
         print("----------------")
         aux2 = input("Seleccione el objetivo: ")
         self.objective = possible_objects[int(aux2)]
-        return self.objective
+        self.objective_list.append(self.objective)
 
 
         

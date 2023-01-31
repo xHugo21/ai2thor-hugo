@@ -13,4 +13,6 @@
 - Crear domino propio para ejecutar sobre OGAMUS
 - Controlar caso de no encontrar objetivo
 - Encadenar acciones
+- ¿Añadir más acciones?
+- ¿Es necesario llamar al planificador otra vez?
 

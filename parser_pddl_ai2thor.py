@@ -153,7 +153,7 @@ class ParserPDDLAI2THOR:
     def parse_actions_ogamus(self, iteracion):
         '''Método que identifica cada acción junto a sus parámetros y la ejecuta. Extrae además una foto en ./images/ del simulador después de ejecutar cada acción'''
         # Creamos foto situación inicial
-        extractActionImage(self.controller.last_event, f'iter{iteracion}_0')
+        extractActionImage(self.controller.last_event, f'problem{iteracion}_0')
         n_image = 1
 
         if self.actions[0].find('PICKUP') != -1:
@@ -170,7 +170,7 @@ class ParserPDDLAI2THOR:
         
         self.controller.step("Pass")
         # Extraemos una foto del paso ejecutado
-        extractActionImage(self.controller.last_event, f'iter{iteracion}_{n_image}')
+        extractActionImage(self.controller.last_event, f'problem{iteracion}_{n_image}')
     
     def object_state_action_ogamus(self, act, action_name_domain, plus_index, action_name_ai2thor):
         
@@ -179,7 +179,7 @@ class ParserPDDLAI2THOR:
         obj_name = act[start_index+plus_index:end_index]
         print(obj_name)
         for obj in self.objects:
-            if obj["objectId"].upper().find(obj_name.upper()) != -1:
+            if obj["objectId"].upper().find(obj_name.upper()+"_") != -1:
                 print(obj["objectId"])
                 self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"], forceAction=True)
                 printObjectStatus(self.controller.last_event, obj)

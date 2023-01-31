@@ -390,5 +390,5 @@ butterknife_0 - butterknife
 )
 (:goal
 (and
-(exists (?o1 - fridge) (and (viewing ?o1) (open ?o1) (close_to ?o1))))
+(exists (?o1 - fridge) (and (viewing ?o1) (close_to ?o1))))
 ))

@@ -100,76 +100,72 @@ else:
   agent_hor = event.metadata["agent"]["cameraHorizon"]
   controller.stop()
 
-  # Pedimos al usuario que escoja el planificador, y el nombre de los ficheros que se van a generar
-  planner_path, problem_path, output_path = inputs.paths_selection(method, iteracion=0)
-
   # Pedimos al usuario que seleccione una acción, un objetivo y su goal
-  problem = inputs.problem_selection_ogamus()
-  objective = inputs.object_selection_ogamus()
+  problem_list, objective_list = inputs.problem_selection_ogamus()
 
-  # Creamos el diccionario a introducir en el json
-  dictionary = [{
-      "episode": 1,
-      "scene": "FloorPlan" + scene_number,
-      "goal": "(exists (?o1 - " + objective + ") (and (viewing ?o1) (close_to ?o1)))",
-      "agent_position": agent_pos,
-      "agent_rotation": agent_rot,
-      "initial_orientation": agent_rot['y'],
-      "initial_horizon": agent_hor,
-      "agent_is_standing": True,
-      "agent_in_high_friction_area": False,
-      "agent_fov": 90,
-      "shortest_path": [
-        {
-          "x": -1.0,
-          "y": 0.901863694190979,
-          "z": 2.0
-        }
-      ],
-      "shortest_path_length": 0
-  }]
+  iteracion = 0
+  for problem in problem_list:
+    # Establecemos el planificador y las rutas de los problemas y ficheros de salida
+    planner_path, problem_path, output_path = inputs.paths_selection(method, iteracion)
 
-  # Modificamos el json test_set_ogn_ithor.json con los datos de la escena y el objetivo
-  json_object = json.dumps(dictionary, indent=4)
+    # Creamos el diccionario a introducir en el json
+    dictionary = [{
+        "episode": 1,
+        "scene": "FloorPlan" + scene_number,
+        "goal": "(exists (?o1 - " + objective_list[iteracion] + ") (and (viewing ?o1) (close_to ?o1)))",
+        "agent_position": agent_pos,
+        "agent_rotation": agent_rot,
+        "initial_orientation": agent_rot['y'],
+        "initial_horizon": agent_hor,
+        "agent_is_standing": True,
+        "agent_in_high_friction_area": False,
+        "agent_fov": 79,
+        "shortest_path": [
+          {
+            "x": -1.0,
+            "y": 0.901863694190979,
+            "z": 2.0
+          }
+        ],
+        "shortest_path_length": 0
+    }]
 
-  with open(DATASET, "w") as f:
-    f.write(json_object)
+    # Modificamos el json test_set_ogn_ithor.json con los datos de la escena y el objetivo
+    json_object = json.dumps(dictionary, indent=4)
 
-  # Llamamos a ogamus.main() para analizar la escena y encontrar el objetivo
-  controller = ogamus.main()
+    with open(DATASET, "w") as f:
+      f.write(json_object)
 
-  # Comprobamos el log de la ejecución de OGAMUS para ver si ha encontrado el objetivo.
-  # Si ha llegado a la iteración 200 significa que no lo ha encontrado
-  with open(LOG, "r") as f:
-    log_str = f.read()
+    # Llamamos a ogamus.main() para analizar la escena y encontrar el objetivo
+    controller = ogamus.main()
 
-  print("HOLA")
-  print(log_str)
-  print("HOLA")
-  
-  print(log_str.find("200:"))
+    # Comprobamos el log de la ejecución de OGAMUS para ver si ha encontrado el objetivo.
+    # Si ha llegado a la iteración 200 significa que no lo ha encontrado
+    with open(LOG, "r") as f:
+      log_str = f.read()
+      if log_str.find("200:Stop") != -1:
+        print("No se ha encontrado el objetivo indicado tras recorrer la escena durante 200 pasos\n")
+        print("Ejecute de nuevo el programa y pruebe con un objetivo distinto\n")
+        exit()
 
-  # Si se cumple esta condición significa que no ha encontrado objetivo -> Se para el programa
-  if log_str.find("200:") != -1:
-    print("No se ha encontrado el objetivo indicado tras recorrer la escena durante 200 pasos\n")
-    print("Ejecute de nuevo el programa y pruebe con un objetivo distinto\n")
-    exit()
-  
-  # Si ha encontrado el objetivo -> Generar
+    
+    # Si ha encontrado el objetivo se ejecuta el problema concreto indicado al inicio
 
-  # Modificamos el fichero "./OGAMUS/Plan/PDDL/facts.pddl" para cambiar su estado meta dependiendo del tipo de problema
-  GoalOgamus(problem_path, problem, objective)
+    # Modificamos el fichero "./OGAMUS/Plan/PDDL/facts.pddl" para cambiar su estado meta dependiendo del tipo de problema
+    GoalOgamus(problem_path, problem, objective_list[iteracion])
 
-  # Llamamos al planificador para que ejecute el problema modificado sobre el dominio de ejecución de acciones
-  plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)
+    # Llamamos al planificador para que ejecute el problema modificado sobre el dominio
+    plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)
 
-  parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion=0, liquid='coffee', ogamus=True)
+    # Llamamos al parser para ejecutar la accion pedida sobre el objetivo
+    parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid='coffee', ogamus=True)
 
+    # Actualizamos posicion agente para siguiente iteracion
+    event = controller.step("Pass")
+    agent_pos = event.metadata["agent"]["position"]
+    agent_rot = event.metadata["agent"]["rotation"]
+    agent_hor = event.metadata["agent"]["cameraHorizon"]
 
-  # Parseamos el plan para convertirlo en acciones ejecutables por el agente
-  # parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion=0, liquid='coffee')
-
-  # Visualizamos estado final
-
+    iteracion += 1
 
 
