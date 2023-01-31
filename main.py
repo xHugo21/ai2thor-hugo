@@ -1,7 +1,7 @@
 # IMPORTS
 import json
 import ogamus
-import time
+import shutil
 from ai2thor.controller import Controller
 from problem_definition import ProblemDefinition
 from parser_ai2thor_pddl import ParserAI2THORPDDL
@@ -153,6 +153,8 @@ else:
 
     # Modificamos el fichero "./OGAMUS/Plan/PDDL/facts.pddl" para cambiar su estado meta dependiendo del tipo de problema
     GoalOgamus(problem_path, problem, objective_list[iteracion])
+
+    shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl", f"pddl/problems/problem{iteracion}.pddl")
 
     # Llamamos al planificador para que ejecute el problema modificado sobre el dominio
     plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)

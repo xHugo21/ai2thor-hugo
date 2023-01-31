@@ -74,3 +74,6 @@ def removeResultFolders():
             except Exception as e:
                 print('Failed to delete %s. Reason: %s' % (file_path, e))
 
+
+
+
