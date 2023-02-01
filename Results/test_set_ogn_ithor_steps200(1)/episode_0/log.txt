@@ -1,7 +1,4 @@
 
-Warning: setting rotation step to 45 degrees according to Object Goal Navigation dataset in iTHOR.
-Warning: setting visibility distance to 1 meter according to Object Goal Navigation standard setting.
-Warning: setting max manipulation distance to 163 (>150) centimeters for solving the Object Goal Navigation task in iTHOR. In this way the agent is more robust to error in object position approximations.
 Warning: setting distance threshold of predicate 'close_to(object)' to 150 centimeters for solving the Object Goal Navigation task in iTHOR. In this way the agent is more robust to error in object position approximations.
 ############# START CONFIGURATION #############
 DATASET:test_set_ogn_ithor
@@ -9,7 +6,7 @@ EPISODE:1
 SCENE:FloorPlan4
 TASK:ogn_ithor
 RANDOM SEED:1
-GOAL OBJECTS:['apple']
+GOAL OBJECTS:['fridge']
 MAX ITER:200
 VISIBILITY DISTANCE:1
 MOVE STEP:0.25
@@ -26,17 +23,22 @@ OPEN CLASSIFIER:Utils/pretrained_models/open_predictor.pth
 ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
 ###############################################
 
-1:MoveAhead
-2:MoveAhead
-3:RotateLeft
-4:RotateLeft
-5:MoveAhead
+1:RotateRight
+2:RotateRight
+3:MoveAhead
+Collision detected
+4:RotateRight
+5:RotateRight
+Changing event planner subgoal to: INSPECT(FRIDGE_0)
+6:MoveAhead
+7:MoveAhead
+8:RotateLeft
 Changing event planner subgoal to: STOP()
-6:Stop
+9:Stop
 Successfully executed action: STOP()
-Average metrics over 1 episodes:
+Average metrics over 2 episodes:
 	 AVG success: 1.0
-	 AVG SPL: 0.0
+	 AVG SPL: 0.5
 	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 2 seconds
+Episode computational time: 5 seconds

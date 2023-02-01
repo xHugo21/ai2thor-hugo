@@ -1,5 +1,4 @@
 * GENERAL *
-- Mejorar README
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto
@@ -8,12 +7,8 @@
 - Comprobar si los planes son óptimos
 
 * OGAMUS *
-- Encontrar objetivo respecto a ai2thor
-- Usar facts.pddl o fichero generado en results?
-- Crear domino propio para ejecutar sobre OGAMUS
-- Controlar caso de no encontrar objetivo
-- Encadenar acciones
-- ¿Añadir más acciones?
-- ¿Es necesario llamar al planificador otra vez?
+- Crear domino propio para ejecutar sobre OGAMUS?
 - Eliminar clases/funciones inutilizadas
+- Añadir acciones (drop, put...)
+- ¿Manejar objeto no encontrado para saltar accion en vez de acabar programa?
 
