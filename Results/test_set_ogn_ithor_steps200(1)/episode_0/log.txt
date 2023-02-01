@@ -23,27 +23,28 @@ OPEN CLASSIFIER:Utils/pretrained_models/open_predictor.pth
 ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
 ###############################################
 
-1:MoveAhead
-2:MoveAhead
-3:RotateLeft
-4:RotateLeft
+1:RotateRight
+2:RotateRight
+3:RotateRight
+4:MoveAhead
 5:MoveAhead
-6:RotateRight
-7:RotateRight
-8:MoveAhead
+6:MoveAhead
+7:MoveAhead
 Collision detected
+Warning: agent is blocked, clearing the area around the agent.
+8:RotateRight
 9:RotateRight
-10:RotateRight
-11:RotateRight
+10:MoveAhead
 Changing event planner subgoal to: INSPECT(FRIDGE_0)
+11:MoveAhead
 12:RotateRight
-13:MoveAhead
+13:RotateRight
 14:MoveAhead
 15:MoveAhead
 16:MoveAhead
-17:RotateLeft
+17:MoveAhead
 18:RotateLeft
-19:MoveAhead
+19:RotateLeft
 20:MoveAhead
 21:MoveAhead
 22:MoveAhead
@@ -66,4 +67,4 @@ Average metrics over 2 episodes:
 	 AVG SPL: 0.0
 	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 68 seconds
+Episode computational time: 70 seconds

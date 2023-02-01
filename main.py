@@ -90,6 +90,8 @@ if method == '1':
 
 # Si method = '2' -> OGAMUS
 else:
+  already_on = False
+
   # Obtenemos los datos necesarios de la escena para pasar a OGAMUS y detenemos la ejecución del controlador
   event = controller.step("Pass")
   agent_pos = event.metadata["agent"]["position"]
@@ -135,7 +137,7 @@ else:
       f.write(json_object)
 
     # Llamamos a ogamus.main() para analizar la escena y encontrar el objetivo
-    controller = ogamus.main()
+    controller = ogamus.main(already_on, controller)
 
     # Comprobamos el log de la ejecución de OGAMUS para ver si ha encontrado el objetivo.
     # Si ha llegado a la iteración 200 significa que no lo ha encontrado
@@ -166,7 +168,9 @@ else:
     agent_hor = event.metadata["agent"]["cameraHorizon"]
 
     # Paramos la ejecución de ese entorno
-    controller.stop()
+    # controller.stop()
+
+    already_on = True
 
     # Contamos la iteración realizada
     iteracion += 1

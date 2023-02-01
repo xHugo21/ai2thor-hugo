@@ -9,7 +9,7 @@ EPISODE:1
 SCENE:FloorPlan3
 TASK:ogn_ithor
 RANDOM SEED:1
-GOAL OBJECTS:['pot']
+GOAL OBJECTS:['saltshaker']
 MAX ITER:200
 VISIBILITY DISTANCE:1
 MOVE STEP:0.25
@@ -27,14 +27,28 @@ ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
 ###############################################
 
 1:MoveAhead
-Changing event planner subgoal to: INSPECT(POT_0)
 2:MoveAhead
+3:MoveAhead
+4:MoveAhead
+5:RotateLeft
+6:RotateLeft
+7:MoveAhead
+8:MoveAhead
+9:MoveAhead
+Collision detected
+10:RotateLeft
+11:RotateLeft
+Changing event planner subgoal to: INSPECT(SALTSHAKER_0)
+12:MoveAhead
+13:MoveAhead
+14:MoveAhead
+15:RotateRight
 Changing event planner subgoal to: STOP()
-3:Stop
+16:Stop
 Successfully executed action: STOP()
 Average metrics over 1 episodes:
 	 AVG success: 1.0
 	 AVG SPL: 0.0
 	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 3 seconds
+Episode computational time: 18 seconds

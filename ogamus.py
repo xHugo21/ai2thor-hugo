@@ -18,7 +18,7 @@ from OGAMUS.Agent import Agent
 from Utils import PddlParser, Logger
 
 
-def main():
+def main(already_on, controller):
 
     starting_episode = 0
 
@@ -257,7 +257,7 @@ def main():
                 shortest_path = episode_data['shortest_path']
 
             controller = Agent(scene=scene, position=init_position, init_rotation=init_rotation, init_horizon=init_horizon,
-                  shortest_path=shortest_path).run()
+                  shortest_path=shortest_path, already_on=already_on, controller=controller).run()
 
         # Copy problem file in result directory
         shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl", os.path.join(Logger.LOG_DIR_PATH, "facts_{}.pddl".format(scene)))
