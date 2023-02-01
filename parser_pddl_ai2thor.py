@@ -179,10 +179,12 @@ class ParserPDDLAI2THOR:
         obj_name = act[start_index+plus_index:end_index]
         print(obj_name)
         for obj in self.objects:
-            if obj["objectId"].upper().find(obj_name.upper()+"_") != -1:
-                print(obj["objectId"])
-                self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"], forceAction=True)
-                printObjectStatus(self.controller.last_event, obj)
+            aux = obj["objectId"].upper().find(obj_name.upper())
+            if aux != -1:
+                if obj["objectId"][aux+len(obj_name)] == "|":
+                    print(obj["objectId"])
+                    self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"])
+                    printObjectStatus(self.controller.last_event, obj)
 
         
                 

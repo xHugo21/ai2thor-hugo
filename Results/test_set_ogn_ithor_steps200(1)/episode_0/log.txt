@@ -1,4 +1,5 @@
 
+Warning: setting distance threshold of predicate 'close_to(object)' to 150 centimeters for solving the Object Goal Navigation task in iTHOR. In this way the agent is more robust to error in object position approximations.
 ############# START CONFIGURATION #############
 DATASET:test_set_ogn_ithor
 EPISODE:1
@@ -24,25 +25,25 @@ ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
 
 1:MoveAhead
 2:MoveAhead
-3:MoveAhead
+3:RotateLeft
 4:RotateLeft
-5:RotateLeft
-6:MoveAhead
+5:MoveAhead
+6:RotateRight
 7:RotateRight
-8:RotateRight
-9:MoveAhead
+8:MoveAhead
 Collision detected
+9:RotateRight
 10:RotateRight
 11:RotateRight
-12:RotateRight
 Changing event planner subgoal to: INSPECT(FRIDGE_0)
-13:RotateRight
+12:RotateRight
+13:MoveAhead
 14:MoveAhead
 15:MoveAhead
 16:MoveAhead
-17:MoveAhead
+17:RotateLeft
 18:RotateLeft
-19:RotateLeft
+19:MoveAhead
 20:MoveAhead
 21:MoveAhead
 22:MoveAhead
@@ -51,17 +52,18 @@ Changing event planner subgoal to: INSPECT(FRIDGE_0)
 25:MoveAhead
 26:MoveAhead
 27:MoveAhead
-Adding a useless goal cell: 1
-28:RotateRight
+28:MoveAhead
 29:RotateRight
-30:MoveAhead
-31:RotateLeft
+Adding a useless goal cell: 1
+30:RotateRight
+31:MoveAhead
+32:RotateLeft
 Changing event planner subgoal to: STOP()
-32:Stop
+33:Stop
 Successfully executed action: STOP()
 Average metrics over 2 episodes:
-	 AVG success: 0.5
-	 AVG SPL: 0.5
-	 AVG dts: 0.25
+	 AVG success: 1.0
+	 AVG SPL: 0.0
+	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 35 seconds
+Episode computational time: 68 seconds

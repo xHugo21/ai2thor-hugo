@@ -10,7 +10,6 @@ cabinet_4 - cabinet
 cabinet_5 - cabinet
 cabinet_6 - cabinet
 cabinet_7 - cabinet
-cabinet_8 - cabinet
 countertop_0 - countertop
 countertop_1 - countertop
 countertop_2 - countertop
@@ -28,22 +27,12 @@ countertop_13 - countertop
 countertop_14 - countertop
 countertop_15 - countertop
 countertop_16 - countertop
-drawer_0 - drawer
-drawer_1 - drawer
-drawer_2 - drawer
-drawer_3 - drawer
-drawer_4 - drawer
-drawer_5 - drawer
-drawer_6 - drawer
-drawer_7 - drawer
-drawer_8 - drawer
 egg_0 - egg
 faucet_0 - faucet
 faucet_1 - faucet
 faucet_2 - faucet
 faucet_3 - faucet
 faucet_4 - faucet
-faucet_5 - faucet
 lettuce_0 - lettuce
 papertowelroll_0 - papertowelroll
 pot_0 - pot
@@ -56,8 +45,7 @@ window_0 - window
 window_1 - window
 window_2 - window
 window_3 - window
-window_4 - window
-fridge_0 - fridge
+fridge_2 - fridge
 kettle_0 - kettle
 spatula_0 - spatula
 stoveburner_0 - stoveburner
@@ -68,6 +56,14 @@ stoveknob_0 - stoveknob
 stoveknob_1 - stoveknob
 bowl_0 - bowl
 bread_0 - bread
+drawer_0 - drawer
+drawer_1 - drawer
+drawer_2 - drawer
+drawer_3 - drawer
+drawer_4 - drawer
+drawer_5 - drawer
+drawer_6 - drawer
+drawer_7 - drawer
 houseplant_0 - houseplant
 plate_0 - plate
 soapbottle_0 - soapbottle
@@ -78,6 +74,7 @@ sidetable_3 - sidetable
 sidetable_4 - sidetable
 sidetable_5 - sidetable
 sidetable_6 - sidetable
+sidetable_7 - sidetable
 coffeemachine_0 - coffeemachine
 cup_0 - cup
 lightswitch_0 - lightswitch
@@ -93,31 +90,21 @@ saltshaker_0 - saltshaker
 spoon_0 - spoon
 fork_0 - fork
 garbagecan_0 - garbagecan
+garbagecan_1 - garbagecan
 butterknife_0 - butterknife
 )
 (:init
-(close_to countertop_16)
-(close_to countertop_16)
-(close_to countertop_7)
-(close_to countertop_7)
-(close_to cup_0)
-(close_to cup_0)
+(close_to drawer_1)
+(close_to drawer_1)
 (close_to drawer_2)
 (close_to drawer_2)
 (close_to drawer_3)
 (close_to drawer_3)
-(close_to drawer_4)
-(close_to drawer_4)
 (close_to drawer_5)
 (close_to drawer_5)
 (close_to drawer_6)
 (close_to drawer_6)
-(close_to drawer_7)
-(close_to drawer_7)
-(close_to fridge_0)
-(close_to fridge_0)
-(close_to lightswitch_0)
-(close_to lightswitch_0)
+(close_to fridge_2)
 (close_to sidetable_0)
 (close_to sidetable_0)
 (close_to sidetable_1)
@@ -132,14 +119,8 @@ butterknife_0 - butterknife
 (close_to sidetable_5)
 (close_to sidetable_6)
 (close_to sidetable_6)
-(close_to stool_0)
-(close_to stool_0)
-(close_to stool_1)
-(close_to stool_1)
-(close_to stool_2)
-(close_to stool_2)
-(close_to winebottle_0)
-(close_to winebottle_0)
+(close_to sidetable_7)
+(close_to sidetable_7)
 (discovered apple_0)
 (discovered bowl_0)
 (discovered bread_0)
@@ -152,7 +133,6 @@ butterknife_0 - butterknife
 (discovered cabinet_5)
 (discovered cabinet_6)
 (discovered cabinet_7)
-(discovered cabinet_8)
 (discovered coffeemachine_0)
 (discovered countertop_0)
 (discovered countertop_1)
@@ -180,17 +160,16 @@ butterknife_0 - butterknife
 (discovered drawer_5)
 (discovered drawer_6)
 (discovered drawer_7)
-(discovered drawer_8)
 (discovered egg_0)
 (discovered faucet_0)
 (discovered faucet_1)
 (discovered faucet_2)
 (discovered faucet_3)
 (discovered faucet_4)
-(discovered faucet_5)
 (discovered fork_0)
-(discovered fridge_0)
+(discovered fridge_2)
 (discovered garbagecan_0)
+(discovered garbagecan_1)
 (discovered houseplant_0)
 (discovered kettle_0)
 (discovered knife_0)
@@ -211,6 +190,7 @@ butterknife_0 - butterknife
 (discovered sidetable_4)
 (discovered sidetable_5)
 (discovered sidetable_6)
+(discovered sidetable_7)
 (discovered sink_0)
 (discovered sink_1)
 (discovered sink_2)
@@ -231,61 +211,41 @@ butterknife_0 - butterknife
 (discovered window_1)
 (discovered window_2)
 (discovered window_3)
-(discovered window_4)
 (discovered winebottle_0)
 (hand_free )
 (inspected apple_0)
-(inspected coffeemachine_0)
 (inspected countertop_0)
 (inspected countertop_1)
-(inspected countertop_16)
 (inspected countertop_2)
 (inspected countertop_3)
 (inspected countertop_4)
 (inspected countertop_5)
-(inspected countertop_6)
 (inspected countertop_7)
 (inspected countertop_9)
-(inspected cup_0)
-(inspected drawer_0)
 (inspected drawer_2)
-(inspected drawer_3)
-(inspected drawer_3)
-(inspected drawer_4)
 (inspected egg_0)
 (inspected fork_0)
-(inspected fridge_0)
-(inspected fridge_0)
-(inspected kettle_0)
+(inspected fridge_2)
+(inspected fridge_2)
 (inspected knife_0)
 (inspected lettuce_0)
-(inspected lightswitch_0)
 (inspected microwave_0)
 (inspected microwave_1)
 (inspected papertowelroll_0)
 (inspected pot_0)
 (inspected potato_0)
-(inspected sidetable_3)
-(inspected sidetable_4)
 (inspected sidetable_5)
 (inspected sidetable_6)
 (inspected sidetable_6)
+(inspected sidetable_7)
 (inspected sink_0)
-(inspected sink_1)
-(inspected sink_2)
 (inspected spatula_0)
 (inspected spoon_0)
-(inspected stool_1)
-(inspected stool_2)
-(inspected stoveburner_0)
 (inspected stoveburner_1)
-(inspected stoveburner_2)
 (inspected stoveknob_0)
-(inspected stoveknob_1)
 (inspected toaster_0)
-(inspected winebottle_0)
+(open cabinet_3)
 (open cabinet_4)
-(open cabinet_5)
 (open kettle_0)
 (openable cabinet_0)
 (openable cabinet_1)
@@ -295,7 +255,6 @@ butterknife_0 - butterknife
 (openable cabinet_5)
 (openable cabinet_6)
 (openable cabinet_7)
-(openable cabinet_8)
 (openable drawer_0)
 (openable drawer_1)
 (openable drawer_2)
@@ -304,8 +263,7 @@ butterknife_0 - butterknife
 (openable drawer_5)
 (openable drawer_6)
 (openable drawer_7)
-(openable drawer_8)
-(openable fridge_0)
+(openable fridge_2)
 (openable kettle_0)
 (openable microwave_0)
 (openable microwave_1)
@@ -338,7 +296,6 @@ butterknife_0 - butterknife
 (receptacle cabinet_5)
 (receptacle cabinet_6)
 (receptacle cabinet_7)
-(receptacle cabinet_8)
 (receptacle coffeemachine_0)
 (receptacle countertop_0)
 (receptacle countertop_1)
@@ -365,9 +322,9 @@ butterknife_0 - butterknife
 (receptacle drawer_5)
 (receptacle drawer_6)
 (receptacle drawer_7)
-(receptacle drawer_8)
-(receptacle fridge_0)
+(receptacle fridge_2)
 (receptacle garbagecan_0)
+(receptacle garbagecan_1)
 (receptacle microwave_0)
 (receptacle microwave_1)
 (receptacle plate_0)
@@ -379,13 +336,13 @@ butterknife_0 - butterknife
 (receptacle sidetable_4)
 (receptacle sidetable_5)
 (receptacle sidetable_6)
+(receptacle sidetable_7)
 (receptacle stoveburner_0)
 (receptacle stoveburner_1)
 (receptacle stoveburner_2)
 (receptacle stoveburner_3)
 (receptacle toaster_0)
-(viewing drawer_3)
-(viewing fridge_0)
+(viewing fridge_2)
 (viewing sidetable_6)
 )
 (:goal

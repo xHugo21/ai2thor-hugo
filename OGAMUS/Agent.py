@@ -89,8 +89,8 @@ class Agent:
         # Initialize event (i.e. the observation after action execution)
         self.event = self.controller.step("Pass")
 
-        if Configuration.TASK == Configuration.TASK_OGN_ROBOTHOR or Configuration.TASK == Configuration.TASK_OGN_ITHOR:
-            self.controller.step(action="MakeAllObjectsStationary")
+        #if Configuration.TASK == Configuration.TASK_OGN_ROBOTHOR or Configuration.TASK == Configuration.TASK_OGN_ITHOR:
+        #    self.controller.step(action="MakeAllObjectsStationary")
 
         if position is not None or init_rotation is not None or init_horizon is not None:
             assert position is not None and init_rotation is not None and init_horizon is not None, \

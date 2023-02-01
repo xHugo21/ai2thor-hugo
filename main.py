@@ -26,7 +26,7 @@ method = inputs.method_selection()
 # Pedimos al usuario que seleccione una escena
 scene_number = inputs.scene_selection()
 
-# Inicialización del entorno
+# Inicialización del entorno inicial (Si método = OGAMUS -> sirve para captar posicion inicial del agente)
 print("*INICIANDO ENTORNO*\n")
 controller = Controller(agentMode="default",
                         visibilityDistance=1.5,
@@ -73,9 +73,6 @@ if method == '1':
       # Ejecución del planificador sobre el dominio y el problema dados. Si último parámetro = True -> se imprime plan por pantalla.
       plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=False)
 
-      # Visualizar estado inicial
-      # printAgentStatus(controller.last_event)
-
       # Parseo del plan para convertirlo en acciones ejecutables por el agente y ejecutarlas
       parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid)
 
@@ -100,9 +97,10 @@ else:
   agent_hor = event.metadata["agent"]["cameraHorizon"]
   controller.stop()
 
-  # Pedimos al usuario que seleccione una acción, un objetivo y su goal
+  # Pedimos al usuario que seleccione los problemas que quiere resolver
   problem_list, objective_list = inputs.problem_selection_ogamus()
 
+  # Bucle que se ejecuta tantas veces como problemas hayamos introducido para resolver
   iteracion = 0
   for problem in problem_list:
     # Establecemos el planificador y las rutas de los problemas y ficheros de salida
@@ -148,26 +146,31 @@ else:
         print("Ejecute de nuevo el programa y pruebe con un objetivo distinto\n")
         exit()
 
-    
     # Si ha encontrado el objetivo se ejecuta el problema concreto indicado al inicio
-
     # Modificamos el fichero "./OGAMUS/Plan/PDDL/facts.pddl" para cambiar su estado meta dependiendo del tipo de problema
     GoalOgamus(problem_path, problem, objective_list[iteracion])
 
+    # Copiamos el archivo al directorio de problemas de pddl para dejarlo guardado si hay más iteraciones
     shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl", f"pddl/problems/problem{iteracion}.pddl")
 
     # Llamamos al planificador para que ejecute el problema modificado sobre el dominio
-    plan = Planificador(planner_path, problem_path, output_path, problem, print=True, ogamus=True)
+    plan = Planificador(planner_path, f"pddl/problems/problem{iteracion}.pddl", output_path, problem, print=True, ogamus=True)
 
     # Llamamos al parser para ejecutar la accion pedida sobre el objetivo
     parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid='coffee', ogamus=True)
 
-    # Actualizamos posicion agente para siguiente iteracion
+    # Actualizamos posicion agente para inicializar la siguiente iteración desde la posición anterior
     event = controller.step("Pass")
     agent_pos = event.metadata["agent"]["position"]
     agent_rot = event.metadata["agent"]["rotation"]
     agent_hor = event.metadata["agent"]["cameraHorizon"]
 
+    # Paramos la ejecución de ese entorno
+    controller.stop()
+
+    # Contamos la iteración realizada
     iteracion += 1
+
+    
 
 

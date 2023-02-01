@@ -210,7 +210,7 @@ def main():
                     Logger.write("Warning: setting distance threshold of predicate 'close_to(object)' to 150 centimeters "
                                  "for solving the Object Goal Navigation task in iTHOR. "
                                  "In this way the agent is more robust to error in object position approximations.")
-                    Configuration.CLOSE_TO_OBJ_DISTANCE = 1.5
+                    Configuration.CLOSE_TO_OBJ_DISTANCE = 1.1
 
 
             if Configuration.ROTATION_STEP > Configuration.FOV:
