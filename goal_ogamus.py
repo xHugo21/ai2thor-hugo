@@ -1,3 +1,5 @@
+from aux import printObjectStatus
+
 class GoalOgamus:
     def __init__(self, problem_path, problem, objective):
         self.problem_path = problem_path

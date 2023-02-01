@@ -15,4 +15,5 @@
 - Encadenar acciones
 - ¿Añadir más acciones?
 - ¿Es necesario llamar al planificador otra vez?
+- Eliminar clases/funciones inutilizadas
 

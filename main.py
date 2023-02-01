@@ -8,6 +8,7 @@ from parser_ai2thor_pddl import ParserAI2THORPDDL
 from parser_pddl_ai2thor import ParserPDDLAI2THOR
 from goal_ogamus import GoalOgamus
 from planificador import Planificador
+from exec_ogamus import ExecOgamus
 from aux import printAgentStatus, printLastActionStatus, createCamera, printObjectStatus, removeResultFolders
 
 # CONSTANTES
@@ -148,18 +149,22 @@ else:
         print("Ejecute de nuevo el programa y pruebe con un objetivo distinto\n")
         exit()
 
+    execute = ExecOgamus(controller, problem, objective_list[iteracion], iteracion)  
+
     # Si ha encontrado el objetivo se ejecuta el problema concreto indicado al inicio
     # Modificamos el fichero "./OGAMUS/Plan/PDDL/facts.pddl" para cambiar su estado meta dependiendo del tipo de problema
-    GoalOgamus(problem_path, problem, objective_list[iteracion])
+    # GoalOgamus(problem_path, problem, objective_list[iteracion])
 
     # Copiamos el archivo al directorio de problemas de pddl para dejarlo guardado si hay más iteraciones
     shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl", f"pddl/problems/problem{iteracion}.pddl")
 
     # Llamamos al planificador para que ejecute el problema modificado sobre el dominio
-    plan = Planificador(planner_path, f"pddl/problems/problem{iteracion}.pddl", output_path, problem, print=True, ogamus=True)
+    # plan = Planificador(planner_path, f"pddl/problems/problem{iteracion}.pddl", output_path, problem, print=True, ogamus=True)
 
     # Llamamos al parser para ejecutar la accion pedida sobre el objetivo
-    parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid='coffee', ogamus=True)
+    # parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid='coffee', ogamus=True)
+
+
 
     # Actualizamos posicion agente para inicializar la siguiente iteración desde la posición anterior
     event = controller.step("Pass")
