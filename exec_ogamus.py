@@ -14,13 +14,19 @@ class ExecOgamus:
             pass
 
         elif self.problem == 'pickup':
-            self.exec_action_ogamus("PickupObject", self.final_objective["objectId"])
+            self.controller.step(action="PickupObject", objectId=self.final_objective["objectId"], forceAction=True)
 
         elif self.problem == 'open':
-            self.exec_action_ogamus("OpenObject", self.final_objective["objectId"])
-
+            self.controller.step(action="OpenObject", objectId=self.final_objective["objectId"], forceAction=True)
+            
         elif self.problem == 'close':
-            self.exec_action_ogamus("CloseObject", self.final_objective["objectId"])
+            self.controller.step(action="CloseObject", objectId=self.final_objective["objectId"], forceAction=True)
+
+        elif self.problem == 'drop':
+            self.controller.step(action="DropHandObject", forceAction=True)
+
+        elif self.problem == 'put':
+            self.controller.step(action="PutObject", objectId=self.final_objective["objectId"], forceAction=True, placeStationary=True)
 
         printObjectStatus(self.controller.last_event, self.final_objective)
 
@@ -37,7 +43,5 @@ class ExecOgamus:
                     self.final_objective = obj
 
 
-    def exec_action_ogamus(self, action_name, object):
-        self.controller.step(action=action_name, objectId=object)
 
     

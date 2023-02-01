@@ -218,7 +218,8 @@ class ProblemDefinition():
             # print("[13] - Empty Object")
             # print("[14] - Use Up Object")
             # print("[15] - Drop Object (Requires holding an object)")
-            # print("[16] - Put Object (Requires holding an object)")
+            print("[5] - Drop Object (Requires holding an object)")
+            print("[6] - Put Object (Requires holding an object)")
             print("----------------")
             aux = input("Seleccione un tipo de problema a resolver: ")
             print("")
@@ -227,7 +228,7 @@ class ProblemDefinition():
             else:
                 print("Por favor, introduce un problema válido\n")
         
-        problemas_ogamus = ["get_close_to", "pickup", "open", "close"]
+        problemas_ogamus = ["get_close_to", "pickup", "open", "close", "drop", "put"]
         self.problem = problemas_ogamus[int(aux)-1]
         self.problem_list.append(self.problem)
 
@@ -257,7 +258,7 @@ class ProblemDefinition():
                    "toilet", "toiletpaperhanger", "towelholder", "tvstand", "stoveburner", "blinds", "book", "box", "cabinet", "drawer", "fridge", "kettle", "laptop", "microwave",
                  "safe", "showercurtain", "showerdoor", "toilet"]
 
-        elif self.problem == "pickup":
+        elif self.problem == "pickup" or self.problem == "drop":
             possible_objects = ["alarmclock", "aluminumfoil", "apple", "baseballbat", "book", "boots", "basketball",
                     "bottle", "bowl", "box", "bread", "butterknife", "candle", "cd", "cellphone", "peppershaker",
                     "cloth", "creditcard", "cup", "dishsponge", "dumbbell", "egg", "fork", "handtowel",
@@ -267,13 +268,16 @@ class ProblemDefinition():
                     "spatula", "spoon", "spraybottle", "statue", "tabletopdecor", "teddybear", "tennisracket",
                     "tissuebox", "toiletpaper", "tomato", "towel", "vase", "watch", "wateringcan", "winebottle"]
                     
-        elif self.problem == "open":
+        elif self.problem == "open" or self.problem == "close":
             possible_objects = ["blinds", "book", "box", "cabinet", "drawer", "fridge", "kettle", "laptop", "microwave",
                  "safe", "showercurtain", "showerdoor", "toilet"]
 
-        elif self.problem == "close":
-            possible_objects = ["blinds", "book", "box", "cabinet", "drawer", "fridge", "kettle", "laptop", "microwave",
-                 "safe", "showercurtain", "showerdoor", "toilet"]
+        elif self.problem == "put":
+            possible_objects = ["armchair", "bathtub", "bathtubbasin", "bed", "bowl", "box", "cabinet", "coffeemachine",
+                   "coffeetable", "countertop", "desk", "diningtable", "drawer", "fridge",
+                   "garbagecan", "handtowelholder", "laundryhamper", "microwave", "mug", "ottoman", "pan",
+                   "plate", "pot", "safe", "shelf", "sidetable", "sinkbasin", "sofa", "toaster",
+                   "toilet", "toiletpaperhanger", "towelholder", "tvstand", "stoveburner"]
 
         print("----OBJETIVO----")
         i = 0
