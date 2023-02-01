@@ -2,6 +2,7 @@
 import json
 import ogamus
 import shutil
+import numpy as np
 from ai2thor.controller import Controller
 from problem_definition import ProblemDefinition
 from parser_ai2thor_pddl import ParserAI2THORPDDL
@@ -27,34 +28,35 @@ method = inputs.method_selection()
 # Pedimos al usuario que seleccione una escena
 scene_number = inputs.scene_selection()
 
-# Inicialización del entorno inicial (Si método = OGAMUS -> sirve para captar posicion inicial del agente)
-print("*INICIANDO ENTORNO*\n")
-controller = Controller(agentMode="default",
-                        visibilityDistance=1.5,
-                        scene="FloorPlan" + str(scene_number),
-
-                        # Tamaño de pasos
-                        gridSize=0.25,
-                        snapToGrid=True,
-                        rotateStepDegrees=90,
-
-                        # Modos de imagen
-                        renderDepthImage=False,
-                        renderInstanceSegmentation=False,
-
-                        # Opciones de cámara
-                        #width=720,
-                        #height=405,
-                        width=300,
-                        height=300,
-                        fieldOfView=90)
-print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
-
-# Creamos una cámara que extrae una foto general de la escena en ./images/scene.png
-createCamera(controller)
-
 # Si method = '1' -> METADATA
 if method == '1':
+
+  # Inicialización del entorno inicial (Si método = OGAMUS -> sirve para captar posicion inicial del agente)
+  print("*INICIANDO ENTORNO*\n")
+  controller = Controller(agentMode="default",
+                          visibilityDistance=1.5,
+                          scene="FloorPlan" + str(scene_number),
+
+                          # Tamaño de pasos
+                          gridSize=0.25,
+                          snapToGrid=True,
+                          rotateStepDegrees=90,
+
+                          # Modos de imagen
+                          renderDepthImage=False,
+                          renderInstanceSegmentation=False,
+
+                          # Opciones de cámara
+                          #width=720,
+                          #height=405,
+                          width=300,
+                          height=300,
+                          fieldOfView=90)
+  print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
+
+  # Creamos una cámara que extrae una foto general de la escena en ./images/scene.png
+  createCamera(controller)
+  
   # Bucle que permite realizar más de una acción sobre la escena iniciada
   iteracion = 0
   bucle = 'Y'
@@ -91,14 +93,34 @@ if method == '1':
 
 # Si method = '2' -> OGAMUS
 else:
-  already_on = False
+
+  hfov = 79 / 360. * 2. * np.pi
+  vfov = 2. * np.arctan(np.tan(hfov / 2) * 224 / 224)
+  vfov = np.rad2deg(vfov)
+
+  controller = Controller(renderDepthImage=1,
+                          renderObjectImage=True,
+                          visibilityDistance=1,
+                          gridSize=0.25,
+                          rotateStepDegrees=45,
+                          scene="FloorPlan" + str(scene_number),
+                          continuousMode=True,
+                          snapToGrid=False,
+                          # camera properties
+                          width=224,
+                          height=224,
+                          fieldOfView=vfov,
+                          agentMode='default'
+                          )
+
+  # Creamos una cámara que extrae una foto general de la escena en ./images/scene.png
+  createCamera(controller)
 
   # Obtenemos los datos necesarios de la escena para pasar a OGAMUS y detenemos la ejecución del controlador
   event = controller.step("Pass")
   agent_pos = event.metadata["agent"]["position"]
   agent_rot = event.metadata["agent"]["rotation"]
   agent_hor = event.metadata["agent"]["cameraHorizon"]
-  controller.stop()
 
   # Pedimos al usuario que seleccione los problemas que quiere resolver
   problem_list, objective_list = inputs.problem_selection_ogamus()
@@ -138,7 +160,7 @@ else:
       f.write(json_object)
 
     # Llamamos a ogamus.main() para analizar la escena y encontrar el objetivo
-    controller = ogamus.main(already_on, controller)
+    controller = ogamus.main(controller)
 
     # Comprobamos el log de la ejecución de OGAMUS para ver si ha encontrado el objetivo.
     # Si ha llegado a la iteración 200 significa que no lo ha encontrado
@@ -164,18 +186,11 @@ else:
     # Llamamos al parser para ejecutar la accion pedida sobre el objetivo
     # parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid='coffee', ogamus=True)
 
-
-
     # Actualizamos posicion agente para inicializar la siguiente iteración desde la posición anterior
     event = controller.step("Pass")
     agent_pos = event.metadata["agent"]["position"]
     agent_rot = event.metadata["agent"]["rotation"]
     agent_hor = event.metadata["agent"]["cameraHorizon"]
-
-    # Paramos la ejecución de ese entorno
-    # controller.stop()
-
-    already_on = True
 
     # Contamos la iteración realizada
     iteracion += 1

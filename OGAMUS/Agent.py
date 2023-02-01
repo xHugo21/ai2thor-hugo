@@ -25,69 +25,73 @@ import matplotlib.pyplot as plt
 class Agent:
 
 
-    def __init__(self, scene="FloorPlan_Train1_1", position=None, init_rotation=None, init_horizon=None, shortest_path=None, already_on=False, controller=None):
+    def __init__(self, scene="FloorPlan_Train1_1", position=None, init_rotation=None, init_horizon=None, shortest_path=None, controller=None):
 
         # Set learner
         self.learner = Learner()
 
         # Set event planner
         self.event_planner = EventPlanner(self.learner.mapper.map_model)
-
+        
         if Configuration.TASK == Configuration.TASK_OGN_ROBOTHOR:
             agent_mode = 'locobot'  # ai2thor 3.3.1
         else:
             agent_mode = 'default'
 
-        hfov = Configuration.FOV / 360. * 2. * np.pi
-        vfov = 2. * np.arctan(np.tan(hfov / 2) * Configuration.FRAME_HEIGHT / Configuration.FRAME_WIDTH)
-        vfov = np.rad2deg(vfov)
+        
+        # hfov = Configuration.FOV / 360. * 2. * np.pi
+        # vfov = 2. * np.arctan(np.tan(hfov / 2) * Configuration.FRAME_HEIGHT / Configuration.FRAME_WIDTH)
+        # vfov = np.rad2deg(vfov)
+# 
+        # if already_on == False:
+        #     if Configuration.TASK == Configuration.TASK_OGN_ROBOTHOR:
+        #         self.controller = Controller(renderDepthImage=Configuration.RENDER_DEPTH_IMG,
+        #                                     renderObjectImage=True,
+        #                                     visibilityDistance=Configuration.VISIBILITY_DISTANCE,
+        #                                     gridSize=Configuration.MOVE_STEP,
+        #                                     rotateStepDegrees=Configuration.ROTATION_STEP,
+        #                                     scene=scene,
+        #                                     # camera properties
+        #                                     width=Configuration.FRAME_WIDTH,
+        #                                     height=Configuration.FRAME_HEIGHT,
+        #                                     fieldOfView=vfov,
+        #                                     continuousMode=True,
+        #                                     snapToGrid=False,
+        #                                     agentMode=agent_mode
+        #                                     )
+        #     elif Configuration.TASK == Configuration.TASK_OGN_ITHOR:
+        #         self.controller = Controller(renderDepthImage=Configuration.RENDER_DEPTH_IMG,
+        #                                     renderObjectImage=True,
+        #                                     visibilityDistance=Configuration.VISIBILITY_DISTANCE,
+        #                                     gridSize=Configuration.MOVE_STEP,
+        #                                     rotateStepDegrees=Configuration.ROTATION_STEP,
+        #                                     scene=scene,
+        #                                     continuousMode=True,
+        #                                     snapToGrid=False,
+        #                                     # camera properties
+        #                                     width=Configuration.FRAME_WIDTH,
+        #                                     height=Configuration.FRAME_HEIGHT,
+        #                                     fieldOfView=vfov,
+        #                                     agentMode=agent_mode
+        #                                     )
+        #     else:
+        #         self.controller = Controller(renderDepthImage=Configuration.RENDER_DEPTH_IMG,
+        #                                     renderObjectImage=True,
+        #                                     visibilityDistance=Configuration.VISIBILITY_DISTANCE,
+        #                                     gridSize=Configuration.MOVE_STEP,
+        #                                     rotateStepDegrees=Configuration.ROTATION_STEP,
+        #                                     scene=scene,
+        #                                     # camera properties
+        #                                     width=Configuration.FRAME_WIDTH,
+        #                                     height=Configuration.FRAME_HEIGHT,
+        #                                     fieldOfView=vfov,
+        #                                     agentMode=agent_mode
+        #                                    )
+        # else:
+        #     self.controller = controller
+        
 
-        if already_on == False:
-            if Configuration.TASK == Configuration.TASK_OGN_ROBOTHOR:
-                self.controller = Controller(renderDepthImage=Configuration.RENDER_DEPTH_IMG,
-                                            renderObjectImage=True,
-                                            visibilityDistance=Configuration.VISIBILITY_DISTANCE,
-                                            gridSize=Configuration.MOVE_STEP,
-                                            rotateStepDegrees=Configuration.ROTATION_STEP,
-                                            scene=scene,
-                                            # camera properties
-                                            width=Configuration.FRAME_WIDTH,
-                                            height=Configuration.FRAME_HEIGHT,
-                                            fieldOfView=vfov,
-                                            continuousMode=True,
-                                            snapToGrid=False,
-                                            agentMode=agent_mode
-                                            )
-            elif Configuration.TASK == Configuration.TASK_OGN_ITHOR:
-                self.controller = Controller(renderDepthImage=Configuration.RENDER_DEPTH_IMG,
-                                            renderObjectImage=True,
-                                            visibilityDistance=Configuration.VISIBILITY_DISTANCE,
-                                            gridSize=Configuration.MOVE_STEP,
-                                            rotateStepDegrees=Configuration.ROTATION_STEP,
-                                            scene=scene,
-                                            continuousMode=True,
-                                            snapToGrid=False,
-                                            # camera properties
-                                            width=Configuration.FRAME_WIDTH,
-                                            height=Configuration.FRAME_HEIGHT,
-                                            fieldOfView=vfov,
-                                            agentMode=agent_mode
-                                            )
-            else:
-                self.controller = Controller(renderDepthImage=Configuration.RENDER_DEPTH_IMG,
-                                            renderObjectImage=True,
-                                            visibilityDistance=Configuration.VISIBILITY_DISTANCE,
-                                            gridSize=Configuration.MOVE_STEP,
-                                            rotateStepDegrees=Configuration.ROTATION_STEP,
-                                            scene=scene,
-                                            # camera properties
-                                            width=Configuration.FRAME_WIDTH,
-                                            height=Configuration.FRAME_HEIGHT,
-                                            fieldOfView=vfov,
-                                            agentMode=agent_mode
-                                           )
-        else:
-            self.controller = controller 
+        self.controller = controller
 
         # Initialize event (i.e. the observation after action execution)
         self.event = self.controller.step("Pass")
