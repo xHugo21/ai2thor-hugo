@@ -23,39 +23,13 @@ OPEN CLASSIFIER:Utils/pretrained_models/open_predictor.pth
 ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
 ###############################################
 
-1:MoveAhead
-2:RotateLeft
-3:RotateLeft
-4:MoveAhead
-Collision detected
-5:RotateLeft
-6:RotateLeft
-7:MoveAhead
-8:MoveAhead
-9:MoveAhead
-10:MoveAhead
-Collision detected
-11:RotateLeft
-12:RotateLeft
-Changing event planner subgoal to: INSPECT(FRIDGE_0)
-13:MoveAhead
-14:MoveAhead
-15:MoveAhead
-16:MoveAhead
-17:MoveAhead
-18:MoveAhead
-19:MoveAhead
-20:MoveAhead
-21:MoveAhead
-22:MoveAhead
-23:MoveAhead
-24:RotateRight
+1:RotateLeft
 Changing event planner subgoal to: STOP()
-25:Stop
+2:Stop
 Successfully executed action: STOP()
-Average metrics over 3 episodes:
-	 AVG success: 0.6666666666666666
-	 AVG SPL: 0.0
-	 AVG dts: 0.08333333448778528
+Average metrics over 4 episodes:
+	 AVG success: 0.75
+	 AVG SPL: 0.25
+	 AVG dts: 0.06250000086583896
 Episode succeeds.
-Episode computational time: 25 seconds
+Episode computational time: 1 seconds

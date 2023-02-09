@@ -6,7 +6,7 @@ EPISODE:1
 SCENE:FloorPlan3
 TASK:ogn_ithor
 RANDOM SEED:1
-GOAL OBJECTS:['fridge']
+GOAL OBJECTS:['saltshaker']
 MAX ITER:200
 VISIBILITY DISTANCE:1
 MOVE STEP:0.25
@@ -27,44 +27,12 @@ ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
 2:RotateRight
 3:RotateRight
 4:MoveAhead
-5:MoveAhead
-6:MoveAhead
-7:MoveAhead
-Collision detected
-Warning: agent is blocked, clearing the area around the agent.
-8:RotateRight
-9:RotateRight
-10:MoveAhead
-Changing event planner subgoal to: INSPECT(FRIDGE_0)
-11:MoveAhead
-12:RotateRight
-13:RotateRight
-14:MoveAhead
-15:MoveAhead
-16:MoveAhead
-17:MoveAhead
-18:RotateLeft
-19:RotateLeft
-20:MoveAhead
-21:MoveAhead
-22:MoveAhead
-23:MoveAhead
-24:MoveAhead
-25:MoveAhead
-26:MoveAhead
-27:MoveAhead
-28:MoveAhead
-29:RotateRight
-Adding a useless goal cell: 1
-30:RotateRight
-31:MoveAhead
-32:RotateLeft
 Changing event planner subgoal to: STOP()
-33:Stop
+5:Stop
 Successfully executed action: STOP()
 Average metrics over 2 episodes:
 	 AVG success: 1.0
 	 AVG SPL: 0.0
 	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 81 seconds
+Episode computational time: 3 seconds

@@ -51,4 +51,4 @@ Average metrics over 1 episodes:
 	 AVG SPL: 0.0
 	 AVG dts: 0.0
 Episode succeeds.
-Episode computational time: 18 seconds
+Episode computational time: 9 seconds

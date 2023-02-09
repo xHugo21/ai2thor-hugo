@@ -1,4 +1,5 @@
 * GENERAL *
+- Manejo de errores
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto
@@ -7,8 +8,9 @@
 - Comprobar si los planes son óptimos
 
 * OGAMUS *
-- Crear domino propio para ejecutar sobre OGAMUS?
+- Añadir posibilidad de introducir fichero pddl como input
 - Eliminar clases/funciones inutilizadas
-- Añadir acciones (drop, put...)
 - ¿Manejar objeto no encontrado para saltar accion en vez de acabar programa?
+- Llamar al planificador desde Planificador
+- Refactorizar planificador inputs
 

@@ -2,12 +2,12 @@
 import json
 import ogamus
 import shutil
+import sys
 import numpy as np
 from ai2thor.controller import Controller
 from problem_definition import ProblemDefinition
 from parser_ai2thor_pddl import ParserAI2THORPDDL
 from parser_pddl_ai2thor import ParserPDDLAI2THOR
-from goal_ogamus import GoalOgamus
 from planificador import Planificador
 from exec_ogamus import ExecOgamus
 from aux import printAgentStatus, printLastActionStatus, createCamera, printObjectStatus, removeResultFolders
@@ -127,15 +127,21 @@ else:
     agent_hor = event.metadata["agent"]["cameraHorizon"]
     print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
 
-    # Pedimos al usuario que seleccione los problemas que quiere resolver
-    problem_list, objective_list = inputs.problem_selection_ogamus()
+    # Si llama a la selección del problema. Dependiendo si se ha introducido un fichero de inputs se carga ese o se permite introducir todo manualmente
+    if len(sys.argv) == 2:
+        problem_list, objective_list = inputs.problem_selection_ogamus_input(input=sys.argv[1])
+    elif len(sys.argv) == 1:
+        problem_list, objective_list = inputs.problem_selection_ogamus()
+    else:
+        print("Por favor. Introduzca un fichero pddl como input o deje los argumentos vacíos\n")
+        exit()
+
 
     # Bucle que se ejecuta tantas veces como problemas hayamos introducido para resolver
     iteracion = 0
     for problem in problem_list:
         # Establecemos el planificador y las rutas de los problemas y ficheros de salida
-        planner_path, problem_path, output_path = inputs.paths_selection(
-            method, iteracion)
+        planner_path, problem_path, output_path = inputs.paths_selection(method, iteracion)
 
         # Creamos el diccionario a introducir en el json. Graba el episodio que se va a ejecutar con la escena, objetivo y posición del agente
         dictionary = [{
@@ -181,19 +187,9 @@ else:
         execute = ExecOgamus(controller, problem,
                              objective_list[iteracion], iteracion)
 
-        # Si ha encontrado el objetivo se ejecuta el problema concreto indicado al inicio
-        # Modificamos el fichero "./OGAMUS/Plan/PDDL/facts.pddl" para cambiar su estado meta dependiendo del tipo de problema
-        # GoalOgamus(problem_path, problem, objective_list[iteracion])
-
         # Copiamos el fichero con los datos analizados del problema al directorio de problemas de pddl para dejarlo guardado si hay más iteraciones
         shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl",
                         f"pddl/problems/problem{iteracion}.pddl")
-
-        # Llamamos al planificador para que ejecute el problema modificado sobre el dominio
-        # plan = Planificador(planner_path, f"pddl/problems/problem{iteracion}.pddl", output_path, problem, print=True, ogamus=True)
-
-        # Llamamos al parser para ejecutar la accion pedida sobre el objetivo
-        # parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteracion, liquid='coffee', ogamus=True)
 
         # Actualizamos posicion agente para inicializar la siguiente iteración desde la posición anterior
         event = controller.step("Pass")

@@ -1,0 +1,151 @@
+{
+  "objects": {
+    "belief": [
+      "Drawer|+00.65|+01.07|+01.02",
+      "CounterTop|-01.81|+01.36|+01.18",
+      "SaltShaker|+00.33|+01.31|-02.83",
+      "GarbageCan|-01.63|+00.21|+02.19",
+      "SideTable|+00.98|+00.22|+00.87",
+      "Fridge|+01.01|+00.23|+01.92"
+    ],
+    "gt": [
+      "Drawer|+00.65|+01.07|+01.02",
+      "Fridge|+01.01|+00.23|+01.92",
+      "SaltShaker|+00.33|+01.31|-02.83",
+      "SideTable|+00.98|+00.22|+00.87",
+      "CounterTop|-01.81|+01.36|+01.18",
+      "GarbageCan|-01.63|+00.21|+02.19"
+    ],
+    "belief2gt": {
+      "drawer_0": "Drawer|+00.65|+01.07|+01.02",
+      "fridge_0": "Fridge|+01.01|+00.23|+01.92",
+      "saltshaker_0": "SaltShaker|+00.33|+01.31|-02.83",
+      "sidetable_0": "SideTable|+00.98|+00.22|+00.87",
+      "countertop_0": "CounterTop|-01.81|+01.36|+01.18",
+      "garbagecan_0": "GarbageCan|-01.63|+00.21|+02.19",
+      "saltshaker_1": "SaltShaker|+00.33|+01.31|-02.83"
+    },
+    "belief_counting": {
+      "drawer_0": 1,
+      "fridge_0": 2,
+      "saltshaker_0": 1,
+      "sidetable_0": 1,
+      "countertop_0": 1,
+      "garbagecan_0": 1,
+      "saltshaker_1": 1
+    },
+    "belief_avg_scores": {
+      "drawer_0": "1",
+      "fridge_0": "1.0",
+      "saltshaker_0": "1",
+      "sidetable_0": "1",
+      "countertop_0": "1",
+      "garbagecan_0": "1",
+      "saltshaker_1": "1"
+    },
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "predicates": {
+    "belief": [
+      "discovered(Fridge|+01.01|+00.23|+01.92)",
+      "discovered(SaltShaker|+00.33|+01.31|-02.83)",
+      "inspected(SaltShaker|+00.33|+01.31|-02.83)",
+      "close_to(Fridge|+01.01|+00.23|+01.92)",
+      "close_to(SaltShaker|+00.33|+01.31|-02.83)",
+      "discovered(GarbageCan|-01.63|+00.21|+02.19)",
+      "on(SaltShaker|+00.33|+01.31|-02.83,CounterTop|-01.81|+01.36|+01.18)",
+      "open(Fridge|+01.01|+00.23|+01.92)",
+      "close_to(Drawer|+00.65|+01.07|+01.02)",
+      "viewing(Fridge|+01.01|+00.23|+01.92)",
+      "discovered(SideTable|+00.98|+00.22|+00.87)",
+      "inspected(Fridge|+01.01|+00.23|+01.92)",
+      "hand_free()",
+      "discovered(Drawer|+00.65|+01.07|+01.02)",
+      "viewing(SaltShaker|+00.33|+01.31|-02.83)",
+      "viewing(CounterTop|-01.81|+01.36|+01.18)",
+      "viewing(GarbageCan|-01.63|+00.21|+02.19)",
+      "discovered(CounterTop|-01.81|+01.36|+01.18)",
+      "inspected(Drawer|+00.65|+01.07|+01.02)"
+    ],
+    "gt": [
+      "discovered(Drawer|+00.65|+01.07|+01.02)",
+      "close_to(Drawer|+00.65|+01.07|+01.02)",
+      "inspected(Drawer|+00.65|+01.07|+01.02)",
+      "open(Fridge|+01.01|+00.23|+01.92)",
+      "discovered(Fridge|+01.01|+00.23|+01.92)",
+      "viewing(Fridge|+01.01|+00.23|+01.92)",
+      "holding(SaltShaker|+00.33|+01.31|-02.83)",
+      "discovered(SaltShaker|+00.33|+01.31|-02.83)",
+      "viewing(SaltShaker|+00.33|+01.31|-02.83)",
+      "close_to(SaltShaker|+00.33|+01.31|-02.83)",
+      "inspected(SaltShaker|+00.33|+01.31|-02.83)",
+      "discovered(SideTable|+00.98|+00.22|+00.87)",
+      "close_to(SideTable|+00.98|+00.22|+00.87)",
+      "inspected(SideTable|+00.98|+00.22|+00.87)",
+      "discovered(CounterTop|-01.81|+01.36|+01.18)",
+      "discovered(GarbageCan|-01.63|+00.21|+02.19)",
+      "on(Fridge|+01.01|+00.23|+01.92,SideTable|+00.98|+00.22|+00.87)"
+    ],
+    "tp": 16,
+    "fp": 8,
+    "fn": 4,
+    "precision": 0.6666666666666666,
+    "recall": 0.8
+  },
+  "global": {
+    "belief": [
+      "discovered(Fridge|+01.01|+00.23|+01.92)",
+      "discovered(SaltShaker|+00.33|+01.31|-02.83)",
+      "inspected(SaltShaker|+00.33|+01.31|-02.83)",
+      "close_to(Fridge|+01.01|+00.23|+01.92)",
+      "close_to(SaltShaker|+00.33|+01.31|-02.83)",
+      "discovered(GarbageCan|-01.63|+00.21|+02.19)",
+      "on(SaltShaker|+00.33|+01.31|-02.83,CounterTop|-01.81|+01.36|+01.18)",
+      "open(Fridge|+01.01|+00.23|+01.92)",
+      "close_to(Drawer|+00.65|+01.07|+01.02)",
+      "viewing(Fridge|+01.01|+00.23|+01.92)",
+      "discovered(SideTable|+00.98|+00.22|+00.87)",
+      "inspected(Fridge|+01.01|+00.23|+01.92)",
+      "hand_free()",
+      "discovered(Drawer|+00.65|+01.07|+01.02)",
+      "viewing(SaltShaker|+00.33|+01.31|-02.83)",
+      "viewing(CounterTop|-01.81|+01.36|+01.18)",
+      "viewing(GarbageCan|-01.63|+00.21|+02.19)",
+      "discovered(CounterTop|-01.81|+01.36|+01.18)",
+      "inspected(Drawer|+00.65|+01.07|+01.02)"
+    ],
+    "gt": [
+      "discovered(Drawer|+00.65|+01.07|+01.02)",
+      "close_to(Drawer|+00.65|+01.07|+01.02)",
+      "inspected(Drawer|+00.65|+01.07|+01.02)",
+      "open(Fridge|+01.01|+00.23|+01.92)",
+      "discovered(Fridge|+01.01|+00.23|+01.92)",
+      "viewing(Fridge|+01.01|+00.23|+01.92)",
+      "holding(SaltShaker|+00.33|+01.31|-02.83)",
+      "discovered(SaltShaker|+00.33|+01.31|-02.83)",
+      "viewing(SaltShaker|+00.33|+01.31|-02.83)",
+      "close_to(SaltShaker|+00.33|+01.31|-02.83)",
+      "inspected(SaltShaker|+00.33|+01.31|-02.83)",
+      "discovered(SideTable|+00.98|+00.22|+00.87)",
+      "close_to(SideTable|+00.98|+00.22|+00.87)",
+      "inspected(SideTable|+00.98|+00.22|+00.87)",
+      "discovered(CounterTop|-01.81|+01.36|+01.18)",
+      "discovered(GarbageCan|-01.63|+00.21|+02.19)",
+      "on(Fridge|+01.01|+00.23|+01.92,SideTable|+00.98|+00.22|+00.87)"
+    ],
+    "tp": 16,
+    "fp": 8,
+    "fn": 4,
+    "precision": 0.6666666666666666,
+    "recall": 0.8
+  },
+  "goal": {
+    "success": 1,
+    "spl": 1.0,
+    "distance_to_success": 0
+  }
+}

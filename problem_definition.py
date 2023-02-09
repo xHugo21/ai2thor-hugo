@@ -1,6 +1,9 @@
 # Fichero que contiene la clase que gestiona los parámetros de entrada para la ejecución del problema
 #TODO comprobación errores
 
+# Imports
+import os
+
 class ProblemDefinition():
     def __init__(self):
         '''Clase que contiene todos los métodos para recoger los parámetros de entrada'''
@@ -200,6 +203,7 @@ class ProblemDefinition():
                 self.liquid = 'water'
 
     def problem_selection_ogamus(self):
+        
         bucle = True
         while bucle:
             print("----PROBLEMA----")
@@ -288,6 +292,58 @@ class ProblemDefinition():
         aux2 = input("Seleccione el objetivo: ")
         self.objective = possible_objects[int(aux2)]
         self.objective_list.append(self.objective)
+    
+    def problem_selection_ogamus_input(self, input):
+        
+        try:
+            os.system(f'./pddl/cbp-roller/cbp-roller -o ./pddl/domain_input.pddl -f {input} > ./pddl/outputs/inputs.txt')
+        except FileNotFoundError:
+            raise Exception("Error al ejecutar el planificador (Archivo no encontrado)")
+
+        with open('./pddl/outputs/inputs.txt', 'r') as f:
+            raw_plan = f.read()
+            print(raw_plan)
+        
+            start_index = raw_plan.find("0:")
+            end_index = raw_plan.find("time")
+
+            plan = raw_plan[start_index:end_index] # Trunca la parte exacta de los pasos del plan
+
+        plan = plan.splitlines() # Divide el string en un array donde cada posición es una línea
+
+        list_plan = []
+        # Eliminar espacios en blanco
+        for act in plan:
+            if (act.find(":") == -1) or (not act):
+                plan.remove(act)
+            index = act.find(":")
+            act = act[:index].replace(" ", "") + act[index:]
+            list_plan.append(act)
+        
+        # Elimina la última posición si está vacía
+        if list_plan[-1] == ' ':
+            list_plan.pop()
+
+        # print(list_plan)
+        # Recorremos cada acción y la parseamos para añadirla a las listas de problemas y objetivos
+        for act in list_plan:
+            if act.find("BASICACTION") != -1:
+                start_index = act.find("(") + 15
+                act2 = act[start_index:]
+                end_index = act2.find(" ")
+                problem_name = act2[:end_index]
+                end_index2 = act2.find(")")
+                objective_name = act2[end_index+1:end_index2]
+            
+                self.problem_list.append(problem_name.lower())
+                self.objective_list.append(objective_name.lower())
+        
+        print(" ")
+        print(self.problem_list)
+        print(self.objective_list)
+        print(" ")        
+
+        return self.problem_list, self.objective_list
 
 
         
