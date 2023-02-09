@@ -1,5 +1,6 @@
 * GENERAL *
 - Manejo de errores
+- Shortest paths entender y modificar
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto
@@ -10,6 +11,6 @@
 * OGAMUS *
 - Añadir más acciones complejas inputs
 - Eliminar clases/funciones inutilizadas
-- ¿Manejar objeto no encontrado para saltar accion en vez de acabar programa?
 - Refactorizar planificador inputs
 - Acciones repetidas en inputs dan fallo (arreglar o no)
+- Mantener forceAction?
