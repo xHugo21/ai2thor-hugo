@@ -8,9 +8,8 @@
 - Comprobar si los planes son óptimos
 
 * OGAMUS *
-- Añadir posibilidad de introducir fichero pddl como input
+- Añadir más acciones complejas inputs
 - Eliminar clases/funciones inutilizadas
 - ¿Manejar objeto no encontrado para saltar accion en vez de acabar programa?
-- Llamar al planificador desde Planificador
 - Refactorizar planificador inputs
-
+- Acciones repetidas en inputs dan fallo (arreglar o no)

@@ -44,7 +44,7 @@ garbagecan_0 - garbagecan
 (viewing garbagecan_0)
 (viewing saltshaker_1)
 )
-(:goal
-(and
-(exists (?o1 - fridge) (and (viewing ?o1) (close_to ?o1))))
+(:goal 
+(and 
+(exists (?o1 - saltshaker) (and (viewing ?o1) (close_to ?o1)))) 
 ))

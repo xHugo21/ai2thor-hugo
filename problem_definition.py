@@ -341,7 +341,9 @@ class ProblemDefinition():
         print(" ")
         print(self.problem_list)
         print(self.objective_list)
-        print(" ")        
+        print(" ")
+
+        exit()        
 
         return self.problem_list, self.objective_list
 

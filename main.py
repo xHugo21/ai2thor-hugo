@@ -21,9 +21,12 @@ LOG = "Results/test_set_ogn_ithor_steps200/episode_0/log.txt"
 # Limpiamos los directorios de resultados generados en las ejecuciones
 removeResultFolders()
 
-# El usuario escoge el tipo de ejecución que desea: METADATA o OGAMUS
+# El usuario escoge el tipo de ejecución que desea: METADATA o OGAMUS. En caso de no haber introducido fichero pddl como input
 inputs = ProblemDefinition()
-method = inputs.method_selection()
+if len(sys.argv) == 1:
+    method = inputs.method_selection()
+else:
+    method = "2"
 
 # Pedimos al usuario que seleccione una escena
 scene_number = inputs.scene_selection()
