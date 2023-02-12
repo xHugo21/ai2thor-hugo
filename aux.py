@@ -15,6 +15,14 @@ def printAgentStatus(event):
     print(f'agent rotation: {event.metadata["agent"]["rotation"]}')
     print("-----------------------------------------------\n")
 
+def isObjectOnScene(event, object):
+    print("-----------------------------------------------")
+    for obj in event.metadata["objects"]:
+        if obj["name"].lower().find(object) != -1:
+            print(f'{object} existe en la escena')
+    print("-----------------------------------------------\n")
+
+
 def printObjectStatus(event, object):
     '''Muestra el estado de un objeto completo'''
     print("-----------------------------------------------")

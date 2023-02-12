@@ -10,7 +10,7 @@ from parser_ai2thor_pddl import ParserAI2THORPDDL
 from parser_pddl_ai2thor import ParserPDDLAI2THOR
 from planificador import Planificador
 from exec_ogamus import ExecOgamus
-from aux import printAgentStatus, printLastActionStatus, createCamera, printObjectStatus, removeResultFolders
+from aux import printAgentStatus, printLastActionStatus, createCamera, printObjectStatus, removeResultFolders, isObjectOnScene
 
 # CONSTANTES
 DATASET = 'Datasets/test_set_ogn_ithor.json'
@@ -97,7 +97,6 @@ if method == '1':
 
 # Si method = '2' -> OGAMUS
 else:
-
     # Cálculo de parámetros auxiliares para inicio controlador
     hfov = 79 / 360. * 2. * np.pi
     vfov = 2. * np.arctan(np.tan(hfov / 2) * 224 / 224)
@@ -129,6 +128,8 @@ else:
     agent_rot = event.metadata["agent"]["rotation"]
     agent_hor = event.metadata["agent"]["cameraHorizon"]
     print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
+
+    isObjectOnScene(event, "potato")
 
     # Si llama a la selección del problema. Dependiendo si se ha introducido un fichero de inputs se carga ese o se permite introducir todo manualmente
     if len(sys.argv) == 2:

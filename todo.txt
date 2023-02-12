@@ -1,6 +1,7 @@
 * GENERAL *
 - Manejo de errores
 - Shortest paths entender y modificar
+- ifs por switch?
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto
@@ -14,3 +15,5 @@
 - Refactorizar planificador inputs
 - Acciones repetidas en inputs dan fallo (arreglar o no)
 - Mantener forceAction?
+- Eliminar domain_ogamus.pddl
+- ¿Se pueden añadir los objetos cortados (sliced)? 

@@ -211,9 +211,9 @@ class ProblemDefinition():
             print("[2] - Pickup Object")
             print("[3] - Open Object")
             print("[4] - Close Object")
-            # print("[5] - Break Object")
-            # print("[6] - Cook Object")
-            # print("[7] - Slice Object")
+            print("[5] - Break Object")
+            print("[6] - Cook Object")
+            print("[7] - Slice Object")
             # print("[8] - Toggle On Object")
             # print("[9] - Toggle Off Object")
             # print("[10] - Dirty Object")
@@ -221,9 +221,8 @@ class ProblemDefinition():
             # print("[12] - Fill Object")
             # print("[13] - Empty Object")
             # print("[14] - Use Up Object")
-            # print("[15] - Drop Object (Requires holding an object)")
-            print("[5] - Drop Object (Requires holding an object)")
-            print("[6] - Put Object (Requires holding an object)")
+            print("[8] - Drop Object (Requires holding an object)")
+            print("[9] - Put Object (Requires holding an object)")
             print("----------------")
             aux = input("Seleccione un tipo de problema a resolver: ")
             print("")
@@ -232,7 +231,7 @@ class ProblemDefinition():
             else:
                 print("Por favor, introduce un problema válido\n")
         
-        problemas_ogamus = ["get_close_to", "pickup", "open", "close", "drop", "put"]
+        problemas_ogamus = ["get_close_to", "pickup", "open", "close", "break", "cook", "slice", "drop", "put"]
         self.problem = problemas_ogamus[int(aux)-1]
         self.problem_list.append(self.problem)
 
@@ -282,6 +281,16 @@ class ProblemDefinition():
                    "garbagecan", "handtowelholder", "laundryhamper", "microwave", "mug", "ottoman", "pan",
                    "plate", "pot", "safe", "shelf", "sidetable", "sinkbasin", "sofa", "toaster",
                    "toilet", "toiletpaperhanger", "towelholder", "tvstand", "stoveburner"]
+
+        elif self.problem == "break":
+            possible_objects = ["bottle", "bowl", "cellphone", "cup", "egg", "laptop", "mirror", "mug", "plate",
+                    "showerdoor", "statue", "vase", "window", "winebottle"]
+
+        elif self.problem == "cook":
+            possible_objects = ["breadsliced", "eggcracked", "potato", "potatosliced"]
+        
+        elif self.problem == "slice":
+            possible_objects = ["apple", "bread", "egg", "lettuce", "potato", "tomato"]
 
         print("----OBJETIVO----")
         i = 0

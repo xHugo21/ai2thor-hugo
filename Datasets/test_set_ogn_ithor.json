@@ -1,20 +1,20 @@
 [
     {
         "episode": 1,
-        "scene": "FloorPlan3",
-        "goal": "(exists (?o1 - fridge) (and (viewing ?o1) (close_to ?o1)))",
+        "scene": "FloorPlan1",
+        "goal": "(exists (?o1 - potato) (and (viewing ?o1) (close_to ?o1)))",
         "agent_position": {
-            "x": 0.2500007748603821,
-            "y": 1.123205542564392,
-            "z": 0.49999940395355225
+            "x": 0.24999985098838806,
+            "y": 0.900999128818512,
+            "z": -1.7500007152557373
         },
         "agent_rotation": {
-            "x": -0.0,
-            "y": 45.000022888183594,
-            "z": -0.0
+            "x": 0.0,
+            "y": 180.00003051757812,
+            "z": 0.0
         },
-        "initial_orientation": 45.000022888183594,
-        "initial_horizon": -0.0,
+        "initial_orientation": 180.00003051757812,
+        "initial_horizon": 3.2987279610097175e-06,
         "agent_is_standing": true,
         "agent_in_high_friction_area": false,
         "agent_fov": 79,
