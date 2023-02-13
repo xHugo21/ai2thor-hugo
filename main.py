@@ -1,3 +1,6 @@
+# Trabajo Final de Grado por Hugo García Cuesta (100428954). Grado en Ingeniería Informática Universidad Carlos III de Madrid.
+# TÍTULO DEL TRABAJO Y DESCRIPCIÓN
+
 # IMPORTS
 import json
 import ogamus
@@ -63,7 +66,7 @@ if method == '1':
     bucle = 'Y'
     while bucle == 'Y':
         # Pedimos al usuario que escoja el planificador, y el nombre de los ficheros que se van a generar
-        planner_path, problem_path, output_path = inputs.paths_selection(iteracion)
+        problem_path, output_path = inputs.paths_selection(iteracion)
 
         # Ejecutamos una acción sobre el agente. En este caso la acción GetReachablePositions para que contenga la información de las posiciones que puede tomar el agente en el entorno.
         event = controller.step(action="GetReachablePositions")
@@ -75,8 +78,7 @@ if method == '1':
         ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
 
         # Ejecución del planificador sobre el dominio y el problema dados. Si último parámetro = True -> se imprime plan por pantalla.
-        plan = Planificador(planner_path, problem_path,
-                            output_path, problem, print=True, ogamus=False)
+        plan = Planificador(problem_path, output_path, problem, print=True, ogamus=False)
 
         # Parseo del plan para convertirlo en acciones ejecutables por el agente y ejecutarlas
         parsed = ParserPDDLAI2THOR(
@@ -187,8 +189,7 @@ else:
                 exit()
 
         # Llamamos a ExecOgamus para ejecutar la acción indicada
-        execute = ExecOgamus(controller, problem,
-                             objective_list[iteracion], iteracion)
+        execute = ExecOgamus(controller, problem, objective_list[iteracion], iteracion)
 
         # Copiamos el fichero con los datos analizados del problema al directorio de problemas de pddl para dejarlo guardado si hay más iteraciones
         shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl",

@@ -1,25 +1,47 @@
 (define (problem example) (:domain inputs)
 (:objects 
     
-    ;alarmclock aluminumfoil apple baseballbat book boots basketball bottle bowl box bread - pickupable ; <- Objects capable of being picked up.
-    ;butterknife candle cd cellphone peppershaker cloth creditcard cup dishsponge dumbbell egg - pickupable ; <- Objects capable of being picked up.
-    ;fork handtowel kettle keychain knife ladle laptop lettuce mug newspaper pan papertowel - pickupable ; <- Objects capable of being picked up.
-    ;papertowerlroll pen pencil papershaker pillow plate plunger pot potato remotecontrol - pickupable ; <- Objects capable of being picked up.
-    ;saltshaker scrubbrush soapbar soapbottle spatula spoon spraybottle statue tabletopdecor - pickupable ; <- Objects capable of being picked up.
-    ;teddybear tennisracket tissuebox toiletpaper tomato towel vase watch wateringcan winebottle - pickupable ; <- Objects capable of being picked up.
+    ; MODIFICAR SOLO LOS OBJETOS DEL FINAL EN ESTE APARTADO
 
-    ;armchair bathtub bathtubbasin bed bowl box cabinet coffeemachine coffeetable countertop - receptacle ; <- Objects capable of having pickupable items inside. Targets of put basic action
-    ;desk diningtable drawer fridge garbagebag handtowelholder laundryhamper microwave mug - receptacle ; <- Objects capable of having pickupable items inside. Targets of put basic action
-    ;ottoman pan plate pot safe shelf sidetable sinkbasin sofa toaster toilet toiletpaperhanger - receptacle ; <- Objects capable of having pickupable items inside. Targets of put basic action
+    ; Objetos que pueden ser recogidos
+    ;alarmclock aluminumfoil apple baseballbat book boots basketball bottle bowl box bread - pickupable 
+    ;butterknife candle cd cellphone peppershaker cloth creditcard cup dishsponge dumbbell egg - pickupable 
+    ;fork handtowel kettle keychain knife ladle laptop lettuce mug newspaper pan papertowel - pickupable 
+    ;papertowerlroll pen pencil papershaker pillow plate plunger pot potato remotecontrol - pickupable 
+    ;saltshaker scrubbrush soapbar soapbottle spatula spoon spraybottle statue tabletopdecor - pickupable 
+    ;teddybear tennisracket tissuebox toiletpaper tomato towel vase watch wateringcan winebottle - pickupable 
+
+    ; Objetos que pueden incluir otros objetos
+    ;armchair bathtub bathtubbasin bed bowl box cabinet coffeemachine coffeetable countertop - receptacle 
+    ;desk diningtable drawer fridge garbagebag handtowelholder laundryhamper microwave mug - receptacle
+    ;ottoman pan plate pot safe shelf sidetable sinkbasin sofa toaster toilet toiletpaperhanger - receptacle
     ;towelholder tvstand stoveburner - receptacle
 
-    ;blinds book box cabinet drawer fridge kettle laptop microwave safe showercurtain showerdoor toilet - openable ; <- Objects capable of being opened or closed.
+    ; Objetos que pueden ser abiertos / cerrados
+    ;blinds book box cabinet drawer fridge kettle laptop microwave safe showercurtain showerdoor toilet - openable
 
-    ; All posible basic actions
-    get_close_to pickup open close break cook slice drop put - action
-    
+    ; Objetos que pueden ser rotos
+    ; bottle bowl cellphone cup egg laptop mirror mug plate - breakable
+    ; showerdoor statue vase window winebottle - breakable
 
-    ; Write here the objects from above that you are going to use
+    ; Objetos que pueden ser cocinados
+    ; breadsliced eggcracked potato potatosliced - cookable
+
+    ; Objetos que pueden ser cortados
+    ; apple bread egg lettuce potato tomato - sliceable
+
+    ; Todas las acciones básicas permitidas
+    get_close_to - action ; (= (basicaction get_close_to <cualquier objeto>) <orden>)
+    pickup - action ; (= (basicaction pickup <pickupable>) <orden>)
+    open - action ; (= (basicaction open <openable>) <orden>)
+    close - action ; (= (basicaction close <openable>) <orden>)
+    break - action ; (= (basicaction break <breakable>) <orden>)
+    cook - action ; (= (basicaction cook <cookable>) <orden>)
+    slice - action ; (= (basicaction slice <sliceable>) <orden>)
+    drop - action ; (= (basicaction drop <pickupable>) <orden>)
+    put - action ; (= (basicaction put <receptacle>) <orden>)
+
+    ; Escribir aquí todos los objetos que van a ser empleados
     potato pan saltshaker fridge - object
 
 )
@@ -39,6 +61,7 @@
 )
 
 (:goal (and
+    ; NO MODIFICAR
     (= (time) (last))
     (= (complextime) 0)
 ))

@@ -7,7 +7,6 @@
     action
 )
 
-
 (:predicates
 )
 
@@ -50,7 +49,7 @@
 )
 
 ; ACCIONES COMPLEJAS
-(:action put__object_into
+(:action put_object_into
     :parameters (?o1 ?o2 - object)
     :precondition (and
                     (= (put_object_into ?o1 ?o2) (time))

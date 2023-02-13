@@ -14,11 +14,8 @@ class ExecOgamus:
         # Se almacena en self.final_objective el objeto concreto con el que se va a interactuar
         self.get_object_id()
 
-        # Se identifica el problema y se ejecuta su acción correspondiente
-        if self.problem == 'get_close_to':
-            pass
-
-        elif self.problem == 'pickup':
+        # Se identifica el problema y se ejecuta su acción correspondiente. Si self.problem == 'get_close_to' -> se ignora porque no tiene que realizar acción
+        if self.problem == 'pickup':
             self.controller.step(action="PickupObject", objectId=self.final_objective["objectId"], forceAction=True)
 
         elif self.problem == 'open':

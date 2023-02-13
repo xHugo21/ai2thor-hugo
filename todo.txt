@@ -1,20 +1,14 @@
 * GENERAL *
 - Manejo de errores
 - Shortest paths entender y modificar
-- ifs por switch?
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto
-- Comentar código
-- Simplificar funciones (funciones de añadir estados meta parser_ai2thor_pddl)
 - Comprobar si los planes son óptimos
 
 * OGAMUS *
 - Añadir más acciones complejas inputs
-- Eliminar clases/funciones inutilizadas
-- Acciones repetidas en inputs dan fallo (arreglar o no)
 - Mantener forceAction?
-- Eliminar domain_ogamus.pddl
-- ¿Se pueden añadir los objetos cortados (sliced)? 
+- ¿Se pueden añadir los objetos cortados (sliced)?
 - MAX_RELEVANT_FLUENTS aumentar
 - Cambiar función paths_selection de problem_definition

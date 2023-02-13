@@ -15,10 +15,7 @@ class ParserPDDLAI2THOR:
 
         print("*EJECUTANDO PLAN SOBRE ENTORNO AI2THOR*\n")
 
-        if ogamus == False:
-            self.parse_actions(iteracion, liquid)
-        else:
-            self.parse_actions_ogamus(iteracion)
+        self.parse_actions(iteracion, liquid)
 
         print("*PLAN EJECUTADO SATISFACTORIAMENTE*\n")
 
@@ -50,10 +47,11 @@ class ParserPDDLAI2THOR:
 
     def parse_actions(self, iteracion, liquid):
         '''Método que identifica cada acción junto a sus parámetros y la ejecuta. Extrae además una foto en ./images/ del simulador después de ejecutar cada acción'''
-        # Creamos foto situación inicial
+        # Extraemos foto situación inicial
         extractActionImage(self.controller.last_event, f'iter{iteracion}_0')
         n_image = 1
 
+        # Ejecutamos la acción correspondiente
         for act in self.actions:
             if act.find("ROTATE-LEFT") != -1:
                 self.controller.step("RotateLeft")
@@ -127,7 +125,8 @@ class ParserPDDLAI2THOR:
                 for obj in self.objects:
                     if (obj["name"].upper() == obj_name) and ("PUT" != "FILL"):
                         self.controller.step(action="PutObject", objectId=obj["objectId"], forceAction=True)
-
+            
+            # Si ha habido error al ejecutar la acción se imprime el metadato para conocer por qué 
             if self.controller.last_event.metadata['errorMessage']:
                 print(f'Error: {self.controller.last_event.metadata["errorMessage"]}')
                 print("Reinicie el programa e intente con otra acción\n")
@@ -137,7 +136,6 @@ class ParserPDDLAI2THOR:
             extractActionImage(self.controller.last_event, f'iter{iteracion}_{n_image}')
             n_image += 1
         
-        #return self.executable_actions
     
     def object_state_action(self, act, action_name_domain, plus_index, action_name_ai2thor, liquid='coffee'):
         '''Método que ejecuta las acciones de cambio de estado de objetos al ser similares entre sí'''
@@ -150,42 +148,43 @@ class ParserPDDLAI2THOR:
             elif (obj["name"].upper() == obj_name) and (action_name_domain == "FILL"):
                 self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"], fillLiquid=liquid)
 
-    def parse_actions_ogamus(self, iteracion):
-        '''Método que identifica cada acción junto a sus parámetros y la ejecuta. Extrae además una foto en ./images/ del simulador después de ejecutar cada acción'''
-        # Creamos foto situación inicial
-        extractActionImage(self.controller.last_event, f'problem{iteracion}_0')
-        n_image = 1
-
-        if self.actions[0].find('PICKUP') != -1:
-            self.object_state_action_ogamus(self.actions[0], "PICKUP", 7, "PickupObject")
-        elif self.actions[0].find("OPEN") != -1:
-                self.object_state_action_ogamus(self.actions[0], "OPEN", 5, "OpenObject")
-        elif self.actions[0].find("CLOSE") != -1:
-            self.object_state_action_ogamus(self.actions[0], "CLOSE", 6, "CloseObject")
-
-        if self.controller.last_event.metadata['errorMessage']:
-            print(f'Error: {self.controller.last_event.metadata["errorMessage"]}')
-            print("Reinicie el programa e intente con otra acción\n")
-            exit()
-        
-        self.controller.step("Pass")
-        # Extraemos una foto del paso ejecutado
-        extractActionImage(self.controller.last_event, f'problem{iteracion}_{n_image}')
     
-    def object_state_action_ogamus(self, act, action_name_domain, plus_index, action_name_ai2thor):
-        
-        start_index = act.find(action_name_domain)
-        end_index = act.find('_')
-        obj_name = act[start_index+plus_index:end_index]
-        print(obj_name)
-        for obj in self.objects:
-            aux = obj["objectId"].upper().find(obj_name.upper())
-            if aux != -1:
-                if obj["objectId"][aux+len(obj_name)] == "|":
-                    print(obj["objectId"])
-                    self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"])
-                    printObjectStatus(self.controller.last_event, obj)
-
+#    def parse_actions_ogamus(self, iteracion):
+#        '''Método que identifica cada acción junto a sus parámetros y la ejecuta. Extrae además una foto en ./images/ del simulador después de ejecutar cada acción'''
+#        # Creamos foto situación inicial
+#        extractActionImage(self.controller.last_event, f'problem{iteracion}_0')
+#        n_image = 1
+#
+#        if self.actions[0].find('PICKUP') != -1:
+#            self.object_state_action_ogamus(self.actions[0], "PICKUP", 7, "PickupObject")
+#        elif self.actions[0].find("OPEN") != -1:
+#                self.object_state_action_ogamus(self.actions[0], "OPEN", 5, "OpenObject")
+#        elif self.actions[0].find("CLOSE") != -1:
+#            self.object_state_action_ogamus(self.actions[0], "CLOSE", 6, "CloseObject")
+#
+#        if self.controller.last_event.metadata['errorMessage']:
+#            print(f'Error: {self.controller.last_event.metadata["errorMessage"]}')
+#            print("Reinicie el programa e intente con otra acción\n")
+#            exit()
+#        
+#        self.controller.step("Pass")
+#        # Extraemos una foto del paso ejecutado
+#        extractActionImage(self.controller.last_event, f'problem{iteracion}_{n_image}')
+#    
+#    def object_state_action_ogamus(self, act, action_name_domain, plus_index, action_name_ai2thor):
+#        
+#        start_index = act.find(action_name_domain)
+#        end_index = act.find('_')
+#        obj_name = act[start_index+plus_index:end_index]
+#        print(obj_name)
+#        for obj in self.objects:
+#            aux = obj["objectId"].upper().find(obj_name.upper())
+#            if aux != -1:
+#                if obj["objectId"][aux+len(obj_name)] == "|":
+#                    print(obj["objectId"])
+#                    self.controller.step(action=action_name_ai2thor, objectId=obj["objectId"])
+#                    printObjectStatus(self.controller.last_event, obj)
+    
         
                 
 

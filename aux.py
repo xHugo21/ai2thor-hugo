@@ -16,6 +16,7 @@ def printAgentStatus(event):
     print("-----------------------------------------------\n")
 
 def isObjectOnScene(event, object):
+    '''Indica si un tipo de objeto está se encuentra en la escena. Útil para ogamus'''
     print("-----------------------------------------------")
     for obj in event.metadata["objects"]:
         if obj["name"].lower().find(object) != -1:

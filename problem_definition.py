@@ -54,11 +54,10 @@ class ProblemDefinition():
 
     def paths_selection(self, iteracion):
         '''Método que permite indicar las rutas de los archivos del planificador, problema y output'''
-        self.planner_path = "./pddl/cbp-roller/cbp-roller"
         self.problem_path = f'./pddl/problems/problem{iteracion}.pddl'
         self.output_path = f'./pddl/outputs/problem{iteracion}.txt'
 
-        return self.planner_path, self.problem_path, self.output_path
+        return self.problem_path, self.output_path
 
     def problem_selection(self, event):
         '''Método que permite escoger el problema (acción) a realizar junto a su respectivo objetivo'''
@@ -199,7 +198,7 @@ class ProblemDefinition():
                 self.liquid = 'water'
 
     def problem_selection_ogamus(self):
-        
+        '''Método que permite al usuario seleccionar los problemas que se van a resolver con ogamus'''
         bucle = True
         while bucle:
             print("----PROBLEMA----")
@@ -242,6 +241,7 @@ class ProblemDefinition():
         return self.problem_list, self.objective_list
     
     def object_selection_ogamus(self):
+        '''Método que permite seleccionar el objeto respecto al problema indicado para ogamus'''
         if self.problem == "get_close_to":
             possible_objects = ["alarmclock", "aluminumfoil", "apple", "baseballbat", "book", "boots", "basketball",
                     "bottle", "bowl", "box", "bread", "butterknife", "candle", "cd", "cellphone", "peppershaker",
@@ -299,18 +299,22 @@ class ProblemDefinition():
         self.objective_list.append(self.objective)
     
     def problem_selection_ogamus_input(self, input):
-        
-        planificador = Planificador("./pddl/cbp-roller/cbp-roller", input, "./pddl/outputs/inputs.txt", "pickup", True, True)
-        raw_plan = planificador.get_plan()
+        '''Método que permite ejecutar el plan introducido por input para extraer los problemas y objetivos'''
 
+        # Llamamos al planificador sobre el input y guardamos la salida en "./pddl/outputs/input_plan.txt"
+        planificador = Planificador(input, "./pddl/outputs/input_plan.txt", "pickup", True, True)
+        
+        # Extraemos el plan
+        raw_plan = planificador.get_plan()
         start_index = raw_plan.find("0:")
         end_index = raw_plan.find("time")
 
+        # Obtenemos la parte de las acciones del plan
         plan = raw_plan[start_index:end_index] # Trunca la parte exacta de los pasos del plan
-
         plan = plan.splitlines() # Divide el string en un array donde cada posición es una línea
-
+        
         list_plan = []
+
         # Eliminar espacios en blanco
         for act in plan:
             if (act.find(":") == -1) or (not act):
@@ -341,8 +345,6 @@ class ProblemDefinition():
         print(self.problem_list)
         print(self.objective_list)
         print(" ")
-
-                
 
         return self.problem_list, self.objective_list
 
