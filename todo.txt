@@ -17,3 +17,4 @@
 - Mantener forceAction?
 - Eliminar domain_ogamus.pddl
 - ¿Se pueden añadir los objetos cortados (sliced)? 
+- MAX_RELEVANT_FLUENTS aumentar

@@ -20,7 +20,7 @@
     
 
     ; Write here the objects from above that you are going to use
-    potato pan - object
+    potato pan saltshaker fridge - object
 
 )
 
@@ -31,8 +31,8 @@
 
     ; MODIFICAR A PARTIR DE AQUÍ. AÑADIR LISTA DE ACCIONES BÁSICAS Y COMPLEJAS Y MODIFICAR LAST. *NO REPETIR ACCIONES IDÉNTICAS
     ;(= (basicaction pickup saltshaker) 1)
-    ;(= (put_into saltshaker fridge) 1)
-    (= (fry_potato) 0)
+    ;(= (put_object_into saltshaker fridge) 1)
+    (= (put_into_fridge saltshaker) 1)
     ;(= (basicaction pickup tomato) 2)
 
     (= (last) 2) ; Debe establecerse a un número superior a la última acción escrita
