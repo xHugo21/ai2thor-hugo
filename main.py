@@ -63,8 +63,7 @@ if method == '1':
     bucle = 'Y'
     while bucle == 'Y':
         # Pedimos al usuario que escoja el planificador, y el nombre de los ficheros que se van a generar
-        planner_path, problem_path, output_path = inputs.paths_selection(
-            method, iteracion)
+        planner_path, problem_path, output_path = inputs.paths_selection(iteracion)
 
         # Ejecutamos una acción sobre el agente. En este caso la acción GetReachablePositions para que contenga la información de las posiciones que puede tomar el agente en el entorno.
         event = controller.step(action="GetReachablePositions")
@@ -145,7 +144,7 @@ else:
     iteracion = 0
     for problem in problem_list:
         # Establecemos el planificador y las rutas de los problemas y ficheros de salida
-        planner_path, problem_path, output_path = inputs.paths_selection(method, iteracion)
+        # planner_path, problem_path, output_path = inputs.paths_selection(method, iteracion)
 
         # Creamos el diccionario a introducir en el json. Graba el episodio que se va a ejecutar con la escena, objetivo y posición del agente
         dictionary = [{

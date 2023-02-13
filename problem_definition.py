@@ -3,6 +3,7 @@
 
 # Imports
 import os
+from planificador import Planificador
 
 class ProblemDefinition():
     def __init__(self):
@@ -51,16 +52,11 @@ class ProblemDefinition():
 
         return self.scene_number
 
-    def paths_selection(self, method, iteracion):
-        '''Método que permite seleccionar las rutas de los archivos del planificador, problema y output'''
-        if method == '1':
-            self.planner_path = "./pddl/cbp-roller/cbp-roller"
-            self.problem_path = f'./pddl/problems/problem{iteracion}.pddl'
-            self.output_path = f'./pddl/outputs/problem{iteracion}.txt'
-        else:
-            self.planner_path = './OGAMUS/Plan/PDDL/Planners/FF/ff'
-            self.problem_path = f'./OGAMUS/Plan/PDDL/facts.pddl'
-            self.output_path = f'./pddl/outputs/problem{iteracion}.txt'
+    def paths_selection(self, iteracion):
+        '''Método que permite indicar las rutas de los archivos del planificador, problema y output'''
+        self.planner_path = "./pddl/cbp-roller/cbp-roller"
+        self.problem_path = f'./pddl/problems/problem{iteracion}.pddl'
+        self.output_path = f'./pddl/outputs/problem{iteracion}.txt'
 
         return self.planner_path, self.problem_path, self.output_path
 
@@ -304,19 +300,13 @@ class ProblemDefinition():
     
     def problem_selection_ogamus_input(self, input):
         
-        try:
-            os.system(f'./pddl/cbp-roller/cbp-roller -o ./pddl/domain_input.pddl -f {input} > ./pddl/outputs/inputs.txt')
-        except FileNotFoundError:
-            raise Exception("Error al ejecutar el planificador (Archivo no encontrado)")
+        planificador = Planificador("./pddl/cbp-roller/cbp-roller", input, "./pddl/outputs/inputs.txt", "pickup", True, True)
+        raw_plan = planificador.get_plan()
 
-        with open('./pddl/outputs/inputs.txt', 'r') as f:
-            raw_plan = f.read()
-            print(raw_plan)
-        
-            start_index = raw_plan.find("0:")
-            end_index = raw_plan.find("time")
+        start_index = raw_plan.find("0:")
+        end_index = raw_plan.find("time")
 
-            plan = raw_plan[start_index:end_index] # Trunca la parte exacta de los pasos del plan
+        plan = raw_plan[start_index:end_index] # Trunca la parte exacta de los pasos del plan
 
         plan = plan.splitlines() # Divide el string en un array donde cada posición es una línea
 

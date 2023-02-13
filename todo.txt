@@ -12,9 +12,9 @@
 * OGAMUS *
 - Añadir más acciones complejas inputs
 - Eliminar clases/funciones inutilizadas
-- Refactorizar planificador inputs
 - Acciones repetidas en inputs dan fallo (arreglar o no)
 - Mantener forceAction?
 - Eliminar domain_ogamus.pddl
 - ¿Se pueden añadir los objetos cortados (sliced)? 
 - MAX_RELEVANT_FLUENTS aumentar
+- Cambiar función paths_selection de problem_definition

@@ -8,14 +8,14 @@ class Planificador():
         if ogamus == False:
             self.domain_path = f'./pddl/domain_{problem}.pddl'
         else:
-            self.domain_path = './pddl/domain_ogamus.pddl'
+            self.domain_path = './pddl/domain_input.pddl'
         self.problem_path = problem_path
         self.output_path = output_path
         
-        if ogamus == False:
-            self.run_plan_cbp()
-        else:
-            self.run_plan_ff()
+        #if ogamus == False:
+        self.run_plan_cbp()
+        #else:
+        #self.run_plan_ff()
 
         if print:
             self.print_plan()
@@ -27,12 +27,15 @@ class Planificador():
         except FileNotFoundError:
             raise Exception("Error al ejecutar el planificador (Archivo no encontrado)")
 
-    def run_plan_ff(self):
-        '''Método que ejecuta el planificador sobre los archivos indicados'''    
-        try:
-            os.system(f'{self.planner_path} -o {self.domain_path} -f {self.problem_path} > {self.output_path}')
-        except FileNotFoundError:
-            raise Exception("Error al ejecutar el planificador (Archivo no encontrado)")
+    
+    #def run_plan_ff(self):
+    #    '''Método que ejecuta el planificador sobre los archivos indicados'''    
+    #    try:
+    #        os.system(f'{self.planner_path} -o {self.domain_path} -f {self.problem_path} > {self.output_path}')
+    #    except FileNotFoundError:
+    #        raise Exception("Error al ejecutar el planificador (Archivo no encontrado)")
+            
+    
 
     def print_plan(self):
         '''Método que permite imprimir el resultado del plan introducido por parámetro'''
