@@ -130,7 +130,7 @@ else:
     agent_hor = event.metadata["agent"]["cameraHorizon"]
     print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
 
-    isObjectOnScene(event, "potato")
+    # isObjectOnScene(event, "potato")
 
     # Si llama a la selección del problema. Dependiendo si se ha introducido un fichero de inputs se carga ese o se permite introducir todo manualmente
     if len(sys.argv) == 2:
@@ -145,8 +145,6 @@ else:
     # Bucle que se ejecuta tantas veces como problemas hayamos introducido para resolver
     iteracion = 0
     for problem in problem_list:
-        # Establecemos el planificador y las rutas de los problemas y ficheros de salida
-        # planner_path, problem_path, output_path = inputs.paths_selection(method, iteracion)
 
         # Creamos el diccionario a introducir en el json. Graba el episodio que se va a ejecutar con la escena, objetivo y posición del agente
         dictionary = [{

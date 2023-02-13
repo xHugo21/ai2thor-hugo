@@ -1,6 +1,8 @@
 * GENERAL *
 - Manejo de errores
 - Shortest paths entender y modificar
+- Eliminar código comentado
+- Eliminar prints innecesarios
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto
@@ -11,4 +13,3 @@
 - Mantener forceAction?
 - ¿Se pueden añadir los objetos cortados (sliced)?
 - MAX_RELEVANT_FLUENTS aumentar
-- Cambiar función paths_selection de problem_definition
