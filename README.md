@@ -7,7 +7,7 @@ Se pretende realizar un programa que permita moverse e interactuar al agente AI2
 
 El programa ofrece la opción de ejecutarse de dos maneras:
 1. Mediante metadatos extraídos del simulador. De esta manera se conocen las posiciones de los objetos y posiciones permitidas. Sobre estos datos se ejecutan diferentes dominios escritos en PDDL para obtener y ejecutar el plan generado de manera óptima.
-2. Mediante el algoritmo OGAMUS, elaborado por Leonardo Lamanna, Luciano Serafini, Alessandro Saetti, Alfonso Gerevini y Paolo Traverso. Este algoritmo permite obtener información de un entorno recorriendolo gracias a una serie de redes de neuronas preentrenadas. Esta información es devuelta a un fichero PDDL desde el cuál se puede comprobar si se ha llegado a un estado meta y ejecutar acciones del simulador a partir de él.
+2. Mediante el algoritmo OGAMUS, elaborado por Leonardo Lamanna, Luciano Serafini, Alessandro Saetti, Alfonso Gerevini y Paolo Traverso. Este algoritmo permite obtener información de un entorno recorriendolo gracias a una serie de redes de neuronas preentrenadas. En este trabajo se ha modificado ligeramente el código original con el fin de conseguir concatenar acciones simples en entornos desconocidos. Además, se permite introducir un fichero de entrada en formato PDDL que puede procesar acciones simples y complejas y pasarlas al algoritmo para ser resueltas.
 
 ### Requisitos de AI2THOR
 1. Sistema operativo: macOS 10.9 o Ubuntu 14.04+ (recomendado: Ubuntu 22.04)
@@ -18,9 +18,12 @@ El programa ofrece la opción de ejecutarse de dos maneras:
 
 ### Ejecución
 1. Comprobar apartado de requisitos e instalar o modificar componentes necesarios
+
 2. Clonar repositorio en carpeta local y acceder al directorio
     ```
     git clone https://github.com/xHugo21/ai2thor-hugo.git
+    ```
+    ```
     cd ai2thor-hugo
     ```
 3. Crear un entorno virtual de Python 3.9 en conda
@@ -61,7 +64,8 @@ El programa ofrece la opción de ejecutarse de dos maneras:
     ```
     pip install matplotlib
     ```
-9. Descargar la red neuronal preentrenada del siguiente enlace [Red Preentrenada](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing) y volcar archivos en /Utils/pretrained_models/ 
+9. Descargar la red neuronal preentrenada del siguiente enlace [Red Preentrenada](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing) y volcar archivos en /Utils/pretrained_models/
+
 10. Ejecutar main.py y seguir los pasos que se muestran por pantalla
     ```
     python main.py
@@ -72,13 +76,11 @@ El programa ofrece la opción de ejecutarse de dos maneras:
     ```
 
 ### Visualización de resultados
-#### Imágenes
 El simulador de AI2THOR se ejecuta a una velocidad muy alta y no permite visualizar los pasos de manera correcta. Para solucionar esto se extraen las siguientes imágenes en cada ejecución dentro de la carpeta ./images:
 - scene.png: Una imágen de la escena desde el plano cenital que permite ver los objetos y la posición inicial del agente.
 - problemX_Y: Una imagen de los pasos ejecutados donde X indica la iteración e Y indica el paso.
 
 Se extraen además los archivos de problemas pddl y salidas de planificador en ./pddl/problems y ./pddl/outputs respectivamente.
-
 
 ### Documentacion
 - AI2THOR documentation: https://ai2thor.allenai.org/ithor/documentation/
