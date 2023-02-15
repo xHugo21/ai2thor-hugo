@@ -42,7 +42,7 @@
     put - action ; (= (basicaction put <receptacle>) <orden>)
 
     ; Escribir aquí todos los objetos que van a ser empleados
-    potato pan saltshaker fridge - object
+    saltshaker fridge - object
 
 )
 

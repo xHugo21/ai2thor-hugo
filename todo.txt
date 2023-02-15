@@ -3,6 +3,7 @@
 - Shortest paths entender y modificar
 - Eliminar código comentado
 - Eliminar prints innecesarios
+- Beautify README
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto

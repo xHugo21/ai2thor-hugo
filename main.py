@@ -37,7 +37,7 @@ scene_number = inputs.scene_selection()
 # Si method = '1' -> METADATA
 if method == '1':
 
-    # Inicialización del entorno inicial (Si método = OGAMUS -> sirve para captar posicion inicial del agente)
+    # Inicialización del entorno inicial
     print("*INICIANDO ENTORNO*\n")
     controller = Controller(agentMode="default",
                             visibilityDistance=1.5,

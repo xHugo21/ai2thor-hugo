@@ -1,5 +1,4 @@
 # Fichero para parsear los datos de un entorno de AI2THOR a un problema PDDL
-# Imports
 
 class ParserAI2THORPDDL:
     '''Clase que contiene todos los métodos necesarios para parsear una escena del simulador AI2THOR a un problema PDDL'''
@@ -19,6 +18,7 @@ class ParserAI2THORPDDL:
             self.parse_move_problem()
         elif problem == "drop":
             self.parse_drop_problem()
+
         # Si el problema es de un tipo distinto a movimiento o drop, entonces se añaden las interactable poses del objetivo
         else:
             self.parse_interactable_poses()

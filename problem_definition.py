@@ -1,5 +1,4 @@
 # Fichero que contiene la clase que gestiona los parámetros de entrada para la ejecución del problema
-#TODO comprobación errores
 
 # Imports
 import os
@@ -13,8 +12,8 @@ class ProblemDefinition():
 
     def method_selection(self):
         '''Método que permite seleccionar el metodo de resolucion del problema
-            1. METADATA: Utiliza los metadatos devueltos por el simulador para conocer las posiciones de los objetos y posiciones válidas
-            2. OGAMUS: Utiliza redes neuronales para reconocer los objetos de una escena'''
+        1. METADATA: Utiliza los metadatos devueltos por el simulador para conocer las posiciones de los objetos y posiciones válidas
+        2. OGAMUS: Utiliza redes neuronales para reconocer los objetos de una escena'''
         bucle = True
         while bucle:
             print("----METODO----")
