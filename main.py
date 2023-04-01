@@ -1,5 +1,4 @@
-# Trabajo Final de Grado por Hugo García Cuesta (100428954). Grado en Ingeniería Informática Universidad Carlos III de Madrid.
-# TÍTULO DEL TRABAJO Y DESCRIPCIÓN
+# End of degree thesis by Hugo García Cuesta (100428954). Computer Engineering Grade, University Carlos III of Madrid
 
 # IMPORTS
 import json
@@ -15,97 +14,100 @@ from planificador import Planificador
 from exec_ogamus import ExecOgamus
 from aux import printAgentStatus, printLastActionStatus, createCamera, printObjectStatus, removeResultFolders, isObjectOnScene
 
-# CONSTANTES
+# CONSTANTS
 DATASET = 'Datasets/test_set_ogn_ithor.json'
 LOG = "Results/test_set_ogn_ithor_steps200/episode_0/log.txt"
 
-# FLUJO DEL PROGRAMA PRINCIPAL
+# MAIN FLOW OF THE PROGRAM
 
-# Limpiamos los directorios de resultados generados en las ejecuciones
+# We clean the results folder before executing
 removeResultFolders()
 
-# El usuario escoge el tipo de ejecución que desea: METADATA o OGAMUS. En caso de no haber introducido fichero pddl como input
+# User selects the method he wants to use.
+    # 1. METADATA: uses data extracted from the simulator to get object positions and applies a automated planning in order to find the best plan to make an action in the environment
+    # 2. OGAMUS: Uses the OGAMUS algorithm (credits in README). Scans the scene using pretrained models to find the desired objective and if the objective is found, it executes the action.
 inputs = ProblemDefinition()
 if len(sys.argv) == 1:
     method = inputs.method_selection()
 else:
     method = "2"
 
-# Pedimos al usuario que seleccione una escena
+# We ask the user to input the scene number he wants
+    # [1-30] - Kitchens
+    # [201-230] - Living rooms
+    # [301-330] - Bedrooms
+    # [401-430] - Bathrooms
 scene_number = inputs.scene_selection()
 
-# Si method = '1' -> METADATA
+# If method = 1 -> METADATA
 if method == '1':
 
-    # Inicialización del entorno inicial
-    print("*INICIANDO ENTORNO*\n")
-    controller = Controller(agentMode="default",
-                            visibilityDistance=1.5,
+    # Initial start of the environment 
+    print("*STARTING ENVIRONMENT*\n")
+    controller = Controller(
+                            agentMode="default", # Agent used is iTHOR -> default
+                            visibilityDistance=1.5, # Visibility distance
                             scene="FloorPlan" + str(scene_number),
-
-                            # Tamaño de pasos
-                            gridSize=0.25,
+                            gridSize=0.25, # Step size
                             snapToGrid=True,
                             rotateStepDegrees=90,
-
-                            # Modos de imagen
                             renderDepthImage=False,
                             renderInstanceSegmentation=False,
-
-                            # Opciones de cámara
-                            width=300,
-                            height=300,
-                            fieldOfView=90)
-    print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
-
-    # Creamos una cámara que extrae una foto general de la escena en ./images/scene.png
+                            width=300, # Controller width
+                            height=300, # Controller height
+                            fieldOfView=90 # Controller fiold of view
+                            )
+    
+    # We create a camera on top of the scene and save an image
     createCamera(controller)
 
-    # Bucle que permite realizar más de una acción sobre la escena iniciada
-    iteracion = 0
-    bucle = 'Y'
-    while bucle == 'Y':
-        # Pedimos al usuario que escoja el planificador, y el nombre de los ficheros que se van a generar
-        problem_path, output_path = inputs.paths_selection(iteracion)
+    print("*ENVIRONMENT SUCCESSFULLY STARTED*\n")
 
-        # Ejecutamos una acción sobre el agente. En este caso la acción GetReachablePositions para que contenga la información de las posiciones que puede tomar el agente en el entorno.
+    # Loop that allows to repeat actions on the same environment
+    iteration = 1
+    loop = 'Y'
+    while loop == 'Y':
+        # Set up problem and output path
+        problem_path, output_path = inputs.paths_selection(iteration)
+
+        # Execution of an action inside the controller. GetReachablePositions allow us to get all the positions where the agent is allowed to be in the scene
         event = controller.step(action="GetReachablePositions")
 
-        # Pedimos al usuario que indique el tipo de problema a resolver y el objetivo concreto dentro de ese problema
+        # Ask user for problem and objective
         problem, objective, liquid = inputs.problem_selection(event)
 
-        # Parseo del entorno a fichero pddl
+        # Using the parser, we translate the simulator state to a PDDL problem
         ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
 
-        # Ejecución del planificador sobre el dominio y el problema dados. Si último parámetro = True -> se imprime plan por pantalla.
+        # Execute the planner with the problem file generated and the corresponding domain (based on selected action)
         plan = Planificador(problem_path, output_path, problem, print=True, ogamus=False)
 
-        # Parseo del plan para convertirlo en acciones ejecutables por el agente y ejecutarlas
-        parsed = ParserPDDLAI2THOR(
-            plan.get_plan(), controller, iteracion, liquid)
+        # Parse and execute plan into actions
+        parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteration, liquid)
 
-        # Visualizar estado final
+        # Final state visualization depending on the type of the problem
         printLastActionStatus(controller.last_event)
         if problem == 'move':
             printAgentStatus(controller.last_event)
         else:
             printObjectStatus(controller.last_event, objective)
 
-        # Preguntar si se desea ejecutar otra acción en este mismo entorno. En caso contrario se finaliza el programa
-        bucle = input('Desea realizar otra acción sobre este entorno [Y/n]: ')
-        iteracion += 1
+        # Ask if the user wants to execute another action. If not, stop the program.
+        loop = input('Do you want to execute another action? [Y/n]: ')
+        iteration += 1
 
 
-# Si method = '2' -> OGAMUS
+# If method = 2 -> OGAMUS
 else:
-    # Cálculo de parámetros auxiliares para inicio controlador
+    # Compute auxiliary params for OGAMUS execution
     hfov = 79 / 360. * 2. * np.pi
     vfov = 2. * np.arctan(np.tan(hfov / 2) * 224 / 224)
     vfov = np.rad2deg(vfov)
 
-    # Inicio de controlador
-    print("*INICIANDO ENTORNO*\n")
-    controller = Controller(renderDepthImage=1,
+    # Controller start
+    print("*STARTING ENVIRONMENT*\n")
+    controller = Controller(
+                            renderDepthImage=1,
                             renderObjectImage=True,
                             visibilityDistance=1,
                             gridSize=0.25,
@@ -113,44 +115,41 @@ else:
                             scene="FloorPlan" + str(scene_number),
                             continuousMode=True,
                             snapToGrid=False,
-                            # camera properties
                             width=224,
                             height=224,
                             fieldOfView=vfov,
                             agentMode='default'
                             )
 
-    # Creamos una cámara que extrae una foto general de la escena en ./images/scene.png
+    # We create a camera on top of the scene and save an image
     createCamera(controller)
 
-    # Obtenemos los datos de la posición inicial del agente para pasarlos al algoritmo OGAMUS
+    # We get initial positions of the agent to pass it to OGAMUS
     event = controller.step("Pass")
     agent_pos = event.metadata["agent"]["position"]
     agent_rot = event.metadata["agent"]["rotation"]
     agent_hor = event.metadata["agent"]["cameraHorizon"]
-    print("*ENTORNO INICIALIZADO SATISFACTORIAMENTE*\n")
+    print("*ENVIRONMENT SUCCESSFULLY STARTED*\n")
 
-    # isObjectOnScene(event, "potato")
-
-    # Si llama a la selección del problema. Dependiendo si se ha introducido un fichero de inputs se carga ese o se permite introducir todo manualmente
+    # Reads problems from CLI or arguments if a PDDL problem is passed.
     if len(sys.argv) == 2:
         problem_list, objective_list = inputs.problem_selection_ogamus_input(input=sys.argv[1])
     elif len(sys.argv) == 1:
         problem_list, objective_list = inputs.problem_selection_ogamus()
     else:
-        print("Por favor. Introduzca un fichero pddl como input o deje los argumentos vacíos\n")
+        print("Input a valid PDDL problem file as argument or leave args empty.\n")
         exit()
 
 
-    # Bucle que se ejecuta tantas veces como problemas hayamos introducido para resolver
-    iteracion = 0
+    # Loop that executes as many times as problems are defined
+    iteration = 0
     for problem in problem_list:
 
-        # Creamos el diccionario a introducir en el json. Graba el episodio que se va a ejecutar con la escena, objetivo y posición del agente
+        # We create the dictionary to be inserted into the JSON that OGAMUS reads. It contains the scene info previously extracted and the objective
         dictionary = [{
             "episode": 1,
             "scene": "FloorPlan" + scene_number,
-            "goal": "(exists (?o1 - " + objective_list[iteracion] + ") (and (viewing ?o1) (close_to ?o1)))",
+            "goal": "(exists (?o1 - " + objective_list[iteration] + ") (and (viewing ?o1) (close_to ?o1)))",
             "agent_position": agent_pos,
             "agent_rotation": agent_rot,
             "initial_orientation": agent_rot['y'],
@@ -168,16 +167,15 @@ else:
             "shortest_path_length": 0
         }]
 
-        # Modificamos el json test_set_ogn_ithor.json con los datos de la escena y el objetivo
+        # Modify json with scene info
         json_object = json.dumps(dictionary, indent=4)
         with open(DATASET, "w") as f:
             f.write(json_object)
 
-        # Llamamos a ogamus.main() para analizar la escena y encontrar el objetivo
+        # Call to ogamus to find the objective 
         controller = ogamus.main(controller)
 
-        # Comprobamos el log de la ejecución de OGAMUS para ver si ha encontrado el objetivo.
-        # Si ha llegado a la iteración 200 significa que no lo ha encontrado
+        # Check if OGAMUS has found the objective. If plan has 200 steps -> objective not found.
         with open(LOG, "r") as f:
             log_str = f.read()
             if log_str.find("200:Stop") != -1:
@@ -186,18 +184,18 @@ else:
                 print("Ejecute de nuevo el programa y pruebe con un objetivo distinto\n")
                 exit()
 
-        # Llamamos a ExecOgamus para ejecutar la acción indicada
-        execute = ExecOgamus(controller, problem, objective_list[iteracion], iteracion)
+        # Call ExecOgamus to execute the action over the objective
+        execute = ExecOgamus(controller, problem, objective_list[iteration], iteration)
 
-        # Copiamos el fichero con los datos analizados del problema al directorio de problemas de pddl para dejarlo guardado si hay más iteraciones
+        # Save facts found from OGAMUS into problems folder
         shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl",
-                        f"pddl/problems/problem{iteracion}.pddl")
+                        f"pddl/problems/problem{iteration}.pddl")
 
-        # Actualizamos posicion agente para inicializar la siguiente iteración desde la posición anterior
+        # Update agent position in for next OGAMUS execution
         event = controller.step("Pass")
         agent_pos = event.metadata["agent"]["position"]
         agent_rot = event.metadata["agent"]["rotation"]
         agent_hor = event.metadata["agent"]["cameraHorizon"]
 
-        # Contamos la iteración realizada
-        iteracion += 1
+        # Update iteration count
+        iteration += 1

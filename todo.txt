@@ -1,9 +1,9 @@
 * GENERAL *
 - Manejo de errores
 - Shortest paths entender y modificar
-- Eliminar código comentado
-- Eliminar prints innecesarios
-- Beautify README
+- problem_definition.paths_selection eliminar?
+- Documentar parámetros modificables
+- Comprobación de que el parámetro introducido es un PDDL creo que no funciona (main.py)
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto

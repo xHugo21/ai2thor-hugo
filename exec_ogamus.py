@@ -3,7 +3,6 @@ from aux import printObjectStatus, extractActionImage
 class ExecOgamus:
     '''Clase encargada de ejecutar la acción indicada en el problema una vez que el objeto ha sido encontrado'''
     def __init__(self, controller, problem, objective, iteracion):
-        '''Método constructor'''
         self.controller = controller
         self.problem = problem
         self.objective = objective

@@ -1,11 +1,11 @@
-# Fichero que implementa funciones auxiliares
+# Auxiliary functions
 # Imports
 from PIL import Image as im
 import os
 import shutil
 
 def printAgentStatus(event):
-    '''Muestra datos generales y posición del agente'''
+    '''Shows general info and agent status'''
     print("-----------------------------------------------")
     print(f'sceneName: {event.metadata["sceneName"]}')
     print(f'lastAction: {event.metadata["lastAction"]}')
@@ -16,7 +16,7 @@ def printAgentStatus(event):
     print("-----------------------------------------------\n")
 
 def isObjectOnScene(event, object):
-    '''Indica si un tipo de objeto está se encuentra en la escena. Útil para ogamus'''
+    '''Check if an object is on the scene. Useful for OGAMUS'''
     print("-----------------------------------------------")
     for obj in event.metadata["objects"]:
         if obj["name"].lower().find(object) != -1:
@@ -25,7 +25,7 @@ def isObjectOnScene(event, object):
 
 
 def printObjectStatus(event, object):
-    '''Muestra el estado de un objeto completo'''
+    '''Shows full state of an object'''
     print("-----------------------------------------------")
     for obj in event.metadata["objects"]:
         if obj['objectId'] == object['objectId']:
@@ -35,7 +35,7 @@ def printObjectStatus(event, object):
     print("-----------------------------------------------\n")
 
 def printLastActionStatus(event):
-    '''Muestra información acerca de la ejecución de la última acción'''
+    '''Shows info of the last action executed'''
     print("-----------------------------------------------")
     print(f'lastAction: {event.metadata["lastAction"]}')
     print(f'lastActionSuccess: {event.metadata["lastActionSuccess"]}')
@@ -44,12 +44,12 @@ def printLastActionStatus(event):
     print("-----------------------------------------------\n")
 
 def extractActionImage(event, name):
-    '''Extrae una imagen de la situación indicada con el nombre pasado por parámetro'''
+    '''Extracts an image using event'''
     data = im.fromarray(event.frame)
     data.save("./images/" + name + ".png")
 
 def createCamera(controller):
-    '''Crea una cámara en la posición indicada y después llama a extractCameraImage() para extraer una imagen'''
+    '''Creates a camera and calls extractCameraImage() to save an image'''
     event = controller.step("Done")
     center = event.metadata["sceneBounds"]["center"]
     center["y"] = event.metadata["sceneBounds"]["cornerPoints"][0][1]
@@ -64,12 +64,12 @@ def createCamera(controller):
     extractCameraImage(event.third_party_camera_frames[0], 'scene')
 
 def extractCameraImage(nparray, name):
-    '''Devuelve una imagen de la situación indicada con el nombre pasado por parámetro'''
+    '''Extracts an image using a nparray'''
     data = im.fromarray(nparray)
     data.save("./images/" + name + ".png")
 
 def removeResultFolders():
-    '''Limpia los directorios de problemas, salidas del planificador, imágenes y resultados de OGAMUS'''
+    '''Cleans result folders mentioned below'''
     dirs = ["./pddl/problems/", "./pddl/outputs/", "./images/", "./Results/"]
     
     for dir in dirs:

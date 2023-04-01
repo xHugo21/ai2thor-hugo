@@ -16,7 +16,7 @@
 
     (basicaction ?a - action ?o - object)
 
-    ;(put_object_into ?o1 - object ?o2 - object)
+    (put_object_into ?o1 - object ?o2 - object)
     (put_into_fridge ?o - object)
     ;(fry_potato)
 
@@ -49,21 +49,21 @@
 )
 
 ; ACCIONES COMPLEJAS
-;(:action put_object_into
-;    :parameters (?o1 ?o2 - object)
-;    :precondition (and
-;                    (= (put_object_into ?o1 ?o2) (time))
-;                    (= (complextime) 0)
-;                    )
-;    :effect (and
-;                (assign (basicaction pickup ?o1) 3)
-;                (assign (basicaction open ?o2) 2)
-;                (assign (basicaction put ?o2) 1)
-;                (assign (put_object_into ?o1 ?o2) 0)
-;                (increase (time) 1)
-;                (increase (complextime) 3)
-;            )
-;)
+(:action put_object_into
+    :parameters (?o1 ?o2 - object)
+    :precondition (and
+                    (= (put_object_into ?o1 ?o2) (time))
+                    (= (complextime) 0)
+                    )
+    :effect (and
+                (assign (basicaction pickup ?o1) 3)
+                (assign (basicaction open ?o2) 2)
+                (assign (basicaction put ?o2) 1)
+                (assign (put_object_into ?o1 ?o2) 0)
+                (increase (time) 1)
+                (increase (complextime) 3)
+            )
+)
 
 (:action put_into_fridge
     :parameters (?o - object)
