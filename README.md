@@ -6,7 +6,7 @@
 The main objective is to develop a program that allows the user to execute any action inside an iTHOR environment.
 
 There are two ways of running the program:
-1. Using methadata given by the simulator. Thanks to it we can know which objects are in a specific scene and their positions. Using this data we can then generate a PDDL problem to obtain an optimized plan. The plan is translated back to executable actions and triggered in order.
+1. Using metadata given by the simulator. Thanks to it we can know which objects are in a specific scene and their positions. Using this data we can then generate a PDDL problem to obtain an optimized plan. The plan is translated back to executable actions and triggered in order.
 
 2. Using OGAMUS algorithm. OGAMUS is an algorithm developed by Leonardo Lamanna, Luciano Serafini, Alessandro Saetti, Alfonso Gerevini y Paolo Traverso which scans an iTHOR scene using pretrained neural network models and stores all the data it gets inside PDDL problem files. In this project the algorithm has been modified so it can run within an specific environment and so that actions can be chained. There is also the possibility to pass a PDDL problem as argument and translate the actions that want to be executed.
 
@@ -79,7 +79,7 @@ There are two ways of running the program:
 ### Results visualization
 iTHOR simulator launches a visualization window every time an environment is generated. However, it is pretty hard to see if everything has executed correctly. The program extracts the following data on each action executed:
 
-- scene.png: A zenithal shot of the scene so that the user can see the layout of the room. It is generated in /assets/scene.png
+- scene.png: A zenithal shot of the scene so that the user can see the layout of the room. It is generated in /images/scene.png
 
 ![Zenithal shot of the scene FloorPlan1](/assets/example_scene.png)
 

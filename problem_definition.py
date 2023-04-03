@@ -1,71 +1,71 @@
-# Fichero que contiene la clase que gestiona los parámetros de entrada para la ejecución del problema
+# File that manages input data between the program and the user
 
 # Imports
 import os
-from planificador import Planificador
+from planner import Planner
 
 class ProblemDefinition():
+    '''Class that contains all methods to manage input data'''
     def __init__(self):
-        '''Clase que contiene todos los métodos para recoger los parámetros de entrada'''
         self.problem_list = []
         self.objective_list = []
 
     def method_selection(self):
-        '''Método que permite seleccionar el metodo de resolucion del problema
-        1. METADATA: Utiliza los metadatos devueltos por el simulador para conocer las posiciones de los objetos y posiciones válidas
-        2. OGAMUS: Utiliza redes neuronales para reconocer los objetos de una escena'''
+        '''Method that allows selecting execution type:
+        1. METADATA: Uses data returned by simulator to locate objects and agent positions
+        2. OGAMUS: Uses OGAMUS algorithm to scan scenes using pretrained neural networks'''
         bucle = True
         while bucle:
-            print("----METODO----")
+            print("----METHOD----")
             print("[1] - METADATA")
             print("[2] - OGAMUS")
             print("--------------")
-            self.method = int(input("Seleccione un método de resolución del problema: "))
+            self.method = int(input("Select the method used to solve the problem: "))
             print("")
             if 1 <= self.method <= 2:
                 bucle = False
                 self.method = str(self.method)
             else:
-                print("Por favor, introduce un método válido\n")
+                print("Please, input a valid option\n")
 
         return self.method
         
 
     def scene_selection(self):
-        '''Método que permite seleccionar la escena a utilizar'''
+        '''Method that allows selection of the scene'''
         bucle = True
         while bucle:
-            print("----ESCENAS----")
-            print("[1-30] - Cocinas")
-            print("[201-230] - Salas de estar")
-            print("[301-330] - Dormitorios")
-            print("[401-430] - Baños")
+            print("----SCENE----")
+            print("[1-30] - Kitchens")
+            print("[201-230] - Living Rooms")
+            print("[301-330] - Bedrooms")
+            print("[401-430] - Bathrooms")
             print("---------------")
-            self.scene_number = int(input("Seleccione una escena: "))
+            self.scene_number = int(input("Select a scene: "))
             print("")
             if (1 <= self.scene_number <= 30) or (201 <= self.scene_number <= 230) or (301 <= self.scene_number <= 330) or (401 <= self.scene_number <= 430):
                 bucle = False
                 self.scene_number = str(self.scene_number)
             else:
-                print("Por favor, introduce una escena válida\n")
+                print("Please, input a valid scene\n")
 
         return self.scene_number
 
     def paths_selection(self, iteracion):
-        '''Método que permite indicar las rutas de los archivos del planificador, problema y output'''
+        '''Method that specifies problem and output paths'''
         self.problem_path = f'./pddl/problems/problem{iteracion}.pddl'
         self.output_path = f'./pddl/outputs/problem{iteracion}.txt'
 
         return self.problem_path, self.output_path
 
     def problem_selection(self, event):
-        '''Método que permite escoger el problema (acción) a realizar junto a su respectivo objetivo'''
+        '''Method that allows selecting problems and objectives'''
         self.liquid = 'coffee'
         self.event = event
         bucle = True
         holding = False
         while bucle:
-            print("----PROBLEMA----")
+            print("----ACTION----")
             print("[1] - Move Agent")
             print("[2] - Pickup Object")
             print("[3] - Open Object")
@@ -83,7 +83,7 @@ class ProblemDefinition():
             print("[15] - Drop Object (Requires holding an object)")
             print("[16] - Put Object (Requires holding an object)")
             print("----------------")
-            aux = input("Seleccione un tipo de problema a resolver: ")
+            aux = input("Select an action: ")
             print("")
             for obj in event.metadata['objects']:
                 if obj['isPickedUp']:
@@ -93,23 +93,23 @@ class ProblemDefinition():
             elif (15 <= int(aux) <= 16) and holding:
                 bucle = False
             else:
-                print("Por favor, introduce un problema válido\n")
+                print("Please, input a valid action\n")
 
 
         # Establecer parámetros en caso de que se seleccione problema de movimiento
         if str(aux) == '1':
             self.problem = "move"
-            print("----OBJETIVO----")
+            print("----OBJECTIVE----")
             positions = event.metadata["actionReturn"]
             i = 0
             for pos in positions:
                 print(f'[{i}] - {pos}')
                 i += 1
             print("----------------")
-            aux2 = input("Seleccione la posición objetivo: ")
+            aux2 = input("Select the goal position: ")
             self.objective = positions[int(aux2)]
             print("")
-            print(f'La posición objetivo seleccionada es: {self.objective}')
+            print(f'Selected goal position is: {self.objective}')
 
         # Establecer parámetros en caso de que se seleccione problema de pickup
         if str(aux) == '2':
@@ -161,33 +161,33 @@ class ProblemDefinition():
         return self.problem, self.objective, self.liquid
 
     def object_selection(self, problem_type, condition1, condition2, condition2_res, select_liquid=False):
-        '''Método que encapsula la selección de objetivos de la mayoría de problemas'''
+        '''Method that contains the objective selection of most of the problems'''
         self.problem = problem_type
         posible_objects = []
         for obj in self.event.metadata["objects"]:
             if (obj[condition1] == True) and (obj[condition2] == condition2_res):
                 posible_objects.append(obj)
         if not posible_objects:
-            print("No existen objetivos para esa tarea. Escoja otra o cambie de escena\n")
+            print("There aren't any objectives for this action. Select another or switch the scene\n")
             return self.problem_selection(self.event)
-        print("----OBJETIVO----")         
+        print("----OBJECTIVE----")         
         i = 0
         for obj in posible_objects:
             print(f'[{i}] - {obj["objectId"]}')
             i += 1
         print("----------------")
-        aux2 = input("Seleccione el objetivo: ")
+        aux2 = input("Select the objective: ")
         self.objective = posible_objects[int(aux2)]            
         print("")
-        print(f'El objetivo seleccionado es: {self.objective["objectId"]}\n')
+        print(f'Selected objective is: {self.objective["objectId"]}\n')
 
         if select_liquid:
-            print("----PROBLEMA----")
+            print("----LIQUID----")
             print("[1] - Coffee")
             print("[2] - Wine")
             print("[3] - Water")
             print("----------------")
-            inp = input(f'Seleccione el líquido con el que rellenar el objeto: ')
+            inp = input(f'Select liquid to fill objective with: ')
 
             if str(inp) == '1':
                 self.liquid = 'coffee'
@@ -197,10 +197,10 @@ class ProblemDefinition():
                 self.liquid = 'water'
 
     def problem_selection_ogamus(self):
-        '''Método que permite al usuario seleccionar los problemas que se van a resolver con ogamus'''
+        '''Method that allows user to select problems to be solved with OGAMUS'''
         bucle = True
         while bucle:
-            print("----PROBLEMA----")
+            print("----ACTION----")
             print("[1] - Get Close To Object")
             print("[2] - Pickup Object")
             print("[3] - Open Object")
@@ -218,12 +218,12 @@ class ProblemDefinition():
             print("[8] - Drop Object (Requires holding an object)")
             print("[9] - Put Object (Requires holding an object)")
             print("----------------")
-            aux = input("Seleccione un tipo de problema a resolver: ")
+            aux = input("Select an action: ")
             print("")
             if (1 <= int(aux) <= 15):
                 bucle = False
             else:
-                print("Por favor, introduce un problema válido\n")
+                print("Please, input a valid action\n")
         
         problemas_ogamus = ["get_close_to", "pickup", "open", "close", "break", "cook", "slice", "drop", "put"]
         self.problem = problemas_ogamus[int(aux)-1]
@@ -232,7 +232,7 @@ class ProblemDefinition():
         self.object_selection_ogamus()
 
         print("")
-        condition = input('Desea realizar otra acción sobre este entorno [Y/n]: ')
+        condition = input('Do you want to execute more actions in this environment? [Y/n]: ')
         print("")
         if condition == 'Y':
             self.problem_selection_ogamus()
@@ -240,7 +240,7 @@ class ProblemDefinition():
         return self.problem_list, self.objective_list
     
     def object_selection_ogamus(self):
-        '''Método que permite seleccionar el objeto respecto al problema indicado para ogamus'''
+        '''Method that allows selecting the objective of OGAMUS problem'''
         if self.problem == "get_close_to":
             possible_objects = ["alarmclock", "aluminumfoil", "apple", "baseballbat", "book", "boots", "basketball",
                     "bottle", "bowl", "box", "bread", "butterknife", "candle", "cd", "cellphone", "peppershaker",
@@ -287,34 +287,33 @@ class ProblemDefinition():
         elif self.problem == "slice":
             possible_objects = ["apple", "bread", "egg", "lettuce", "potato", "tomato"]
 
-        print("----OBJETIVO----")
+        print("----OBJECTIVE----")
         i = 0
         for obj in possible_objects:
             print(f'[{i}] - {obj}')
             i += 1
         print("----------------")
-        aux2 = input("Seleccione el objetivo: ")
+        aux2 = input("Select the objective: ")
         self.objective = possible_objects[int(aux2)]
         self.objective_list.append(self.objective)
     
     def problem_selection_ogamus_input(self, input):
-        '''Método que permite ejecutar el plan introducido por input para extraer los problemas y objetivos'''
+        '''Method that executes and reads PDDL input files for OGAMUS'''
+        # We call the planner and save the input in /pddl/outputs/input_plan.txt
+        planificador = Planner(input, "./pddl/outputs/input_plan.txt", "pickup", True, True)
 
-        # Llamamos al planificador sobre el input y guardamos la salida en "./pddl/outputs/input_plan.txt"
-        planificador = Planificador(input, "./pddl/outputs/input_plan.txt", "pickup", True, True)
-        
-        # Extraemos el plan
+        # Extract the plan        
         raw_plan = planificador.get_plan()
         start_index = raw_plan.find("0:")
         end_index = raw_plan.find("time")
 
-        # Obtenemos la parte de las acciones del plan
-        plan = raw_plan[start_index:end_index] # Trunca la parte exacta de los pasos del plan
-        plan = plan.splitlines() # Divide el string en un array donde cada posición es una línea
+        # Get actions split by lines
+        plan = raw_plan[start_index:end_index]
+        plan = plan.splitlines()
         
         list_plan = []
 
-        # Eliminar espacios en blanco
+        # Remove blank spaces
         for act in plan:
             if (act.find(":") == -1) or (not act):
                 plan.remove(act)
@@ -322,12 +321,11 @@ class ProblemDefinition():
             act = act[:index].replace(" ", "") + act[index:]
             list_plan.append(act)
         
-        # Elimina la última posición si está vacía
+        # Remove last position if empty
         if list_plan[-1] == ' ':
             list_plan.pop()
 
-        # print(list_plan)
-        # Recorremos cada acción y la parseamos para añadirla a las listas de problemas y objetivos
+        # Cycle through each action and parse it to add problems and objectives to arrays
         for act in list_plan:
             if act.find("BASICACTION") != -1:
                 start_index = act.find("(") + 15

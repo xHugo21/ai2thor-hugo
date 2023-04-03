@@ -1,19 +1,19 @@
 from aux import printObjectStatus, extractActionImage
 
 class ExecOgamus:
-    '''Clase encargada de ejecutar la acción indicada en el problema una vez que el objeto ha sido encontrado'''
+    '''This class executes the action asked by the user after OGAMUS has found the objective'''
     def __init__(self, controller, problem, objective, iteracion):
         self.controller = controller
         self.problem = problem
         self.objective = objective
 
-        # Se extrae una imágen del estado inicial
+        # An image is extracted with the current state
         extractActionImage(self.controller.last_event, f'problem{iteracion}_0')
 
-        # Se almacena en self.final_objective el objeto concreto con el que se va a interactuar
+        # We call get_object_id() to get object id
         self.get_object_id()
 
-        # Se identifica el problema y se ejecuta su acción correspondiente. Si self.problem == 'get_close_to' -> se ignora porque no tiene que realizar acción
+        # Depending on the problem we execute an action or another. get_close_to action is ignored because there isn't more actions that the simulator has to trigger
         if self.problem == 'pickup':
             self.controller.step(action="PickupObject", objectId=self.final_objective["objectId"], forceAction=True)
 
@@ -38,16 +38,16 @@ class ExecOgamus:
         elif self.problem == 'put':
             self.controller.step(action="PutObject", objectId=self.final_objective["objectId"], forceAction=True, placeStationary=True)
 
-        # Se imprime por pantalla el estado final del objetivo para comprobar si se ha modificado
+        # Show the object status via CLI
         printObjectStatus(self.controller.last_event, self.final_objective)
 
-        # Se extrae una imagen del estado final tras realizar la acción
+        # Extract last state image
         self.controller.step("Pass")
         extractActionImage(self.controller.last_event, f'problem{iteracion}_1')
             
 
     def get_object_id(self):
-        '''Método que extrae el objeto de la escena para poder referenciarlo en las acciones'''
+        '''Method that extracts the object id corresponding to the object found in OGAMUS'''
         for obj in self.controller.last_event.metadata["objects"]:
             aux = obj["objectId"].upper().find(self.objective.upper())
             if aux != -1:

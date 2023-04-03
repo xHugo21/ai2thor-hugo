@@ -13,7 +13,7 @@
 
   (:predicates
     (holding ?o - object)
-    (open ?o - object)
+    (opened ?o - object)
     (closed ?o - object)
     (broken ?o - object)
     (cooked ?o - object)
@@ -174,7 +174,7 @@
       (= (inclination) (interactablepose-inclination ?p ?o))
     )
     :effect (and
-      (open ?o)
+      (opened ?o)
     )
   )
 

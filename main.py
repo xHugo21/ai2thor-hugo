@@ -10,7 +10,7 @@ from ai2thor.controller import Controller
 from problem_definition import ProblemDefinition
 from parser_ai2thor_pddl import ParserAI2THORPDDL
 from parser_pddl_ai2thor import ParserPDDLAI2THOR
-from planificador import Planificador
+from planner import Planner
 from exec_ogamus import ExecOgamus
 from aux import printAgentStatus, printLastActionStatus, createCamera, printObjectStatus, removeResultFolders, isObjectOnScene
 
@@ -80,7 +80,7 @@ if method == '1':
         ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
 
         # Execute the planner with the problem file generated and the corresponding domain (based on selected action)
-        plan = Planificador(problem_path, output_path, problem, print=True, ogamus=False)
+        plan = Planner(problem_path, output_path, problem, print=True, ogamus=False)
 
         # Parse and execute plan into actions
         parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteration, liquid)
