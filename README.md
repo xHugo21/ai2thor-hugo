@@ -1,44 +1,45 @@
-# Ejecución de acciones sobre el simulador iTHOR mediante planificación automática y redes neuronales
+# Execution of actions on the iTHOR simulator using automatic planning and neural networks.
 
-## Trabajo Fin de Grado - Hugo García Cuesta 100428954
+## End of Degree Work by Hugo García Cuesta 100428954. University Carlos III of Madrid
 
-### Introducción
-Se pretende realizar un programa que permita moverse e interactuar al agente iTHOR con el entorno
+### Description
+The main objective is to develop a program that allows the user to execute any action inside an iTHOR environment.
 
-El programa ofrece la opción de ejecutarse de dos maneras:
-1. Mediante metadatos extraídos del simulador. De esta manera se conocen las posiciones de los objetos y posiciones permitidas. Sobre estos datos se ejecutan diferentes dominios escritos en PDDL para obtener y ejecutar el plan generado de manera óptima.
-2. Mediante el algoritmo OGAMUS, elaborado por Leonardo Lamanna, Luciano Serafini, Alessandro Saetti, Alfonso Gerevini y Paolo Traverso. Este algoritmo permite obtener información de un entorno recorriendolo gracias a una serie de redes de neuronas preentrenadas. En este trabajo se ha modificado ligeramente el código original con el fin de conseguir concatenar acciones simples en entornos desconocidos. Además, se permite introducir un fichero de entrada en formato PDDL que puede procesar acciones simples y complejas y pasarlas al algoritmo para ser resueltas.
+There are two ways of running the program:
+1. Using methadata given by the simulator. Thanks to it we can know which objects are in a specific scene and their positions. Using this data we can then generate a PDDL problem to obtain an optimized plan. The plan is translated back to executable actions and triggered in order.
 
-### Requisitos del simulador iTHOR
-1. Sistema operativo: macOS 10.9 o Ubuntu 14.04+ (recomendado: Ubuntu 22.04)
+2. Using OGAMUS algorithm. OGAMUS is an algorithm developed by Leonardo Lamanna, Luciano Serafini, Alessandro Saetti, Alfonso Gerevini y Paolo Traverso which scans an iTHOR scene using pretrained neural network models and stores all the data it gets inside PDDL problem files. In this project the algorithm has been modified so it can run within an specific environment and so that actions can be chained. There is also the possibility to pass a PDDL problem as argument and translate the actions that want to be executed.
+
+### iTHOR simulator requirements
+1. Operative System: macOS 10.9 o Ubuntu 14.04+ (recommended: Ubuntu 22.04)
 2. Python: 3.5+ 
-3. CPU con soporte de instrucciones SSE2
+3. CPU with SSE2 instruction support
 4. GPU: DX9 (shader model 3.0) or DX11 with feature level 9.3 capabilities
-5. Para usuarios de Linux necesario X server con módulo GLX habilitado
+5. Linux users need X server with GLX module enabled
 
-### Ejecución recomendada
-1. Comprobar apartado de requisitos e instalar o modificar componentes necesarios
+### Step by step instalation
+1. Meet simulator requirements
 
-2. Clonar repositorio en carpeta local y acceder al directorio
+2. Clone repository into local folder
     ```
     git clone https://github.com/xHugo21/ai2thor-hugo.git
     ```
     ```
     cd ai2thor-hugo
     ```
-3. Crear un entorno virtual de Python 3.9 en conda
+3. Create a Python 3.9 virtual environment. We recommend using conda
     ```
     conda create -n ogamus python=3.9
     ```
-4. Activar el entorno
+4. Activate the conda environment
     ```
     conda activate ogamus
     ```
-5. Instalar pip en el entorno
+5. Install pip inside the environment
     ```
     conda install pip
     ```
-6. Instalar [PyTorch](https://pytorch.org/get-started/locally/) (versión 1.11.0) *Ejecutar solo uno de los siguientes comandos
+6. Install [PyTorch](https://pytorch.org/get-started/locally/) (version 1.11.0) *Execute only one of the following commands
 
     ```
     # OSX
@@ -56,39 +57,44 @@ El programa ofrece la opción de ejecutarse de dos maneras:
     conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cpuonly -c pytorch
     ```
 
-7. Instalar AI2THOR (versión 5.0.0) 
+7. Install AI2THOR (version 5.0.0) 
     ```
     pip install ai2thor==5.0.0
     ```
-8. Instalar matplotlib 
+8. Install matplotlib 
     ```
     pip install matplotlib
     ```
-9. Descargar la red neuronal preentrenada del siguiente enlace [Red Preentrenada](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing) y volcar archivos en /Utils/pretrained_models/
+9. Download the pretrained neural network from the following link and drop the files into /Utils/pretrained_models/ [Red Preentrenada](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing)
 
-10. Ejecutar main.py y seguir los pasos que se muestran por pantalla
+10. Execute main.py and follow steps in CLI
     ```
     python main.py
     ```
-11. Adicionalmente se permite la introducción de un fichero PDDL como parámetro para indicar los problemas a resolver. Cabe tener en cuenta que esto solo se permite para el método OGAMUS. Hay un fichero PDDL de ejemplo en ./pddl/inputs/example.pddl
+11. If the user wants, he can pass a PDDL problem file as argument so that there is no need to select actions and objectives via CLI. This is only allowed for the OGAMUS method. There is a PDDL input file at /pddl/inputs/example.pddl
     ```
     python main.py ./pddl/inputs/example.pddl
     ```
 
-### Visualización de resultados
-El simulador de AI2THOR se ejecuta a una velocidad muy alta y no permite visualizar los pasos de manera correcta. Para solucionar esto se extraen las siguientes imágenes en cada ejecución dentro de la carpeta ./images:
-- scene.png: Una imágen de la escena desde el plano cenital que permite ver los objetos y la posición inicial del agente. A continuación se muestra un ejemplo:
+### Results visualization
+iTHOR simulator launches a visualization window every time an environment is generated. However, it is pretty hard to see if everything has executed correctly. The program extracts the following data on each action executed:
 
-![Plano cenital de la escena FloorPlan1](/assets/example_scene.png)
+- scene.png: A zenithal shot of the scene so that the user can see the layout of the room. It is generated in /assets/scene.png
 
-- problemX_Y: Una imagen de los pasos ejecutados donde X indica la iteración e Y indica el paso.
+![Zenithal shot of the scene FloorPlan1](/assets/example_scene.png)
 
-![El agente se posiciona en frente del objetivo](/assets/iter0_1.png) ![El agente coge el objetivo](/assets/iter0_2.png)
+- problemX_Y: An image of each step executed. X represents the action and Y the step.
 
-Se extraen además los archivos de problemas pddl y salidas de planificador en ./pddl/problems y ./pddl/outputs respectivamente.
+![The agent positions in front of the objective: iter0_1](/assets/iter0_1.png) ![The agent picks up the objective: iter0_2](/assets/iter0_2.png)
+
+- CLI data: When an action is finished, status about last action and objective is displayed.
+
+- PDDL problem files in /pddl/problems/
+
+- Plans generated in /pddl/outputs/
 
 
-### Documentacion
+### References
 - iTHOR documentation: https://ai2thor.allenai.org/ithor/documentation/
 - LAMANNA, Leonardo, et al. Online grounding of symbolic planning domains in unknown environments. En Proceedings of the International Conference on Principles of Knowledge Representation and Reasoning. 2022. p. 511-521. [PDF](https://arxiv.org/pdf/2112.10007.pdf). [GitHub](https://github.com/LamannaLeonardo/OGAMUS)
 

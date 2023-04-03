@@ -14,3 +14,4 @@
 - Mantener forceAction?
 - ¿Se pueden añadir los objetos cortados (sliced)?
 - MAX_RELEVANT_FLUENTS aumentar
+- CLI data visualization OGAMUS
