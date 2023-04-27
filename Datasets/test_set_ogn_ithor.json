@@ -2,7 +2,7 @@
     {
         "episode": 1,
         "scene": "FloorPlan1",
-        "goal": "(exists (?o1 - saltshaker) (and (viewing ?o1) (close_to ?o1)))",
+        "goal": "(exists (?o1 - potato) (and (viewing ?o1) (close_to ?o1)))",
         "agent_position": {
             "x": -1.0,
             "y": 0.900999128818512,

@@ -6,48 +6,22 @@
   (:requirements :strips :fluents :typing :equality)
 
   (:types
-    ;breakable cookable dirtyable fillable moveable openable pickupable receptacle sliceable toggleable usedup - object
     object
     position
   )
 
   (:predicates
-    (holding ?o - object)
-    (open ?o - object)
-    (closed ?o - object)
-    (broken ?o - object)
-    (cooked ?o - object)
-    (sliced ?o - object)
-    (toggledon ?o - object)
-    (toggledoff ?o - object)
-    (dirty ?o - object)
-    (cleaned ?o - object)
-    (filled ?o - object)
-    (emptied ?o - object)
-    (usedup ?o - object)
-    ;(put ?o2 ?o1 - object)
 
-    ;(is-standing)
   )
 
   (:functions
-    ;(distance ?o - object)
-    ;(stepsize)
-    ;(n_lookdown)
     (facing)
     (inclination)
     (agent-at-x)
-    ;(agent-at-y)
     (agent-at-z)
-    ;(object-at-x ?o - object)
-    ;(object-at-y ?o - object)
-    ;(object-at-z ?o - object)
+
     (posiblepos-x ?p - position)
     (posiblepos-z ?p - position)
-    (interactablepose-x ?p - position ?o - object)
-    (interactablepose-z ?p - position ?o - object)
-    (interactablepose-facing ?p - position ?o - object)
-    (interactablepose-inclination ?p - position ?o - object)
   )
 
   ; Permite mover al agente hacia delante un tamaño gridSize (default=0.25). facing=0 -> z+0.25
@@ -139,30 +113,8 @@
     )
     :effect (and
       (increase (inclination) 30)
-      ;(increase (n_lookdown) 1)
     )
   )
 
-  ; Permite al agente levantarse
-  ;(:action standup
-  ;  :parameters()
-  ;  :precondition (and
-  ;                (not (is-standing))
-  ;  )
-  ;  :effect (and
-  ;          (is-standing)
-  ;  )
-  ;)
-;
-  ;; Permite al agente agacharse
-  ;(:action crouch
-  ;  :parameters()
-  ;  :precondition (and
-  ;                (is-standing)
-  ;  )
-  ;  :effect (and
-  ;          (not (is-standing))
-  ;  )
-  ;)
 
 )

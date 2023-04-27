@@ -131,6 +131,6 @@ def generate_plots():
 
 if __name__ == "__main__":
 
-    generate_plots()
+    # generate_plots()
 
-    # ogn_metrics()
+    ogn_metrics()
