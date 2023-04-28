@@ -1,7 +1,6 @@
 * GENERAL *
 - Manejo de errores
 - Shortest paths entender y modificar
-- Comprobación de que el parámetro introducido es un PDDL creo que no funciona (main.py)
 - Pasar problem_definition.paths_selection como variable a main?
 - Manejo de plan (dividir por lineas y limpiar) ver si se puede refactorizar porque se usa dos veces en distintos sitios
 
@@ -11,10 +10,8 @@
 - Comprobar put problem execution
 
 * OGAMUS *
-- Añadir más acciones complejas inputs
-- Chequear si forceAction es necesario
+- Añadir más acciones complejas input?
 - ¿Se pueden añadir los objetos cortados (sliced)?
-- CLI data visualization
+- MoveHeldObjectUp ver si corrige problema de concatenación
 - Gestionar drop action
-- Añadir selección de escena a input por PDDL
 

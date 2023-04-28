@@ -17,8 +17,8 @@
     (basicaction ?a - action ?o - object)
 
     (put_object_into ?o1 - object ?o2 - object)
-    (put_into_fridge ?o - object)
     (fry_object ?o1 - object)
+    (boil_object ?o1 - object)
 
     (last)
 )
@@ -49,6 +49,7 @@
 )
 
 ; COMPLEX ACTIONS
+; Put an object inside another
 (:action put_object_into
     :parameters (?o1 ?o2 - object)
     :precondition (and
@@ -65,6 +66,7 @@
             )
 )
 
+; Fry an object
 (:action fry_object
     :parameters (?o1 - object)
     :precondition (and
@@ -83,36 +85,41 @@
             )
 )
 
-;(:action put_into_fridge
-;    :parameters (?o - object)
-;    :precondition (and
-;                    (= (put_into_fridge ?o) (time))
-;                    (= (complextime) 0)
-;                    )
-;    :effect (and
-;                (assign (basicaction pickup ?o) 3)
-;                (assign (basicaction open fridge) 2)
-;                (assign (basicaction put fridge) 1)
-;                (assign (put_into_fridge ?o) 0)
-;                (increase (time) 1)
-;                (increase (complextime) 3)
-;            )
-;)
+; Boil an object
+(:action boil_object
+    :parameters (?o1 - object)
+    :precondition (and
+                    (= (boil_object ?o1) (time))
+                    (= (complextime) 0)
+                    )
+    :effect (and
+                (assign (basicaction pickup pot) 5)
+                (assign (basicaction put stoveburner) 4)
+                (assign (basicaction pickup ?o1) 3)
+                (assign (basicaction put pot) 2)
+                (assign (basicaction cook ?o1) 1)
+                (assign (boil_object ?o1) 0)
+                (increase (time) 1)
+                (increase (complextime) 5)
+            )
+)
 
-;(:action fry_potato
-;    :parameters ()
-;    :precondition (and
-;                    (= (fry_potato) (time))
-;                    (= (complextime) 0)
-;                    )
-;    :effect (and
-;                (assign (basicaction pickup potato) 3)
-;                (assign (basicaction put pan) 2)
-;                (assign (basicaction cook potato) 1)
-;                (assign (fry_potato) 0)
-;                (increase (time) 1)
-;                (increase (complextime) 3)
-;            )
-;)
+; Slice an object using a knife
+(:action real_slice
+    :parameters (?o1 - object)
+    :precondition (and
+                    (= (real_slice ?o1) (time))
+                    (= (complextime) 0)
+                    )
+    :effect (and
+                (assign (basicaction pickup knife) 2)
+                (assign (basicaction slice ?o1) 1)
+                (assign (real_slice ?o1) 0)
+                (increase (time) 1)
+                (increase (complextime) 2)
+            )
+)
+
+
 
 )
