@@ -18,7 +18,7 @@
 
     (put_object_into ?o1 - object ?o2 - object)
     (put_into_fridge ?o - object)
-    (fry_potato)
+    (fry_object ?o1 - object)
 
     (last)
 )
@@ -65,36 +65,54 @@
             )
 )
 
-(:action put_into_fridge
-    :parameters (?o - object)
+(:action fry_object
+    :parameters (?o1 - object)
     :precondition (and
-                    (= (put_into_fridge ?o) (time))
+                    (= (fry_object ?o1) (time))
                     (= (complextime) 0)
                     )
     :effect (and
-                (assign (basicaction pickup ?o) 3)
-                (assign (basicaction open fridge) 2)
-                (assign (basicaction put fridge) 1)
-                (assign (put_into_fridge ?o) 0)
+                (assign (basicaction pickup pan) 5)
+                (assign (basicaction put stoveburner) 4)
+                (assign (basicaction pickup ?o1) 3)
+                (assign (basicaction put pan) 2)
+                (assign (basicaction cook ?o1) 1)
+                (assign (fry_object ?o1) 0)
                 (increase (time) 1)
-                (increase (complextime) 3)
+                (increase (complextime) 5)
             )
 )
 
-(:action fry_potato
-    :parameters ()
-    :precondition (and
-                    (= (fry_potato) (time))
-                    (= (complextime) 0)
-                    )
-    :effect (and
-                (assign (basicaction pickup potato) 3)
-                (assign (basicaction put pan) 2)
-                (assign (basicaction cook potato) 1)
-                (assign (fry_potato) 0)
-                (increase (time) 1)
-                (increase (complextime) 3)
-            )
-)
+;(:action put_into_fridge
+;    :parameters (?o - object)
+;    :precondition (and
+;                    (= (put_into_fridge ?o) (time))
+;                    (= (complextime) 0)
+;                    )
+;    :effect (and
+;                (assign (basicaction pickup ?o) 3)
+;                (assign (basicaction open fridge) 2)
+;                (assign (basicaction put fridge) 1)
+;                (assign (put_into_fridge ?o) 0)
+;                (increase (time) 1)
+;                (increase (complextime) 3)
+;            )
+;)
+
+;(:action fry_potato
+;    :parameters ()
+;    :precondition (and
+;                    (= (fry_potato) (time))
+;                    (= (complextime) 0)
+;                    )
+;    :effect (and
+;                (assign (basicaction pickup potato) 3)
+;                (assign (basicaction put pan) 2)
+;                (assign (basicaction cook potato) 1)
+;                (assign (fry_potato) 0)
+;                (increase (time) 1)
+;                (increase (complextime) 3)
+;            )
+;)
 
 )

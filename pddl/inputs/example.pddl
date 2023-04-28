@@ -37,12 +37,19 @@
     break - action ; (= (basicaction break <breakable>) <orden>)
     cook - action ; (= (basicaction cook <cookable>) <orden>)
     slice - action ; (= (basicaction slice <sliceable>) <orden>)
+    toggleon - action
+    toggleoff - action
+    dirty - action
+    clean - action
+    fill - action
+    empty - action
+    useup - action
     drop - action ; (= (basicaction drop <pickupable>) <orden>)
     put - action ; (= (basicaction put <receptacle>) <orden>)
 
 
     ; MODIFY THIS SECTION ADDING OBJECTS USED
-    saltshaker fridge potato pan - object
+    saltshaker fridge potato pan stoveburner - object
 
 )
 
@@ -55,8 +62,12 @@
     ;(= (basicaction pickup saltshaker) 1)
     ;(= (put_object_into saltshaker fridge) 2)
     ;(= (put_into_fridge saltshaker) 1)
-    (= (fry_potato) 1)
+    ;(= (fry_potato) 1)
     ;(= (basicaction pickup tomato) 2)
+
+    (= (fry_object potato) 1)
+
+
 
     (= (last) 2) ; MUST BE ESTABLISHED TO THE NUMBER NEXT TO THE LAST ACTION
 )

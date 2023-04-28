@@ -15,8 +15,8 @@ class ParserAI2THORPDDL:
         # Goal condition depending on type of problem
         if problem == "move":
             self.parse_move_problem()
-        elif problem == "drop":
-            self.parse_drop_problem()
+        # elif problem == "drop":
+        #     self.parse_drop_problem()
 
         # Interactable poses added if problem needs to interact with an object
         else:
@@ -164,17 +164,17 @@ class ParserAI2THORPDDL:
         self.problem += "\t))\n"
         self.problem += ")\n"
 
-    def parse_drop_problem(self):
-        '''Parse drop problem goal state'''
-        self.problem += "\t(:goal (and\n"
-        self.problem += f"\t\t(not (holding {self.objective['name']}))\n"    
-        self.problem += "\t))\n"
-        self.problem += ")\n"
+    # def parse_drop_problem(self):
+    #     '''Parse drop problem goal state'''
+    #     self.problem += "\t(:goal (and\n"
+    #     self.problem += f"\t\t(not (holding {self.objective['name']}))\n"    
+    #     self.problem += "\t))\n"
+    #     self.problem += ")\n"
 
     def parse_put_problem(self):
         '''Parse put problem goal state'''
         self.problem += "\t(:goal (and\n"
-        self.problem += f"\t\t(put {self.held_obj['name']} {self.objective['name']}))\n"    
+        self.problem += f"\t\t(put {self.held_obj['name']} {self.objective['name']})\n"    
         self.problem += "\t))\n"
         self.problem += ")\n"
 

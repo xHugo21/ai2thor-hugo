@@ -16,6 +16,7 @@ class ExecOgamus:
         # Depending on the problem we execute an action or another. get_close_to action is ignored because there isn't more actions that the simulator has to trigger
         if self.problem == 'pickup':
             self.controller.step(action="PickupObject", objectId=self.final_objective["objectId"])
+            self.controller.step(action="MoveHeldObjectUp", moveMagnitude=0.3, forceVisible=False)
 
         elif self.problem == 'open':
             self.controller.step(action="OpenObject", objectId=self.final_objective["objectId"])

@@ -7,7 +7,7 @@
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto
-- Comprobar si los planes son óptimos
+- Planes no son óptimos, a veces gira tres veces right en vez de una left
 - Comprobar put problem execution
 
 * OGAMUS *
@@ -16,4 +16,5 @@
 - ¿Se pueden añadir los objetos cortados (sliced)?
 - CLI data visualization
 - Gestionar drop action
+- Añadir selección de escena a input por PDDL
 
