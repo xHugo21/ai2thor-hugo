@@ -1,0 +1,2 @@
+#!/bin/bash
+ ./cbp-roller -o $1 -f $2 -F $3 -O -h 3 -H 2 -S 9 -n
