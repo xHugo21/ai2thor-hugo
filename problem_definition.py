@@ -208,15 +208,15 @@ class ProblemDefinition():
             print("[5] - Break Object")
             print("[6] - Cook Object")
             print("[7] - Slice Object")
-            # print("[8] - Toggle On Object")
-            # print("[9] - Toggle Off Object")
-            # print("[10] - Dirty Object")
-            # print("[11] - Clean Object")
-            # print("[12] - Fill Object")
-            # print("[13] - Empty Object")
-            # print("[14] - Use Up Object")
-            print("[8] - Drop Object (Requires holding an object)")
-            print("[9] - Put Object (Requires holding an object)")
+            print("[8] - Toggle On Object")
+            print("[9] - Toggle Off Object")
+            print("[10] - Dirty Object")
+            print("[11] - Clean Object")
+            print("[12] - Fill Object")
+            print("[13] - Empty Object")
+            print("[14] - Use Up Object")
+            print("[15] - Drop Object (Requires holding an object)")
+            print("[16] - Put Object (Requires holding an object)")
             print("----------------")
             aux = input("Select an action: ")
             print("")
@@ -225,7 +225,7 @@ class ProblemDefinition():
             else:
                 print("Please, input a valid action\n")
         
-        problemas_ogamus = ["get_close_to", "pickup", "open", "close", "break", "cook", "slice", "drop", "put"]
+        problemas_ogamus = ["get_close_to", "pickup", "open", "close", "break", "cook", "slice", "toggleon", "toggleoff", "dirty", "clean", "fill", "empty", "useup", "drop", "put"]
         self.problem = problemas_ogamus[int(aux)-1]
         self.problem_list.append(self.problem)
 
@@ -286,6 +286,19 @@ class ProblemDefinition():
         
         elif self.problem == "slice":
             possible_objects = ["apple", "bread", "egg", "lettuce", "potato", "tomato"]
+        
+        elif self.problem == "toggleon" or self.problem == "toggleoff":
+            possible_objects = ["candle", "cellphone", "coffeemachine", "desklamp", "faucet", "floorlamp", "laptop", "lightswitch", "microwave", "showerhead",
+                                "stoveburner", "stoveknob", "television", "toaster"]
+            
+        elif self.problem == "dirty" or self.problem == "clean":
+            possible_objects = ["bed", "bowl", "cloth", "cup", "mirror", "mug", "pan", "plate", "pot"]
+
+        elif self.problem == "fill" or self.problem == "empty":
+            possible_objects = ["bottle", "bowl", "cup", "houseplant", "kettle", "mug", "pot", "wateringcan", "winebottle"]
+
+        elif self.problem == "useup":
+            possible_objects = ["papertowelroll", "soapbottle", "tissuebox", "toiletpaper"]
 
         print("----OBJECTIVE----")
         i = 0

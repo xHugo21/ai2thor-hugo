@@ -76,14 +76,19 @@ if method == '1':
         # Ask user for problem and objective
         problem, objective, liquid = inputs.problem_selection(event)
 
-        # Using the parser, we translate the simulator state to a PDDL problem
-        ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
+        # If the problem selected is drop there is no need to plan anything. Execute the action directly. Otherwise parse the problem and generate a plan.
+        if problem == "drop":
+            event = controller.step(action="DropHandObject")
 
-        # Execute the planner with the problem file generated and the corresponding domain (based on selected action)
-        plan = Planner(problem_path, output_path, problem, print=True, ogamus=False)
+        else:
+            # Using the parser, we translate the simulator state to a PDDL problem
+            ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
 
-        # Parse and execute plan into actions
-        parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteration, liquid)
+            # Execute the planner with the problem file generated and the corresponding domain (based on selected action)
+            plan = Planner(problem_path, output_path, problem, print=True, ogamus=False)
+
+            # Parse and execute plan into actions
+            parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteration, liquid)
 
         # Final state visualization depending on the type of the problem
         printLastActionStatus(controller.last_event)
@@ -145,6 +150,7 @@ else:
     iteration = 0
     for problem in problem_list:
 
+        
         # We create the dictionary to be inserted into the JSON that OGAMUS reads. It contains the scene info previously extracted and the objective
         dictionary = [{
             "episode": 1,

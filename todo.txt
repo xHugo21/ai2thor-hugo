@@ -1,14 +1,9 @@
 * GENERAL *
 - Manejo de errores
 - Shortest paths entender y modificar
-- problem_definition.paths_selection eliminar?
-- Documentar parámetros modificables
 - Comprobación de que el parámetro introducido es un PDDL creo que no funciona (main.py)
-- Mantener inclinacion agente en ficheros pddl?
-- Pasar problem_definition.paths_selection a argumento fijo main
+- Pasar problem_definition.paths_selection como variable a main?
 - Manejo de plan (dividir por lineas y limpiar) ver si se puede refactorizar porque se usa dos veces en distintos sitios
-- Limpiar dominios pddl
-- CAMBIAR DROP A ACCIÓN EJECUTABLE SIN NECESIDAD DE PLANIFICAR. SI AGENTE SOSTIENE OBJETO -> SOLTAR
 
 * METADATA *
 - El objetivo no se encuentra accesible chequear si es cierto
@@ -17,8 +12,8 @@
 
 * OGAMUS *
 - Añadir más acciones complejas inputs
-- Mantener forceAction?
+- Chequear si forceAction es necesario
 - ¿Se pueden añadir los objetos cortados (sliced)?
-- MAX_RELEVANT_FLUENTS aumentar
-- CLI data visualization OGAMUS
+- CLI data visualization
+- Gestionar drop action
 

@@ -15,28 +15,49 @@ class ExecOgamus:
 
         # Depending on the problem we execute an action or another. get_close_to action is ignored because there isn't more actions that the simulator has to trigger
         if self.problem == 'pickup':
-            self.controller.step(action="PickupObject", objectId=self.final_objective["objectId"], forceAction=True)
+            self.controller.step(action="PickupObject", objectId=self.final_objective["objectId"])
 
         elif self.problem == 'open':
-            self.controller.step(action="OpenObject", objectId=self.final_objective["objectId"], forceAction=True)
+            self.controller.step(action="OpenObject", objectId=self.final_objective["objectId"])
             
         elif self.problem == 'close':
-            self.controller.step(action="CloseObject", objectId=self.final_objective["objectId"], forceAction=True)
+            self.controller.step(action="CloseObject", objectId=self.final_objective["objectId"])
 
         elif self.problem == "break":
-            self.controller.step(action="BreakObject", objectId=self.final_objective["objectId"], forceAction=True)
+            self.controller.step(action="BreakObject", objectId=self.final_objective["objectId"])
 
         elif self.problem == "cook":
-            self.controller.step(action="CookObject", objectId=self.final_objective["objectId"], forceAction=True)
+            self.controller.step(action="CookObject", objectId=self.final_objective["objectId"])
 
         elif self.problem == "slice":
-            self.controller.step(action="SliceObject", objectId=self.final_objective["objectId"], forceAction=True)
+            self.controller.step(action="SliceObject", objectId=self.final_objective["objectId"])
+        
+        elif self.problem == "toggleon":
+            self.controller.step(action="ToggleObjectOn", objectId=self.final_objective["objectId"])
+
+        elif self.problem == "toggleoff":
+            self.controller.step(action="ToggleObjectOff", objectId=self.final_objective["objectId"])
+        
+        elif self.problem == "dirty":
+            self.controller.step(action="DirtyObject", objectId=self.final_objective["objectId"])
+
+        elif self.problem == "clean":
+            self.controller.step(action="CleanObject", objectId=self.final_objective["objectId"])
+
+        elif self.problem == "fill":
+            self.controller.step(action="FillObjectWithLiquid", objectId=self.final_objective["objectId"], fillLiquid="water")
+
+        elif self.problem == "empty":
+            self.controller.step(action="EmptyLiquidFromObject", objectId=self.final_objective["objectId"])
+
+        elif self.problem == "useup":
+            self.controller.step(action="UseUpObject", objectId=self.final_objective["objectId"])
 
         elif self.problem == 'drop':
-            self.controller.step(action="DropHandObject", forceAction=True)
+            self.controller.step(action="DropHandObject")
 
         elif self.problem == 'put':
-            self.controller.step(action="PutObject", objectId=self.final_objective["objectId"], forceAction=True, placeStationary=True)
+            self.controller.step(action="PutObject", objectId=self.final_objective["objectId"], placeStationary=True)
 
         # Show the object status via CLI
         printObjectStatus(self.controller.last_event, self.final_objective)

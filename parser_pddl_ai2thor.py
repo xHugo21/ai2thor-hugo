@@ -112,8 +112,8 @@ class ParserPDDLAI2THOR:
             elif act.find("USEUP") != -1:
                 self.object_state_action(act, "USEUP", 6, "UseUpObject")
 
-            elif act.find("DROP") != -1:
-                self.controller.step(action="DropHandObject", forceAction=True)
+            # elif act.find("DROP") != -1:
+            #     self.controller.step(action="DropHandObject", forceAction=True)
             
             elif act.find("PUT") != -1:
                 start_index = act.find("PUT ")

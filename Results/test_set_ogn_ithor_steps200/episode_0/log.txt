@@ -1,0 +1,54 @@
+
+Warning: setting rotation step to 45 degrees according to Object Goal Navigation dataset in iTHOR.
+Warning: setting visibility distance to 1 meter according to Object Goal Navigation standard setting.
+Warning: setting max manipulation distance to 163 (>150) centimeters for solving the Object Goal Navigation task in iTHOR. In this way the agent is more robust to error in object position approximations.
+Warning: setting distance threshold of predicate 'close_to(object)' to 150 centimeters for solving the Object Goal Navigation task in iTHOR. In this way the agent is more robust to error in object position approximations.
+############# START CONFIGURATION #############
+DATASET:test_set_ogn_ithor
+EPISODE:1
+SCENE:FloorPlan3
+TASK:ogn_ithor
+RANDOM SEED:1
+GOAL OBJECTS:['saltshaker']
+MAX ITER:200
+VISIBILITY DISTANCE:1
+MOVE STEP:0.25
+MOVE AND ROTATION RANDOMNESS:False
+ROTATION DEGREES:45
+FIELD OF VIEW:79
+MAX DISTANCE MANIPULATION (belief):163
+IoU THRESHOLD:0.8
+OBJECT DETECTOR GROUND TRUTH:True
+OPEN CLASSIFIER THRESHOLD:0.5
+ON CLASSIFIER THRESHOLD:0.5
+OBJECT DETECTOR:Utils/pretrained_models/faster-rcnn_118classes.pkl
+OPEN CLASSIFIER:Utils/pretrained_models/open_predictor.pth
+ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
+###############################################
+
+1:MoveAhead
+2:MoveAhead
+3:MoveAhead
+4:MoveAhead
+5:RotateLeft
+6:RotateLeft
+7:MoveAhead
+8:MoveAhead
+9:MoveAhead
+Collision detected
+10:RotateLeft
+11:RotateLeft
+Changing event planner subgoal to: INSPECT(SALTSHAKER_0)
+12:MoveAhead
+13:MoveAhead
+14:MoveAhead
+15:RotateRight
+Changing event planner subgoal to: STOP()
+16:Stop
+Successfully executed action: STOP()
+Average metrics over 1 episodes:
+	 AVG success: 1.0
+	 AVG SPL: 0.0
+	 AVG dts: 0.0
+Episode succeeds.
+Episode computational time: 26 seconds
