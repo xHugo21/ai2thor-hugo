@@ -67,6 +67,8 @@ There are two ways of running the program:
     ```
 9. Download the pretrained neural network from the following link and drop the files into /Utils/pretrained_models/ [Red Preentrenada](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing)
 
+10. Download cbp-planner and place inside pddl folder. Modify planner path inside planner.py if needed.
+
 10. Execute main.py and follow steps in CLI
     ```
     python main.py
