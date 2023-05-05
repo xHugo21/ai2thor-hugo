@@ -137,3 +137,6 @@ dmypy.json
 
 # Pretrained neural network models
 Utils/pretrained_models
+
+# CBP Planner
+pddl/seq-sat-cbp2-compiled-2023
