@@ -27,19 +27,15 @@ There are two ways of running the program:
     ```
     cd ai2thor-hugo
     ```
-3. Create a Python 3.9 virtual environment. We recommend using conda
+3. Create a Python 3.9 virtual environment with conda using the requirements.txt file.
     ```
-    conda create -n ogamus python=3.9
+    conda create --name <env_name> python=3.9 --file requirements.txt 
     ```
 4. Activate the conda environment
     ```
-    conda activate ogamus
+    conda activate <env_name>
     ```
-5. Install pip inside the environment
-    ```
-    conda install pip
-    ```
-6. Install [PyTorch](https://pytorch.org/get-started/locally/) (version 1.11.0) *Execute only one of the following commands
+5. Install [PyTorch](https://pytorch.org/get-started/locally/) (version 1.11.0) *Execute only one of the following commands
 
     ```
     # OSX
@@ -56,24 +52,15 @@ There are two ways of running the program:
     # CPU Only
     conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cpuonly -c pytorch
     ```
+6. Download the pretrained neural network from the following link and drop the files into /Utils/pretrained_models/ [Red Preentrenada](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing)
 
-7. Install AI2THOR (version 5.0.0) 
-    ```
-    pip install ai2thor==5.0.0
-    ```
-8. Install matplotlib 
-    ```
-    pip install matplotlib
-    ```
-9. Download the pretrained neural network from the following link and drop the files into /Utils/pretrained_models/ [Red Preentrenada](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing)
+7. Download cbp-planner and place inside pddl folder. Modify planner path inside planner.py if needed.
 
-10. Download cbp-planner and place inside pddl folder. Modify planner path inside planner.py if needed.
-
-11. Execute main.py and follow steps in CLI
+8. Execute main.py and follow steps in CLI
     ```
     python main.py
     ```
-12. If the user wants, he can pass a PDDL problem file as argument so that there is no need to select actions and objectives via CLI. This is only allowed for the OGAMUS method. There is a PDDL input file at /pddl/inputs/example.pddl
+9. If the user wants, he can pass a PDDL problem file as argument so that there is no need to select actions and objectives via CLI. This is only allowed for the OGAMUS method. There is a PDDL input example file at /pddl/inputs/example.pddl
     ```
     python main.py ./pddl/inputs/example.pddl
     ```
