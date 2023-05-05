@@ -69,11 +69,11 @@ There are two ways of running the program:
 
 10. Download cbp-planner and place inside pddl folder. Modify planner path inside planner.py if needed.
 
-10. Execute main.py and follow steps in CLI
+11. Execute main.py and follow steps in CLI
     ```
     python main.py
     ```
-11. If the user wants, he can pass a PDDL problem file as argument so that there is no need to select actions and objectives via CLI. This is only allowed for the OGAMUS method. There is a PDDL input file at /pddl/inputs/example.pddl
+12. If the user wants, he can pass a PDDL problem file as argument so that there is no need to select actions and objectives via CLI. This is only allowed for the OGAMUS method. There is a PDDL input file at /pddl/inputs/example.pddl
     ```
     python main.py ./pddl/inputs/example.pddl
     ```
