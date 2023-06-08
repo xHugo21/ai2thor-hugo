@@ -2,7 +2,7 @@
 
 ## End of Degree Work by Hugo García Cuesta 100428954. University Carlos III of Madrid
 
-### Description
+### :page_with_curl: Description
 The main objective is to develop a program that allows the user to execute any action inside an iTHOR environment.
 
 There are two ways of running the program:
@@ -10,14 +10,14 @@ There are two ways of running the program:
 
 2. Using OGAMUS algorithm. OGAMUS is an algorithm developed by Leonardo Lamanna, Luciano Serafini, Alessandro Saetti, Alfonso Gerevini y Paolo Traverso which scans an iTHOR scene using pretrained neural network models and stores all the data it gets inside PDDL problem files. In this project the algorithm has been modified so it can run within an specific environment and so that actions can be chained. There is also the possibility to pass a PDDL problem as argument and translate the actions that want to be executed.
 
-### iTHOR simulator requirements
+### :computer: iTHOR simulator requirements
 1. Operative System: macOS 10.9 o Ubuntu 14.04+ (recommended: Ubuntu 22.04)
 2. Python: 3.5+ 
 3. CPU with SSE2 instruction support
 4. GPU: DX9 (shader model 3.0) or DX11 with feature level 9.3 capabilities
 5. Linux users need X server with GLX module enabled
 
-### Step by step instalation
+### :white_check_mark: Step by step installation
 1. Meet simulator requirements
 
 2. Clone repository into local folder
@@ -65,7 +65,7 @@ There are two ways of running the program:
     python main.py ./pddl/inputs/example.pddl
     ```
 
-### Results visualization
+### :eyes: Results visualization
 iTHOR simulator launches a visualization window every time an environment is generated. However, it is pretty hard to see if everything has executed correctly. The program extracts the following data on each action executed:
 
 - scene.png: A zenithal shot of the scene so that the user can see the layout of the room. It is generated in /images/scene.png
@@ -83,7 +83,7 @@ iTHOR simulator launches a visualization window every time an environment is gen
 - Plans generated in /pddl/outputs/
 
 
-### References
+### :pencil2: References
 - iTHOR documentation: https://ai2thor.allenai.org/ithor/documentation/
 - LAMANNA, Leonardo, et al. Online grounding of symbolic planning domains in unknown environments. En Proceedings of the International Conference on Principles of Knowledge Representation and Reasoning. 2022. p. 511-521. [PDF](https://arxiv.org/pdf/2112.10007.pdf). [GitHub](https://github.com/LamannaLeonardo/OGAMUS)
 
