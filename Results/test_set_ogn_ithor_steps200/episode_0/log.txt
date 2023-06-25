@@ -1,0 +1,65 @@
+
+############# START CONFIGURATION #############
+DATASET:test_set_ogn_ithor
+EPISODE:1
+SCENE:FloorPlan24
+TASK:ogn_ithor
+RANDOM SEED:1
+GOAL OBJECTS:['coffeemachine']
+MAX ITER:200
+VISIBILITY DISTANCE:1.5
+MOVE STEP:0.25
+MOVE AND ROTATION RANDOMNESS:False
+ROTATION DEGREES:45
+FIELD OF VIEW:90
+MAX DISTANCE MANIPULATION (belief):140
+IoU THRESHOLD:0.8
+OBJECT DETECTOR GROUND TRUTH:False
+OPEN CLASSIFIER THRESHOLD:0.5
+ON CLASSIFIER THRESHOLD:0.5
+OBJECT DETECTOR:Utils/pretrained_models/faster-rcnn_118classes.pkl
+OPEN CLASSIFIER:Utils/pretrained_models/open_predictor.pth
+ON CLASSIFIER:Utils/pretrained_models/on_predictor.pth
+###############################################
+
+1:MoveAhead
+2:MoveAhead
+3:MoveAhead
+4:MoveAhead
+5:MoveAhead
+6:MoveAhead
+7:RotateLeft
+8:RotateLeft
+9:MoveAhead
+10:MoveAhead
+11:MoveAhead
+12:MoveAhead
+13:MoveAhead
+14:MoveAhead
+Collision detected
+15:RotateLeft
+16:RotateLeft
+17:MoveAhead
+Changing event planner subgoal to: INSPECT(COFFEEMACHINE_0)
+18:RotateLeft
+19:RotateLeft
+20:MoveAhead
+21:MoveAhead
+22:MoveAhead
+23:RotateRight
+24:RotateRight
+25:MoveAhead
+26:MoveAhead
+27:MoveAhead
+28:MoveAhead
+29:MoveAhead
+30:MoveAhead
+Changing event planner subgoal to: STOP()
+31:Stop
+Successfully executed action: STOP()
+Average metrics over 1 episodes:
+	 AVG success: 1.0
+	 AVG SPL: 0.0
+	 AVG dts: 0.0
+Episode succeeds.
+Episode computational time: 108 seconds

@@ -19,6 +19,7 @@
     (put_object_into ?o1 - object ?o2 - object)
     (fry_object ?o1 - object)
     (boil_object ?o1 - object)
+    (real_slice ?o1 - object)
 
     (last)
 )

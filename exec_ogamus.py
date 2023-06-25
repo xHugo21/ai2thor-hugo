@@ -1,4 +1,4 @@
-from aux import printObjectStatus, extractActionImage
+from aux import printObjectStatus, extractActionImage, printLastActionStatus
 
 class ExecOgamus:
     '''This class executes the action asked by the user after OGAMUS has found the objective'''
@@ -62,6 +62,7 @@ class ExecOgamus:
 
         # Show the object status via CLI
         printObjectStatus(self.controller.last_event, self.final_objective)
+        printLastActionStatus(self.controller.last_event)
 
         # Extract last state image
         self.controller.step("Pass")

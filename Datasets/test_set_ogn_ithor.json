@@ -1,23 +1,23 @@
 [
     {
         "episode": 1,
-        "scene": "FloorPlan1",
-        "goal": "(exists (?o1 - pan) (and (viewing ?o1) (close_to ?o1)))",
+        "scene": "FloorPlan24",
+        "goal": "(exists (?o1 - coffeemachine) (and (viewing ?o1) (close_to ?o1)))",
         "agent_position": {
-            "x": -1.0,
-            "y": 0.900999128818512,
-            "z": 1.0
+            "x": -0.5,
+            "y": 0.9009992480278015,
+            "z": 2.5
         },
         "agent_rotation": {
-            "x": -0.0,
+            "x": 0.0,
             "y": 270.0,
             "z": 0.0
         },
         "initial_orientation": 270.0,
-        "initial_horizon": 0.0,
+        "initial_horizon": -0.0,
         "agent_is_standing": true,
         "agent_in_high_friction_area": false,
-        "agent_fov": 79,
+        "agent_fov": 90,
         "shortest_path": [
             {
                 "x": -1.0,

@@ -12,6 +12,7 @@
 
   (:predicates
     (opened ?o - object)
+    (holding ?o - object)
   )
 
   (:functions

@@ -82,10 +82,10 @@ def main(controller):
     # Get input arguments
     # args = args_parser.parse_args()
     task = 'ogn_ithor'
-    object_ground_truth = True
+    object_ground_truth = None
 
-    if object_ground_truth is not None:
-        Configuration.GROUND_TRUTH_OBJS = True
+    #if object_ground_truth is not None:
+    #    Configuration.GROUND_TRUTH_OBJS = True
 
     if task is not None:
         assert task in [Configuration.TASK_ON, Configuration.TASK_OGN_ROBOTHOR, Configuration.TASK_OPEN,
@@ -196,21 +196,21 @@ def main(controller):
                     Logger.write("Warning: setting maximum camera inclination to 30 degrees since 'default' robot in "
                                  "iTHOR cannot look up or down more than 60 degrees.")
                     Configuration.MAX_CAM_ANGLE = 60
-                if Configuration.FOV != 79:
+                if Configuration.FOV != 90:
                     Logger.write("Warning: setting field of view to 79 degrees according to Object Goal Navigation standard setting.")
-                    Configuration.FOV = 79
-                if Configuration.VISIBILITY_DISTANCE != 1:
+                    Configuration.FOV = 90
+                if Configuration.VISIBILITY_DISTANCE != 1.5:
                     Logger.write("Warning: setting visibility distance to 1 meter according to Object Goal Navigation standard setting.")
-                    Configuration.VISIBILITY_DISTANCE = 1
-                if Configuration.MAX_DISTANCE_MANIPULATION != 163:
+                    Configuration.VISIBILITY_DISTANCE = 1.5
+                if Configuration.MAX_DISTANCE_MANIPULATION != 140:
                     Logger.write("Warning: setting max manipulation distance to 163 (>150) centimeters for solving the Object Goal "
                                  "Navigation task in iTHOR. In this way the agent is more robust to error in object position approximations.")
-                    Configuration.MAX_DISTANCE_MANIPULATION = 163
-                if Configuration.CLOSE_TO_OBJ_DISTANCE != 1.5:
+                    Configuration.MAX_DISTANCE_MANIPULATION = 140
+                if Configuration.CLOSE_TO_OBJ_DISTANCE != 1.4:
                     Logger.write("Warning: setting distance threshold of predicate 'close_to(object)' to 150 centimeters "
                                  "for solving the Object Goal Navigation task in iTHOR. "
                                  "In this way the agent is more robust to error in object position approximations.")
-                    Configuration.CLOSE_TO_OBJ_DISTANCE = 1.1
+                    Configuration.CLOSE_TO_OBJ_DISTANCE = 1.4
 
 
             if Configuration.ROTATION_STEP > Configuration.FOV:

@@ -20,7 +20,7 @@ IP_ADDRESS = "172.20.48.1"  # Set this for WSL2 by looking into /etc/resolv.conf
 ############### AGENT BELIEF CONFIGURATION ###############
 ##########################################################
 TRUST_PDDL = True  # If set to true, apply action effects regardless of observation after action execution
-GROUND_TRUTH_OBJS = True  # Use ground truth objects detection
+GROUND_TRUTH_OBJS = False  # Use ground truth objects detection
 STOCASTIC_AGENT = False  # An agent is stochastic if its movements and rotations are affected by actuation noise
 
 
@@ -37,10 +37,10 @@ RENDER_DEPTH_IMG = 1
 HIDE_PICKED_OBJECTS = 1
 FRAME_WIDTH = 224
 FRAME_HEIGHT = 224
-FOV = 79
+FOV = 90
 VISIBILITY_DISTANCE = 1.5  # 150 centimeters
 MOVE_STEP = 0.25  # 25 centimeters
-ROTATION_STEP = 30  # degrees
+ROTATION_STEP = 45  # degrees
 MAX_CAM_ANGLE = 60  # maximum degrees of camera when executing LookUp and LookDown actions
 
 

@@ -179,7 +179,7 @@ class ProblemDefinition():
         aux2 = input("Select the objective: ")
         self.objective = posible_objects[int(aux2)]            
         print("")
-        print(f'Selected objective is: {self.objective["objectId"]}\n')
+        print(f'Selected objective is: {self.objective["objectId"]} {self.objective["name"]}\n')
 
         if select_liquid:
             print("----LIQUID----")
@@ -220,7 +220,7 @@ class ProblemDefinition():
             print("----------------")
             aux = input("Select an action: ")
             print("")
-            if (1 <= int(aux) <= 15):
+            if (1 <= int(aux) <= 16):
                 bucle = False
             else:
                 print("Please, input a valid action\n")
@@ -278,7 +278,7 @@ class ProblemDefinition():
                    "toilet", "toiletpaperhanger", "towelholder", "tvstand", "stoveburner"]
 
         elif self.problem == "break":
-            possible_objects = ["bottle", "bowl", "cellphone", "cup", "egg", "laptop", "mirror", "mug", "plate",
+            possible_objects = ["bottle", "bowl", "cellphone", "cup", "egg", "laptop", "television", "mirror", "mug", "plate",
                     "showerdoor", "statue", "vase", "window", "winebottle"]
 
         elif self.problem == "cook":
@@ -313,7 +313,7 @@ class ProblemDefinition():
     def problem_selection_ogamus_input(self, input):
         '''Method that executes and reads PDDL input files for OGAMUS'''
         # We call the planner and save the input in /pddl/outputs/input_plan.txt
-        planificador = Planner(input, "./pddl/outputs/input_plan.txt", "pickup", True, True)
+        planificador = Planner(input, "./pddl/outputs/input_plan.txt", "pickup", 1, 3, True, True)
 
         # Extract the plan        
         raw_plan = planificador.get_plan()

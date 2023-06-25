@@ -19,7 +19,7 @@
     (inclination)
     (agent-at-x)
     (agent-at-z)
-
+    
     (posiblepos-x ?p - position)
     (posiblepos-z ?p - position)
   )

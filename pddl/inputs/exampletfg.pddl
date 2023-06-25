@@ -1,4 +1,4 @@
-(define (problem example) (:domain inputs)
+(define (problem exampletfg) (:domain inputs)
 (:objects 
     ; LEAVE IT AS IT IS
 
@@ -47,11 +47,11 @@
     drop - action ; (= (basicaction drop <pickupable>) <orden>)
     put - action ; (= (basicaction put <receptacle>) <orden>)
 
-    ; LEAVE IT AS IT IS
+    ; DON'T MODIFY
     knife pot stoveburner pan - object
 
     ; MODIFY THIS SECTION ADDING OBJECTS USED
-    saltshaker fridge potato - object
+    potato microwave - object
 
 )
 
@@ -61,15 +61,11 @@
     (= (complextime) 0)
 
     ; MODIFY FROM HERE MANTAINING AN ORDER BETWEEN ACTIONS
-    ;(= (basicaction pickup saltshaker) 1)
-    ;(= (put_object_into saltshaker fridge) 2)
-    ;(= (put_into_fridge saltshaker) 1)
-    ;(= (fry_potato) 1)
-    ;(= (basicaction pickup tomato) 2)
+    ;(= (basicaction pickup potato) 1)
+    ;(= (basicaction open microwave) 2)
+    ;(= (basicaction put microwave) 3)
 
-    (= (fry_object potato) 1)
-
-
+    (= (put_object_into potato microwave) 1)
 
     (= (last) 2) ; MUST BE ESTABLISHED TO THE NUMBER NEXT TO THE LAST ACTION
 )

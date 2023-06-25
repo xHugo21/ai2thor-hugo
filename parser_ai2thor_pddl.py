@@ -121,12 +121,15 @@ class ParserAI2THORPDDL:
         # Add interactable poses. If there isn't any interactable poses, increase the horizons (agent inclinations)        
         event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True], horizons=[0])
         interactable_poses = event2.metadata["actionReturn"]
+        print(f'Interactable poses: {interactable_poses}')
         if not interactable_poses:
             event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True], horizons=[0, 30])
             interactable_poses = event2.metadata["actionReturn"]
+            print(f'Interactable poses: {interactable_poses}')
             if not interactable_poses:
                 event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True], horizons=[0, 30, 60])
                 interactable_poses = event2.metadata["actionReturn"]
+                print(f'Interactable poses: {interactable_poses}')
                 if not interactable_poses:
                     event2 = self.controller.step(action="GetInteractablePoses", objectId=self.objective["objectId"], standings=[True])
                     interactable_poses = event2.metadata["actionReturn"]

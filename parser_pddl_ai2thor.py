@@ -111,9 +111,6 @@ class ParserPDDLAI2THOR:
 
             elif act.find("USEUP") != -1:
                 self.object_state_action(act, "USEUP", 6, "UseUpObject")
-
-            # elif act.find("DROP") != -1:
-            #     self.controller.step(action="DropHandObject", forceAction=True)
             
             elif act.find("PUT") != -1:
                 start_index = act.find("PUT ")
@@ -123,7 +120,7 @@ class ParserPDDLAI2THOR:
                 obj_name = act[start_index+4:end_index2]
                 for obj in self.objects:
                     if (obj["name"].upper() == obj_name) and ("PUT" != "FILL"):
-                        self.controller.step(action="PutObject", objectId=obj["objectId"], forceAction=True)
+                        self.controller.step(action="PutObject", objectId=obj["objectId"])
             
             # If there has been an error -> print via CLI and exit
             if self.controller.last_event.metadata['errorMessage']:
