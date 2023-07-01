@@ -82,6 +82,11 @@ iTHOR simulator launches a visualization window every time an environment is gen
 
 - Plans generated in /pddl/outputs/
 
+### :dizzy: Recommended improvements
+- Run the following command to prevent GNOME from launching the "Application not responds" window. This way the Unity window can be left more time without interruption before executing tasks
+```bash
+gsettings set org.gnome.mutter check-alive-timeout 60000
+```
 
 ### :pencil2: References
 - iTHOR documentation: https://ai2thor.allenai.org/ithor/documentation/
