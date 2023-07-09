@@ -1,4 +1,4 @@
-# Execution of actions on the iTHOR simulator using automated planning and neural networks.
+# Task execution on the iTHOR simulator using automated planning and neural networks.
 
 ## End of Degree Work by Hugo García Cuesta 100428954. University Carlos III of Madrid
 
