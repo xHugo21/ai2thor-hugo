@@ -2,7 +2,7 @@
 
 # IMPORTS
 import json
-import ogamus
+# import ogamus
 import shutil
 import sys
 import time
@@ -191,7 +191,7 @@ else:
             f.write(json_object)
 
         # Call to ogamus to find the objective 
-        controller = ogamus.main(controller)
+        # controller = ogamus.main(controller)
 
         # Check if OGAMUS has found the objective. If plan has 200 steps -> objective not found.
         with open(LOG, "r") as f:
