@@ -36,18 +36,38 @@ There are two ways of running the program:
    conda env create -n ai2thor -f environment.yml
    ```
 4. Activate the conda environment
+
    ```
    conda activate ai2thor
    ```
-5. Download the pretrained neural network from the following link and drop the files into /Utils/pretrained_models/ [Pretrained Neural Network](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing)
 
-6. Download cbp-planner and place inside pddl folder. Modify planner path inside planner.py if needed.
+5. Init and update the planner submodule
 
-7. Execute main.py and follow steps in CLI
+   ```
+   git submodule init
+   ```
+
+   ```
+   git submodule update
+   ```
+
+6. Compile the planner. Credits to [tranchis](https://github.com/tranchis/metric-ff-macos) for his [Metric-FF](https://fai.cs.uni-saarland.de/hoffmann/metric-ff.html) version
+
+   ```
+   cd planner/metric-ff-macos/
+   ```
+
+   ```
+   make
+   ```
+
+7. Download the pretrained neural network from the following link and drop the files into /Utils/pretrained_models/ [Pretrained Neural Network](https://drive.google.com/drive/folders/1UjADpBeBOMUKXQt-qSULIP3vM90zr_MR?usp=sharing)
+
+8. Execute main.py and follow steps in CLI
    ```
    python main.py
    ```
-8. If the user wants, he can pass a PDDL problem file as argument so that there is no need to select actions and objectives via CLI. This is only allowed for the OGAMUS method. There is a PDDL input example file at /pddl/inputs/example.pddl
+9. If the user wants, he can pass a PDDL problem file as argument so that there is no need to select actions and objectives via CLI. This is only allowed for the OGAMUS method. There is a PDDL input example file at /pddl/inputs/example.pddl
    ```
    python main.py ./pddl/inputs/example.pddl
    ```
