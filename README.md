@@ -51,7 +51,7 @@ There are two ways of running the program:
    git submodule update
    ```
 
-6. Compile the planner. Credits to [tranchis](https://github.com/tranchis/metric-ff-macos) for his [Metric-FF](https://fai.cs.uni-saarland.de/hoffmann/metric-ff.html) version
+6. Compile the planner
 
    ```
    cd planner/metric-ff-macos/
@@ -102,3 +102,5 @@ gsettings set org.gnome.mutter check-alive-timeout 60000
 
 - iTHOR documentation: https://ai2thor.allenai.org/ithor/documentation/
 - LAMANNA, Leonardo, et al. Online grounding of symbolic planning domains in unknown environments. En Proceedings of the International Conference on Principles of Knowledge Representation and Reasoning. 2022. p. 511-521. [PDF](https://arxiv.org/pdf/2112.10007.pdf). [GitHub](https://github.com/LamannaLeonardo/OGAMUS)
+- [Metric-FF](https://fai.cs.uni-saarland.de/hoffmann/metric-ff.html) planner
+- [tranchis](https://github.com/tranchis/metric-ff-macos) macos compilable version of [Metric-FF](https://fai.cs.uni-saarland.de/hoffmann/metric-ff.html)
