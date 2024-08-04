@@ -1,0 +1,3 @@
+[submodule "planner/metric-ff-macos"]
+	path = planner/metric-ff-macos
+	url = https://github.com/tranchis/metric-ff-macos.git
