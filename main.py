@@ -26,12 +26,12 @@ LOG = "Results/test_set_ogn_ithor_steps200/episode_0/log.txt"
 removeResultFolders()
 
 # User selects the method he wants to use.
-    # 1. METADATA: uses data extracted from the simulator to get object positions and applies a automated planning in order to find the best plan to make an action in the environment
-    # 2. OGAMUS: Uses the OGAMUS algorithm (credits in README). Scans the scene using pretrained models to find the desired objective and if the objective is found, it executes the action.
+# 1. METADATA: uses data extracted from the simulator to get object positions and applies a automated planning in order to find the best plan to make an action in the environment
+# 2. OGAMUS: Uses the OGAMUS algorithm (credits in README). Scans the scene using pretrained models to find the desired objective and if the objective is found, it executes the action.
 inputs = ProblemDefinition()
 
 if len(sys.argv) == 1:
-    method =  inputs.method_selection()
+    method = inputs.method_selection()
 else:
     method = "2"
 
@@ -41,28 +41,28 @@ else:
     # [201-230] - Living rooms
     # [301-330] - Bedrooms
     # [401-430] - Bathrooms
-scene_number =  inputs.scene_selection()
+scene_number = inputs.scene_selection()
 
 
 # If method = 1 -> METADATA
 if method == '1':
 
-    # Initial start of the environment 
+    # Initial start of the environment
     print("*STARTING ENVIRONMENT*\n")
     controller = Controller(
-                            agentMode="default", # Agent used is iTHOR -> default
-                            visibilityDistance=1.5, # Visibility distance
-                            scene="FloorPlan" + str(scene_number),
-                            gridSize=0.25, # Step size
-                            snapToGrid=True,
-                            rotateStepDegrees=90,
-                            renderDepthImage=False,
-                            renderInstanceSegmentation=False,
-                            width=224, # Controller width
-                            height=224, # Controller height
-                            fieldOfView=90 # Controller fiold of view
-                            )
-    
+        agentMode="default",  # Agent used is iTHOR -> default
+        visibilityDistance=1.5,  # Visibility distance
+        scene="FloorPlan" + str(scene_number),
+        gridSize=0.25,  # Step size
+        snapToGrid=True,
+        rotateStepDegrees=90,
+        renderDepthImage=False,
+        renderInstanceSegmentation=False,
+        width=224,  # Controller width
+        height=224,  # Controller height
+        fieldOfView=90  # Controller fiold of view
+    )
+
     # We create a camera on top of the scene and save an image
     createCamera(controller)
 
@@ -90,13 +90,16 @@ if method == '1':
 
         else:
             # Using the parser, we translate the simulator state to a PDDL problem
-            ParserAI2THORPDDL(event, problem_path, problem, objective, controller)
+            ParserAI2THORPDDL(event, problem_path, problem,
+                              objective, controller)
 
             # Execute the planner with the problem file generated and the corresponding domain (based on selected action)
-            plan = Planner(problem_path, output_path, problem, 1, 3, print=True, ogamus=False)
+            plan = Planner(problem_path, output_path, problem,
+                           1, 3, print=True, ogamus=False)
 
             # Parse and execute plan into actions
-            parsed = ParserPDDLAI2THOR(plan.get_plan(), controller, iteration, liquid)
+            parsed = ParserPDDLAI2THOR(
+                plan.get_plan(), controller, iteration, liquid)
 
         # Final state visualization depending on the type of the problem
         printLastActionStatus(controller.last_event)
@@ -115,26 +118,26 @@ if method == '1':
 # If method = 2 -> OGAMUS
 else:
     # Compute auxiliary params for OGAMUS execution
-    #hfov = 79 / 360. * 2. * np.pi
-    #vfov = 2. * np.arctan(np.tan(hfov / 2) * 224 / 224)
-    #vfov = np.rad2deg(vfov)
+    # hfov = 79 / 360. * 2. * np.pi
+    # vfov = 2. * np.arctan(np.tan(hfov / 2) * 224 / 224)
+    # vfov = np.rad2deg(vfov)
 
     # Controller start
     print("*STARTING ENVIRONMENT*\n")
     controller = Controller(
-                            renderDepthImage=1,
-                            renderObjectImage=True,
-                            visibilityDistance=1.5,
-                            gridSize=0.25,
-                            rotateStepDegrees=45,
-                            scene="FloorPlan" + str(scene_number),
-                            continuousMode=True,
-                            snapToGrid=False,
-                            width=224,
-                            height=224,
-                            fieldOfView=90,
-                            agentMode='default'
-                            )
+        renderDepthImage=1,
+        renderObjectImage=True,
+        visibilityDistance=1.5,
+        gridSize=0.25,
+        rotateStepDegrees=45,
+        scene="FloorPlan" + str(scene_number),
+        continuousMode=True,
+        snapToGrid=False,
+        width=224,
+        height=224,
+        fieldOfView=90,
+        agentMode='default'
+    )
 
     # We create a camera on top of the scene and save an image
     createCamera(controller)
@@ -148,7 +151,8 @@ else:
 
     # Reads problems from CLI or arguments if a PDDL problem is passed.
     if len(sys.argv) == 2:
-        problem_list, objective_list = inputs.problem_selection_ogamus_input(input=sys.argv[1])
+        problem_list, objective_list = inputs.problem_selection_ogamus_input(
+            input=sys.argv[1])
     elif len(sys.argv) == 1:
         problem_list, objective_list = inputs.problem_selection_ogamus()
     else:
@@ -161,8 +165,6 @@ else:
     iteration = 0
     for problem in problem_list:
 
-        
-        
         # We create the dictionary to be inserted into the JSON that OGAMUS reads. It contains the scene info previously extracted and the objective
         dictionary = [{
             "episode": 1,
@@ -190,7 +192,7 @@ else:
         with open(DATASET, "w") as f:
             f.write(json_object)
 
-        # Call to ogamus to find the objective 
+        # Call to ogamus to find the objective
         # controller = ogamus.main(controller)
 
         # Check if OGAMUS has found the objective. If plan has 200 steps -> objective not found.
@@ -203,14 +205,12 @@ else:
                 exit()
 
         # Call ExecOgamus to execute the action over the objective
-        execute = ExecOgamus(controller, problem, objective_list[iteration], iteration)
+        execute = ExecOgamus(controller, problem,
+                             objective_list[iteration], iteration)
 
         # Save facts found from OGAMUS into problems folder
         shutil.copyfile("OGAMUS/Plan/PDDL/facts.pddl",
                         f"pddl/problems/problem{iteration}.pddl")
-        
-        
-        
 
         # Update agent position in for next OGAMUS execution
         event = controller.step("Pass")
@@ -222,7 +222,6 @@ else:
 
         # Update iteration count
         iteration += 1
-
 
 
 print(f"\nElapsed time: {end_time-start_time}")

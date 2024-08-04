@@ -140,3 +140,6 @@ Utils/pretrained_models
 
 # DS Store
 .DS_Store
+
+# Metric-FF compiled file
+planner/metric-ff/ff
